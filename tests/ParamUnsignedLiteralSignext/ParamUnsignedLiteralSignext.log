@@ -1,0 +1,2179 @@
+[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/ParamUnsignedLiteralSignext/slpp_all/surelog.log".
+[WRN:PA0205] ${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv:7:1: No timescale set for "test".
+[INF:CP0300] Compilation...
+[INF:CP0303] ${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv:7:1: Compile module "work@test".
+[INF:EL0526] Design Elaboration...
+[NTE:EL0503] ${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv:7:1: Top level module "work@test".
+[NTE:EL0508] Nb Top level modules: 1.
+[NTE:EL0509] Max instance depth: 1.
+[NTE:EL0510] Nb instances: 1.
+[NTE:EL0511] Nb leaf instances: 1.
+[INF:UH0706] Creating UHDM Model...
+=== UHDM Object Stats Begin (Non-Elaborated Model) ===
+byte_typespec                                          5
+byte_var                                               1
+constant                                              55
+cont_assign                                           20
+design                                                 1
+int_typespec                                          32
+int_var                                                8
+logic_net                                             11
+logic_typespec                                         6
+module_inst                                            6
+operation                                              2
+param_assign                                          22
+parameter                                             22
+port                                                  20
+range                                                  9
+ref_obj                                               62
+ref_typespec                                          85
+=== UHDM Object Stats End ===
+[INF:UH0707] Elaborating UHDM...
+=== UHDM Object Stats Begin (Elaborated Model) ===
+byte_typespec                                          5
+byte_var                                               1
+constant                                              55
+cont_assign                                           30
+design                                                 1
+int_typespec                                          32
+int_var                                                8
+logic_net                                             11
+logic_typespec                                         6
+module_inst                                            6
+operation                                              2
+param_assign                                          22
+parameter                                             22
+port                                                  30
+range                                                  9
+ref_obj                                               82
+ref_typespec                                          95
+=== UHDM Object Stats End ===
+[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ParamUnsignedLiteralSignext/slpp_all/surelog.uhdm ...
+[INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ParamUnsignedLiteralSignext/slpp_all/checker/surelog.chk.html ...
+[INF:UH0710] Loading UHDM DB: ${SURELOG_DIR}/build/regression/ParamUnsignedLiteralSignext/slpp_all/surelog.uhdm ...
+[INF:UH0711] Decompiling UHDM...
+====== UHDM =======
+design: (work@test)
+|vpiElaborated:1
+|vpiName:work@test
+|uhdmallModules:
+\_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiParent:
+  \_design: (work@test)
+  |vpiFullName:work@test
+  |vpiParameter:
+  \_parameter: (work@test.p_1b1), line:9:20, endln:9:25
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_1b1)
+      |vpiParent:
+      \_parameter: (work@test.p_1b1), line:9:20, endln:9:25
+      |vpiFullName:work@test.p_1b1
+      |vpiActual:
+      \_int_typespec: , line:9:13, endln:9:16
+    |vpiSigned:1
+    |vpiName:p_1b1
+    |vpiFullName:work@test.p_1b1
+  |vpiParameter:
+  \_parameter: (work@test.p_2b11), line:10:20, endln:10:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:11
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_2b11)
+      |vpiParent:
+      \_parameter: (work@test.p_2b11), line:10:20, endln:10:26
+      |vpiFullName:work@test.p_2b11
+      |vpiActual:
+      \_int_typespec: , line:10:13, endln:10:16
+    |vpiSigned:1
+    |vpiName:p_2b11
+    |vpiFullName:work@test.p_2b11
+  |vpiParameter:
+  \_parameter: (work@test.p_4b1111), line:11:20, endln:11:28
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1111
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_4b1111)
+      |vpiParent:
+      \_parameter: (work@test.p_4b1111), line:11:20, endln:11:28
+      |vpiFullName:work@test.p_4b1111
+      |vpiActual:
+      \_int_typespec: , line:11:13, endln:11:16
+    |vpiSigned:1
+    |vpiName:p_4b1111
+    |vpiFullName:work@test.p_4b1111
+  |vpiParameter:
+  \_parameter: (work@test.p_2b01), line:12:20, endln:12:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:01
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_2b01)
+      |vpiParent:
+      \_parameter: (work@test.p_2b01), line:12:20, endln:12:26
+      |vpiFullName:work@test.p_2b01
+      |vpiActual:
+      \_int_typespec: , line:12:13, endln:12:16
+    |vpiSigned:1
+    |vpiName:p_2b01
+    |vpiFullName:work@test.p_2b01
+  |vpiParameter:
+  \_parameter: (work@test.p_sb1), line:13:20, endln:13:25
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_sb1)
+      |vpiParent:
+      \_parameter: (work@test.p_sb1), line:13:20, endln:13:25
+      |vpiFullName:work@test.p_sb1
+      |vpiActual:
+      \_int_typespec: , line:13:13, endln:13:16
+    |vpiSigned:1
+    |vpiName:p_sb1
+    |vpiFullName:work@test.p_sb1
+  |vpiParameter:
+  \_parameter: (work@test.p_4sb1111), line:14:20, endln:14:29
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1111
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_4sb1111)
+      |vpiParent:
+      \_parameter: (work@test.p_4sb1111), line:14:20, endln:14:29
+      |vpiFullName:work@test.p_4sb1111
+      |vpiActual:
+      \_int_typespec: , line:14:13, endln:14:16
+    |vpiSigned:1
+    |vpiName:p_4sb1111
+    |vpiFullName:work@test.p_4sb1111
+  |vpiParameter:
+  \_parameter: (work@test.p_8h88), line:15:20, endln:15:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |HEX:88
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_8h88)
+      |vpiParent:
+      \_parameter: (work@test.p_8h88), line:15:20, endln:15:26
+      |vpiFullName:work@test.p_8h88
+      |vpiActual:
+      \_int_typespec: , line:15:13, endln:15:16
+    |vpiSigned:1
+    |vpiName:p_8h88
+    |vpiFullName:work@test.p_8h88
+  |vpiParameter:
+  \_parameter: (work@test.p_untyped), line:16:20, endln:16:29
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_untyped)
+      |vpiParent:
+      \_parameter: (work@test.p_untyped), line:16:20, endln:16:29
+      |vpiFullName:work@test.p_untyped
+      |vpiActual:
+      \_int_typespec: , line:16:3, endln:16:36
+    |vpiName:p_untyped
+    |vpiFullName:work@test.p_untyped
+  |vpiParameter:
+  \_parameter: (work@test.p_logic), line:17:26, endln:17:33
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_logic)
+      |vpiParent:
+      \_parameter: (work@test.p_logic), line:17:26, endln:17:33
+      |vpiFullName:work@test.p_logic
+      |vpiActual:
+      \_logic_typespec: , line:17:13, endln:17:25
+    |vpiName:p_logic
+    |vpiFullName:work@test.p_logic
+  |vpiParameter:
+  \_parameter: (work@test.p_byte), line:18:20, endln:18:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:11
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_byte)
+      |vpiParent:
+      \_parameter: (work@test.p_byte), line:18:20, endln:18:26
+      |vpiFullName:work@test.p_byte
+      |vpiActual:
+      \_byte_typespec: , line:18:13, endln:18:17
+    |vpiSigned:1
+    |vpiName:p_byte
+    |vpiFullName:work@test.p_byte
+  |vpiParamAssign:
+  \_param_assign: , line:9:20, endln:9:34
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:9:30, endln:9:34
+      |vpiParent:
+      \_param_assign: , line:9:20, endln:9:34
+      |vpiDecompile:1'b1
+      |vpiSize:1
+      |BIN:1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:9:30, endln:9:34
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:9:13, endln:9:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_1b1), line:9:20, endln:9:25
+  |vpiParamAssign:
+  \_param_assign: , line:10:20, endln:10:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:10:30, endln:10:35
+      |vpiParent:
+      \_param_assign: , line:10:20, endln:10:35
+      |vpiDecompile:2'b11
+      |vpiSize:2
+      |BIN:11
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:10:30, endln:10:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:10:13, endln:10:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_2b11), line:10:20, endln:10:26
+  |vpiParamAssign:
+  \_param_assign: , line:11:20, endln:11:38
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:11:31, endln:11:38
+      |vpiParent:
+      \_param_assign: , line:11:20, endln:11:38
+      |vpiDecompile:4'b1111
+      |vpiSize:4
+      |BIN:1111
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:11:31, endln:11:38
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:11:13, endln:11:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_4b1111), line:11:20, endln:11:28
+  |vpiParamAssign:
+  \_param_assign: , line:12:20, endln:12:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:12:30, endln:12:35
+      |vpiParent:
+      \_param_assign: , line:12:20, endln:12:35
+      |vpiDecompile:2'b01
+      |vpiSize:2
+      |BIN:01
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:12:30, endln:12:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:12:13, endln:12:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_2b01), line:12:20, endln:12:26
+  |vpiParamAssign:
+  \_param_assign: , line:13:20, endln:13:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:13:30, endln:13:35
+      |vpiParent:
+      \_param_assign: , line:13:20, endln:13:35
+      |vpiDecompile:1'sb1
+      |vpiSize:1
+      |BIN:1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:13:30, endln:13:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:13:13, endln:13:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_sb1), line:13:20, endln:13:25
+  |vpiParamAssign:
+  \_param_assign: , line:14:20, endln:14:40
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:14:32, endln:14:40
+      |vpiParent:
+      \_param_assign: , line:14:20, endln:14:40
+      |vpiDecompile:4'sb1111
+      |vpiSize:4
+      |BIN:1111
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:14:32, endln:14:40
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:14:13, endln:14:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_4sb1111), line:14:20, endln:14:29
+  |vpiParamAssign:
+  \_param_assign: , line:15:20, endln:15:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:15:30, endln:15:35
+      |vpiParent:
+      \_param_assign: , line:15:20, endln:15:35
+      |vpiDecompile:8'h88
+      |vpiSize:8
+      |HEX:88
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:15:30, endln:15:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:15:13, endln:15:16
+      |vpiConstType:5
+    |vpiLhs:
+    \_parameter: (work@test.p_8h88), line:15:20, endln:15:26
+  |vpiParamAssign:
+  \_param_assign: , line:16:20, endln:16:36
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:16:32, endln:16:36
+      |vpiParent:
+      \_param_assign: , line:16:20, endln:16:36
+      |vpiDecompile:1'b1
+      |vpiSize:1
+      |BIN:1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:16:32, endln:16:36
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:16:3, endln:16:36
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_untyped), line:16:20, endln:16:29
+  |vpiParamAssign:
+  \_param_assign: , line:17:26, endln:17:40
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:17:36, endln:17:40
+      |vpiParent:
+      \_param_assign: , line:17:26, endln:17:40
+      |vpiDecompile:1'b1
+      |vpiSize:1
+      |BIN:1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:17:36, endln:17:40
+        |vpiFullName:work@test
+        |vpiActual:
+        \_logic_typespec: , line:17:13, endln:17:25
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_logic), line:17:26, endln:17:33
+  |vpiParamAssign:
+  \_param_assign: , line:18:20, endln:18:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:18:30, endln:18:35
+      |vpiParent:
+      \_param_assign: , line:18:20, endln:18:35
+      |vpiDecompile:2'b11
+      |vpiSize:2
+      |BIN:11
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:18:30, endln:18:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_byte_typespec: , line:18:13, endln:18:17
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_byte), line:18:20, endln:18:26
+  |vpiDefName:work@test
+  |vpiNet:
+  \_logic_net: (work@test.o1), line:7:24, endln:7:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o1
+    |vpiFullName:work@test.o1
+  |vpiNet:
+  \_logic_net: (work@test.o2), line:7:28, endln:7:30
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o2
+    |vpiFullName:work@test.o2
+  |vpiNet:
+  \_logic_net: (work@test.o3), line:7:32, endln:7:34
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o3
+    |vpiFullName:work@test.o3
+  |vpiNet:
+  \_logic_net: (work@test.o4), line:7:36, endln:7:38
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o4
+    |vpiFullName:work@test.o4
+  |vpiNet:
+  \_logic_net: (work@test.o5), line:7:40, endln:7:42
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o5
+    |vpiFullName:work@test.o5
+  |vpiNet:
+  \_logic_net: (work@test.o6), line:7:44, endln:7:46
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o6
+    |vpiFullName:work@test.o6
+  |vpiNet:
+  \_logic_net: (work@test.o7), line:7:48, endln:7:50
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o7
+    |vpiFullName:work@test.o7
+  |vpiNet:
+  \_logic_net: (work@test.o8), line:7:52, endln:7:54
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o8
+    |vpiFullName:work@test.o8
+  |vpiNet:
+  \_logic_net: (work@test.o9), line:8:33, endln:8:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o9
+    |vpiFullName:work@test.o9
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@test.o10), line:8:49, endln:8:52
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o10
+    |vpiFullName:work@test.o10
+  |vpiPort:
+  \_port: (o1), line:7:24, endln:7:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o1
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o1.o1), line:7:24, endln:7:26
+      |vpiParent:
+      \_port: (o1), line:7:24, endln:7:26
+      |vpiName:o1
+      |vpiFullName:work@test.o1.o1
+      |vpiActual:
+      \_logic_net: (work@test.o1), line:7:24, endln:7:26
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o1)
+      |vpiParent:
+      \_port: (o1), line:7:24, endln:7:26
+      |vpiFullName:work@test.o1
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+  |vpiPort:
+  \_port: (o2), line:7:28, endln:7:30
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o2
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o2.o2), line:7:28, endln:7:30
+      |vpiParent:
+      \_port: (o2), line:7:28, endln:7:30
+      |vpiName:o2
+      |vpiFullName:work@test.o2.o2
+      |vpiActual:
+      \_logic_net: (work@test.o2), line:7:28, endln:7:30
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o2)
+      |vpiParent:
+      \_port: (o2), line:7:28, endln:7:30
+      |vpiFullName:work@test.o2
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+  |vpiPort:
+  \_port: (o3), line:7:32, endln:7:34
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o3
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o3.o3), line:7:32, endln:7:34
+      |vpiParent:
+      \_port: (o3), line:7:32, endln:7:34
+      |vpiName:o3
+      |vpiFullName:work@test.o3.o3
+      |vpiActual:
+      \_logic_net: (work@test.o3), line:7:32, endln:7:34
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o3)
+      |vpiParent:
+      \_port: (o3), line:7:32, endln:7:34
+      |vpiFullName:work@test.o3
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+  |vpiPort:
+  \_port: (o4), line:7:36, endln:7:38
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o4
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o4.o4), line:7:36, endln:7:38
+      |vpiParent:
+      \_port: (o4), line:7:36, endln:7:38
+      |vpiName:o4
+      |vpiFullName:work@test.o4.o4
+      |vpiActual:
+      \_logic_net: (work@test.o4), line:7:36, endln:7:38
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o4)
+      |vpiParent:
+      \_port: (o4), line:7:36, endln:7:38
+      |vpiFullName:work@test.o4
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+  |vpiPort:
+  \_port: (o5), line:7:40, endln:7:42
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o5
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o5.o5), line:7:40, endln:7:42
+      |vpiParent:
+      \_port: (o5), line:7:40, endln:7:42
+      |vpiName:o5
+      |vpiFullName:work@test.o5.o5
+      |vpiActual:
+      \_logic_net: (work@test.o5), line:7:40, endln:7:42
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o5)
+      |vpiParent:
+      \_port: (o5), line:7:40, endln:7:42
+      |vpiFullName:work@test.o5
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+  |vpiPort:
+  \_port: (o6), line:7:44, endln:7:46
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o6
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o6.o6), line:7:44, endln:7:46
+      |vpiParent:
+      \_port: (o6), line:7:44, endln:7:46
+      |vpiName:o6
+      |vpiFullName:work@test.o6.o6
+      |vpiActual:
+      \_logic_net: (work@test.o6), line:7:44, endln:7:46
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o6)
+      |vpiParent:
+      \_port: (o6), line:7:44, endln:7:46
+      |vpiFullName:work@test.o6
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+  |vpiPort:
+  \_port: (o7), line:7:48, endln:7:50
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o7
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o7.o7), line:7:48, endln:7:50
+      |vpiParent:
+      \_port: (o7), line:7:48, endln:7:50
+      |vpiName:o7
+      |vpiFullName:work@test.o7.o7
+      |vpiActual:
+      \_logic_net: (work@test.o7), line:7:48, endln:7:50
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o7)
+      |vpiParent:
+      \_port: (o7), line:7:48, endln:7:50
+      |vpiFullName:work@test.o7
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+  |vpiPort:
+  \_port: (o8), line:7:52, endln:7:54
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o8
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o8.o8), line:7:52, endln:7:54
+      |vpiParent:
+      \_port: (o8), line:7:52, endln:7:54
+      |vpiName:o8
+      |vpiFullName:work@test.o8.o8
+      |vpiActual:
+      \_logic_net: (work@test.o8), line:7:52, endln:7:54
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o8)
+      |vpiParent:
+      \_port: (o8), line:7:52, endln:7:54
+      |vpiFullName:work@test.o8
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+  |vpiPort:
+  \_port: (o9), line:8:33, endln:8:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o9
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o9.o9), line:8:33, endln:8:35
+      |vpiParent:
+      \_port: (o9), line:8:33, endln:8:35
+      |vpiName:o9
+      |vpiFullName:work@test.o9.o9
+      |vpiActual:
+      \_logic_net: (work@test.o9), line:8:33, endln:8:35
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o9)
+      |vpiParent:
+      \_port: (o9), line:8:33, endln:8:35
+      |vpiFullName:work@test.o9
+      |vpiActual:
+      \_logic_typespec: , line:8:20, endln:8:32
+  |vpiPort:
+  \_port: (o10), line:8:49, endln:8:52
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o10
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o10.o10), line:8:49, endln:8:52
+      |vpiParent:
+      \_port: (o10), line:8:49, endln:8:52
+      |vpiName:o10
+      |vpiFullName:work@test.o10.o10
+      |vpiActual:
+      \_logic_net: (work@test.o10), line:8:49, endln:8:52
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o10)
+      |vpiParent:
+      \_port: (o10), line:8:49, endln:8:52
+      |vpiFullName:work@test.o10
+      |vpiActual:
+      \_byte_typespec: , line:8:44, endln:8:48
+  |vpiContAssign:
+  \_cont_assign: , line:19:10, endln:19:20
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_1b1), line:19:15, endln:19:20
+      |vpiParent:
+      \_cont_assign: , line:19:10, endln:19:20
+      |vpiName:p_1b1
+      |vpiFullName:work@test.p_1b1
+    |vpiLhs:
+    \_ref_obj: (work@test.o1), line:19:10, endln:19:12
+      |vpiParent:
+      \_cont_assign: , line:19:10, endln:19:20
+      |vpiName:o1
+      |vpiFullName:work@test.o1
+      |vpiActual:
+      \_logic_net: (work@test.o1), line:7:24, endln:7:26
+  |vpiContAssign:
+  \_cont_assign: , line:20:10, endln:20:21
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_2b11), line:20:15, endln:20:21
+      |vpiParent:
+      \_cont_assign: , line:20:10, endln:20:21
+      |vpiName:p_2b11
+      |vpiFullName:work@test.p_2b11
+    |vpiLhs:
+    \_ref_obj: (work@test.o2), line:20:10, endln:20:12
+      |vpiParent:
+      \_cont_assign: , line:20:10, endln:20:21
+      |vpiName:o2
+      |vpiFullName:work@test.o2
+      |vpiActual:
+      \_logic_net: (work@test.o2), line:7:28, endln:7:30
+  |vpiContAssign:
+  \_cont_assign: , line:21:10, endln:21:23
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_4b1111), line:21:15, endln:21:23
+      |vpiParent:
+      \_cont_assign: , line:21:10, endln:21:23
+      |vpiName:p_4b1111
+      |vpiFullName:work@test.p_4b1111
+    |vpiLhs:
+    \_ref_obj: (work@test.o3), line:21:10, endln:21:12
+      |vpiParent:
+      \_cont_assign: , line:21:10, endln:21:23
+      |vpiName:o3
+      |vpiFullName:work@test.o3
+      |vpiActual:
+      \_logic_net: (work@test.o3), line:7:32, endln:7:34
+  |vpiContAssign:
+  \_cont_assign: , line:22:10, endln:22:21
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_2b01), line:22:15, endln:22:21
+      |vpiParent:
+      \_cont_assign: , line:22:10, endln:22:21
+      |vpiName:p_2b01
+      |vpiFullName:work@test.p_2b01
+    |vpiLhs:
+    \_ref_obj: (work@test.o4), line:22:10, endln:22:12
+      |vpiParent:
+      \_cont_assign: , line:22:10, endln:22:21
+      |vpiName:o4
+      |vpiFullName:work@test.o4
+      |vpiActual:
+      \_logic_net: (work@test.o4), line:7:36, endln:7:38
+  |vpiContAssign:
+  \_cont_assign: , line:23:10, endln:23:20
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_sb1), line:23:15, endln:23:20
+      |vpiParent:
+      \_cont_assign: , line:23:10, endln:23:20
+      |vpiName:p_sb1
+      |vpiFullName:work@test.p_sb1
+    |vpiLhs:
+    \_ref_obj: (work@test.o5), line:23:10, endln:23:12
+      |vpiParent:
+      \_cont_assign: , line:23:10, endln:23:20
+      |vpiName:o5
+      |vpiFullName:work@test.o5
+      |vpiActual:
+      \_logic_net: (work@test.o5), line:7:40, endln:7:42
+  |vpiContAssign:
+  \_cont_assign: , line:24:10, endln:24:24
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_4sb1111), line:24:15, endln:24:24
+      |vpiParent:
+      \_cont_assign: , line:24:10, endln:24:24
+      |vpiName:p_4sb1111
+      |vpiFullName:work@test.p_4sb1111
+    |vpiLhs:
+    \_ref_obj: (work@test.o6), line:24:10, endln:24:12
+      |vpiParent:
+      \_cont_assign: , line:24:10, endln:24:24
+      |vpiName:o6
+      |vpiFullName:work@test.o6
+      |vpiActual:
+      \_logic_net: (work@test.o6), line:7:44, endln:7:46
+  |vpiContAssign:
+  \_cont_assign: , line:25:10, endln:25:21
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_8h88), line:25:15, endln:25:21
+      |vpiParent:
+      \_cont_assign: , line:25:10, endln:25:21
+      |vpiName:p_8h88
+      |vpiFullName:work@test.p_8h88
+    |vpiLhs:
+    \_ref_obj: (work@test.o7), line:25:10, endln:25:12
+      |vpiParent:
+      \_cont_assign: , line:25:10, endln:25:21
+      |vpiName:o7
+      |vpiFullName:work@test.o7
+      |vpiActual:
+      \_logic_net: (work@test.o7), line:7:48, endln:7:50
+  |vpiContAssign:
+  \_cont_assign: , line:26:10, endln:26:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_operation: , line:26:15, endln:26:35
+      |vpiParent:
+      \_cont_assign: , line:26:10, endln:26:35
+      |vpiOpType:24
+      |vpiOperand:
+      \_ref_obj: (work@test.unit_foo), line:26:15, endln:26:23
+        |vpiParent:
+        \_operation: , line:26:15, endln:26:35
+        |vpiName:unit_foo
+        |vpiFullName:work@test.unit_foo
+        |vpiActual:
+        \_parameter: (unit_foo), line:6:15, endln:6:23
+      |vpiOperand:
+      \_ref_obj: (work@test.p_untyped), line:26:26, endln:26:35
+        |vpiParent:
+        \_operation: , line:26:15, endln:26:35
+        |vpiName:p_untyped
+        |vpiFullName:work@test.p_untyped
+    |vpiLhs:
+    \_ref_obj: (work@test.o8), line:26:10, endln:26:12
+      |vpiParent:
+      \_cont_assign: , line:26:10, endln:26:35
+      |vpiName:o8
+      |vpiFullName:work@test.o8
+      |vpiActual:
+      \_logic_net: (work@test.o8), line:7:52, endln:7:54
+  |vpiContAssign:
+  \_cont_assign: , line:27:10, endln:27:22
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_logic), line:27:15, endln:27:22
+      |vpiParent:
+      \_cont_assign: , line:27:10, endln:27:22
+      |vpiName:p_logic
+      |vpiFullName:work@test.p_logic
+    |vpiLhs:
+    \_ref_obj: (work@test.o9), line:27:10, endln:27:12
+      |vpiParent:
+      \_cont_assign: , line:27:10, endln:27:22
+      |vpiName:o9
+      |vpiFullName:work@test.o9
+      |vpiActual:
+      \_logic_net: (work@test.o9), line:8:33, endln:8:35
+  |vpiContAssign:
+  \_cont_assign: , line:28:10, endln:28:22
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_ref_obj: (work@test.p_byte), line:28:16, endln:28:22
+      |vpiParent:
+      \_cont_assign: , line:28:10, endln:28:22
+      |vpiName:p_byte
+      |vpiFullName:work@test.p_byte
+    |vpiLhs:
+    \_ref_obj: (work@test.o10), line:28:10, endln:28:13
+      |vpiParent:
+      \_cont_assign: , line:28:10, endln:28:22
+      |vpiName:o10
+      |vpiFullName:work@test.o10
+      |vpiActual:
+      \_logic_net: (work@test.o10), line:8:49, endln:8:52
+|vpiParameter:
+\_parameter: (unit_foo), line:6:15, endln:6:23
+  |vpiParent:
+  \_design: (work@test)
+  |BIN:1
+  |vpiTypespec:
+  \_ref_typespec: (unit_foo)
+    |vpiParent:
+    \_parameter: (unit_foo), line:6:15, endln:6:23
+    |vpiFullName:unit_foo
+    |vpiActual:
+    \_int_typespec: , line:6:11, endln:6:14
+  |vpiSigned:1
+  |vpiName:unit_foo
+|vpiParamAssign:
+\_param_assign: , line:6:15, endln:6:30
+  |vpiParent:
+  \_design: (work@test)
+  |vpiRhs:
+  \_constant: , line:6:26, endln:6:30
+    |vpiParent:
+    \_param_assign: , line:6:15, endln:6:30
+    |vpiDecompile:1'b1
+    |vpiSize:32
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: 
+      |vpiParent:
+      \_constant: , line:6:26, endln:6:30
+      |vpiActual:
+      \_int_typespec: , line:6:11, endln:6:14
+    |vpiConstType:3
+  |vpiLhs:
+  \_parameter: (unit_foo), line:6:15, endln:6:23
+|uhdmtopModules:
+\_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiParent:
+  \_design: (work@test)
+  |vpiName:work@test
+  |vpiVariables:
+  \_int_var: (work@test.o1), line:7:24, endln:7:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o1)
+      |vpiParent:
+      \_int_var: (work@test.o1), line:7:24, endln:7:26
+      |vpiFullName:work@test.o1
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiName:o1
+    |vpiFullName:work@test.o1
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@test.o2), line:7:28, endln:7:30
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o2)
+      |vpiParent:
+      \_int_var: (work@test.o2), line:7:28, endln:7:30
+      |vpiFullName:work@test.o2
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiName:o2
+    |vpiFullName:work@test.o2
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@test.o3), line:7:32, endln:7:34
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o3)
+      |vpiParent:
+      \_int_var: (work@test.o3), line:7:32, endln:7:34
+      |vpiFullName:work@test.o3
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiName:o3
+    |vpiFullName:work@test.o3
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@test.o4), line:7:36, endln:7:38
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o4)
+      |vpiParent:
+      \_int_var: (work@test.o4), line:7:36, endln:7:38
+      |vpiFullName:work@test.o4
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiName:o4
+    |vpiFullName:work@test.o4
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@test.o5), line:7:40, endln:7:42
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o5)
+      |vpiParent:
+      \_int_var: (work@test.o5), line:7:40, endln:7:42
+      |vpiFullName:work@test.o5
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiName:o5
+    |vpiFullName:work@test.o5
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@test.o6), line:7:44, endln:7:46
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o6)
+      |vpiParent:
+      \_int_var: (work@test.o6), line:7:44, endln:7:46
+      |vpiFullName:work@test.o6
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiName:o6
+    |vpiFullName:work@test.o6
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@test.o7), line:7:48, endln:7:50
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o7)
+      |vpiParent:
+      \_int_var: (work@test.o7), line:7:48, endln:7:50
+      |vpiFullName:work@test.o7
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiName:o7
+    |vpiFullName:work@test.o7
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@test.o8), line:7:52, endln:7:54
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o8)
+      |vpiParent:
+      \_int_var: (work@test.o8), line:7:52, endln:7:54
+      |vpiFullName:work@test.o8
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiName:o8
+    |vpiFullName:work@test.o8
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_byte_var: (work@test.o10), line:8:49, endln:8:52
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o10)
+      |vpiParent:
+      \_byte_var: (work@test.o10), line:8:49, endln:8:52
+      |vpiFullName:work@test.o10
+      |vpiActual:
+      \_byte_typespec: , line:8:44, endln:8:48
+    |vpiName:o10
+    |vpiFullName:work@test.o10
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiParameter:
+  \_parameter: (work@test.p_1b1), line:9:20, endln:9:25
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_1b1)
+      |vpiParent:
+      \_parameter: (work@test.p_1b1), line:9:20, endln:9:25
+      |vpiFullName:work@test.p_1b1
+      |vpiActual:
+      \_int_typespec: , line:9:13, endln:9:16
+    |vpiSigned:1
+    |vpiName:p_1b1
+    |vpiFullName:work@test.p_1b1
+  |vpiParameter:
+  \_parameter: (work@test.p_2b11), line:10:20, endln:10:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:11
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_2b11)
+      |vpiParent:
+      \_parameter: (work@test.p_2b11), line:10:20, endln:10:26
+      |vpiFullName:work@test.p_2b11
+      |vpiActual:
+      \_int_typespec: , line:10:13, endln:10:16
+    |vpiSigned:1
+    |vpiName:p_2b11
+    |vpiFullName:work@test.p_2b11
+  |vpiParameter:
+  \_parameter: (work@test.p_4b1111), line:11:20, endln:11:28
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1111
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_4b1111)
+      |vpiParent:
+      \_parameter: (work@test.p_4b1111), line:11:20, endln:11:28
+      |vpiFullName:work@test.p_4b1111
+      |vpiActual:
+      \_int_typespec: , line:11:13, endln:11:16
+    |vpiSigned:1
+    |vpiName:p_4b1111
+    |vpiFullName:work@test.p_4b1111
+  |vpiParameter:
+  \_parameter: (work@test.p_2b01), line:12:20, endln:12:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:01
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_2b01)
+      |vpiParent:
+      \_parameter: (work@test.p_2b01), line:12:20, endln:12:26
+      |vpiFullName:work@test.p_2b01
+      |vpiActual:
+      \_int_typespec: , line:12:13, endln:12:16
+    |vpiSigned:1
+    |vpiName:p_2b01
+    |vpiFullName:work@test.p_2b01
+  |vpiParameter:
+  \_parameter: (work@test.p_sb1), line:13:20, endln:13:25
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_sb1)
+      |vpiParent:
+      \_parameter: (work@test.p_sb1), line:13:20, endln:13:25
+      |vpiFullName:work@test.p_sb1
+      |vpiActual:
+      \_int_typespec: , line:13:13, endln:13:16
+    |vpiSigned:1
+    |vpiName:p_sb1
+    |vpiFullName:work@test.p_sb1
+  |vpiParameter:
+  \_parameter: (work@test.p_4sb1111), line:14:20, endln:14:29
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1111
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_4sb1111)
+      |vpiParent:
+      \_parameter: (work@test.p_4sb1111), line:14:20, endln:14:29
+      |vpiFullName:work@test.p_4sb1111
+      |vpiActual:
+      \_int_typespec: , line:14:13, endln:14:16
+    |vpiSigned:1
+    |vpiName:p_4sb1111
+    |vpiFullName:work@test.p_4sb1111
+  |vpiParameter:
+  \_parameter: (work@test.p_8h88), line:15:20, endln:15:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |HEX:88
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_8h88)
+      |vpiParent:
+      \_parameter: (work@test.p_8h88), line:15:20, endln:15:26
+      |vpiFullName:work@test.p_8h88
+      |vpiActual:
+      \_int_typespec: , line:15:13, endln:15:16
+    |vpiSigned:1
+    |vpiName:p_8h88
+    |vpiFullName:work@test.p_8h88
+  |vpiParameter:
+  \_parameter: (work@test.p_untyped), line:16:20, endln:16:29
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_untyped)
+      |vpiParent:
+      \_parameter: (work@test.p_untyped), line:16:20, endln:16:29
+      |vpiFullName:work@test.p_untyped
+      |vpiActual:
+      \_int_typespec: , line:16:3, endln:16:36
+    |vpiName:p_untyped
+    |vpiFullName:work@test.p_untyped
+  |vpiParameter:
+  \_parameter: (work@test.p_logic), line:17:26, endln:17:33
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:1
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_logic)
+      |vpiParent:
+      \_parameter: (work@test.p_logic), line:17:26, endln:17:33
+      |vpiFullName:work@test.p_logic
+      |vpiActual:
+      \_logic_typespec: , line:17:13, endln:17:25
+    |vpiName:p_logic
+    |vpiFullName:work@test.p_logic
+  |vpiParameter:
+  \_parameter: (work@test.p_byte), line:18:20, endln:18:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |BIN:11
+    |vpiTypespec:
+    \_ref_typespec: (work@test.p_byte)
+      |vpiParent:
+      \_parameter: (work@test.p_byte), line:18:20, endln:18:26
+      |vpiFullName:work@test.p_byte
+      |vpiActual:
+      \_byte_typespec: , line:18:13, endln:18:17
+    |vpiSigned:1
+    |vpiName:p_byte
+    |vpiFullName:work@test.p_byte
+  |vpiParamAssign:
+  \_param_assign: , line:9:20, endln:9:34
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:9:30, endln:9:34
+      |vpiParent:
+      \_cont_assign: , line:19:10, endln:19:20
+      |vpiDecompile:1'b1
+      |vpiSize:1
+      |BIN:1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:9:30, endln:9:34
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:9:13, endln:9:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_1b1), line:9:20, endln:9:25
+  |vpiParamAssign:
+  \_param_assign: , line:10:20, endln:10:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:10:30, endln:10:35
+      |vpiParent:
+      \_cont_assign: , line:20:10, endln:20:21
+      |vpiDecompile:2'b11
+      |vpiSize:2
+      |BIN:11
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:10:30, endln:10:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:10:13, endln:10:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_2b11), line:10:20, endln:10:26
+  |vpiParamAssign:
+  \_param_assign: , line:11:20, endln:11:38
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:11:31, endln:11:38
+      |vpiParent:
+      \_cont_assign: , line:21:10, endln:21:23
+      |vpiDecompile:4'b1111
+      |vpiSize:4
+      |BIN:1111
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:11:31, endln:11:38
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:11:13, endln:11:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_4b1111), line:11:20, endln:11:28
+  |vpiParamAssign:
+  \_param_assign: , line:12:20, endln:12:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:12:30, endln:12:35
+      |vpiParent:
+      \_cont_assign: , line:22:10, endln:22:21
+      |vpiDecompile:2'b01
+      |vpiSize:2
+      |BIN:01
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:12:30, endln:12:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:12:13, endln:12:16
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_2b01), line:12:20, endln:12:26
+  |vpiParamAssign:
+  \_param_assign: , line:13:20, endln:13:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:13:30, endln:13:35
+      |vpiParent:
+      \_cont_assign: , line:23:10, endln:23:20
+      |vpiDecompile:-1
+      |vpiSize:32
+      |INT:-1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:13:30, endln:13:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: 
+      |vpiConstType:7
+    |vpiLhs:
+    \_parameter: (work@test.p_sb1), line:13:20, endln:13:25
+  |vpiParamAssign:
+  \_param_assign: , line:14:20, endln:14:40
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:14:32, endln:14:40
+      |vpiParent:
+      \_cont_assign: , line:24:10, endln:24:24
+      |vpiDecompile:-1
+      |vpiSize:32
+      |INT:-1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:14:32, endln:14:40
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: 
+      |vpiConstType:7
+    |vpiLhs:
+    \_parameter: (work@test.p_4sb1111), line:14:20, endln:14:29
+  |vpiParamAssign:
+  \_param_assign: , line:15:20, endln:15:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:15:30, endln:15:35
+      |vpiParent:
+      \_cont_assign: , line:25:10, endln:25:21
+      |vpiDecompile:32'h88
+      |vpiSize:32
+      |HEX:88
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:15:30, endln:15:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:15:13, endln:15:16
+      |vpiConstType:5
+    |vpiLhs:
+    \_parameter: (work@test.p_8h88), line:15:20, endln:15:26
+  |vpiParamAssign:
+  \_param_assign: , line:16:20, endln:16:36
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:16:32, endln:16:36
+      |vpiParent:
+      \_param_assign: , line:16:20, endln:16:36
+      |vpiDecompile:1'b1
+      |vpiSize:1
+      |BIN:1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:16:32, endln:16:36
+        |vpiFullName:work@test
+        |vpiActual:
+        \_int_typespec: , line:16:3, endln:16:36
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_untyped), line:16:20, endln:16:29
+  |vpiParamAssign:
+  \_param_assign: , line:17:26, endln:17:40
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:17:36, endln:17:40
+      |vpiParent:
+      \_cont_assign: , line:27:10, endln:27:22
+      |vpiDecompile:1'b1
+      |vpiSize:1
+      |BIN:1
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:17:36, endln:17:40
+        |vpiFullName:work@test
+        |vpiActual:
+        \_logic_typespec: 
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_logic), line:17:26, endln:17:33
+  |vpiParamAssign:
+  \_param_assign: , line:18:20, endln:18:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:18:30, endln:18:35
+      |vpiParent:
+      \_cont_assign: , line:28:10, endln:28:22
+      |vpiDecompile:2'b11
+      |vpiSize:2
+      |BIN:11
+      |vpiTypespec:
+      \_ref_typespec: (work@test)
+        |vpiParent:
+        \_constant: , line:18:30, endln:18:35
+        |vpiFullName:work@test
+        |vpiActual:
+        \_byte_typespec: , line:18:13, endln:18:17
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@test.p_byte), line:18:20, endln:18:26
+  |vpiDefName:work@test
+  |vpiTop:1
+  |vpiNet:
+  \_logic_net: (work@test.o9), line:8:33, endln:8:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiTypespec:
+    \_ref_typespec: (work@test.o9)
+      |vpiParent:
+      \_logic_net: (work@test.o9), line:8:33, endln:8:35
+      |vpiFullName:work@test.o9
+      |vpiActual:
+      \_logic_typespec: , line:8:20, endln:8:32
+    |vpiName:o9
+    |vpiFullName:work@test.o9
+    |vpiNetType:36
+  |vpiTopModule:1
+  |vpiPort:
+  \_port: (o1), line:7:24, endln:7:26
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o1
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o1), line:7:24, endln:7:26
+      |vpiParent:
+      \_port: (o1), line:7:24, endln:7:26
+      |vpiName:o1
+      |vpiFullName:work@test.o1
+      |vpiActual:
+      \_int_var: (work@test.o1), line:7:24, endln:7:26
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o1)
+      |vpiParent:
+      \_port: (o1), line:7:24, endln:7:26
+      |vpiFullName:work@test.o1
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o2), line:7:28, endln:7:30
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o2
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o2), line:7:28, endln:7:30
+      |vpiParent:
+      \_port: (o2), line:7:28, endln:7:30
+      |vpiName:o2
+      |vpiFullName:work@test.o2
+      |vpiActual:
+      \_int_var: (work@test.o2), line:7:28, endln:7:30
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o2)
+      |vpiParent:
+      \_port: (o2), line:7:28, endln:7:30
+      |vpiFullName:work@test.o2
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o3), line:7:32, endln:7:34
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o3
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o3), line:7:32, endln:7:34
+      |vpiParent:
+      \_port: (o3), line:7:32, endln:7:34
+      |vpiName:o3
+      |vpiFullName:work@test.o3
+      |vpiActual:
+      \_int_var: (work@test.o3), line:7:32, endln:7:34
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o3)
+      |vpiParent:
+      \_port: (o3), line:7:32, endln:7:34
+      |vpiFullName:work@test.o3
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o4), line:7:36, endln:7:38
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o4
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o4), line:7:36, endln:7:38
+      |vpiParent:
+      \_port: (o4), line:7:36, endln:7:38
+      |vpiName:o4
+      |vpiFullName:work@test.o4
+      |vpiActual:
+      \_int_var: (work@test.o4), line:7:36, endln:7:38
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o4)
+      |vpiParent:
+      \_port: (o4), line:7:36, endln:7:38
+      |vpiFullName:work@test.o4
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o5), line:7:40, endln:7:42
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o5
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o5), line:7:40, endln:7:42
+      |vpiParent:
+      \_port: (o5), line:7:40, endln:7:42
+      |vpiName:o5
+      |vpiFullName:work@test.o5
+      |vpiActual:
+      \_int_var: (work@test.o5), line:7:40, endln:7:42
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o5)
+      |vpiParent:
+      \_port: (o5), line:7:40, endln:7:42
+      |vpiFullName:work@test.o5
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o6), line:7:44, endln:7:46
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o6
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o6), line:7:44, endln:7:46
+      |vpiParent:
+      \_port: (o6), line:7:44, endln:7:46
+      |vpiName:o6
+      |vpiFullName:work@test.o6
+      |vpiActual:
+      \_int_var: (work@test.o6), line:7:44, endln:7:46
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o6)
+      |vpiParent:
+      \_port: (o6), line:7:44, endln:7:46
+      |vpiFullName:work@test.o6
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o7), line:7:48, endln:7:50
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o7
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o7), line:7:48, endln:7:50
+      |vpiParent:
+      \_port: (o7), line:7:48, endln:7:50
+      |vpiName:o7
+      |vpiFullName:work@test.o7
+      |vpiActual:
+      \_int_var: (work@test.o7), line:7:48, endln:7:50
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o7)
+      |vpiParent:
+      \_port: (o7), line:7:48, endln:7:50
+      |vpiFullName:work@test.o7
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o8), line:7:52, endln:7:54
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o8
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o8), line:7:52, endln:7:54
+      |vpiParent:
+      \_port: (o8), line:7:52, endln:7:54
+      |vpiName:o8
+      |vpiFullName:work@test.o8
+      |vpiActual:
+      \_int_var: (work@test.o8), line:7:52, endln:7:54
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o8)
+      |vpiParent:
+      \_port: (o8), line:7:52, endln:7:54
+      |vpiFullName:work@test.o8
+      |vpiActual:
+      \_int_typespec: , line:7:20, endln:7:23
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o9), line:8:33, endln:8:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o9
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o9), line:8:33, endln:8:35
+      |vpiParent:
+      \_port: (o9), line:8:33, endln:8:35
+      |vpiName:o9
+      |vpiFullName:work@test.o9
+      |vpiActual:
+      \_logic_net: (work@test.o9), line:8:33, endln:8:35
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o9)
+      |vpiParent:
+      \_port: (o9), line:8:33, endln:8:35
+      |vpiFullName:work@test.o9
+      |vpiActual:
+      \_logic_typespec: , line:8:20, endln:8:32
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiPort:
+  \_port: (o10), line:8:49, endln:8:52
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiName:o10
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@test.o10), line:8:49, endln:8:52
+      |vpiParent:
+      \_port: (o10), line:8:49, endln:8:52
+      |vpiName:o10
+      |vpiFullName:work@test.o10
+      |vpiActual:
+      \_byte_var: (work@test.o10), line:8:49, endln:8:52
+    |vpiTypedef:
+    \_ref_typespec: (work@test.o10)
+      |vpiParent:
+      \_port: (o10), line:8:49, endln:8:52
+      |vpiFullName:work@test.o10
+      |vpiActual:
+      \_byte_typespec: , line:8:44, endln:8:48
+    |vpiInstance:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiContAssign:
+  \_cont_assign: , line:19:10, endln:19:20
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:9:30, endln:9:34
+    |vpiLhs:
+    \_ref_obj: (work@test.o1), line:19:10, endln:19:12
+      |vpiParent:
+      \_cont_assign: , line:19:10, endln:19:20
+      |vpiName:o1
+      |vpiFullName:work@test.o1
+      |vpiActual:
+      \_int_var: (work@test.o1), line:7:24, endln:7:26
+  |vpiContAssign:
+  \_cont_assign: , line:20:10, endln:20:21
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:10:30, endln:10:35
+    |vpiLhs:
+    \_ref_obj: (work@test.o2), line:20:10, endln:20:12
+      |vpiParent:
+      \_cont_assign: , line:20:10, endln:20:21
+      |vpiName:o2
+      |vpiFullName:work@test.o2
+      |vpiActual:
+      \_int_var: (work@test.o2), line:7:28, endln:7:30
+  |vpiContAssign:
+  \_cont_assign: , line:21:10, endln:21:23
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:11:31, endln:11:38
+    |vpiLhs:
+    \_ref_obj: (work@test.o3), line:21:10, endln:21:12
+      |vpiParent:
+      \_cont_assign: , line:21:10, endln:21:23
+      |vpiName:o3
+      |vpiFullName:work@test.o3
+      |vpiActual:
+      \_int_var: (work@test.o3), line:7:32, endln:7:34
+  |vpiContAssign:
+  \_cont_assign: , line:22:10, endln:22:21
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:12:30, endln:12:35
+    |vpiLhs:
+    \_ref_obj: (work@test.o4), line:22:10, endln:22:12
+      |vpiParent:
+      \_cont_assign: , line:22:10, endln:22:21
+      |vpiName:o4
+      |vpiFullName:work@test.o4
+      |vpiActual:
+      \_int_var: (work@test.o4), line:7:36, endln:7:38
+  |vpiContAssign:
+  \_cont_assign: , line:23:10, endln:23:20
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:13:30, endln:13:35
+    |vpiLhs:
+    \_ref_obj: (work@test.o5), line:23:10, endln:23:12
+      |vpiParent:
+      \_cont_assign: , line:23:10, endln:23:20
+      |vpiName:o5
+      |vpiFullName:work@test.o5
+      |vpiActual:
+      \_int_var: (work@test.o5), line:7:40, endln:7:42
+  |vpiContAssign:
+  \_cont_assign: , line:24:10, endln:24:24
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:14:32, endln:14:40
+    |vpiLhs:
+    \_ref_obj: (work@test.o6), line:24:10, endln:24:12
+      |vpiParent:
+      \_cont_assign: , line:24:10, endln:24:24
+      |vpiName:o6
+      |vpiFullName:work@test.o6
+      |vpiActual:
+      \_int_var: (work@test.o6), line:7:44, endln:7:46
+  |vpiContAssign:
+  \_cont_assign: , line:25:10, endln:25:21
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:15:30, endln:15:35
+    |vpiLhs:
+    \_ref_obj: (work@test.o7), line:25:10, endln:25:12
+      |vpiParent:
+      \_cont_assign: , line:25:10, endln:25:21
+      |vpiName:o7
+      |vpiFullName:work@test.o7
+      |vpiActual:
+      \_int_var: (work@test.o7), line:7:48, endln:7:50
+  |vpiContAssign:
+  \_cont_assign: , line:26:10, endln:26:35
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: 
+      |vpiDecompile:2
+      |vpiSize:32
+      |UINT:2
+      |vpiConstType:9
+    |vpiLhs:
+    \_ref_obj: (work@test.o8), line:26:10, endln:26:12
+      |vpiParent:
+      \_cont_assign: , line:26:10, endln:26:35
+      |vpiName:o8
+      |vpiFullName:work@test.o8
+      |vpiActual:
+      \_int_var: (work@test.o8), line:7:52, endln:7:54
+  |vpiContAssign:
+  \_cont_assign: , line:27:10, endln:27:22
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:17:36, endln:17:40
+    |vpiLhs:
+    \_ref_obj: (work@test.o9), line:27:10, endln:27:12
+      |vpiParent:
+      \_cont_assign: , line:27:10, endln:27:22
+      |vpiName:o9
+      |vpiFullName:work@test.o9
+      |vpiActual:
+      \_logic_net: (work@test.o9), line:8:33, endln:8:35
+  |vpiContAssign:
+  \_cont_assign: , line:28:10, endln:28:22
+    |vpiParent:
+    \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+    |vpiRhs:
+    \_constant: , line:18:30, endln:18:35
+    |vpiLhs:
+    \_ref_obj: (work@test.o10), line:28:10, endln:28:13
+      |vpiParent:
+      \_cont_assign: , line:28:10, endln:28:22
+      |vpiName:o10
+      |vpiFullName:work@test.o10
+      |vpiActual:
+      \_byte_var: (work@test.o10), line:8:49, endln:8:52
+\_weaklyReferenced:
+\_int_typespec: , line:6:11, endln:6:14
+  |vpiParent:
+  \_parameter: (unit_foo), line:6:15, endln:6:23
+  |vpiSigned:1
+\_int_typespec: , line:9:13, endln:9:16
+  |vpiParent:
+  \_parameter: (work@test.p_1b1), line:9:20, endln:9:25
+  |vpiSigned:1
+\_int_typespec: , line:10:13, endln:10:16
+  |vpiParent:
+  \_parameter: (work@test.p_2b11), line:10:20, endln:10:26
+  |vpiSigned:1
+\_int_typespec: , line:11:13, endln:11:16
+  |vpiParent:
+  \_parameter: (work@test.p_4b1111), line:11:20, endln:11:28
+  |vpiSigned:1
+\_int_typespec: , line:12:13, endln:12:16
+  |vpiParent:
+  \_parameter: (work@test.p_2b01), line:12:20, endln:12:26
+  |vpiSigned:1
+\_int_typespec: , line:13:13, endln:13:16
+  |vpiParent:
+  \_parameter: (work@test.p_sb1), line:13:20, endln:13:25
+  |vpiSigned:1
+\_int_typespec: , line:14:13, endln:14:16
+  |vpiParent:
+  \_parameter: (work@test.p_4sb1111), line:14:20, endln:14:29
+  |vpiSigned:1
+\_int_typespec: , line:15:13, endln:15:16
+  |vpiParent:
+  \_parameter: (work@test.p_8h88), line:15:20, endln:15:26
+  |vpiSigned:1
+\_int_typespec: , line:16:3, endln:16:36
+  |vpiRange:
+  \_range: 
+    |vpiParent:
+    \_int_typespec: , line:16:3, endln:16:36
+    |vpiLeftRange:
+    \_constant: 
+      |INT:0
+    |vpiRightRange:
+    \_constant: 
+      |INT:0
+\_logic_typespec: , line:17:13, endln:17:25
+  |vpiParent:
+  \_parameter: (work@test.p_logic), line:17:26, endln:17:33
+  |vpiRange:
+  \_range: , line:17:19, endln:17:25
+    |vpiParent:
+    \_logic_typespec: , line:17:13, endln:17:25
+    |vpiLeftRange:
+    \_constant: , line:17:20, endln:17:22
+      |vpiParent:
+      \_range: , line:17:19, endln:17:25
+      |vpiDecompile:31
+      |vpiSize:64
+      |UINT:31
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:17:23, endln:17:24
+      |vpiParent:
+      \_range: , line:17:19, endln:17:25
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_byte_typespec: , line:18:13, endln:18:17
+  |vpiParent:
+  \_parameter: (work@test.p_byte), line:18:20, endln:18:26
+  |vpiSigned:1
+\_int_typespec: 
+  |vpiSigned:1
+\_int_typespec: 
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_logic_typespec: , line:8:20, endln:8:32
+  |vpiRange:
+  \_range: , line:8:26, endln:8:32
+    |vpiParent:
+    \_logic_typespec: , line:8:20, endln:8:32
+    |vpiLeftRange:
+    \_constant: , line:8:27, endln:8:29
+      |vpiParent:
+      \_range: , line:8:26, endln:8:32
+      |vpiDecompile:31
+      |vpiSize:64
+      |UINT:31
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:8:30, endln:8:31
+      |vpiParent:
+      \_range: , line:8:26, endln:8:32
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_byte_typespec: , line:8:44, endln:8:48
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_logic_typespec: , line:8:20, endln:8:32
+  |vpiRange:
+  \_range: , line:8:26, endln:8:32
+    |vpiParent:
+    \_logic_typespec: , line:8:20, endln:8:32
+    |vpiLeftRange:
+    \_constant: , line:8:27, endln:8:29
+      |vpiParent:
+      \_range: , line:8:26, endln:8:32
+      |vpiDecompile:31
+      |vpiSize:64
+      |UINT:31
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:8:30, endln:8:31
+      |vpiParent:
+      \_range: , line:8:26, endln:8:32
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_byte_typespec: , line:8:44, endln:8:48
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_int_typespec: , line:7:20, endln:7:23
+  |vpiSigned:1
+\_logic_typespec: , line:8:20, endln:8:32
+  |vpiRange:
+  \_range: , line:8:26, endln:8:32
+    |vpiParent:
+    \_logic_typespec: , line:8:20, endln:8:32
+    |vpiLeftRange:
+    \_constant: , line:8:27, endln:8:29
+      |vpiParent:
+      \_range: , line:8:26, endln:8:32
+      |vpiDecompile:31
+      |vpiSize:64
+      |UINT:31
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:8:30, endln:8:31
+      |vpiParent:
+      \_range: , line:8:26, endln:8:32
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_byte_typespec: , line:8:44, endln:8:48
+  |vpiSigned:1
+\_int_typespec: , line:9:13, endln:9:16
+  |vpiParent:
+  \_ref_typespec: (work@test.p_1b1)
+  |vpiSigned:1
+\_int_typespec: , line:10:13, endln:10:16
+  |vpiParent:
+  \_ref_typespec: (work@test.p_2b11)
+  |vpiSigned:1
+\_int_typespec: , line:11:13, endln:11:16
+  |vpiParent:
+  \_ref_typespec: (work@test.p_4b1111)
+  |vpiSigned:1
+\_int_typespec: , line:12:13, endln:12:16
+  |vpiParent:
+  \_ref_typespec: (work@test.p_2b01)
+  |vpiSigned:1
+\_int_typespec: , line:13:13, endln:13:16
+  |vpiParent:
+  \_ref_typespec: (work@test.p_sb1)
+  |vpiSigned:1
+\_int_typespec: , line:14:13, endln:14:16
+  |vpiParent:
+  \_ref_typespec: (work@test.p_4sb1111)
+  |vpiSigned:1
+\_int_typespec: , line:15:13, endln:15:16
+  |vpiParent:
+  \_ref_typespec: (work@test.p_8h88)
+  |vpiSigned:1
+\_int_typespec: , line:16:3, endln:16:36
+  |vpiParent:
+  \_ref_typespec: (work@test.p_untyped)
+  |vpiRange:
+  \_range: 
+    |vpiParent:
+    \_int_typespec: , line:16:3, endln:16:36
+    |vpiLeftRange:
+    \_constant: 
+      |vpiParent:
+      \_range: 
+      |INT:0
+    |vpiRightRange:
+    \_constant: 
+      |vpiParent:
+      \_range: 
+      |INT:0
+\_logic_typespec: , line:17:13, endln:17:25
+  |vpiParent:
+  \_ref_typespec: (work@test.p_logic)
+  |vpiRange:
+  \_range: , line:17:19, endln:17:25
+    |vpiParent:
+    \_logic_typespec: , line:17:13, endln:17:25
+    |vpiLeftRange:
+    \_constant: , line:17:20, endln:17:22
+      |vpiParent:
+      \_range: , line:17:19, endln:17:25
+      |vpiDecompile:31
+      |vpiSize:64
+      |UINT:31
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:17:23, endln:17:24
+      |vpiParent:
+      \_range: , line:17:19, endln:17:25
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_byte_typespec: , line:18:13, endln:18:17
+  |vpiParent:
+  \_ref_typespec: (work@test.p_byte)
+  |vpiSigned:1
+\_cont_assign: , line:19:10, endln:19:20
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:9:30, endln:9:34
+  |vpiLhs:
+  \_ref_obj: (work@test.o1), line:19:10, endln:19:12
+    |vpiParent:
+    \_cont_assign: , line:19:10, endln:19:20
+    |vpiName:o1
+    |vpiFullName:work@test.o1
+    |vpiActual:
+    \_logic_net: (work@test.o1), line:7:24, endln:7:26
+\_cont_assign: , line:20:10, endln:20:21
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:10:30, endln:10:35
+  |vpiLhs:
+  \_ref_obj: (work@test.o2), line:20:10, endln:20:12
+    |vpiParent:
+    \_cont_assign: , line:20:10, endln:20:21
+    |vpiName:o2
+    |vpiFullName:work@test.o2
+    |vpiActual:
+    \_logic_net: (work@test.o2), line:7:28, endln:7:30
+\_cont_assign: , line:21:10, endln:21:23
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:11:31, endln:11:38
+  |vpiLhs:
+  \_ref_obj: (work@test.o3), line:21:10, endln:21:12
+    |vpiParent:
+    \_cont_assign: , line:21:10, endln:21:23
+    |vpiName:o3
+    |vpiFullName:work@test.o3
+    |vpiActual:
+    \_logic_net: (work@test.o3), line:7:32, endln:7:34
+\_cont_assign: , line:22:10, endln:22:21
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:12:30, endln:12:35
+  |vpiLhs:
+  \_ref_obj: (work@test.o4), line:22:10, endln:22:12
+    |vpiParent:
+    \_cont_assign: , line:22:10, endln:22:21
+    |vpiName:o4
+    |vpiFullName:work@test.o4
+    |vpiActual:
+    \_logic_net: (work@test.o4), line:7:36, endln:7:38
+\_cont_assign: , line:23:10, endln:23:20
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:13:30, endln:13:35
+  |vpiLhs:
+  \_ref_obj: (work@test.o5), line:23:10, endln:23:12
+    |vpiParent:
+    \_cont_assign: , line:23:10, endln:23:20
+    |vpiName:o5
+    |vpiFullName:work@test.o5
+    |vpiActual:
+    \_logic_net: (work@test.o5), line:7:40, endln:7:42
+\_cont_assign: , line:24:10, endln:24:24
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:14:32, endln:14:40
+  |vpiLhs:
+  \_ref_obj: (work@test.o6), line:24:10, endln:24:12
+    |vpiParent:
+    \_cont_assign: , line:24:10, endln:24:24
+    |vpiName:o6
+    |vpiFullName:work@test.o6
+    |vpiActual:
+    \_logic_net: (work@test.o6), line:7:44, endln:7:46
+\_cont_assign: , line:25:10, endln:25:21
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:15:30, endln:15:35
+  |vpiLhs:
+  \_ref_obj: (work@test.o7), line:25:10, endln:25:12
+    |vpiParent:
+    \_cont_assign: , line:25:10, endln:25:21
+    |vpiName:o7
+    |vpiFullName:work@test.o7
+    |vpiActual:
+    \_logic_net: (work@test.o7), line:7:48, endln:7:50
+\_logic_typespec: 
+  |vpiRange:
+  \_range: 
+    |vpiParent:
+    \_logic_typespec: 
+    |vpiLeftRange:
+    \_constant: 
+      |UINT:31
+    |vpiRightRange:
+    \_constant: 
+      |UINT:0
+\_cont_assign: , line:27:10, endln:27:22
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:17:36, endln:17:40
+  |vpiLhs:
+  \_ref_obj: (work@test.o9), line:27:10, endln:27:12
+    |vpiParent:
+    \_cont_assign: , line:27:10, endln:27:22
+    |vpiName:o9
+    |vpiFullName:work@test.o9
+    |vpiActual:
+    \_logic_net: (work@test.o9), line:8:33, endln:8:35
+\_cont_assign: , line:28:10, endln:28:22
+  |vpiParent:
+  \_module_inst: work@test (work@test), file:${SURELOG_DIR}/tests/ParamUnsignedLiteralSignext/dut.sv, line:7:1, endln:29:10
+  |vpiRhs:
+  \_constant: , line:18:30, endln:18:35
+  |vpiLhs:
+  \_ref_obj: (work@test.o10), line:28:10, endln:28:13
+    |vpiParent:
+    \_cont_assign: , line:28:10, endln:28:22
+    |vpiName:o10
+    |vpiFullName:work@test.o10
+    |vpiActual:
+    \_logic_net: (work@test.o10), line:8:49, endln:8:52
+===================
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 0
+[WARNING] : 1
+[   NOTE] : 5
