@@ -105,7 +105,22 @@ bool CompileHelper::substituteAssignedValue(const UHDM::any *oper,
 }
 
 any *CompileHelper::getParamTypespec(std::string_view name,
-                                     DesignComponent *component) {
+                                     DesignComponent *component,
+                                     CompileDesign *compileDesign) {
+  // A PACKAGE-qualified parameter (`sbox_pkg::SBOX4[k]`): the declaring
+  // component is the package, not the one reducing the expression.  Without
+  // this the element-select fold had no typespec to size the element by and
+  // degraded to a BIT select -- `pkg::TABLE[10]` on a `logic [15:0][3:0]`
+  // table returned bit 10 of the packed value.
+  if (compileDesign && name.find("::") != std::string_view::npos) {
+    std::vector<std::string_view> res;
+    StringUtils::tokenizeMulti(name, "::", res);
+    if (res.size() > 1) {
+      Design *design = compileDesign->getCompiler()->getDesign();
+      if (Package *pack = design->getPackage(res[0]))
+        if (any *ts = getParamTypespec(res[1], pack, nullptr)) return ts;
+    }
+  }
   if (component == nullptr) return nullptr;
   if (UHDM::VectorOfparam_assign *pas = component->getParam_assigns()) {
     for (UHDM::param_assign *pa : *pas) {
@@ -845,7 +860,8 @@ any *CompileHelper::decodeHierPath(hier_path *path, bool &invalidValue,
               bindTypespec(name, instance, compileDesign->getSerializer()))
         return (UHDM::any *)bound;
     }
-    if (UHDM::any *ts = getParamTypespec(name, component)) return ts;
+    if (UHDM::any *ts = getParamTypespec(name, component, compileDesign))
+      return ts;
     // A `P[k]` element-select reduced from inside a GENERATE SCOPE reduces with
     // the gen-scope component, which does not carry the enclosing module's
     // localparams — so getParamTypespec above misses `P`.  Walk the instance
@@ -944,7 +960,8 @@ expr *CompileHelper::reduceExpr(any *result, bool &invalidValue,
               bindTypespec(name, instance, compileDesign->getSerializer()))
         return (UHDM::any *)bound;
     }
-    if (UHDM::any *ts = getParamTypespec(name, component)) return ts;
+    if (UHDM::any *ts = getParamTypespec(name, component, compileDesign))
+      return ts;
     // A `P[k]` element-select reduced from inside a GENERATE SCOPE reduces with
     // the gen-scope component, which does not carry the enclosing module's
     // localparams — so getParamTypespec above misses `P`.  Walk the instance
@@ -5025,7 +5042,8 @@ uint64_t CompileHelper::Bits(const UHDM::any *typespec, bool &invalidValue,
               bindTypespec(name, instance, compileDesign->getSerializer()))
         return (UHDM::any *)bound;
     }
-    if (UHDM::any *ts = getParamTypespec(name, component)) return ts;
+    if (UHDM::any *ts = getParamTypespec(name, component, compileDesign))
+      return ts;
     // A `P[k]` element-select reduced from inside a GENERATE SCOPE reduces with
     // the gen-scope component, which does not carry the enclosing module's
     // localparams — so getParamTypespec above misses `P`.  Walk the instance

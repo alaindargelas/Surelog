@@ -1,0 +1,1164 @@
+[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/PkgParamElemSelect/slpp_all/surelog.log".
+[WRN:PA0205] ${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv:6:1: No timescale set for "sbox".
+[WRN:PA0205] ${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv:10:1: No timescale set for "top".
+[INF:CP0300] Compilation...
+[INF:CP0301] ${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv:6:1: Compile package "sbox".
+[INF:CP0303] ${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv:10:1: Compile module "work@top".
+[INF:EL0526] Design Elaboration...
+[NTE:EL0503] ${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv:10:1: Top level module "work@top".
+[NTE:EL0508] Nb Top level modules: 1.
+[NTE:EL0509] Max instance depth: 1.
+[NTE:EL0510] Nb instances: 1.
+[NTE:EL0511] Nb leaf instances: 1.
+[INF:UH0706] Creating UHDM Model...
+=== UHDM Object Stats Begin (Non-Elaborated Model) ===
+bit_select                                             8
+constant                                             228
+cont_assign                                            8
+design                                                 1
+logic_net                                              8
+logic_typespec                                        14
+module_inst                                            5
+operation                                             10
+package                                                2
+param_assign                                           4
+parameter                                              4
+port                                                   8
+range                                                 26
+ref_obj                                               16
+ref_typespec                                          26
+=== UHDM Object Stats End ===
+[INF:UH0707] Elaborating UHDM...
+=== UHDM Object Stats Begin (Elaborated Model) ===
+bit_select                                             8
+constant                                             228
+cont_assign                                           12
+design                                                 1
+logic_net                                              8
+logic_typespec                                        14
+module_inst                                            5
+operation                                             10
+package                                                2
+param_assign                                           4
+parameter                                              4
+port                                                  12
+range                                                 26
+ref_obj                                               24
+ref_typespec                                          30
+=== UHDM Object Stats End ===
+[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/PkgParamElemSelect/slpp_all/surelog.uhdm ...
+[INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/PkgParamElemSelect/slpp_all/checker/surelog.chk.html ...
+[INF:UH0710] Loading UHDM DB: ${SURELOG_DIR}/build/regression/PkgParamElemSelect/slpp_all/surelog.uhdm ...
+[INF:UH0711] Decompiling UHDM...
+====== UHDM =======
+design: (work@top)
+|vpiElaborated:1
+|vpiName:work@top
+|uhdmallPackages:
+\_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+  |vpiParent:
+  \_design: (work@top)
+  |vpiName:sbox
+  |vpiFullName:sbox::
+  |vpiParameter:
+  \_parameter: (sbox::T), line:7:31, endln:7:32
+    |vpiParent:
+    \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+    |vpiTypespec:
+    \_ref_typespec: (sbox::T)
+      |vpiParent:
+      \_parameter: (sbox::T), line:7:31, endln:7:32
+      |vpiFullName:sbox::T
+      |vpiActual:
+      \_logic_typespec: , line:7:13, endln:7:30
+    |vpiName:T
+    |vpiFullName:sbox::T
+  |vpiParamAssign:
+  \_param_assign: , line:7:31, endln:8:83
+    |vpiParent:
+    \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+    |vpiRhs:
+    \_operation: , line:7:35, endln:8:83
+      |vpiParent:
+      \_param_assign: , line:7:31, endln:8:83
+      |vpiOpType:33
+      |vpiOperand:
+      \_constant: , line:7:36, endln:7:40
+        |vpiDecompile:4'h2
+        |vpiSize:4
+        |HEX:2
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:42, endln:7:46
+        |vpiDecompile:4'h1
+        |vpiSize:4
+        |HEX:1
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:48, endln:7:52
+        |vpiDecompile:4'h7
+        |vpiSize:4
+        |HEX:7
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:54, endln:7:58
+        |vpiDecompile:4'h4
+        |vpiSize:4
+        |HEX:4
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:60, endln:7:64
+        |vpiDecompile:4'h8
+        |vpiSize:4
+        |HEX:8
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:66, endln:7:70
+        |vpiDecompile:4'hF
+        |vpiSize:4
+        |HEX:F
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:72, endln:7:76
+        |vpiDecompile:4'hE
+        |vpiSize:4
+        |HEX:E
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:78, endln:7:82
+        |vpiDecompile:4'h3
+        |vpiSize:4
+        |HEX:3
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:36, endln:8:40
+        |vpiDecompile:4'hD
+        |vpiSize:4
+        |HEX:D
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:42, endln:8:46
+        |vpiDecompile:4'hA
+        |vpiSize:4
+        |HEX:A
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:48, endln:8:52
+        |vpiDecompile:4'h0
+        |vpiSize:4
+        |HEX:0
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:54, endln:8:58
+        |vpiDecompile:4'h9
+        |vpiSize:4
+        |HEX:9
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:60, endln:8:64
+        |vpiDecompile:4'hB
+        |vpiSize:4
+        |HEX:B
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:66, endln:8:70
+        |vpiDecompile:4'h6
+        |vpiSize:4
+        |HEX:6
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:72, endln:8:76
+        |vpiDecompile:4'h5
+        |vpiSize:4
+        |HEX:5
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:78, endln:8:82
+        |vpiDecompile:4'hC
+        |vpiSize:4
+        |HEX:C
+        |vpiConstType:5
+    |vpiLhs:
+    \_parameter: (sbox::T), line:7:31, endln:7:32
+  |vpiDefName:sbox
+|uhdmtopPackages:
+\_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+  |vpiParent:
+  \_design: (work@top)
+  |vpiName:sbox
+  |vpiFullName:sbox::
+  |vpiParameter:
+  \_parameter: (sbox::T), line:7:31, endln:7:32
+    |vpiParent:
+    \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+    |vpiTypespec:
+    \_ref_typespec: (sbox::T)
+      |vpiParent:
+      \_parameter: (sbox::T), line:7:31, endln:7:32
+      |vpiFullName:sbox::T
+      |vpiActual:
+      \_logic_typespec: , line:7:13, endln:7:30
+    |vpiName:T
+    |vpiFullName:sbox::T
+  |vpiParamAssign:
+  \_param_assign: , line:7:31, endln:8:83
+    |vpiParent:
+    \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+    |vpiRhs:
+    \_operation: , line:7:35, endln:8:83
+      |vpiParent:
+      \_param_assign: , line:7:31, endln:8:83
+      |vpiOpType:33
+      |vpiOperand:
+      \_constant: , line:7:36, endln:7:40
+        |vpiDecompile:4'h2
+        |vpiSize:4
+        |HEX:2
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:42, endln:7:46
+        |vpiDecompile:4'h1
+        |vpiSize:4
+        |HEX:1
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:48, endln:7:52
+        |vpiDecompile:4'h7
+        |vpiSize:4
+        |HEX:7
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:54, endln:7:58
+        |vpiDecompile:4'h4
+        |vpiSize:4
+        |HEX:4
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:60, endln:7:64
+        |vpiDecompile:4'h8
+        |vpiSize:4
+        |HEX:8
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:66, endln:7:70
+        |vpiDecompile:4'hF
+        |vpiSize:4
+        |HEX:F
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:72, endln:7:76
+        |vpiDecompile:4'hE
+        |vpiSize:4
+        |HEX:E
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:7:78, endln:7:82
+        |vpiDecompile:4'h3
+        |vpiSize:4
+        |HEX:3
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:36, endln:8:40
+        |vpiDecompile:4'hD
+        |vpiSize:4
+        |HEX:D
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:42, endln:8:46
+        |vpiDecompile:4'hA
+        |vpiSize:4
+        |HEX:A
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:48, endln:8:52
+        |vpiDecompile:4'h0
+        |vpiSize:4
+        |HEX:0
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:54, endln:8:58
+        |vpiDecompile:4'h9
+        |vpiSize:4
+        |HEX:9
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:60, endln:8:64
+        |vpiDecompile:4'hB
+        |vpiSize:4
+        |HEX:B
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:66, endln:8:70
+        |vpiDecompile:4'h6
+        |vpiSize:4
+        |HEX:6
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:72, endln:8:76
+        |vpiDecompile:4'h5
+        |vpiSize:4
+        |HEX:5
+        |vpiConstType:5
+      |vpiOperand:
+      \_constant: , line:8:78, endln:8:82
+        |vpiDecompile:4'hC
+        |vpiSize:4
+        |HEX:C
+        |vpiConstType:5
+    |vpiLhs:
+    \_parameter: (sbox::T), line:7:31, endln:7:32
+  |vpiDefName:sbox
+  |vpiTop:1
+|uhdmallModules:
+\_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiFullName:work@top
+  |vpiDefName:work@top
+  |vpiNet:
+  \_logic_net: (work@top.o10), line:10:31, endln:10:34
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o10
+    |vpiFullName:work@top.o10
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.o1), line:10:36, endln:10:38
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o1
+    |vpiFullName:work@top.o1
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.o15), line:10:40, endln:10:43
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o15
+    |vpiFullName:work@top.o15
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.o0), line:10:45, endln:10:47
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o0
+    |vpiFullName:work@top.o0
+    |vpiNetType:36
+  |vpiPort:
+  \_port: (o10), line:10:31, endln:10:34
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o10
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o10.o10), line:10:31, endln:10:34
+      |vpiParent:
+      \_port: (o10), line:10:31, endln:10:34
+      |vpiName:o10
+      |vpiFullName:work@top.o10.o10
+      |vpiActual:
+      \_logic_net: (work@top.o10), line:10:31, endln:10:34
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o10)
+      |vpiParent:
+      \_port: (o10), line:10:31, endln:10:34
+      |vpiFullName:work@top.o10
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+  |vpiPort:
+  \_port: (o1), line:10:36, endln:10:38
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o1
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o1.o1), line:10:36, endln:10:38
+      |vpiParent:
+      \_port: (o1), line:10:36, endln:10:38
+      |vpiName:o1
+      |vpiFullName:work@top.o1.o1
+      |vpiActual:
+      \_logic_net: (work@top.o1), line:10:36, endln:10:38
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_port: (o1), line:10:36, endln:10:38
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+  |vpiPort:
+  \_port: (o15), line:10:40, endln:10:43
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o15
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o15.o15), line:10:40, endln:10:43
+      |vpiParent:
+      \_port: (o15), line:10:40, endln:10:43
+      |vpiName:o15
+      |vpiFullName:work@top.o15.o15
+      |vpiActual:
+      \_logic_net: (work@top.o15), line:10:40, endln:10:43
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o15)
+      |vpiParent:
+      \_port: (o15), line:10:40, endln:10:43
+      |vpiFullName:work@top.o15
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+  |vpiPort:
+  \_port: (o0), line:10:45, endln:10:47
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o0
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o0.o0), line:10:45, endln:10:47
+      |vpiParent:
+      \_port: (o0), line:10:45, endln:10:47
+      |vpiName:o0
+      |vpiFullName:work@top.o0.o0
+      |vpiActual:
+      \_logic_net: (work@top.o0), line:10:45, endln:10:47
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o0)
+      |vpiParent:
+      \_port: (o0), line:10:45, endln:10:47
+      |vpiFullName:work@top.o0
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+  |vpiContAssign:
+  \_cont_assign: , line:11:10, endln:11:30
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiRhs:
+    \_bit_select: (sbox::T), line:11:24, endln:11:29
+      |vpiParent:
+      \_parameter: (sbox::T), line:7:31, endln:7:32
+      |vpiName:sbox::T
+      |vpiIndex:
+      \_constant: , line:11:24, endln:11:29
+        |vpiParent:
+        \_bit_select: (sbox::T), line:11:24, endln:11:29
+        |vpiDecompile:4'd10
+        |vpiSize:4
+        |DEC:10
+        |vpiConstType:1
+    |vpiLhs:
+    \_ref_obj: (work@top.o10), line:11:10, endln:11:13
+      |vpiParent:
+      \_cont_assign: , line:11:10, endln:11:30
+      |vpiName:o10
+      |vpiFullName:work@top.o10
+      |vpiActual:
+      \_logic_net: (work@top.o10), line:10:31, endln:10:34
+  |vpiContAssign:
+  \_cont_assign: , line:12:10, endln:12:26
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiRhs:
+    \_bit_select: (sbox::T), line:12:24, endln:12:25
+      |vpiParent:
+      \_parameter: (sbox::T), line:7:31, endln:7:32
+      |vpiName:sbox::T
+      |vpiIndex:
+      \_constant: , line:12:24, endln:12:25
+        |vpiParent:
+        \_bit_select: (sbox::T), line:12:24, endln:12:25
+        |vpiDecompile:1
+        |vpiSize:64
+        |UINT:1
+        |vpiConstType:9
+    |vpiLhs:
+    \_ref_obj: (work@top.o1), line:12:10, endln:12:12
+      |vpiParent:
+      \_cont_assign: , line:12:10, endln:12:26
+      |vpiName:o1
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_logic_net: (work@top.o1), line:10:36, endln:10:38
+  |vpiContAssign:
+  \_cont_assign: , line:13:10, endln:13:27
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiRhs:
+    \_bit_select: (sbox::T), line:13:24, endln:13:26
+      |vpiParent:
+      \_parameter: (sbox::T), line:7:31, endln:7:32
+      |vpiName:sbox::T
+      |vpiIndex:
+      \_constant: , line:13:24, endln:13:26
+        |vpiParent:
+        \_bit_select: (sbox::T), line:13:24, endln:13:26
+        |vpiDecompile:15
+        |vpiSize:64
+        |UINT:15
+        |vpiConstType:9
+    |vpiLhs:
+    \_ref_obj: (work@top.o15), line:13:10, endln:13:13
+      |vpiParent:
+      \_cont_assign: , line:13:10, endln:13:27
+      |vpiName:o15
+      |vpiFullName:work@top.o15
+      |vpiActual:
+      \_logic_net: (work@top.o15), line:10:40, endln:10:43
+  |vpiContAssign:
+  \_cont_assign: , line:14:10, endln:14:26
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiRhs:
+    \_bit_select: (sbox::T), line:14:24, endln:14:25
+      |vpiParent:
+      \_parameter: (sbox::T), line:7:31, endln:7:32
+      |vpiName:sbox::T
+      |vpiIndex:
+      \_constant: , line:14:24, endln:14:25
+        |vpiParent:
+        \_bit_select: (sbox::T), line:14:24, endln:14:25
+        |vpiDecompile:0
+        |vpiSize:64
+        |UINT:0
+        |vpiConstType:9
+    |vpiLhs:
+    \_ref_obj: (work@top.o0), line:14:10, endln:14:12
+      |vpiParent:
+      \_cont_assign: , line:14:10, endln:14:26
+      |vpiName:o0
+      |vpiFullName:work@top.o0
+      |vpiActual:
+      \_logic_net: (work@top.o0), line:10:45, endln:10:47
+|uhdmtopModules:
+\_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiName:work@top
+  |vpiDefName:work@top
+  |vpiTop:1
+  |vpiNet:
+  \_logic_net: (work@top.o10), line:10:31, endln:10:34
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o10)
+      |vpiParent:
+      \_logic_net: (work@top.o10), line:10:31, endln:10:34
+      |vpiFullName:work@top.o10
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+    |vpiName:o10
+    |vpiFullName:work@top.o10
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.o1), line:10:36, endln:10:38
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_logic_net: (work@top.o1), line:10:36, endln:10:38
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+    |vpiName:o1
+    |vpiFullName:work@top.o1
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.o15), line:10:40, endln:10:43
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o15)
+      |vpiParent:
+      \_logic_net: (work@top.o15), line:10:40, endln:10:43
+      |vpiFullName:work@top.o15
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+    |vpiName:o15
+    |vpiFullName:work@top.o15
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.o0), line:10:45, endln:10:47
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o0)
+      |vpiParent:
+      \_logic_net: (work@top.o0), line:10:45, endln:10:47
+      |vpiFullName:work@top.o0
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+    |vpiName:o0
+    |vpiFullName:work@top.o0
+    |vpiNetType:36
+  |vpiTopModule:1
+  |vpiPort:
+  \_port: (o10), line:10:31, endln:10:34
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o10
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o10), line:10:31, endln:10:34
+      |vpiParent:
+      \_port: (o10), line:10:31, endln:10:34
+      |vpiName:o10
+      |vpiFullName:work@top.o10
+      |vpiActual:
+      \_logic_net: (work@top.o10), line:10:31, endln:10:34
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o10)
+      |vpiParent:
+      \_port: (o10), line:10:31, endln:10:34
+      |vpiFullName:work@top.o10
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiPort:
+  \_port: (o1), line:10:36, endln:10:38
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o1
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o1), line:10:36, endln:10:38
+      |vpiParent:
+      \_port: (o1), line:10:36, endln:10:38
+      |vpiName:o1
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_logic_net: (work@top.o1), line:10:36, endln:10:38
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_port: (o1), line:10:36, endln:10:38
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiPort:
+  \_port: (o15), line:10:40, endln:10:43
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o15
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o15), line:10:40, endln:10:43
+      |vpiParent:
+      \_port: (o15), line:10:40, endln:10:43
+      |vpiName:o15
+      |vpiFullName:work@top.o15
+      |vpiActual:
+      \_logic_net: (work@top.o15), line:10:40, endln:10:43
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o15)
+      |vpiParent:
+      \_port: (o15), line:10:40, endln:10:43
+      |vpiFullName:work@top.o15
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiPort:
+  \_port: (o0), line:10:45, endln:10:47
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiName:o0
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o0), line:10:45, endln:10:47
+      |vpiParent:
+      \_port: (o0), line:10:45, endln:10:47
+      |vpiName:o0
+      |vpiFullName:work@top.o0
+      |vpiActual:
+      \_logic_net: (work@top.o0), line:10:45, endln:10:47
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o0)
+      |vpiParent:
+      \_port: (o0), line:10:45, endln:10:47
+      |vpiFullName:work@top.o0
+      |vpiActual:
+      \_logic_typespec: , line:10:19, endln:10:30
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiContAssign:
+  \_cont_assign: , line:11:10, endln:11:30
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiRhs:
+    \_constant: 
+      |vpiParent:
+      \_cont_assign: , line:11:10, endln:11:30
+      |vpiDecompile:1111
+      |vpiSize:4
+      |BIN:1111
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_constant: 
+        |vpiFullName:work@top
+        |vpiActual:
+        \_logic_typespec: , line:7:13, endln:7:30
+      |vpiConstType:3
+    |vpiLhs:
+    \_ref_obj: (work@top.o10), line:11:10, endln:11:13
+      |vpiParent:
+      \_cont_assign: , line:11:10, endln:11:30
+      |vpiName:o10
+      |vpiFullName:work@top.o10
+      |vpiActual:
+      \_logic_net: (work@top.o10), line:10:31, endln:10:34
+  |vpiContAssign:
+  \_cont_assign: , line:12:10, endln:12:26
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiRhs:
+    \_constant: 
+      |vpiParent:
+      \_cont_assign: , line:12:10, endln:12:26
+      |vpiDecompile:0101
+      |vpiSize:4
+      |BIN:0101
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_constant: 
+        |vpiFullName:work@top
+        |vpiActual:
+        \_logic_typespec: , line:7:13, endln:7:30
+      |vpiConstType:3
+    |vpiLhs:
+    \_ref_obj: (work@top.o1), line:12:10, endln:12:12
+      |vpiParent:
+      \_cont_assign: , line:12:10, endln:12:26
+      |vpiName:o1
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_logic_net: (work@top.o1), line:10:36, endln:10:38
+  |vpiContAssign:
+  \_cont_assign: , line:13:10, endln:13:27
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiRhs:
+    \_constant: 
+      |vpiParent:
+      \_cont_assign: , line:13:10, endln:13:27
+      |vpiDecompile:0010
+      |vpiSize:4
+      |BIN:0010
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_constant: 
+        |vpiFullName:work@top
+        |vpiActual:
+        \_logic_typespec: , line:7:13, endln:7:30
+      |vpiConstType:3
+    |vpiLhs:
+    \_ref_obj: (work@top.o15), line:13:10, endln:13:13
+      |vpiParent:
+      \_cont_assign: , line:13:10, endln:13:27
+      |vpiName:o15
+      |vpiFullName:work@top.o15
+      |vpiActual:
+      \_logic_net: (work@top.o15), line:10:40, endln:10:43
+  |vpiContAssign:
+  \_cont_assign: , line:14:10, endln:14:26
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+    |vpiRhs:
+    \_constant: 
+      |vpiParent:
+      \_cont_assign: , line:14:10, endln:14:26
+      |vpiDecompile:1100
+      |vpiSize:4
+      |BIN:1100
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_constant: 
+        |vpiFullName:work@top
+        |vpiActual:
+        \_logic_typespec: , line:7:13, endln:7:30
+      |vpiConstType:3
+    |vpiLhs:
+    \_ref_obj: (work@top.o0), line:14:10, endln:14:12
+      |vpiParent:
+      \_cont_assign: , line:14:10, endln:14:26
+      |vpiName:o0
+      |vpiFullName:work@top.o0
+      |vpiActual:
+      \_logic_net: (work@top.o0), line:10:45, endln:10:47
+\_weaklyReferenced:
+\_logic_typespec: , line:7:13, endln:7:30
+  |vpiParent:
+  \_parameter: (sbox::T), line:7:31, endln:7:32
+  |vpiInstance:
+  \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+  |vpiRange:
+  \_range: , line:7:19, endln:7:25
+    |vpiParent:
+    \_logic_typespec: , line:7:13, endln:7:30
+    |vpiLeftRange:
+    \_constant: , line:7:20, endln:7:22
+      |vpiParent:
+      \_range: , line:7:19, endln:7:25
+      |vpiDecompile:15
+      |vpiSize:64
+      |UINT:15
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:23, endln:7:24
+      |vpiParent:
+      \_range: , line:7:19, endln:7:25
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+  |vpiRange:
+  \_range: , line:7:25, endln:7:30
+    |vpiParent:
+    \_logic_typespec: , line:7:13, endln:7:30
+    |vpiLeftRange:
+    \_constant: , line:7:26, endln:7:27
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:28, endln:7:29
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:7:13, endln:7:30
+  |vpiParent:
+  \_parameter: (sbox::T), line:7:31, endln:7:32
+  |vpiInstance:
+  \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+  |vpiRange:
+  \_range: , line:7:19, endln:7:25
+    |vpiParent:
+    \_logic_typespec: , line:7:13, endln:7:30
+    |vpiLeftRange:
+    \_constant: , line:7:20, endln:7:22
+      |vpiParent:
+      \_range: , line:7:19, endln:7:25
+      |vpiDecompile:15
+      |vpiSize:64
+      |UINT:15
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:23, endln:7:24
+      |vpiParent:
+      \_range: , line:7:19, endln:7:25
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+  |vpiRange:
+  \_range: , line:7:25, endln:7:30
+    |vpiParent:
+    \_logic_typespec: , line:7:13, endln:7:30
+    |vpiLeftRange:
+    \_constant: , line:7:26, endln:7:27
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:28, endln:7:29
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:10:19, endln:10:30
+  |vpiRange:
+  \_range: , line:10:25, endln:10:30
+    |vpiParent:
+    \_logic_typespec: , line:10:19, endln:10:30
+    |vpiLeftRange:
+    \_constant: , line:10:26, endln:10:27
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:10:28, endln:10:29
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:10:19, endln:10:30
+  |vpiRange:
+  \_range: , line:10:25, endln:10:30
+    |vpiParent:
+    \_logic_typespec: , line:10:19, endln:10:30
+    |vpiLeftRange:
+    \_constant: , line:10:26, endln:10:27
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:10:28, endln:10:29
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:10:19, endln:10:30
+  |vpiRange:
+  \_range: , line:10:25, endln:10:30
+    |vpiParent:
+    \_logic_typespec: , line:10:19, endln:10:30
+    |vpiLeftRange:
+    \_constant: , line:10:26, endln:10:27
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:10:28, endln:10:29
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:10:19, endln:10:30
+  |vpiRange:
+  \_range: , line:10:25, endln:10:30
+    |vpiParent:
+    \_logic_typespec: , line:10:19, endln:10:30
+    |vpiLeftRange:
+    \_constant: , line:10:26, endln:10:27
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:10:28, endln:10:29
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:10:19, endln:10:30
+  |vpiRange:
+  \_range: , line:10:25, endln:10:30
+    |vpiParent:
+    \_logic_typespec: , line:10:19, endln:10:30
+    |vpiLeftRange:
+    \_constant: , line:10:26, endln:10:27
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:10:28, endln:10:29
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:10:19, endln:10:30
+  |vpiRange:
+  \_range: , line:10:25, endln:10:30
+    |vpiParent:
+    \_logic_typespec: , line:10:19, endln:10:30
+    |vpiLeftRange:
+    \_constant: , line:10:26, endln:10:27
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:10:28, endln:10:29
+      |vpiParent:
+      \_range: , line:10:25, endln:10:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:7:13, endln:7:30
+  |vpiInstance:
+  \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+  |vpiRange:
+  \_range: , line:7:25, endln:7:30
+    |vpiParent:
+    \_logic_typespec: , line:7:13, endln:7:30
+    |vpiLeftRange:
+    \_constant: , line:7:26, endln:7:27
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:28, endln:7:29
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_cont_assign: , line:11:10, endln:11:30
+  |vpiParent:
+  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiRhs:
+  \_constant: 
+  |vpiLhs:
+  \_ref_obj: (work@top.o10), line:11:10, endln:11:13
+    |vpiParent:
+    \_cont_assign: , line:11:10, endln:11:30
+    |vpiName:o10
+    |vpiFullName:work@top.o10
+    |vpiActual:
+    \_logic_net: (work@top.o10), line:10:31, endln:10:34
+\_logic_typespec: , line:7:13, endln:7:30
+  |vpiInstance:
+  \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+  |vpiRange:
+  \_range: , line:7:25, endln:7:30
+    |vpiParent:
+    \_logic_typespec: , line:7:13, endln:7:30
+    |vpiLeftRange:
+    \_constant: , line:7:26, endln:7:27
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:28, endln:7:29
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_cont_assign: , line:12:10, endln:12:26
+  |vpiParent:
+  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiRhs:
+  \_constant: 
+  |vpiLhs:
+  \_ref_obj: (work@top.o1), line:12:10, endln:12:12
+    |vpiParent:
+    \_cont_assign: , line:12:10, endln:12:26
+    |vpiName:o1
+    |vpiFullName:work@top.o1
+    |vpiActual:
+    \_logic_net: (work@top.o1), line:10:36, endln:10:38
+\_logic_typespec: , line:7:13, endln:7:30
+  |vpiInstance:
+  \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+  |vpiRange:
+  \_range: , line:7:25, endln:7:30
+    |vpiParent:
+    \_logic_typespec: , line:7:13, endln:7:30
+    |vpiLeftRange:
+    \_constant: , line:7:26, endln:7:27
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:28, endln:7:29
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_cont_assign: , line:13:10, endln:13:27
+  |vpiParent:
+  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiRhs:
+  \_constant: 
+  |vpiLhs:
+  \_ref_obj: (work@top.o15), line:13:10, endln:13:13
+    |vpiParent:
+    \_cont_assign: , line:13:10, endln:13:27
+    |vpiName:o15
+    |vpiFullName:work@top.o15
+    |vpiActual:
+    \_logic_net: (work@top.o15), line:10:40, endln:10:43
+\_logic_typespec: , line:7:13, endln:7:30
+  |vpiInstance:
+  \_package: sbox (sbox::), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:6:1, endln:9:11
+  |vpiRange:
+  \_range: , line:7:25, endln:7:30
+    |vpiParent:
+    \_logic_typespec: , line:7:13, endln:7:30
+    |vpiLeftRange:
+    \_constant: , line:7:26, endln:7:27
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:28, endln:7:29
+      |vpiParent:
+      \_range: , line:7:25, endln:7:30
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_cont_assign: , line:14:10, endln:14:26
+  |vpiParent:
+  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv, line:10:1, endln:15:10
+  |vpiRhs:
+  \_constant: 
+  |vpiLhs:
+  \_ref_obj: (work@top.o0), line:14:10, endln:14:12
+    |vpiParent:
+    \_cont_assign: , line:14:10, endln:14:26
+    |vpiName:o0
+    |vpiFullName:work@top.o0
+    |vpiActual:
+    \_logic_net: (work@top.o0), line:10:45, endln:10:47
+===================
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 0
+[WARNING] : 2
+[   NOTE] : 5
+
+============================== Begin RoundTrip Results ==============================
+[roundtrip]: ${SURELOG_DIR}/tests/PkgParamElemSelect/dut.sv | ${SURELOG_DIR}/build/regression/PkgParamElemSelect/roundtrip/dut_000.sv | 5 | 15 |
+============================== End RoundTrip Results ==============================
