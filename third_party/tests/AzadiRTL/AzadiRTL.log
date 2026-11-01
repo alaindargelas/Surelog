@@ -17724,7 +17724,7 @@ property_spec                                         31
 range                                              72265
 ref_module                                           488
 ref_obj                                            67772
-ref_typespec                                      171426
+ref_typespec                                      171428
 ref_var                                                8
 return_stmt                                          118
 string_typespec                                     2724
@@ -17805,7 +17805,7 @@ property_spec                                        110
 range                                              72692
 ref_module                                           488
 ref_obj                                           287145
-ref_typespec                                      852184
+ref_typespec                                      852186
 ref_var                                               36
 return_stmt                                          317
 string_typespec                                     2895
