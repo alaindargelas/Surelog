@@ -4411,6 +4411,47 @@ UHDM::constant* CompileHelper::adjustSize(const UHDM::typespec* ts,
     signedLhs = its->VpiSigned();
   }
 
+  // A binary literal with x/z digits has no integer value and used to be
+  // widened by vpiSize alone, turning `1'bx` into `32'bX` -- which by 5.7.1
+  // is THIRTY-TWO x bits.  Into a wider integral target the literal keeps
+  // its own width (its MSD x/z-extends to that width) and the rest is
+  // ZERO-extended, unless the literal is signed: `parameter int P = 1'bx`
+  // is `0…0x`, `4'bzzzz` is `0…0zzzz` (sv-tests number_test_10..14;
+  // read_verilog agrees).  VpiConstType can still be unset here, so the
+  // BIN: prefix is the test.
+  if ((c->VpiConstType() == vpiBinaryConst || c->VpiConstType() == 0) &&
+      orig_size > 0 && size > orig_size) {
+    std::string_view sv = c->VpiValue();
+    if (sv.size() > 4 && sv.substr(0, 4) == "BIN:" &&
+        sv.find_first_of("xXzZ?") != std::string_view::npos) {
+      std::string v(sv.substr(4));
+      if (!v.empty() && v.size() <= (size_t)size) {
+        const char msd = v[0];
+        const bool xz = (msd == 'x' || msd == 'X' || msd == 'z' || msd == 'Z' ||
+                         msd == '?');
+        while ((int32_t)v.size() < orig_size)
+          v.insert(v.begin(), xz ? msd : '0');
+        std::string_view deco = c->VpiDecompile();
+        size_t q = deco.find('\'');
+        const bool lit_signed =
+            (q != std::string_view::npos && q + 1 < deco.size() &&
+             (deco[q + 1] == 's' || deco[q + 1] == 'S'));
+        while ((int32_t)v.size() < size)
+          v.insert(v.begin(), lit_signed ? v[0] : '0');
+        if (uniquify) {
+          UHDM::ElaboratorContext elaboratorContext(&s, false, true);
+          c = (UHDM::constant*)UHDM::clone_tree(c, &elaboratorContext);
+          result = c;
+        }
+        c->VpiValue("BIN:" + v);
+        c->VpiDecompile(std::to_string(size) + "'b" + v);
+        c->VpiConstType(vpiBinaryConst);
+        c->VpiSize(size);
+        return result;
+      }
+    }
+  }
+
   UHDM::ExprEval eval;
   int64_t val = eval.get_value(invalidValue, c);
   bool constantIsSigned = false;
@@ -4441,6 +4482,23 @@ UHDM::constant* CompileHelper::adjustSize(const UHDM::typespec* ts,
             }
           }
           ts = tstmp;
+        }
+      }
+      // A literal's signedness is the LITERAL's own (`2'sb11` is signed,
+      // `2'b11` is not), not that of the typespec stamped on it.  A constant
+      // folded into a typed parameter carries the PARAMETER's typespec by
+      // the time adjustSize sees it again (DesignElaboration attaches the
+      // declared type after the first pass), so `parameter int P = 2'b11`
+      // read its own `int` back as "the constant is signed" and
+      // two's-complemented 3 into -1 (and `1'b1` into -1).  The decompile
+      // keeps the base sigil for as long as the constant is still a literal;
+      // once rewritten below it has none and the typespec remains the only
+      // source.
+      {
+        std::string_view deco = c->VpiDecompile();
+        size_t q = deco.find('\'');
+        if (q != std::string_view::npos && q + 1 < deco.size()) {
+          constantIsSigned = (deco[q + 1] == 's' || deco[q + 1] == 'S');
         }
       }
       if (ts) {

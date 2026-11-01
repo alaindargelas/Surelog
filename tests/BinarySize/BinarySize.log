@@ -11,7 +11,7 @@
 [NTE:EL0511] Nb leaf instances: 1.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-constant                                              24
+constant                                              28
 cont_assign                                           18
 design                                                 1
 logic_net                                              1
@@ -24,7 +24,7 @@ ref_typespec                                           2
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-constant                                              24
+constant                                              28
 cont_assign                                           27
 design                                                 1
 logic_net                                              1
@@ -341,6 +341,12 @@ design: (work@top)
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BinarySize/dut.sv, line:1:1, endln:13:10
     |vpiRhs:
     \_constant: , line:8:18, endln:8:22
+      |vpiParent:
+      \_cont_assign: , line:8:10, endln:8:22
+      |vpiDecompile:32'b0000000000000000000000000000000X
+      |vpiSize:32
+      |BIN:0000000000000000000000000000000X
+      |vpiConstType:3
     |vpiLhs:
     \_ref_obj: (work@top.first), line:8:10, endln:8:15
       |vpiParent:
@@ -355,6 +361,12 @@ design: (work@top)
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BinarySize/dut.sv, line:1:1, endln:13:10
     |vpiRhs:
     \_constant: , line:9:18, endln:9:23
+      |vpiParent:
+      \_cont_assign: , line:9:10, endln:9:23
+      |vpiDecompile:32'b0000000000000000000000000000000x
+      |vpiSize:32
+      |BIN:0000000000000000000000000000000x
+      |vpiConstType:3
     |vpiLhs:
     \_ref_obj: (work@top.first), line:9:10, endln:9:15
       |vpiParent:
@@ -369,6 +381,12 @@ design: (work@top)
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BinarySize/dut.sv, line:1:1, endln:13:10
     |vpiRhs:
     \_constant: , line:10:18, endln:10:22
+      |vpiParent:
+      \_cont_assign: , line:10:10, endln:10:22
+      |vpiDecompile:32'b0000000000000000000000000000000z
+      |vpiSize:32
+      |BIN:0000000000000000000000000000000z
+      |vpiConstType:3
     |vpiLhs:
     \_ref_obj: (work@top.first), line:10:10, endln:10:15
       |vpiParent:
@@ -383,6 +401,12 @@ design: (work@top)
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BinarySize/dut.sv, line:1:1, endln:13:10
     |vpiRhs:
     \_constant: , line:11:18, endln:11:23
+      |vpiParent:
+      \_cont_assign: , line:11:10, endln:11:23
+      |vpiDecompile:32'b0000000000000000000000000000000z
+      |vpiSize:32
+      |BIN:0000000000000000000000000000000z
+      |vpiConstType:3
     |vpiLhs:
     \_ref_obj: (work@top.first), line:11:10, endln:11:15
       |vpiParent:
