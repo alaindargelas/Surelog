@@ -241,7 +241,7 @@ array_typespec                                         9
 array_var                                              4
 begin                                                  1
 bit_select                                             4
-constant                                              56
+constant                                              54
 cont_assign                                            4
 design                                                 1
 gen_region                                             1
@@ -265,7 +265,7 @@ array_typespec                                         9
 array_var                                              4
 begin                                                  1
 bit_select                                             6
-constant                                              56
+constant                                              54
 cont_assign                                            6
 design                                                 1
 gen_region                                             1
@@ -391,7 +391,7 @@ design: (work@top)
       |vpiLeftRange:
       \_constant: , line:3:16, endln:3:17
         |vpiParent:
-        \_range: , line:3:15, endln:3:20
+        \_operation: , line:10:9, endln:10:25
         |vpiDecompile:1
         |vpiSize:64
         |UINT:1
@@ -399,7 +399,7 @@ design: (work@top)
       |vpiRightRange:
       \_constant: , line:3:18, endln:3:19
         |vpiParent:
-        \_range: , line:3:15, endln:3:20
+        \_operation: , line:10:9, endln:10:25
         |vpiDecompile:0
         |vpiSize:64
         |UINT:0
@@ -518,7 +518,7 @@ design: (work@top)
   \_array_var: (work@top.d), line:10:7, endln:10:8
     |vpiParent:
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/SystemCallSize/dut.sv, line:1:1, endln:18:10
-    |vpiSize:2
+    |vpiSize:3
     |vpiTypespec:
     \_ref_typespec: (work@top.d)
       |vpiParent:
@@ -539,9 +539,9 @@ design: (work@top)
       \_constant: , line:10:9, endln:10:25
         |vpiParent:
         \_range: , line:10:8, endln:10:30
-        |vpiDecompile:1
+        |vpiDecompile:2
         |vpiSize:64
-        |INT:1
+        |INT:2
         |vpiConstType:7
       |vpiRightRange:
       \_constant: , line:10:28, endln:10:29
@@ -710,6 +710,12 @@ design: (work@top)
 \_logic_typespec: , line:10:1, endln:10:6
   |vpiParent:
   \_logic_var: (work@top.d), line:10:7, endln:10:8
+\_operation: , line:10:9, endln:10:25
+  |vpiOpType:11
+  |vpiOperand:
+  \_constant: , line:3:16, endln:3:17
+  |vpiOperand:
+  \_constant: , line:3:18, endln:3:19
 \_array_typespec: 
 \_logic_typespec: , line:3:1, endln:3:20
   |vpiRange:
