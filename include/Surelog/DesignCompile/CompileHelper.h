@@ -627,8 +627,8 @@ class CompileHelper final {
   // navigate struct/packed member layouts of parameters whose value is a
   // typespec-less assignment-pattern operation; declaration types are
   // instance-independent, so this does not affect value resolution.
-  UHDM::any* getParamTypespec(std::string_view name,
-                              DesignComponent* component);
+  UHDM::any* getParamTypespec(std::string_view name, DesignComponent* component,
+                              CompileDesign* compileDesign = nullptr);
 
   // Resolve a value read of an interface-port localparam `<port>.<member>`
   // (e.g. a generate-for bound `i < sub.CFG_BUS_BYT`) via the port's interface
