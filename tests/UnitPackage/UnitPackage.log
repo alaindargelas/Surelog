@@ -1,4 +1,4 @@
-[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/UnitPackage/slpp_unit/surelog.log".
+[INF:CM0023] Creating log file "/home/alain/uhdm2rtlil/build/third_party/Surelog/regression/UnitPackage/slpp_unit/surelog.log".
 [INF:CM0020] Separate compilation-unit mode is on.
 LIB: work
      ${SURELOG_DIR}/tests/UnitPackage/definesPkg.pkg
@@ -976,25 +976,17 @@ AST_DEBUG_END
 [INF:CP0302] Compile class "work@process".
 [INF:CP0302] Compile class "work@semaphore".
 [INF:EL0526] Design Elaboration...
-[INF:CP0335] ${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv:15:15: Compile generate block "work@simple_package.inst".
 Instance tree:
 [TOP] work@simple_package work@simple_package
-[SCO] work@simple_package.inst work@simple_package.inst
 [SCO] work@simple_package.genblk2 work@simple_package.genblk2
-[MOD] work@simple_package.inst::M1 [U] work@simple_package.inst.u1
 
 [NTE:EL0503] ${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv:11:1: Top level module "work@simple_package".
-[WRN:EL0500] ${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv:16:4: Cannot find a module definition for "work@simple_package.inst::M1".
 [NTE:EL0508] Nb Top level modules: 1.
-[NTE:EL0509] Max instance depth: 3.
-[NTE:EL0510] Nb instances: 2.
-[NTE:EL0511] Nb leaf instances: 1.
-[WRN:EL0512] Nb undefined modules: 1.
-[WRN:EL0513] Nb undefined instances: 1.
+[NTE:EL0509] Max instance depth: 1.
+[NTE:EL0510] Nb instances: 1.
+[NTE:EL0511] Nb leaf instances: 0.
 [NTE:EL0523] ${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv:11:1: Instance "work@simple_package".
-[NTE:EL0522] ${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv:15:15: Scope "work@simple_package.inst".
 [NTE:EL0522] ${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv:19:9: Scope "work@simple_package.genblk2".
-[NTE:EL0523] ${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv:16:4: Instance "work@simple_package.inst.u1".
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 assignment                                             8
@@ -1004,7 +996,7 @@ bit_var                                                4
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              59
+constant                                              56
 delay_control                                          3
 design                                                 1
 enum_const                                             9
@@ -1013,28 +1005,26 @@ enum_var                                               2
 func_call                                              2
 function                                              13
 gen_if                                                 1
-gen_scope                                              2
-gen_scope_array                                        2
 if_stmt                                                3
 import_typespec                                        2
 initial                                                1
-int_typespec                                          12
+int_typespec                                          11
 int_var                                                4
 integer_typespec                                      18
 integer_var                                           16
 io_decl                                               23
 logic_net                                             10
 logic_var                                              1
-module_inst                                            7
+module_inst                                            6
 named_begin                                            1
 operation                                              7
 package                                                6
-param_assign                                           5
-parameter                                              6
+param_assign                                           4
+parameter                                              4
 range                                                  4
-ref_module                                             2
-ref_obj                                               40
-ref_typespec                                          72
+ref_module                                             1
+ref_obj                                               41
+ref_typespec                                          71
 string_typespec                                       15
 string_var                                             4
 struct_typespec                                        2
@@ -1045,55 +1035,53 @@ typespec_member                                        6
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-assignment                                            24
-begin                                                 26
+assignment                                            20
+begin                                                 22
 bit_typespec                                          13
 bit_var                                                4
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              59
+constant                                              56
 delay_control                                          6
 design                                                 1
 enum_const                                            14
 enum_typespec                                          4
 enum_var                                               2
 func_call                                              4
-function                                              30
+function                                              28
 gen_if                                                 1
-gen_scope                                              3
-gen_scope_array                                        3
-if_stmt                                                8
+if_stmt                                                7
 import_typespec                                        2
 initial                                                2
-int_typespec                                          12
+int_typespec                                          11
 int_var                                                4
 integer_typespec                                      18
 integer_var                                           16
-io_decl                                               58
+io_decl                                               52
 logic_net                                             10
 logic_var                                              1
-module_inst                                            8
+module_inst                                            6
 named_begin                                            1
-operation                                             16
+operation                                             14
 package                                                6
-param_assign                                           6
-parameter                                              6
+param_assign                                           4
+parameter                                              4
 range                                                  4
-ref_module                                             2
-ref_obj                                              117
-ref_typespec                                         102
+ref_module                                             1
+ref_obj                                               99
+ref_typespec                                          94
 string_typespec                                       15
 string_var                                             4
 struct_typespec                                        2
-sys_func_call                                         62
-task                                                  48
+sys_func_call                                         52
+task                                                  43
 task_call                                             12
 typespec_member                                        6
 === UHDM Object Stats End ===
-[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/UnitPackage/slpp_unit/surelog.uhdm ...
-[INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/UnitPackage/slpp_unit/checker/surelog.chk.html ...
-[INF:UH0710] Loading UHDM DB: ${SURELOG_DIR}/build/regression/UnitPackage/slpp_unit/surelog.uhdm ...
+[INF:UH0708] Writing UHDM DB: /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/UnitPackage/slpp_unit/surelog.uhdm ...
+[INF:UH0709] Writing UHDM Html Coverage: /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/UnitPackage/slpp_unit/checker/surelog.chk.html ...
+[INF:UH0710] Loading UHDM DB: /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/UnitPackage/slpp_unit/surelog.uhdm ...
 [INF:UH0711] Decompiling UHDM...
 ====== UHDM =======
 design: (work@simple_package)
@@ -1870,7 +1858,7 @@ design: (work@simple_package)
   |vpiTypedef:
   \_enum_typespec: (definesPkg::bool), line:10:3, endln:10:36
     |vpiParent:
-    \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
+    \_module_inst: work@simple_package (work@simple_package), file:${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv, line:11:1, endln:30:10
     |vpiName:definesPkg::bool
     |vpiInstance:
     \_package: definesPkg (definesPkg::), file:${SURELOG_DIR}/tests/UnitPackage/definesPkg.pkg, line:4:1, endln:17:11
@@ -4461,472 +4449,6 @@ design: (work@simple_package)
             |vpiName:msgPkg::msg_fatal
             |vpiTask:
             \_task: (msgPkg::msg_fatal), line:40:3, endln:43:10
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@simple_package.inst), line:15:15, endln:17:6
-    |vpiParent:
-    \_module_inst: work@simple_package (work@simple_package), file:${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv, line:11:1, endln:30:10
-    |vpiName:inst
-    |vpiFullName:work@simple_package.inst
-    |vpiGenScope:
-    \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-      |vpiParent:
-      \_gen_scope_array: (work@simple_package.inst), line:15:15, endln:17:6
-      |vpiFullName:work@simple_package.inst
-      |vpiParameter:
-      \_parameter: (work@simple_package.inst.SIZE), line:8:0
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |UINT:2
-        |vpiTypespec:
-        \_ref_typespec: (work@simple_package.inst.SIZE)
-          |vpiParent:
-          \_parameter: (work@simple_package.inst.SIZE), line:8:0
-          |vpiFullName:work@simple_package.inst.SIZE
-          |vpiActual:
-          \_int_typespec: 
-        |vpiLocalParam:1
-        |vpiName:SIZE
-        |vpiFullName:work@simple_package.inst.SIZE
-      |vpiTypedef:
-      \_enum_typespec: (definesPkg::bool), line:10:3, endln:10:36
-      |vpiModule:
-      \_module_inst: work@simple_package.inst::M1 (work@simple_package.inst.u1), file:${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv, line:16:4, endln:16:12
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |vpiName:u1
-        |vpiFullName:work@simple_package.inst.u1
-        |vpiParameter:
-        \_parameter: (work@simple_package.inst.u1.SIZE)
-          |vpiParent:
-          \_param_assign: 
-          |vpiName:SIZE
-          |vpiFullName:work@simple_package.inst.u1.SIZE
-        |vpiParamAssign:
-        \_param_assign: 
-          |vpiParent:
-          \_module_inst: work@simple_package.inst::M1 (work@simple_package.inst.u1), file:${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv, line:16:4, endln:16:12
-          |vpiRhs:
-          \_constant: , line:8:0, endln:8:0
-            |vpiDecompile:2
-            |vpiSize:64
-            |UINT:2
-            |vpiConstType:9
-          |vpiLhs:
-          \_parameter: (work@simple_package.inst.u1.SIZE)
-        |vpiDefName:work@simple_package.inst::M1
-      |vpiTaskFunc:
-      \_task: (msgPkg::initMsgPkg), line:12:3, endln:15:10
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |vpiName:initMsgPkg
-        |vpiFullName:msgPkg::initMsgPkg
-        |vpiVisibility:1
-        |vpiIODecl:
-        \_io_decl: (mName), line:12:27, endln:12:32
-          |vpiParent:
-          \_task: (msgPkg::initMsgPkg), line:12:3, endln:15:10
-          |vpiDirection:1
-          |vpiName:mName
-          |vpiTypedef:
-          \_ref_typespec: (work@simple_package.inst.initMsgPkg.mName)
-            |vpiParent:
-            \_io_decl: (mName), line:12:27, endln:12:32
-            |vpiFullName:work@simple_package.inst.initMsgPkg.mName
-            |vpiActual:
-            \_string_typespec: , line:12:20, endln:12:26
-        |vpiIODecl:
-        \_io_decl: (term), line:12:38, endln:12:42
-          |vpiParent:
-          \_task: (msgPkg::initMsgPkg), line:12:3, endln:15:10
-          |vpiDirection:1
-          |vpiName:term
-          |vpiTypedef:
-          \_ref_typespec: (work@simple_package.inst.initMsgPkg.term)
-            |vpiParent:
-            \_io_decl: (term), line:12:38, endln:12:42
-            |vpiFullName:work@simple_package.inst.initMsgPkg.term
-            |vpiActual:
-            \_bit_typespec: , line:12:34, endln:12:37
-        |vpiStmt:
-        \_begin: (work@simple_package.inst.initMsgPkg), line:14:5, endln:14:21
-          |vpiParent:
-          \_task: (msgPkg::initMsgPkg), line:12:3, endln:15:10
-          |vpiFullName:work@simple_package.inst.initMsgPkg
-          |vpiStmt:
-          \_assignment: , line:13:5, endln:13:30
-            |vpiParent:
-            \_begin: (work@simple_package.inst.initMsgPkg), line:14:5, endln:14:21
-            |vpiOpType:82
-            |vpiBlocking:1
-            |vpiRhs:
-            \_ref_obj: (work@simple_package.inst.initMsgPkg.term), line:13:26, endln:13:30
-              |vpiParent:
-              \_assignment: , line:13:5, endln:13:30
-              |vpiName:term
-              |vpiFullName:work@simple_package.inst.initMsgPkg.term
-              |vpiActual:
-              \_io_decl: (term), line:12:38, endln:12:42
-            |vpiLhs:
-            \_ref_obj: (work@simple_package.inst.initMsgPkg.terminate_on_error), line:13:5, endln:13:23
-              |vpiParent:
-              \_assignment: , line:13:5, endln:13:30
-              |vpiName:terminate_on_error
-              |vpiFullName:work@simple_package.inst.initMsgPkg.terminate_on_error
-              |vpiActual:
-              \_bit_var: (work@simple_package.terminate_on_error), line:7:12, endln:7:30
-          |vpiStmt:
-          \_assignment: , line:14:5, endln:14:20
-            |vpiParent:
-            \_begin: (work@simple_package.inst.initMsgPkg), line:14:5, endln:14:21
-            |vpiOpType:82
-            |vpiBlocking:1
-            |vpiRhs:
-            \_ref_obj: (work@simple_package.inst.initMsgPkg.mName), line:14:15, endln:14:20
-              |vpiParent:
-              \_assignment: , line:14:5, endln:14:20
-              |vpiName:mName
-              |vpiFullName:work@simple_package.inst.initMsgPkg.mName
-              |vpiActual:
-              \_io_decl: (mName), line:12:27, endln:12:32
-            |vpiLhs:
-            \_ref_obj: (work@simple_package.inst.initMsgPkg.msgName), line:14:5, endln:14:12
-              |vpiParent:
-              \_assignment: , line:14:5, endln:14:20
-              |vpiName:msgName
-              |vpiFullName:work@simple_package.inst.initMsgPkg.msgName
-              |vpiActual:
-              \_string_var: (work@simple_package.msgName), line:8:12, endln:8:28
-        |vpiInstance:
-        \_package: msgPkg (msgPkg::), file:${SURELOG_DIR}/tests/UnitPackage/msgPkg.pkg, line:4:1, endln:57:11
-      |vpiTaskFunc:
-      \_task: (msgPkg::msg_info), line:19:3, endln:21:10
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |vpiName:msg_info
-        |vpiFullName:msgPkg::msg_info
-        |vpiVisibility:1
-        |vpiIODecl:
-        \_io_decl: (msg), line:19:26, endln:19:29
-          |vpiParent:
-          \_task: (msgPkg::msg_info), line:19:3, endln:21:10
-          |vpiDirection:1
-          |vpiName:msg
-          |vpiTypedef:
-          \_ref_typespec: (work@simple_package.inst.msg_info.msg)
-            |vpiParent:
-            \_io_decl: (msg), line:19:26, endln:19:29
-            |vpiFullName:work@simple_package.inst.msg_info.msg
-            |vpiActual:
-            \_string_typespec: , line:19:19, endln:19:25
-        |vpiStmt:
-        \_sys_func_call: ($display), line:20:5, endln:20:55
-          |vpiParent:
-          \_task: (msgPkg::msg_info), line:19:3, endln:21:10
-          |vpiArgument:
-          \_constant: , line:20:15, endln:20:36
-          |vpiArgument:
-          \_sys_func_call: ($time), line:20:37, endln:20:42
-            |vpiParent:
-            \_sys_func_call: ($display), line:20:5, endln:20:55
-            |vpiName:$time
-          |vpiArgument:
-          \_ref_obj: (work@simple_package.inst.msg_info.msgName), line:20:43, endln:20:50
-            |vpiParent:
-            \_sys_func_call: ($display), line:20:5, endln:20:55
-            |vpiName:msgName
-            |vpiFullName:work@simple_package.inst.msg_info.msgName
-            |vpiActual:
-            \_string_var: (work@simple_package.msgName), line:8:12, endln:8:28
-          |vpiArgument:
-          \_ref_obj: (work@simple_package.inst.msg_info.msg), line:20:51, endln:20:54
-            |vpiParent:
-            \_sys_func_call: ($display), line:20:5, endln:20:55
-            |vpiName:msg
-            |vpiFullName:work@simple_package.inst.msg_info.msg
-            |vpiActual:
-            \_io_decl: (msg), line:19:26, endln:19:29
-          |vpiName:$display
-        |vpiInstance:
-        \_package: msgPkg (msgPkg::), file:${SURELOG_DIR}/tests/UnitPackage/msgPkg.pkg, line:4:1, endln:57:11
-      |vpiTaskFunc:
-      \_task: (msgPkg::msg_warn), line:25:3, endln:28:10
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |vpiName:msg_warn
-        |vpiFullName:msgPkg::msg_warn
-        |vpiVisibility:1
-        |vpiIODecl:
-        \_io_decl: (msg), line:25:26, endln:25:29
-          |vpiParent:
-          \_task: (msgPkg::msg_warn), line:25:3, endln:28:10
-          |vpiDirection:1
-          |vpiName:msg
-          |vpiTypedef:
-          \_ref_typespec: (work@simple_package.inst.msg_warn.msg)
-            |vpiParent:
-            \_io_decl: (msg), line:25:26, endln:25:29
-            |vpiFullName:work@simple_package.inst.msg_warn.msg
-            |vpiActual:
-            \_string_typespec: , line:25:19, endln:25:25
-        |vpiStmt:
-        \_begin: (work@simple_package.inst.msg_warn), line:27:5, endln:27:16
-          |vpiParent:
-          \_task: (msgPkg::msg_warn), line:25:3, endln:28:10
-          |vpiFullName:work@simple_package.inst.msg_warn
-          |vpiStmt:
-          \_sys_func_call: ($display), line:26:5, endln:26:55
-            |vpiParent:
-            \_begin: (work@simple_package.inst.msg_warn), line:27:5, endln:27:16
-            |vpiArgument:
-            \_constant: , line:26:15, endln:26:36
-            |vpiArgument:
-            \_sys_func_call: ($time), line:26:37, endln:26:42
-              |vpiParent:
-              \_sys_func_call: ($display), line:26:5, endln:26:55
-              |vpiName:$time
-            |vpiArgument:
-            \_ref_obj: (work@simple_package.inst.msg_warn.msgName), line:26:43, endln:26:50
-              |vpiParent:
-              \_sys_func_call: ($display), line:26:5, endln:26:55
-              |vpiName:msgName
-              |vpiFullName:work@simple_package.inst.msg_warn.msgName
-              |vpiActual:
-              \_string_var: (work@simple_package.msgName), line:8:12, endln:8:28
-            |vpiArgument:
-            \_ref_obj: (work@simple_package.inst.msg_warn.msg), line:26:51, endln:26:54
-              |vpiParent:
-              \_sys_func_call: ($display), line:26:5, endln:26:55
-              |vpiName:msg
-              |vpiFullName:work@simple_package.inst.msg_warn.msg
-              |vpiActual:
-              \_io_decl: (msg), line:25:26, endln:25:29
-            |vpiName:$display
-          |vpiStmt:
-          \_operation: , line:27:5, endln:27:15
-            |vpiParent:
-            \_begin: (work@simple_package.inst.msg_warn), line:27:5, endln:27:16
-            |vpiOpType:62
-            |vpiOperand:
-            \_ref_obj: (work@simple_package.inst.msg_warn.warnCnt), line:27:5, endln:27:12
-              |vpiParent:
-              \_operation: , line:27:5, endln:27:15
-              |vpiName:warnCnt
-              |vpiFullName:work@simple_package.inst.msg_warn.warnCnt
-              |vpiActual:
-              \_integer_var: (work@simple_package.warnCnt), line:6:12, endln:6:23
-        |vpiInstance:
-        \_package: msgPkg (msgPkg::), file:${SURELOG_DIR}/tests/UnitPackage/msgPkg.pkg, line:4:1, endln:57:11
-      |vpiTaskFunc:
-      \_task: (msgPkg::msg_error), line:32:3, endln:36:10
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |vpiName:msg_error
-        |vpiFullName:msgPkg::msg_error
-        |vpiVisibility:1
-        |vpiIODecl:
-        \_io_decl: (msg), line:32:27, endln:32:30
-          |vpiParent:
-          \_task: (msgPkg::msg_error), line:32:3, endln:36:10
-          |vpiDirection:1
-          |vpiName:msg
-          |vpiTypedef:
-          \_ref_typespec: (work@simple_package.inst.msg_error.msg)
-            |vpiParent:
-            \_io_decl: (msg), line:32:27, endln:32:30
-            |vpiFullName:work@simple_package.inst.msg_error.msg
-            |vpiActual:
-            \_string_typespec: , line:32:20, endln:32:26
-        |vpiStmt:
-        \_begin: (work@simple_package.inst.msg_error), line:34:5, endln:34:15
-          |vpiParent:
-          \_task: (msgPkg::msg_error), line:32:3, endln:36:10
-          |vpiFullName:work@simple_package.inst.msg_error
-          |vpiStmt:
-          \_sys_func_call: ($display), line:33:5, endln:33:56
-            |vpiParent:
-            \_begin: (work@simple_package.inst.msg_error), line:34:5, endln:34:15
-            |vpiArgument:
-            \_constant: , line:33:15, endln:33:37
-            |vpiArgument:
-            \_sys_func_call: ($time), line:33:38, endln:33:43
-              |vpiParent:
-              \_sys_func_call: ($display), line:33:5, endln:33:56
-              |vpiName:$time
-            |vpiArgument:
-            \_ref_obj: (work@simple_package.inst.msg_error.msgName), line:33:44, endln:33:51
-              |vpiParent:
-              \_sys_func_call: ($display), line:33:5, endln:33:56
-              |vpiName:msgName
-              |vpiFullName:work@simple_package.inst.msg_error.msgName
-              |vpiActual:
-              \_string_var: (work@simple_package.msgName), line:8:12, endln:8:28
-            |vpiArgument:
-            \_ref_obj: (work@simple_package.inst.msg_error.msg), line:33:52, endln:33:55
-              |vpiParent:
-              \_sys_func_call: ($display), line:33:5, endln:33:56
-              |vpiName:msg
-              |vpiFullName:work@simple_package.inst.msg_error.msg
-              |vpiActual:
-              \_io_decl: (msg), line:32:27, endln:32:30
-            |vpiName:$display
-          |vpiStmt:
-          \_operation: , line:34:5, endln:34:14
-            |vpiParent:
-            \_begin: (work@simple_package.inst.msg_error), line:34:5, endln:34:15
-            |vpiOpType:62
-            |vpiOperand:
-            \_ref_obj: (work@simple_package.inst.msg_error.errCnt), line:34:5, endln:34:11
-              |vpiParent:
-              \_operation: , line:34:5, endln:34:14
-              |vpiName:errCnt
-              |vpiFullName:work@simple_package.inst.msg_error.errCnt
-              |vpiActual:
-              \_integer_var: (work@simple_package.errCnt), line:5:12, endln:5:23
-          |vpiStmt:
-          \_if_stmt: , line:35:5, endln:35:37
-            |vpiParent:
-            \_begin: (work@simple_package.inst.msg_error), line:34:5, endln:34:15
-            |vpiCondition:
-            \_ref_obj: (work@simple_package.inst.msg_error.terminate_on_error), line:35:9, endln:35:27
-              |vpiParent:
-              \_if_stmt: , line:35:5, endln:35:37
-              |vpiName:terminate_on_error
-              |vpiFullName:work@simple_package.inst.msg_error.terminate_on_error
-              |vpiActual:
-              \_bit_var: (work@simple_package.terminate_on_error), line:7:12, endln:7:30
-            |vpiStmt:
-            \_sys_func_call: ($finish), line:35:29, endln:35:36
-              |vpiParent:
-              \_if_stmt: , line:35:5, endln:35:37
-              |vpiName:$finish
-        |vpiInstance:
-        \_package: msgPkg (msgPkg::), file:${SURELOG_DIR}/tests/UnitPackage/msgPkg.pkg, line:4:1, endln:57:11
-      |vpiTaskFunc:
-      \_task: (msgPkg::msg_fatal), line:40:3, endln:43:10
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |vpiName:msg_fatal
-        |vpiFullName:msgPkg::msg_fatal
-        |vpiVisibility:1
-        |vpiIODecl:
-        \_io_decl: (msg), line:40:27, endln:40:30
-          |vpiParent:
-          \_task: (msgPkg::msg_fatal), line:40:3, endln:43:10
-          |vpiDirection:1
-          |vpiName:msg
-          |vpiTypedef:
-          \_ref_typespec: (work@simple_package.inst.msg_fatal.msg)
-            |vpiParent:
-            \_io_decl: (msg), line:40:27, endln:40:30
-            |vpiFullName:work@simple_package.inst.msg_fatal.msg
-            |vpiActual:
-            \_string_typespec: , line:40:20, endln:40:26
-        |vpiStmt:
-        \_begin: (work@simple_package.inst.msg_fatal), line:42:5, endln:42:13
-          |vpiParent:
-          \_task: (msgPkg::msg_fatal), line:40:3, endln:43:10
-          |vpiFullName:work@simple_package.inst.msg_fatal
-          |vpiStmt:
-          \_sys_func_call: ($display), line:41:5, endln:41:56
-            |vpiParent:
-            \_begin: (work@simple_package.inst.msg_fatal), line:42:5, endln:42:13
-            |vpiArgument:
-            \_constant: , line:41:15, endln:41:37
-            |vpiArgument:
-            \_sys_func_call: ($time), line:41:38, endln:41:43
-              |vpiParent:
-              \_sys_func_call: ($display), line:41:5, endln:41:56
-              |vpiName:$time
-            |vpiArgument:
-            \_ref_obj: (work@simple_package.inst.msg_fatal.msgName), line:41:44, endln:41:51
-              |vpiParent:
-              \_sys_func_call: ($display), line:41:5, endln:41:56
-              |vpiName:msgName
-              |vpiFullName:work@simple_package.inst.msg_fatal.msgName
-              |vpiActual:
-              \_string_var: (work@simple_package.msgName), line:8:12, endln:8:28
-            |vpiArgument:
-            \_ref_obj: (work@simple_package.inst.msg_fatal.msg), line:41:52, endln:41:55
-              |vpiParent:
-              \_sys_func_call: ($display), line:41:5, endln:41:56
-              |vpiName:msg
-              |vpiFullName:work@simple_package.inst.msg_fatal.msg
-              |vpiActual:
-              \_io_decl: (msg), line:40:27, endln:40:30
-            |vpiName:$display
-          |vpiStmt:
-          \_sys_func_call: ($finish), line:42:5, endln:42:12
-            |vpiParent:
-            \_begin: (work@simple_package.inst.msg_fatal), line:42:5, endln:42:13
-            |vpiName:$finish
-        |vpiInstance:
-        \_package: msgPkg (msgPkg::), file:${SURELOG_DIR}/tests/UnitPackage/msgPkg.pkg, line:4:1, endln:57:11
-      |vpiTaskFunc:
-      \_function: (msgPkg::getErrCnt), line:47:3, endln:49:14
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |vpiName:getErrCnt
-        |vpiFullName:msgPkg::getErrCnt
-        |vpiVisibility:1
-        |vpiReturn:
-        \_integer_var: (msgPkg::getErrCnt), line:47:12, endln:47:19
-        |vpiStmt:
-        \_assignment: , line:48:5, endln:48:23
-          |vpiParent:
-          \_function: (msgPkg::getErrCnt), line:47:3, endln:49:14
-          |vpiOpType:82
-          |vpiBlocking:1
-          |vpiRhs:
-          \_ref_obj: (work@simple_package.inst.getErrCnt.errCnt), line:48:17, endln:48:23
-            |vpiParent:
-            \_assignment: , line:48:5, endln:48:23
-            |vpiName:errCnt
-            |vpiFullName:work@simple_package.inst.getErrCnt.errCnt
-            |vpiActual:
-            \_integer_var: (work@simple_package.errCnt), line:5:12, endln:5:23
-          |vpiLhs:
-          \_ref_obj: (work@simple_package.inst.getErrCnt.getErrCnt), line:48:5, endln:48:14
-            |vpiParent:
-            \_assignment: , line:48:5, endln:48:23
-            |vpiName:getErrCnt
-            |vpiFullName:work@simple_package.inst.getErrCnt.getErrCnt
-            |vpiActual:
-            \_integer_var: (msgPkg::getErrCnt), line:47:12, endln:47:19
-        |vpiInstance:
-        \_package: msgPkg (msgPkg::), file:${SURELOG_DIR}/tests/UnitPackage/msgPkg.pkg, line:4:1, endln:57:11
-      |vpiTaskFunc:
-      \_function: (msgPkg::getWarnCnt), line:53:3, endln:55:14
-        |vpiParent:
-        \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-        |vpiName:getWarnCnt
-        |vpiFullName:msgPkg::getWarnCnt
-        |vpiVisibility:1
-        |vpiReturn:
-        \_integer_var: (msgPkg::getWarnCnt), line:53:12, endln:53:19
-        |vpiStmt:
-        \_assignment: , line:54:5, endln:54:25
-          |vpiParent:
-          \_function: (msgPkg::getWarnCnt), line:53:3, endln:55:14
-          |vpiOpType:82
-          |vpiBlocking:1
-          |vpiRhs:
-          \_ref_obj: (work@simple_package.inst.getWarnCnt.warnCnt), line:54:18, endln:54:25
-            |vpiParent:
-            \_assignment: , line:54:5, endln:54:25
-            |vpiName:warnCnt
-            |vpiFullName:work@simple_package.inst.getWarnCnt.warnCnt
-            |vpiActual:
-            \_integer_var: (work@simple_package.warnCnt), line:6:12, endln:6:23
-          |vpiLhs:
-          \_ref_obj: (work@simple_package.inst.getWarnCnt.getWarnCnt), line:54:5, endln:54:15
-            |vpiParent:
-            \_assignment: , line:54:5, endln:54:25
-            |vpiName:getWarnCnt
-            |vpiFullName:work@simple_package.inst.getWarnCnt.getWarnCnt
-            |vpiActual:
-            \_integer_var: (msgPkg::getWarnCnt), line:53:12, endln:53:19
-        |vpiInstance:
-        \_package: msgPkg (msgPkg::), file:${SURELOG_DIR}/tests/UnitPackage/msgPkg.pkg, line:4:1, endln:57:11
 \_weaklyReferenced:
 \_int_typespec: , line:8:3, endln:8:21
 \_bit_typespec: , line:12:6, endln:12:9
@@ -5705,59 +5227,12 @@ design: (work@simple_package)
   |vpiSigned:1
 \_bit_typespec: , line:7:3, endln:7:6
 \_string_typespec: , line:8:3, endln:8:28
-\_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-  |vpiParent:
-  \_gen_scope_array: (work@simple_package.inst), line:15:15, endln:17:6
-  |vpiFullName:work@simple_package.inst
-  |vpiParameter:
-  \_parameter: (work@simple_package.inst.SIZE), line:8:0
-  |vpiTypedef:
-  \_enum_typespec: (definesPkg::bool), line:10:3, endln:10:36
-  |vpiModule:
-  \_module_inst: work@simple_package.inst::M1 (work@simple_package.inst.u1), file:${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv, line:16:4, endln:16:12
-    |vpiParent:
-    \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-    |vpiName:u1
-    |vpiFullName:work@simple_package.inst.u1
-    |vpiParameter:
-    \_parameter: (work@simple_package.inst.u1.SIZE)
-    |vpiParamAssign:
-    \_param_assign: 
-      |vpiParent:
-      \_module_inst: work@simple_package.inst::M1 (work@simple_package.inst.u1), file:${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv, line:16:4, endln:16:12
-      |vpiRhs:
-      \_constant: , line:8:0, endln:8:0
-      |vpiLhs:
-      \_parameter: (work@simple_package.inst.u1.SIZE)
-    |vpiDefName:work@simple_package.inst::M1
-  |vpiTaskFunc:
-  \_task: (msgPkg::initMsgPkg), line:12:3, endln:15:10
-  |vpiTaskFunc:
-  \_task: (msgPkg::msg_info), line:19:3, endln:21:10
-  |vpiTaskFunc:
-  \_task: (msgPkg::msg_warn), line:25:3, endln:28:10
-  |vpiTaskFunc:
-  \_task: (msgPkg::msg_error), line:32:3, endln:36:10
-  |vpiTaskFunc:
-  \_task: (msgPkg::msg_fatal), line:40:3, endln:43:10
-  |vpiTaskFunc:
-  \_function: (msgPkg::getErrCnt), line:47:3, endln:49:14
-  |vpiTaskFunc:
-  \_function: (msgPkg::getWarnCnt), line:53:3, endln:55:14
-\_gen_scope_array: (work@simple_package.inst), line:15:15, endln:17:6
-  |vpiParent:
-  \_module_inst: work@simple_package (work@simple_package), file:${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv, line:11:1, endln:30:10
-  |vpiName:inst
-  |vpiFullName:work@simple_package.inst
-  |vpiGenScope:
-  \_gen_scope: (work@simple_package.inst), line:15:15, endln:17:6
-\_int_typespec: 
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0
 [  ERROR] : 0
-[WARNING] : 6
-[   NOTE] : 9
+[WARNING] : 3
+[   NOTE] : 7
 
 ============================== Begin Linting Results ==============================
 [LINT]: ${SURELOG_DIR}/tests/UnitPackage/simple_pkg.sv:22:3: Non synthesizable construct,

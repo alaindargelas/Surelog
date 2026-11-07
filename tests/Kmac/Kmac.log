@@ -1,4 +1,4 @@
-[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/Kmac/slpp_all/surelog.log".
+[INF:CM0023] Creating log file "/home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Kmac/slpp_all/surelog.log".
 AST_DEBUG_BEGIN
 LIB:  work
 FILE: ${SURELOG_DIR}/tests/Kmac/sha3_pkg.sv
@@ -671,70 +671,70 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 always                                                 1
-array_typespec                                        16
+array_typespec                                        10
 assignment                                             6
 begin                                                  1
 bit_select                                             5
 bit_typespec                                           4
 case_item                                              6
 case_stmt                                              1
-constant                                             311
+constant                                             263
 design                                                 1
 enum_const                                            20
 enum_typespec                                          4
 enum_var                                               2
 import_typespec                                        7
-int_typespec                                          72
+int_typespec                                          66
 logic_net                                              7
 logic_typespec                                        17
 logic_var                                              1
 module_inst                                            9
-operation                                             95
+operation                                             83
 package                                                2
 param_assign                                          28
 parameter                                             31
 port                                                   9
-range                                                 34
+range                                                 28
 ref_module                                             1
 ref_obj                                               43
-ref_typespec                                         138
+ref_typespec                                         126
 sys_func_call                                          4
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 always                                                 2
-array_typespec                                        16
+array_typespec                                        10
 assignment                                            12
 begin                                                  2
 bit_select                                            10
 bit_typespec                                           4
 case_item                                             12
 case_stmt                                              2
-constant                                             317
+constant                                             269
 design                                                 1
 enum_const                                            20
 enum_typespec                                          4
 enum_var                                               2
 import_typespec                                        7
-int_typespec                                          72
+int_typespec                                          66
 logic_net                                              7
 logic_typespec                                        17
 logic_var                                              1
 module_inst                                            9
-operation                                            100
+operation                                             88
 package                                                2
 param_assign                                          28
 parameter                                             31
 port                                                  13
-range                                                 34
+range                                                 28
 ref_module                                             1
 ref_obj                                               66
-ref_typespec                                         147
+ref_typespec                                         135
 sys_func_call                                          4
 === UHDM Object Stats End ===
-[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Kmac/slpp_all/surelog.uhdm ...
-[INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/Kmac/slpp_all/checker/surelog.chk.html ...
-[INF:UH0710] Loading UHDM DB: ${SURELOG_DIR}/build/regression/Kmac/slpp_all/surelog.uhdm ...
+[INF:UH0708] Writing UHDM DB: /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Kmac/slpp_all/surelog.uhdm ...
+[INF:UH0709] Writing UHDM Html Coverage: /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Kmac/slpp_all/checker/surelog.chk.html ...
+[INF:UH0710] Loading UHDM DB: /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Kmac/slpp_all/surelog.uhdm ...
 [INF:UH0711] Decompiling UHDM...
 ====== UHDM =======
 design: (work@kmac)

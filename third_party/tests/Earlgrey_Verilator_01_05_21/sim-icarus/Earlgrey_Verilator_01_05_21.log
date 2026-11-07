@@ -1,4 +1,4 @@
-[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21/slpp_all/surelog.log".
+[INF:CM0023] Creating log file "/home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Earlgrey_Verilator_01_05_21/slpp_all/surelog.log".
 [WRN:CM0010] Command line argument "--cc" ignored.
 [WRN:CM0010] Command line argument "-CFLAGS" ignored.
 [NTE:CM0009] Command line argument "../src/lowrisc_lint_comportable_0.1/tools/verilator/comportable.vlt" ignored.
@@ -75,7 +75,7 @@
 [NTE:CM0009] Command line argument "../src/lowrisc_dv_otbn_model_0.1/iss_wrapper.cc" ignored.
 [NTE:CM0009] Command line argument "../src/lowrisc_dv_otbn_model_0.1/otbn_trace_checker.cc" ignored.
 [NTE:CM0009] Command line argument "../src/lowrisc_systems_top_earlgrey_verilator_0.1/top_earlgrey_verilator.cc" ignored.
-Running: cd "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/sim-icarus"; "${SURELOG_DIR}/build/bin/surelog" -o "${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21" -nostdout -batch ${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21/slpp_all/mp_parser/pp_batch.txt
+Running: cd "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/sim-icarus"; "/home/alain/uhdm2rtlil/build/third_party/Surelog/bin/surelog" -o "/home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Earlgrey_Verilator_01_05_21" -nostdout -batch /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Earlgrey_Verilator_01_05_21/slpp_all/mp_parser/pp_batch.txt
 Surelog preproc status: 0
 [INF:PP0122] Preprocessing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_constants_top_pkg_0/rtl/top_pkg.sv".
 [INF:PP0122] Preprocessing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_dv_dpi_gpiodpi_0.1/gpiodpi.sv".
@@ -492,7 +492,7 @@ Surelog preproc status: 0
 [INF:PP0122] Preprocessing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_systems_top_earlgrey_0.1/rtl/autogen/top_earlgrey_rnd_cnst_pkg.sv".
 [INF:PP0122] Preprocessing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_systems_top_earlgrey_0.1/rtl/autogen/top_earlgrey.sv".
 [INF:PP0122] Preprocessing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_systems_top_earlgrey_verilator_0.1/rtl/top_earlgrey_verilator.sv".
-Running: cd "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/sim-icarus"; "${SURELOG_DIR}/build/bin/surelog" -o "${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21" -nostdout -batch ${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21/slpp_all/mp_preprocess/parser_batch.txt
+Running: cd "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/sim-icarus"; "/home/alain/uhdm2rtlil/build/third_party/Surelog/bin/surelog" -o "/home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Earlgrey_Verilator_01_05_21" -nostdout -batch /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Earlgrey_Verilator_01_05_21/slpp_all/mp_preprocess/parser_batch.txt
 Surelog parsing status: 0
 [INF:PA0201] Parsing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_constants_top_pkg_0/rtl/top_pkg.sv".
 PARSER CACHE USED FOR: ${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_constants_top_pkg_0/rtl/top_pkg.sv
@@ -14343,7 +14343,7 @@ there are 2 more instances of this message.
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 always                                              1957
 array_net                                             89
-array_typespec                                      3315
+array_typespec                                      3301
 array_var                                            477
 assignment                                         17408
 attribute                                             35
@@ -14360,7 +14360,7 @@ chandle_var                                           14
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                          897650
+constant                                          897487
 cont_assign                                        39270
 design                                                 1
 enum_const                                         19028
@@ -14384,7 +14384,7 @@ import_typespec                                      282
 include_file_info                                    184
 indexed_part_select                                 1916
 initial                                               30
-int_typespec                                       66493
+int_typespec                                       66449
 int_var                                              632
 integer_typespec                                    1727
 integer_var                                            8
@@ -14392,24 +14392,24 @@ interface_inst                                        10
 interface_typespec                                     1
 io_decl                                              433
 logic_net                                          68635
-logic_typespec                                    206416
+logic_typespec                                    206412
 logic_var                                          30508
 method_func_call                                       1
 module_inst                                        23076
 named_begin                                         1113
-operation                                         227439
+operation                                         227410
 package                                              142
 packed_array_net                                      30
 packed_array_typespec                                588
 packed_array_var                                      75
-param_assign                                      100427
-parameter                                         115383
+param_assign                                      100402
+parameter                                         115367
 part_select                                         4964
 port                                               91788
-range                                             157967
+range                                             157947
 ref_module                                          5040
 ref_obj                                           334166
-ref_typespec                                      410125
+ref_typespec                                      410051
 ref_var                                                2
 return_stmt                                          429
 string_typespec                                    27017
@@ -14428,7 +14428,7 @@ var_select                                          3914
 === UHDM Object Stats Begin (Elaborated Model) ===
 always                                             17644
 array_net                                             89
-array_typespec                                      3666
+array_typespec                                      3652
 array_var                                            749
 assignment                                        119759
 attribute                                           2915
@@ -14445,7 +14445,7 @@ chandle_var                                           14
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                          927182
+constant                                          927019
 cont_assign                                       147477
 design                                                 1
 enum_const                                         19033
@@ -14469,7 +14469,7 @@ import_typespec                                      282
 include_file_info                                    184
 indexed_part_select                                13347
 initial                                              634
-int_typespec                                       66505
+int_typespec                                       66461
 int_var                                             9266
 integer_typespec                                    1727
 integer_var                                           12
@@ -14477,24 +14477,24 @@ interface_inst                                        10
 interface_typespec                                     1
 io_decl                                            19631
 logic_net                                          68635
-logic_typespec                                    209168
+logic_typespec                                    209164
 logic_var                                          81122
 method_func_call                                       1
 module_inst                                        32615
 named_begin                                         3234
-operation                                         640204
+operation                                         640175
 package                                              142
 packed_array_net                                      30
 packed_array_typespec                                588
 packed_array_var                                      88
-param_assign                                      138737
-parameter                                         115383
+param_assign                                      138712
+parameter                                         115367
 part_select                                        22457
 port                                              224742
-range                                             166627
+range                                             166607
 ref_module                                          5040
 ref_obj                                          1094970
-ref_typespec                                      754493
+ref_typespec                                      754419
 ref_var                                                4
 return_stmt                                        15514
 string_typespec                                    27407
@@ -14509,7 +14509,7 @@ typespec_member                                    41235
 unsupported_typespec                                  26
 var_select                                         16611
 === UHDM Object Stats End ===
-[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21/slpp_all/surelog.uhdm ...
+[INF:UH0708] Writing UHDM DB: /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Earlgrey_Verilator_01_05_21/slpp_all/surelog.uhdm ...
 [  FATAL] : 0
 [ SYNTAX] : 0
 [  ERROR] : 0

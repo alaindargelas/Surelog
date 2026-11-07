@@ -37,6 +37,7 @@
 #include "Surelog/Design/FileContent.h"
 #include "Surelog/Design/Function.h"
 #include "Surelog/Design/LetStmt.h"
+#include "Surelog/Design/ParamAssign.h"
 #include "Surelog/Design/Parameter.h"
 #include "Surelog/Design/Task.h"
 #include "Surelog/Design/ValuedComponentI.h"
@@ -241,6 +242,44 @@ void DesignComponent::insertParameter(Parameter* p) {
     m_parameterMap.emplace(p->getName(), p);
   }
   m_orderedParameters.push_back(p);
+}
+
+// An explicit `import pkg::name;` replaces the clone a wildcard import left
+// for `name` (LRM 26.3): drop that clone from the parameter map, the ordered
+// list and the UHDM parameter vector.  A parameter the scope declares ITSELF
+// is never touched -- it already wins over every import.
+void DesignComponent::dropImportedParameter(std::string_view name) {
+  ParameterMap::iterator itr = m_parameterMap.find(name);
+  if (itr == m_parameterMap.end()) return;
+  Parameter* prev = itr->second;
+  if (prev->importedPackage().empty()) return;
+  m_parameterMap.erase(itr);
+  m_orderedParameters.erase(
+      std::remove(m_orderedParameters.begin(), m_orderedParameters.end(), prev),
+      m_orderedParameters.end());
+  dropImportedUhdmParameter(name);
+}
+
+// Same for the param_assign a wildcard import cloned for `name`.
+void DesignComponent::dropImportedParamAssign(std::string_view name) {
+  auto imported_lhs = [&](const UHDM::param_assign* pa) {
+    const UHDM::any* lhs = pa ? pa->Lhs() : nullptr;
+    if (!lhs || lhs->VpiName() != name) return false;
+    if (lhs->UhdmType() == UHDM::uhdmparameter)
+      return !((const UHDM::parameter*)lhs)->VpiImported().empty();
+    if (lhs->UhdmType() == UHDM::uhdmtype_parameter)
+      return !((const UHDM::type_parameter*)lhs)->VpiImported().empty();
+    return false;
+  };
+  for (auto it = m_paramAssigns.begin(); it != m_paramAssigns.end();) {
+    it = imported_lhs((*it)->getUhdmParamAssign()) ? m_paramAssigns.erase(it)
+                                                   : it + 1;
+  }
+  if (std::vector<UHDM::param_assign*>* pas = getParam_assigns()) {
+    for (auto it = pas->begin(); it != pas->end();) {
+      it = imported_lhs(*it) ? pas->erase(it) : it + 1;
+    }
+  }
 }
 
 // Remove the UHDM nodes an earlier `import pkg::*` cloned into this scope for

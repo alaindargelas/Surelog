@@ -2048,9 +2048,36 @@ std::vector<std::string_view> DesignElaboration::collectParams_(
       pack_imports.push_back(import);
     }
   }
+  // `import pkg::name;` brings in ONE name, and that name shadows the same
+  // name from any wildcard import (LRM 26.3), so the explicit imports are
+  // applied last and a wildcard import never overwrites one of them.
+  auto explicit_item = [](const FileCNodeId& imp) -> std::string_view {
+    NodeId pack_id = imp.fC->Child(imp.nodeId);
+    if (NodeId objId = imp.fC->Sibling(pack_id);
+        objId && imp.fC->Type(objId) == VObjectType::slStringConst)
+      return imp.fC->SymName(objId);
+    return std::string_view();
+  };
+  std::set<std::string_view> explicit_names;
+  for (const auto& pack_import : pack_imports) {
+    std::string_view item = explicit_item(pack_import);
+    if (!item.empty()) explicit_names.emplace(item);
+  }
+  {
+    // FileCNodeId is immutable, so order by rebuilding: wildcards, then the
+    // explicit items, each group in source order.
+    std::vector<FileCNodeId> ordered;
+    ordered.reserve(pack_imports.size());
+    for (const auto& imp : pack_imports)
+      if (explicit_item(imp).empty()) ordered.push_back(imp);
+    for (const auto& imp : pack_imports)
+      if (!explicit_item(imp).empty()) ordered.push_back(imp);
+    pack_imports.swap(ordered);
+  }
   for (const auto& pack_import : pack_imports) {
     NodeId pack_id = pack_import.fC->Child(pack_import.nodeId);
     const std::string_view pack_name = pack_import.fC->SymName(pack_id);
+    const std::string_view only = explicit_item(pack_import);
     Package* def = design->getPackage(pack_name);
     if (def) {
       auto& paramSet = def->getObjects(VObjectType::paParam_assignment);
@@ -2060,6 +2087,11 @@ std::vector<std::string_view> DesignElaboration::collectParams_(
 
         NodeId ident = packageFile->Child(param);
         const std::string_view name = packageFile->SymName(ident);
+        if (only.empty()) {
+          if (explicit_names.count(name)) continue;
+        } else if (name != only) {
+          continue;
+        }
         if (UHDM::expr* exp = def->getComplexValue(name)) {
           UHDM::Serializer& s = m_compileDesign->getSerializer();
           UHDM::ElaboratorContext elaboratorContext(&s, false, true);

@@ -38,6 +38,7 @@
 #include <cstdint>
 #include <functional>
 #include <map>
+#include <set>
 #include <string>
 #include <string_view>
 #include <utility>
@@ -156,6 +157,17 @@ class DesignComponent : public ValuedComponentI, public PortNetHolder {
   Parameter* getParameter(std::string_view name) const;
   void insertParameter(Parameter* p);
   void dropImportedUhdmParameter(std::string_view name);
+  // LRM 26.3: an EXPLICIT `import pkg::name;` shadows the same name made
+  // visible by a wildcard import (in either order).  These drop the clones a
+  // wildcard import left for `name` so the explicit one is the only copy.
+  void dropImportedParameter(std::string_view name);
+  void dropImportedParamAssign(std::string_view name);
+  void addExplicitImport(std::string_view name) {
+    m_explicitImports.emplace(name);
+  }
+  bool isExplicitImport(std::string_view name) const {
+    return m_explicitImports.find(name) != m_explicitImports.end();
+  }
   const ParameterVec& getOrderedParameters() const {
     return m_orderedParameters;
   }
@@ -260,6 +272,7 @@ class DesignComponent : public ValuedComponentI, public PortNetHolder {
   ParameterMap m_parameterMap;
   ParameterVec m_orderedParameters;
   ParamAssignVec m_paramAssigns;
+  std::set<std::string, std::less<>> m_explicitImports;
   UHDM::instance* m_instance;
   std::vector<std::pair<std::string, ExprEval>> m_scheduledParamExprEval;
   const DesignElement* m_designElement = nullptr;

@@ -195,11 +195,19 @@ bool CompileHelper::importPackage(DesignComponent* scope, Design* design,
       scope->needLateTypedefBinding(var);
     }
 
+    // LRM 26.3: an explicit `import pkg::name;` shadows a wildcard import of
+    // the same name whichever comes first -- `import reg_pkg::*; import
+    // macro_pkg::OtpWidth;` must read macro_pkg's OtpWidth (opentitan
+    // otp_ctrl_dai: both packages declare it, 16 vs 2, and the module's
+    // `32 / OtpWidth - 1` folded against reg_pkg's).
+    const bool explicit_import = !object_name.empty();
     // Type parameters
     auto& paramSet = def->getParameterMap();
     for (auto& param : paramSet) {
-      if (!object_name.empty()) {
+      if (explicit_import) {
         if (param.first != object_name) continue;
+      } else if (scope->isExplicitImport(param.first)) {
+        continue;
       }
       // A parameter the scope declares ITSELF is not shadowed by the import
       // (LRM 26.3); the reverse order (import first) is resolved in
@@ -207,6 +215,7 @@ bool CompileHelper::importPackage(DesignComponent* scope, Design* design,
       if (Parameter* local = scope->getParameter(param.first);
           local && local->importedPackage().empty())
         continue;
+      if (explicit_import) scope->dropImportedParameter(param.first);
       Parameter* orig = param.second;
       Parameter* clone = new Parameter(*orig);
       clone->setImportedPackage(pack_name);
@@ -247,15 +256,23 @@ bool CompileHelper::importPackage(DesignComponent* scope, Design* design,
     // Regular parameter
     auto& params = def->getParamAssignVec();
     for (ParamAssign* orig : params) {
-      if (!object_name.empty()) {
-        UHDM::param_assign* pass = orig->getUhdmParamAssign();
-        if (pass->Lhs()->VpiName() != object_name) continue;
-      }
       if (const UHDM::param_assign* pass = orig->getUhdmParamAssign();
           pass && pass->Lhs()) {
-        if (Parameter* local = scope->getParameter(pass->Lhs()->VpiName());
+        const std::string_view pname = pass->Lhs()->VpiName();
+        if (explicit_import) {
+          if (pname != object_name) continue;
+        } else if (scope->isExplicitImport(pname)) {
+          continue;
+        }
+        if (Parameter* local = scope->getParameter(pname);
             local && local->importedPackage().empty())
           continue;
+        if (explicit_import) {
+          scope->dropImportedParamAssign(pname);
+          scope->addExplicitImport(pname);
+        }
+      } else if (explicit_import) {
+        continue;
       }
       ParamAssign* clone = new ParamAssign(*orig);
       scope->addParamAssign(clone);
@@ -295,16 +312,20 @@ bool CompileHelper::importPackage(DesignComponent* scope, Design* design,
     // Values (from enum declarations...)
     auto& values = def->getMappedValues();
     for (auto& mvalue : values) {
-      if (!object_name.empty()) {
+      if (explicit_import) {
         if (mvalue.first != object_name) continue;
+      } else if (scope->isExplicitImport(mvalue.first)) {
+        continue;
       }
       if (mvalue.second.first->isValid())
         scope->setValue(mvalue.first, m_exprBuilder.clone(mvalue.second.first),
                         m_exprBuilder, mvalue.second.second);
     }
     for (auto& cvalue : def->getComplexValues()) {
-      if (!object_name.empty()) {
+      if (explicit_import) {
         if (cvalue.first != object_name) continue;
+      } else if (scope->isExplicitImport(cvalue.first)) {
+        continue;
       }
       scope->setComplexValue(cvalue.first, cvalue.second);
     }
