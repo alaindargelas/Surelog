@@ -293,7 +293,7 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 begin                                                  4
-constant                                              42
+constant                                              40
 design                                                 1
 gen_if                                                 3
 gen_region                                             2
@@ -308,12 +308,12 @@ parameter                                              5
 range                                                  3
 ref_module                                             9
 ref_obj                                                3
-ref_typespec                                          10
+ref_typespec                                           8
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 begin                                                  4
-constant                                              42
+constant                                              40
 design                                                 1
 gen_if                                                 3
 gen_region                                             2
@@ -328,7 +328,7 @@ parameter                                              5
 range                                                  3
 ref_module                                             9
 ref_obj                                                3
-ref_typespec                                          28
+ref_typespec                                          26
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/DefParamIndex/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/DefParamIndex/slpp_all/checker/surelog.chk.html ...

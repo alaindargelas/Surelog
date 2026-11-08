@@ -2455,73 +2455,31 @@ std::vector<std::string_view> DesignElaboration::collectParams_(
     }
   }
 
-  // Defparams
-  VObjectTypeUnorderedSet types = {VObjectType::paDefparam_assignment};
-  VObjectTypeUnorderedSet stopPoints = {
-      VObjectType::paConditional_generate_construct,
-      VObjectType::paGenerate_module_conditional_statement,
-      VObjectType::paGenerate_interface_conditional_statement,
-      VObjectType::paLoop_generate_construct,
-      VObjectType::paGenerate_module_loop_statement,
-      VObjectType::paGenerate_interface_loop_statement,
-      VObjectType::paPar_block,
-      VObjectType::paSeq_block,
-      VObjectType::paModule_declaration};
-
-  std::vector<NodeId> defParams = fC->sl_collect_all(nodeId, types, stopPoints);
-  for (auto defParam : defParams) {
-    NodeId hIdent = fC->Child(defParam);
-    NodeId var;
-    fC->Child(hIdent);
-    if (fC->Type(hIdent) == VObjectType::paHierarchical_identifier)
-      var = fC->Child(hIdent);
-    else
-      var = hIdent;
-    NodeId value = fC->Sibling(hIdent);
-    std::string fullPath;
-    std::string path;
-    while (var) {
-      if (fC->Type(var) == VObjectType::slStringConst) {
-        fullPath += fC->SymName(var);
-      } else if (fC->Type(var) == VObjectType::paConstant_expression) {
-        NodeId Constant_primary = fC->Child(var);
-        NodeId Primary_literal = fC->Child(Constant_primary);
-        NodeId IntConst = fC->Child(Primary_literal);
-        const std::string_view name = fC->SymName(IntConst);
-        fullPath.append("[").append(name).append("]");
-      }
-      var = fC->Sibling(var);
-      bool isString = false;
-      if (fC->Type(var) == VObjectType::slStringConst) {
-        isString = true;
-      }
-      if (var && isString) {
-        fullPath += ".";
-      }
+  // A DEFPARAM targeting THIS instance is an override like `#(...)`: apply it
+  // BEFORE the default assignments below, so a parameter whose default names
+  // it (`parameter Width = 32, Set = Width;`, OpenPiton's Reverse) folds
+  // against the defparam'd value.  It used to be applied only after this
+  // function returned, by which time `Set` had already folded to the default
+  // 32 -- UAReceiver's RxReverse (`defparam RxReverse.Width = Width;`, 8) kept
+  // Set = 32 and read its input from the wrong bits.  The defparam's own value
+  // was evaluated in the PARENT, which elaborates first.
+  if (module) {
+    Design* dpDesign = m_compileDesign->getCompiler()->getDesign();
+    for (FileCNodeId param :
+         module->getObjects(VObjectType::paParam_assignment)) {
+      NodeId ident = param.fC->Child(param.nodeId);
+      const std::string_view name = param.fC->SymName(ident);
+      if (overridenParams.find(name) != overridenParams.end()) continue;
+      DefParam* defparam = dpDesign->getDefParam(
+          StrCat(instance->getFullPathName(), ".", name));
+      if (defparam == nullptr) continue;
+      Value* value = defparam->getValue();
+      if (value == nullptr || !value->isValid()) continue;
+      instance->setValue(name, value, m_exprBuilder, param.fC->Line(ident));
+      overridenParams.emplace(name);
     }
-    for (char c : fullPath) {
-      if (c == '.') break;
-      path += c;
-    }
-    std::string pathRoot = StrCat(fC->getLibrary()->getName(), "@", path);
-    path = fullPath;
-
-    // path refers to a sub instance
-    std::string prefix;
-    if (design->findInstance(pathRoot)) {
-      std::string p = design->findInstance(pathRoot)->getFullPathName();
-      if (p.find('.') != std::string::npos) {
-        prefix.assign(instance->getFullPathName()).append(".");
-      } else {
-        prefix.assign(fC->getLibrary()->getName()).append("@");
-      }
-    } else {
-      prefix = instance->getFullPathName() + ".";
-    }
-    path = StrCat(prefix, path);
-    Value* val = m_exprBuilder.evalExpr(fC, value, instance);
-    design->addDefParam(path, fC, hIdent, val);
   }
+
 
   if (module) {
     for (FileCNodeId param :
@@ -2739,6 +2697,79 @@ std::vector<std::string_view> DesignElaboration::collectParams_(
         }
       }
     }
+  }
+  // Defparams -- evaluated AFTER the module's own parameter assignments: a
+  // defparam's value is an expression in THIS instance's scope, and a
+  // localparam it names (`defparam TxDivCounter.Width = DivWidth;`, OpenPiton
+  // UATransmitter, where DivWidth = `log2(ClockFreq / Baud)) has no value
+  // until the loop above has run.  Evaluated first, evalExpr answered an
+  // invalid value, the defparam was never applied, and the child kept its
+  // default Width = 32.
+  VObjectTypeUnorderedSet types = {VObjectType::paDefparam_assignment};
+  VObjectTypeUnorderedSet stopPoints = {
+      VObjectType::paConditional_generate_construct,
+      VObjectType::paGenerate_module_conditional_statement,
+      VObjectType::paGenerate_interface_conditional_statement,
+      VObjectType::paLoop_generate_construct,
+      VObjectType::paGenerate_module_loop_statement,
+      VObjectType::paGenerate_interface_loop_statement,
+      VObjectType::paPar_block,
+      VObjectType::paSeq_block,
+      VObjectType::paModule_declaration};
+
+  std::vector<NodeId> defParams = fC->sl_collect_all(nodeId, types, stopPoints);
+  for (auto defParam : defParams) {
+    NodeId hIdent = fC->Child(defParam);
+    NodeId var;
+    fC->Child(hIdent);
+    if (fC->Type(hIdent) == VObjectType::paHierarchical_identifier)
+      var = fC->Child(hIdent);
+    else
+      var = hIdent;
+    NodeId value = fC->Sibling(hIdent);
+    std::string fullPath;
+    std::string path;
+    while (var) {
+      if (fC->Type(var) == VObjectType::slStringConst) {
+        fullPath += fC->SymName(var);
+      } else if (fC->Type(var) == VObjectType::paConstant_expression) {
+        NodeId Constant_primary = fC->Child(var);
+        NodeId Primary_literal = fC->Child(Constant_primary);
+        NodeId IntConst = fC->Child(Primary_literal);
+        const std::string_view name = fC->SymName(IntConst);
+        fullPath.append("[").append(name).append("]");
+      }
+      var = fC->Sibling(var);
+      bool isString = false;
+      if (fC->Type(var) == VObjectType::slStringConst) {
+        isString = true;
+      }
+      if (var && isString) {
+        fullPath += ".";
+      }
+    }
+    for (char c : fullPath) {
+      if (c == '.') break;
+      path += c;
+    }
+    std::string pathRoot = StrCat(fC->getLibrary()->getName(), "@", path);
+    path = fullPath;
+
+    // path refers to a sub instance
+    std::string prefix;
+    if (design->findInstance(pathRoot)) {
+      std::string p = design->findInstance(pathRoot)->getFullPathName();
+      if (p.find('.') != std::string::npos) {
+        prefix.assign(instance->getFullPathName()).append(".");
+      } else {
+        prefix.assign(fC->getLibrary()->getName()).append("@");
+      }
+    } else {
+      prefix = instance->getFullPathName() + ".";
+    }
+    path = StrCat(prefix, path);
+    Value* val = m_exprBuilder.evalExpr(fC, value, instance);
+    design->addDefParam(path, fC, hIdent, val);
   }
   return params;
 }
