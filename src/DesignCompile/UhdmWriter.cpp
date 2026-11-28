@@ -3436,6 +3436,10 @@ void UhdmWriter::lateBinding(Serializer& s, DesignComponent* mod, scope* m) {
     }
 
     const any* parent = ref->VpiParent();
+    // Set when an enclosing foreach declares the name but its loop variable
+    // is not bound yet (still a reference): the elaborator binds it later,
+    // so the name is neither undefined nor an implicit net.
+    bool foreachLoopVar = false;
     while (parent) {
       if (parent->UhdmType() == uhdmdesign) {
         design* d = (design*)parent;
@@ -3604,13 +3608,17 @@ void UhdmWriter::lateBinding(Serializer& s, DesignComponent* mod, scope* m) {
         if (vars) {
           for (auto var : *vars) {
             if (var->VpiName() == name) {
-              if (var->UhdmType() == uhdmref_var) continue;
-              if (var->UhdmType() == uhdmref_obj) continue;
+              if (var->UhdmType() == uhdmref_var ||
+                  var->UhdmType() == uhdmref_obj) {
+                foreachLoopVar = true;
+                continue;
+              }
               ref->Actual_group((expr*)var);
               break;
             }
           }
         }
+        if (foreachLoopVar && !ref->Actual_group()) break;
       } else if (parent->UhdmType() == uhdmgen_for) {
         gen_for* for_stmt = (gen_for*)parent;
         if (VectorOfany* inits = for_stmt->VpiForInitStmts()) {
@@ -3815,7 +3823,7 @@ void UhdmWriter::lateBinding(Serializer& s, DesignComponent* mod, scope* m) {
       if (ref->Actual_group()) break;
       parent = parent->VpiParent();
     }
-    if (ref->Actual_group()) continue;
+    if (ref->Actual_group() || foreachLoopVar) continue;
     if (m && (m->UhdmType() == uhdmmodule_inst)) {
       module_inst* minst = (module_inst*)m;
       if (minst->Interfaces()) {
