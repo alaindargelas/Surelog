@@ -87,6 +87,7 @@ class CompileModule final {
   void importUnitScopeSignals_();
   void checkDuplicateSignals_();
   void checkPortNetConsistency_();
+  void checkNonAnsiPortRedeclaration_();
   // LRM 6.20.5: a specparam may not appear in a parameter value or any
   // other general constant expression (only in specify blocks and delays).
   void checkSpecparamUse_(const FileContent* fC, NodeId expr);

@@ -1839,6 +1839,8 @@ n<> u<142> t<Tf_item_declaration> p<386> c<141> s<384> l<28>
           const bool typedPort =
               fC->Type(Data_type) == VObjectType::paData_type;
           if (typedPort && declaredVars.count(name)) redefined(nameId);
+          // `input x; input x;`: a second direction declaration.
+          if (ioMap.count(name)) redefined(nameId);
           if (typedPort) typedIos.emplace(name);
           io_decl* decl = s.MakeIo_decl();
           ios->push_back(decl);

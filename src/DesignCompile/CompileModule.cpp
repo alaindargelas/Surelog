@@ -181,6 +181,7 @@ bool CompileModule::compile() {
       importUnitScopeSignals_();
       checkDuplicateSignals_();
       checkPortNetConsistency_();
+      checkNonAnsiPortRedeclaration_();
       checkGenvarLoops_();
       if (!checkModule_()) return false;
       break;
@@ -440,6 +441,154 @@ void CompileModule::checkDuplicateSignals_() {
                   m_symbols->registerSymbol(prev->getName()));
     Error err(ErrorDefinition::COMP_MULTIPLY_DEFINED_SIGNAL, loc1, loc2);
     m_errors->addError(err);
+  }
+}
+
+// A non-ANSI port is declared by at most one direction declaration and at
+// most one net or variable declaration, and a direction declaration that
+// carries a net type or a data type declares it completely (LRM 23.2.2.1):
+//   input x;  input x;              // two direction declarations
+//   input x;  wire x;  reg x;       // two net / variable declarations
+//   input integer x;  wire x;       // already completely declared
+//   real x;  output integer x;      // (in either order)
+// Only the module's own top-level items are looked at: a generate block or
+// a task declares a NEW `x` in its own scope.
+void CompileModule::checkNonAnsiPortRedeclaration_() {
+  if (m_module->m_fileContents.empty()) return;
+  const FileContent* fC = m_module->m_fileContents[0];
+  const NodeId modId = m_module->m_nodeIds[0];
+  struct Decls {
+    std::vector<NodeId> dirs;    // direction declarations
+    std::vector<NodeId> bodies;  // net / variable declarations
+    NodeId complete;             // a direction declaration with a type
+  };
+  std::map<std::string_view, Decls> decls;
+  std::vector<std::string_view> order;
+  auto entry = [&](std::string_view name) -> Decls& {
+    auto [it, inserted] = decls.try_emplace(name);
+    if (inserted) order.push_back(name);
+    return it->second;
+  };
+  // Names listed by a List_of_*_identifiers / List_of_*_assignments node.
+  auto names = [fC](NodeId list, std::vector<NodeId>& out) {
+    for (NodeId c = fC->Child(list); c; c = fC->Sibling(c)) {
+      if (fC->Type(c) == VObjectType::slStringConst) {
+        out.push_back(c);
+      } else if (NodeId n = fC->Child(c);
+                 n && fC->Type(n) == VObjectType::slStringConst) {
+        out.push_back(n);  // Net_decl_assignment / Variable_decl_assignment
+      }
+    }
+  };
+  for (NodeId item = fC->Child(modId); item; item = fC->Sibling(item)) {
+    if (fC->Type(item) != VObjectType::paModule_item) continue;
+    NodeId n = fC->Child(item);
+    if (fC->Type(n) == VObjectType::paPort_declaration) {
+      NodeId dir = fC->Child(n);
+      while (dir && fC->Type(dir) == VObjectType::paAttribute_instance)
+        dir = fC->Sibling(dir);
+      const VObjectType dt = fC->Type(dir);
+      if (dt != VObjectType::paInput_declaration &&
+          dt != VObjectType::paOutput_declaration &&
+          dt != VObjectType::paInout_declaration)
+        continue;
+      bool typed = false;
+      NodeId list;
+      for (NodeId c = fC->Child(dir); c; c = fC->Sibling(c)) {
+        const VObjectType ct = fC->Type(c);
+        if (ct == VObjectType::paNet_port_type ||
+            ct == VObjectType::paVariable_port_type) {
+          for (NodeId t = fC->Child(c); t; t = fC->Sibling(t)) {
+            const VObjectType tt = fC->Type(t);
+            if (tt == VObjectType::paData_type_or_implicit) {
+              NodeId d = fC->Child(t);
+              if (d && fC->Type(d) == VObjectType::paData_type) typed = true;
+            } else if (tt != VObjectType::paPacked_dimension &&
+                       tt != VObjectType::paSigning_Signed &&
+                       tt != VObjectType::paSigning_Unsigned) {
+              typed = true;  // a net type keyword or a data type
+            }
+          }
+        } else if (ct == VObjectType::paList_of_port_identifiers ||
+                   ct == VObjectType::paList_of_variable_identifiers ||
+                   ct == VObjectType::paList_of_variable_port_identifiers) {
+          list = c;
+        }
+      }
+      if (!list) continue;
+      std::vector<NodeId> ids;
+      names(list, ids);
+      for (NodeId id : ids) {
+        Decls& d = entry(fC->SymName(id));
+        d.dirs.push_back(id);
+        if (typed && !d.complete) d.complete = id;
+      }
+      continue;
+    }
+    // Module_item > Non_port_module_item > Module_or_generate_item >
+    // Module_common_item > Module_or_generate_item_declaration >
+    // Package_or_generate_item_declaration > Net/Data_declaration
+    while (n) {
+      const VObjectType t = fC->Type(n);
+      if (t != VObjectType::paNon_port_module_item &&
+          t != VObjectType::paModule_or_generate_item &&
+          t != VObjectType::paModule_common_item &&
+          t != VObjectType::paModule_or_generate_item_declaration &&
+          t != VObjectType::paPackage_or_generate_item_declaration)
+        break;
+      n = fC->Child(n);
+    }
+    if (!n) continue;
+    NodeId list;
+    if (fC->Type(n) == VObjectType::paNet_declaration) {
+      for (NodeId c = fC->Child(n); c; c = fC->Sibling(c))
+        if (fC->Type(c) == VObjectType::paList_of_net_decl_assignments)
+          list = c;
+    } else if (fC->Type(n) == VObjectType::paData_declaration) {
+      NodeId v = fC->Child(n);
+      while (v && (fC->Type(v) == VObjectType::paConst_type ||
+                   fC->Type(v) == VObjectType::paVar_type ||
+                   fC->Type(v) == VObjectType::paLifetime_Static ||
+                   fC->Type(v) == VObjectType::paLifetime_Automatic))
+        v = fC->Sibling(v);
+      if (!v || fC->Type(v) != VObjectType::paVariable_declaration) continue;
+      for (NodeId c = fC->Child(v); c; c = fC->Sibling(c))
+        if (fC->Type(c) == VObjectType::paList_of_variable_decl_assignments)
+          list = c;
+    }
+    if (!list) continue;
+    std::vector<NodeId> ids;
+    names(list, ids);
+    for (NodeId id : ids) {
+      entry(fC->SymName(id)).bodies.push_back(id);
+    }
+  }
+  auto report = [&](NodeId id, NodeId prev) {
+    Location loc1(fC->getFileId(id), fC->Line(id), fC->Column(id),
+                  m_symbols->registerSymbol(fC->SymName(id)));
+    Location loc2(fC->getFileId(prev), fC->Line(prev), fC->Column(prev),
+                  m_symbols->registerSymbol(fC->SymName(prev)));
+    Error err(ErrorDefinition::COMP_MULTIPLY_DEFINED_SIGNAL, loc1, loc2);
+    m_errors->addError(err);
+  };
+  auto before = [fC](NodeId a, NodeId b) {
+    return fC->Line(a) < fC->Line(b) ||
+           (fC->Line(a) == fC->Line(b) && fC->Column(a) < fC->Column(b));
+  };
+  for (std::string_view name : order) {
+    const Decls& d = decls[name];
+    if (d.dirs.empty()) continue;  // not a port: checkDuplicateSignals_
+    if (d.dirs.size() > 1) {
+      report(d.dirs[1], d.dirs[0]);
+    } else if (d.bodies.size() > 1) {
+      report(d.bodies[1], d.bodies[0]);
+    } else if (d.complete && !d.bodies.empty()) {
+      NodeId b = d.bodies[0];
+      if (before(b, d.complete))
+        report(d.complete, b);
+      else
+        report(b, d.complete);
+    }
   }
 }
 
