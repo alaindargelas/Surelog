@@ -1388,7 +1388,12 @@ UHDM::typespec* CompileHelper::compileTypespec(
         }
         Value* value = nullptr;
         if (enumValueId) {
-          value = m_exprBuilder.evalExpr(fC, enumValueId, component);
+          // Muted: a module parameter (`enum {A = P}`) is not a value of
+          // the module DEFINITION, and was reported as an undefined
+          // variable (EL0514) although the fallback below resolves it.
+          value = m_exprBuilder.evalExpr(
+              fC, enumValueId,
+              instance ? instance : (ValuedComponentI*)component, true);
           // ExprBuilder has no size-cast (`(W+1)'('d4)`, even `3'('d2)`);
           // forcing its invalid result valid published 0 for every such
           // member (SCR1 scr1_dm's type_scr1_abs_err_e).  Reduce the
@@ -1410,6 +1415,11 @@ UHDM::typespec* CompileHelper::compileTypespec(
               }
             }
           }
+          // Still unresolved: report it (a genuinely undeclared name).
+          if (!value->isValid())
+            m_exprBuilder.getValueFactory().deleteValue(m_exprBuilder.evalExpr(
+                fC, enumValueId,
+                instance ? instance : (ValuedComponentI*)component, false));
           value->setValid();
         } else {
           value = m_exprBuilder.getValueFactory().newLValue();

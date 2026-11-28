@@ -901,7 +901,10 @@ const DataType* CompileHelper::compileTypeDef(DesignComponent* scope,
             if (!invalidValue) val = v;
           }
         } else {
-          value = m_exprBuilder.evalExpr(fC, enumValueId, scope);
+          // Muted: a module parameter (`enum {A = P}`) is not a value of
+          // the module DEFINITION and was reported as an undefined variable
+          // (EL0514) although the fallback below resolves it.
+          value = m_exprBuilder.evalExpr(fC, enumValueId, scope, true);
           // ExprBuilder has no size-cast (`(W+1)'('d4)`, even `3'('d2)`)
           // and forcing the invalid result valid published 0 for every such
           // member: SCR1's scr1_dm type_scr1_abs_err_e ABS_ERR_CMD /
@@ -929,6 +932,10 @@ const DataType* CompileHelper::compileTypeDef(DesignComponent* scope,
               }
             }
           }
+          // Still unresolved: report it (a genuinely undeclared name).
+          if (!value->isValid())
+            m_exprBuilder.getValueFactory().deleteValue(
+                m_exprBuilder.evalExpr(fC, enumValueId, scope, false));
           value->setValid();
         }
       }
