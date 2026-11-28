@@ -2104,8 +2104,22 @@ bool CompileModule::checkModule_() {
   int32_t countMissingDirection = 0;
   Location* missingTypeLoc = nullptr;
   Location* missingDirectionLoc = nullptr;
+  // A name listed twice in a non-ANSI port list (`module id(a, a);
+  // inout a;`) is one port: only one of its occurrences receives the
+  // direction declaration.
+  std::set<std::string_view> directed;
+  for (Signal* port : m_module->m_ports)
+    if (port->getDirection() != VObjectType::slNoType)
+      directed.insert(port->getName());
   for (Signal* port : m_module->m_ports) {
     if (port->isInterface()) continue;
+    if (port->getDirection() == VObjectType::slNoType &&
+        directed.count(port->getName()))
+      continue;
+    // An empty port (`module m(a, , b);`) names nothing to declare.
+    if (port->getName().empty() ||
+        port->getName() == SymbolTable::getBadSymbol())
+      continue;
     const FileContent* fC = port->getFileContent();
     NodeId portId = port->getNodeId();
     if (fC->Type(portId) == VObjectType::paPort) {
