@@ -915,6 +915,54 @@ VectorOfany* CompileHelper::compileStmt(DesignComponent* component,
                                        compileDesign, reduce, pstmt, instance);
       break;
     }
+    case VObjectType::paNet_declaration: {
+      // `T x;` with a user type name T (a typedef or a type parameter)
+      // parses as a net declaration.  Inside a generate block of a module
+      // DEFINITION this switch had no case for it, so the variable was
+      // dropped while the statements using it were kept: their references
+      // then resolved to nothing (UH0737 on CVA6's hpdcache_memctrl,
+      // `hpdcache_data_row_enable_t data_read_sel_q;` in a disabled
+      // `if (HPDcacheCfg.u.eccEn)` branch).  Compile it like a variable
+      // declaration.  Net-type keywords (`wire T x;`) are left alone.
+      NodeId typeId = fC->Child(the_stmt);
+      if (fC->Type(typeId) != VObjectType::slStringConst) break;
+      NodeId listId = fC->Sibling(typeId);
+      if (fC->Type(listId) != VObjectType::paList_of_net_decl_assignments)
+        break;
+      for (NodeId declId = fC->Child(listId); declId;
+           declId = fC->Sibling(declId)) {
+        NodeId nameId = fC->Child(declId);
+        if (fC->Type(nameId) != VObjectType::slStringConst) continue;
+        variables* var =
+            (variables*)compileVariable(component, fC, typeId, compileDesign,
+                                        Reduce::No, pstmt, instance, true);
+        if (var == nullptr) {
+          logic_var* lvar = s.MakeLogic_var();
+          var = lvar;
+        }
+        fC->populateCoreMembers(nameId, nameId, var);
+        var->VpiName(fC->SymName(nameId));
+        if (results == nullptr) results = s.MakeAnyVec();
+        assignment* assign_stmt = s.MakeAssignment();
+        assign_stmt->VpiOpType(vpiAssignmentOp);
+        assign_stmt->VpiBlocking(true);
+        var->VpiParent(assign_stmt);
+        assign_stmt->Lhs(var);
+        fC->populateCoreMembers(declId, declId, assign_stmt);
+        results->push_back(assign_stmt);
+        NodeId exprId = fC->Sibling(nameId);
+        while (exprId && fC->Type(exprId) != VObjectType::paExpression)
+          exprId = fC->Sibling(exprId);
+        if (exprId) {
+          if (expr* rhs =
+                  (expr*)compileExpression(component, fC, exprId, compileDesign,
+                                           Reduce::No, assign_stmt, instance)) {
+            assign_stmt->Rhs(rhs);
+          }
+        }
+      }
+      break;
+    }
     case VObjectType::slStringConst: {
       if (VectorOfany* stmts =
               compileStmt(component, fC, fC->Sibling(the_stmt), compileDesign,
