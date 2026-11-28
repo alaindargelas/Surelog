@@ -120,7 +120,10 @@ bool checkValidBuiltinClass_(std::string_view classname,
   bool validFunction = true;
   ClassDefinition* array =
       design->getClassDefinition(StrCat("builtin::", classname));
-  if (array == nullptr) return false;
+  // Under -nobuiltin the builtin classes are not compiled: there is nothing
+  // to check the call against, which does not make `$display` (or
+  // `q.push_back`) in a class method undefined.
+  if (array == nullptr) return true;
   Function* func = array->getFunction(function);
   if (func)
     stmt->setFunction(func);
