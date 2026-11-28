@@ -416,6 +416,7 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 array_net                                              2
+assignment                                             1
 bit_typespec                                           2
 class_defn                                             8
 class_typespec                                         4
@@ -444,15 +445,18 @@ param_assign                                           4
 parameter                                              4
 range                                                  2
 ref_obj                                                1
-ref_typespec                                          35
+ref_typespec                                          36
+ref_var                                                1
 struct_net                                             2
 struct_typespec                                        2
 task                                                   9
 typespec_member                                        8
+unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 array_net                                              2
+assignment                                             1
 bit_typespec                                           2
 class_defn                                             8
 class_typespec                                         4
@@ -481,11 +485,13 @@ param_assign                                           4
 parameter                                              4
 range                                                  2
 ref_obj                                                1
-ref_typespec                                          40
+ref_typespec                                          41
+ref_var                                                1
 struct_net                                             2
 struct_typespec                                        2
 task                                                  18
 typespec_member                                        8
+unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/IfGenTypeBinding/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/IfGenTypeBinding/slpp_all/checker/surelog.chk.html ...
@@ -1249,6 +1255,25 @@ design: (work@top)
       \_gen_if: , line:20:4, endln:20:6
       |vpiName:g_pmp_registers
       |vpiFullName:work@top.g_pmp_registers
+      |vpiStmt:
+      \_assignment: , line:21:36, endln:21:68
+        |vpiParent:
+        \_named_begin: (work@top.g_pmp_registers)
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiLhs:
+        \_ref_var: (work@top.g_pmp_registers.pmp_cfg2), line:21:36, endln:21:44
+          |vpiParent:
+          \_assignment: , line:21:36, endln:21:68
+          |vpiTypespec:
+          \_ref_typespec: (work@top.g_pmp_registers.pmp_cfg2)
+            |vpiParent:
+            \_ref_var: (work@top.g_pmp_registers.pmp_cfg2), line:21:36, endln:21:44
+            |vpiFullName:work@top.g_pmp_registers.pmp_cfg2
+            |vpiActual:
+            \_unsupported_typespec: (pmp_cfg_t), line:21:7, endln:21:16
+          |vpiName:pmp_cfg2
+          |vpiFullName:work@top.g_pmp_registers.pmp_cfg2
 |uhdmtopModules:
 \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/IfGenTypeBinding/dut.sv, line:13:1, endln:24:10
   |vpiParent:
@@ -1336,7 +1361,7 @@ design: (work@top)
   \_array_net: (work@top.pmp_cfg1), line:18:34, endln:18:42
     |vpiParent:
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/IfGenTypeBinding/dut.sv, line:13:1, endln:24:10
-    |vpiSize:1
+    |vpiSize:2
     |vpiName:pmp_cfg1
     |vpiFullName:work@top.pmp_cfg1
     |vpiRange:
@@ -1405,7 +1430,7 @@ design: (work@top)
       \_array_net: (work@top.g_pmp_registers.pmp_cfg2), line:21:36, endln:21:44
         |vpiParent:
         \_gen_scope: (work@top.g_pmp_registers), line:20:19, endln:22:7
-        |vpiSize:1
+        |vpiSize:2
         |vpiName:pmp_cfg2
         |vpiFullName:work@top.g_pmp_registers.pmp_cfg2
         |vpiRange:
@@ -1506,6 +1531,8 @@ design: (work@top)
   |vpiParent:
   \_parameter: (work@top.PMPNumRegions), line:15:20, endln:15:33
   |vpiSigned:1
+\_unsupported_typespec: (pmp_cfg_t), line:21:7, endln:21:16
+  |vpiName:pmp_cfg_t
 \_function: (work@mailbox::new), line:3:5, endln:4:16
   |vpiParent:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/IfGenTypeBinding/builtin.sv, line:1:3, endln:27:11
@@ -1749,8 +1776,3 @@ design: (work@top)
 [  ERROR] : 0
 [WARNING] : 2
 [   NOTE] : 5
-
-============================== Begin RoundTrip Results ==============================
-[roundtrip]: ${SURELOG_DIR}/tests/IfGenTypeBinding/builtin.sv | ${SURELOG_DIR}/build/regression/IfGenTypeBinding/roundtrip/builtin_000.sv | 0 | 0 |
-[roundtrip]: ${SURELOG_DIR}/tests/IfGenTypeBinding/dut.sv     | ${SURELOG_DIR}/build/regression/IfGenTypeBinding/roundtrip/dut_000.sv     | 5 | 24 |
-============================== End RoundTrip Results ==============================

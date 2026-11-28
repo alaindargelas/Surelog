@@ -1271,11 +1271,10 @@ Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -t
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns contrib8.2.v -l contrib8.2.v.log
-[WRN:CP0310] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/contrib8.2.v:51:22: Port "%s" definition missing its direction (input, output, inout).
 [  FATAL] : 0
 [ SYNTAX] : 0
 [  ERROR] : 0
-[WARNING] : 1
+[WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns mem2port.v -l mem2port.v.log
 [  FATAL] : 0
@@ -1374,12 +1373,12 @@ Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -t
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns port-test4b.v -l port-test4b.v.log
-[WRN:CP0310] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test4b.v:11:19: Port "%s" definition missing its direction (input, output, inout).
-[ERR:CP0340] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test4b.v:11:19: Port "%s" of unspecified type.
+[ERR:CP0346] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test4b.v:16:8: Multiply defined net or variable "b",
+             ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test4b.v:15:8: previous definition.
 [  FATAL] : 0
 [ SYNTAX] : 0
 [  ERROR] : 1
-[WARNING] : 1
+[WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns pr224a.v -l pr224a.v.log
 [ERR:PP0101] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/pr224a.v:2: Cannot open include file "${SURELOG_DIR}/third_party/tests/Icarus/ivltests/ivltests/pr224.v".
@@ -1842,13 +1841,10 @@ Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -t
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns port-test2.v -l port-test2.v.log
-[WRN:CP0310] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test2.v:14:21: Port "%s" definition missing its direction (input, output, inout),
-there are 1 more instances of this message.
-[ERR:CP0340] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test2.v:14:21: Port "%s" of unspecified type.
 [  FATAL] : 0
 [ SYNTAX] : 0
-[  ERROR] : 1
-[WARNING] : 1
+[  ERROR] : 0
+[WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns bitsel2.v -l bitsel2.v.log
 [  FATAL] : 0
@@ -2863,12 +2859,12 @@ Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -t
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns port-test4a.v -l port-test4a.v.log
-[WRN:CP0310] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test4a.v:11:19: Port "%s" definition missing its direction (input, output, inout).
-[ERR:CP0340] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test4a.v:11:19: Port "%s" of unspecified type.
+[ERR:CP0346] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test4a.v:14:7: Multiply defined net or variable "a",
+             ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/port-test4a.v:13:7: previous definition.
 [  FATAL] : 0
 [ SYNTAX] : 0
 [  ERROR] : 1
-[WARNING] : 1
+[WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns sdw_task2.v -l sdw_task2.v.log
 [  FATAL] : 0
@@ -4170,12 +4166,10 @@ Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -t
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns inout.v -l inout.v.log
-[WRN:CP0310] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/inout.v:21:13: Port "a" definition missing its direction (input, output, inout).
-[ERR:CP0340] ${SURELOG_DIR}/third_party/tests/Icarus/ivltests/inout.v:21:13: Port "a" of unspecified type.
 [  FATAL] : 0
 [ SYNTAX] : 0
-[  ERROR] : 1
-[WARNING] : 1
+[  ERROR] : 0
+[WARNING] : 0
 [   NOTE] : 0
 Processing: -cd ivltests +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns assign_nb1.v -l assign_nb1.v.log
 [  FATAL] : 0
@@ -4252,8 +4246,8 @@ Processing: -cd contrib +incdir+. -parse -nocache -nobuiltin -nonote -noinfo -ti
 Processed 697 tests.
 [  FATAL] : 0
 [ SYNTAX] : 11
-[  ERROR] : 18
-[WARNING] : 15
+[  ERROR] : 16
+[WARNING] : 10
 [   NOTE] : 0
 
 ============================== Begin Linting Results ==============================

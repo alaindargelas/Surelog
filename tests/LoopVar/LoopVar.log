@@ -90,7 +90,7 @@ hier_path                                              1
 initial                                                1
 int_typespec                                           3
 int_var                                                2
-logic_net                                              2
+logic_net                                              1
 module_inst                                            4
 operation                                              1
 range                                                  1
@@ -113,7 +113,7 @@ hier_path                                              1
 initial                                                2
 int_typespec                                           3
 int_var                                                3
-logic_net                                              2
+logic_net                                              1
 module_inst                                            4
 operation                                              1
 range                                                  1
@@ -149,13 +149,6 @@ design: (work@dut)
       \_int_typespec: , line:2:5, endln:2:18
     |vpiName:array
     |vpiFullName:work@dut.array
-  |vpiNet:
-  \_logic_net: (work@dut.i), line:6:19, endln:6:20
-    |vpiParent:
-    \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/LoopVar/dut.sv, line:1:1, endln:9:10
-    |vpiName:i
-    |vpiFullName:work@dut.i
-    |vpiNetType:1
   |vpiProcess:
   \_initial: , line:4:5, endln:7:8
     |vpiParent:

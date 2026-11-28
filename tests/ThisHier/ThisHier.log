@@ -194,15 +194,16 @@ class_var                                              1
 constant                                               6
 design                                                 1
 extends                                                8
-func_call                                              3
+func_call                                              2
 function                                              14
 hier_path                                             16
 int_typespec                                           1
 int_var                                                4
+method_func_call                                       3
 module_inst                                            1
 package                                                2
 range                                                  4
-ref_obj                                               46
+ref_obj                                               44
 ref_typespec                                          31
 var_select                                             3
 === UHDM Object Stats End ===
@@ -513,13 +514,10 @@ design: (unnamed)
               |vpiActual:
               \_array_var: (uvm::uvm_phase::m_predecessors), line:20:16, endln:20:30
             |vpiActual:
-            \_ref_obj: (uvm::uvm_phase::add::size)
+            \_method_func_call: (size)
               |vpiParent:
               \_hier_path: (this.m_predecessors.size), line:27:5, endln:27:9
               |vpiName:size
-              |vpiFullName:uvm::uvm_phase::add::size
-              |vpiActual:
-              \_func_call: (size)
             |vpiName:this.m_predecessors.size
         |vpiInstance:
         \_package: uvm (uvm::), file:${SURELOG_DIR}/tests/ThisHier/dut.sv, line:1:1, endln:33:11
@@ -724,10 +722,6 @@ design: (unnamed)
       |vpiActual:
       \_bit_typespec: , line:4:11, endln:4:14
     |vpiFullName:uvm::uvm_object::m_successors
-\_func_call: (size)
-  |vpiParent:
-  \_hier_path: (this.m_predecessors.size), line:27:5, endln:27:9
-  |vpiName:size
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0

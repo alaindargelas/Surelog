@@ -6763,7 +6763,7 @@ initial                                                1
 int_typespec                                          66
 int_var                                               32
 io_decl                                               43
-logic_net                                             18
+logic_net                                             17
 logic_typespec                                        25
 logic_var                                              9
 method_func_call                                      13
@@ -6827,7 +6827,7 @@ initial                                                2
 int_typespec                                          66
 int_var                                               68
 io_decl                                               86
-logic_net                                             18
+logic_net                                             17
 logic_typespec                                        25
 logic_var                                             19
 method_func_call                                      26
@@ -13669,7 +13669,7 @@ design: (work@top)
                       |vpiName:i
                       |vpiFullName:work@test_program.get_expected_command_for_slave.i
                       |vpiActual:
-                      \_logic_net: (work@test_program.i), line:692:59, endln:692:60
+                      \_int_var: (work@test_program.get_expected_command_for_slave.i), line:691:54, endln:691:55
                     |vpiName:delete
                     |vpiPrefix:
                     \_ref_obj: (work@test_program.get_expected_command_for_slave.write_command_queue_slave), line:694:16, endln:694:41
@@ -13920,7 +13920,7 @@ design: (work@top)
                       |vpiName:i
                       |vpiFullName:work@test_program.get_expected_command_for_slave.i
                       |vpiActual:
-                      \_logic_net: (work@test_program.i), line:692:59, endln:692:60
+                      \_int_var: (work@test_program.get_expected_command_for_slave.i), line:703:53, endln:703:54
                     |vpiName:delete
                     |vpiPrefix:
                     \_ref_obj: (work@test_program.get_expected_command_for_slave.read_command_queue_slave), line:706:16, endln:706:40
@@ -15386,13 +15386,6 @@ design: (work@top)
     \_module_inst: work@test_program (work@test_program), file:${SURELOG_DIR}/tests/DollarRoot/dut.sv, line:5:1, endln:797:10
     |vpiName:REQ_READ
     |vpiFullName:work@test_program.REQ_READ
-    |vpiNetType:1
-  |vpiNet:
-  \_logic_net: (work@test_program.i), line:692:59, endln:692:60
-    |vpiParent:
-    \_module_inst: work@test_program (work@test_program), file:${SURELOG_DIR}/tests/DollarRoot/dut.sv, line:5:1, endln:797:10
-    |vpiName:i
-    |vpiFullName:work@test_program.i
     |vpiNetType:1
   |vpiNet:
   \_logic_net: (work@test_program.VERBOSITY_ERROR), line:752:19, endln:752:34

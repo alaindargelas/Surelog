@@ -60,7 +60,7 @@ initial                                                2
 int_typespec                                          70
 int_var                                               32
 io_decl                                               43
-logic_net                                             20
+logic_net                                             19
 logic_typespec                                        25
 logic_var                                              9
 method_func_call                                      13

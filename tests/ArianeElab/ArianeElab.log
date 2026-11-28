@@ -20169,7 +20169,7 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 0.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-assignment                                           139
+assignment                                           140
 begin                                                 83
 bit_select                                           103
 bit_typespec                                         353
@@ -20215,7 +20215,8 @@ port                                                  42
 range                                               1651
 ref_module                                             6
 ref_obj                                             1706
-ref_typespec                                        5602
+ref_typespec                                        5603
+ref_var                                                1
 return_stmt                                          212
 string_typespec                                      821
 string_var                                             8
@@ -20226,12 +20227,12 @@ tagged_pattern                                       813
 type_parameter                                         2
 typespec_member                                      944
 union_typespec                                         4
-unsupported_typespec                                  26
+unsupported_typespec                                  27
 var_select                                            48
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-assignment                                           348
+assignment                                           349
 begin                                                265
 bit_select                                           295
 bit_typespec                                         353
@@ -20277,7 +20278,8 @@ port                                                  84
 range                                               1651
 ref_module                                             6
 ref_obj                                             3909
-ref_typespec                                        6554
+ref_typespec                                        6555
+ref_var                                                1
 return_stmt                                          684
 string_typespec                                      821
 string_var                                            22
@@ -20288,7 +20290,7 @@ tagged_pattern                                       813
 type_parameter                                         2
 typespec_member                                      944
 union_typespec                                         4
-unsupported_typespec                                  26
+unsupported_typespec                                  27
 var_select                                           216
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ArianeElab/slpp_all/surelog.uhdm ...
@@ -93222,6 +93224,25 @@ design: (work@top)
           |vpiName:fpu_gen
           |vpiFullName:work@ex_stage.fpu_gen
           |vpiStmt:
+          \_assignment: , line:2032:23, endln:2032:31
+            |vpiParent:
+            \_named_begin: (work@ex_stage.fpu_gen)
+            |vpiOpType:82
+            |vpiBlocking:1
+            |vpiLhs:
+            \_ref_var: (work@ex_stage.fpu_gen.fpu_data), line:2032:23, endln:2032:31
+              |vpiParent:
+              \_assignment: , line:2032:23, endln:2032:31
+              |vpiTypespec:
+              \_ref_typespec: (work@ex_stage.fpu_gen.fpu_data)
+                |vpiParent:
+                \_ref_var: (work@ex_stage.fpu_gen.fpu_data), line:2032:23, endln:2032:31
+                |vpiFullName:work@ex_stage.fpu_gen.fpu_data
+                |vpiActual:
+                \_unsupported_typespec: (fu_data_t), line:2032:13, endln:2032:22
+              |vpiName:fpu_data
+              |vpiFullName:work@ex_stage.fpu_gen.fpu_data
+          |vpiStmt:
           \_cont_assign: , line:2033:20, endln:2033:61
             |vpiParent:
             \_named_begin: (work@ex_stage.fpu_gen)
@@ -164284,6 +164305,8 @@ design: (work@top)
   |vpiParent:
   \_ref_typespec: (work@ex_stage)
   |vpiName:NrPMPEntries
+\_unsupported_typespec: (fu_data_t), line:2032:13, endln:2032:22
+  |vpiName:fu_data_t
 \_string_typespec: (Width), line:1695:5, endln:1695:10
   |vpiParent:
   \_ref_typespec: (work@fpnew_top)

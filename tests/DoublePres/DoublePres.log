@@ -1059,8 +1059,8 @@ AST_DEBUG_END
 [INF:CP0335] ${SURELOG_DIR}/tests/DoublePres/dut.sv:104:6: Compile generate block "work@top.d.genblk13".
 [INF:CP0335] ${SURELOG_DIR}/tests/DoublePres/dut.sv:108:6: Compile generate block "work@top.d.genblk14".
 [NTE:EL0503] ${SURELOG_DIR}/tests/DoublePres/dut.sv:1:1: Top level module "work@top".
-[ERR:UH0722] ${SURELOG_DIR}/tests/DoublePres/dut.sv:12:36: Division by zero in instance "".
-[ERR:UH0722] ${SURELOG_DIR}/tests/DoublePres/dut.sv:44:22: Division by zero in instance "".
+[WRN:UH0722] ${SURELOG_DIR}/tests/DoublePres/dut.sv:12:36: Division by zero in instance "".
+[WRN:UH0722] ${SURELOG_DIR}/tests/DoublePres/dut.sv:44:22: Division by zero in instance "".
 [WRN:EL0500] ${SURELOG_DIR}/tests/DoublePres/dut.sv:56:7: Cannot find a module definition for "work@top.d.genblk1::GOOD".
 [WRN:EL0500] ${SURELOG_DIR}/tests/DoublePres/dut.sv:60:7: Cannot find a module definition for "work@top.d.genblk2::GOOD".
 [WRN:EL0500] ${SURELOG_DIR}/tests/DoublePres/dut.sv:64:7: Cannot find a module definition for "work@top.d.genblk3::GOOD".
@@ -3651,8 +3651,8 @@ design: (work@top)
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0
-[  ERROR] : 4
-[WARNING] : 18
+[  ERROR] : 2
+[WARNING] : 20
 [   NOTE] : 7
 
 ============================== Begin Linting Results ==============================

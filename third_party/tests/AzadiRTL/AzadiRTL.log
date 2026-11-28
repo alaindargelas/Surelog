@@ -17665,7 +17665,7 @@ array_net                                             21
 array_typespec                                       209
 array_var                                            136
 assert_stmt                                           31
-assignment                                          5865
+assignment                                          5886
 begin                                               3023
 bit_select                                         12236
 bit_typespec                                         664
@@ -17680,7 +17680,7 @@ delay_control                                          4
 design                                                 1
 enum_const                                          2292
 enum_typespec                                        391
-enum_var                                             219
+enum_var                                             223
 event_control                                        383
 for_stmt                                             124
 func_call                                            731
@@ -17724,8 +17724,8 @@ property_spec                                         31
 range                                              72265
 ref_module                                           488
 ref_obj                                            67772
-ref_typespec                                      171428
-ref_var                                                8
+ref_typespec                                      171449
+ref_var                                               25
 return_stmt                                          118
 string_typespec                                     2724
 struct_net                                           138
@@ -17736,7 +17736,7 @@ tagged_pattern                                      2282
 task                                                   9
 type_parameter                                        38
 typespec_member                                     2303
-unsupported_typespec                                 167
+unsupported_typespec                                 184
 var_select                                          1400
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -17746,7 +17746,7 @@ array_net                                             21
 array_typespec                                       361
 array_var                                            224
 assert_stmt                                          110
-assignment                                         33949
+assignment                                         33970
 begin                                              14973
 bit_select                                         77007
 bit_typespec                                         664
@@ -17761,7 +17761,7 @@ delay_control                                          8
 design                                                 1
 enum_const                                          2297
 enum_typespec                                        392
-enum_var                                             624
+enum_var                                             628
 event_control                                       1880
 for_stmt                                             502
 func_call                                           1093
@@ -17805,8 +17805,8 @@ property_spec                                        110
 range                                              72692
 ref_module                                           488
 ref_obj                                           287145
-ref_typespec                                      852186
-ref_var                                               36
+ref_typespec                                      852207
+ref_var                                               53
 return_stmt                                          317
 string_typespec                                     2895
 struct_net                                           138
@@ -17817,7 +17817,7 @@ tagged_pattern                                      2453
 task                                                  18
 type_parameter                                        38
 typespec_member                                     2303
-unsupported_typespec                                 167
+unsupported_typespec                                 184
 var_select                                         18159
 === UHDM Object Stats End ===
 [WRN:UH0732] ${SURELOG_DIR}/third_party/tests/AzadiRTL/div_sqrt_top_mvp.sv:159:28: Critical: Signed vs Unsigned port connection "Exp_in_DI".

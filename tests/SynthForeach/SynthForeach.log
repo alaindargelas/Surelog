@@ -300,7 +300,7 @@ design                                                 1
 event_control                                          2
 foreach_stmt                                           3
 hier_path                                              5
-logic_net                                             12
+logic_net                                              7
 logic_typespec                                        11
 logic_var                                              2
 module_inst                                            7
@@ -328,7 +328,7 @@ design                                                 1
 event_control                                          4
 foreach_stmt                                           6
 hier_path                                              5
-logic_net                                             12
+logic_net                                              7
 logic_typespec                                        11
 logic_var                                              5
 module_inst                                            7
@@ -368,20 +368,6 @@ design: (work@dut)
     |vpiName:data
     |vpiFullName:work@dut.data
     |vpiNetType:36
-  |vpiNet:
-  \_logic_net: (work@dut.i), line:5:22, endln:5:23
-    |vpiParent:
-    \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/SynthForeach/dut.sv, line:1:1, endln:7:10
-    |vpiName:i
-    |vpiFullName:work@dut.i
-    |vpiNetType:1
-  |vpiNet:
-  \_logic_net: (work@dut.j), line:5:25, endln:5:26
-    |vpiParent:
-    \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/SynthForeach/dut.sv, line:1:1, endln:7:10
-    |vpiName:j
-    |vpiFullName:work@dut.j
-    |vpiNetType:1
   |vpiPort:
   \_port: (clk), line:1:18, endln:1:21
     |vpiParent:
@@ -582,27 +568,6 @@ design: (work@dut)
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/SynthForeach/dut.sv, line:9:1, endln:16:10
     |vpiName:B
     |vpiFullName:work@top.B
-  |vpiNet:
-  \_logic_net: (work@top.q), line:12:15, endln:12:16
-    |vpiParent:
-    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/SynthForeach/dut.sv, line:9:1, endln:16:10
-    |vpiName:q
-    |vpiFullName:work@top.q
-    |vpiNetType:1
-  |vpiNet:
-  \_logic_net: (work@top.r), line:12:18, endln:12:19
-    |vpiParent:
-    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/SynthForeach/dut.sv, line:9:1, endln:16:10
-    |vpiName:r
-    |vpiFullName:work@top.r
-    |vpiNetType:1
-  |vpiNet:
-  \_logic_net: (work@top.s), line:12:24, endln:12:25
-    |vpiParent:
-    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/SynthForeach/dut.sv, line:9:1, endln:16:10
-    |vpiName:s
-    |vpiFullName:work@top.s
-    |vpiNetType:1
   |vpiPort:
   \_port: (clk), line:9:18, endln:9:21
     |vpiParent:

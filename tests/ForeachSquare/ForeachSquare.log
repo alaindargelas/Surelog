@@ -114,7 +114,7 @@ hier_path                                              2
 initial                                                1
 int_typespec                                           4
 int_var                                                3
-logic_net                                              3
+logic_net                                              1
 module_inst                                            4
 operation                                              3
 range                                                  2
@@ -137,7 +137,7 @@ hier_path                                              2
 initial                                                2
 int_typespec                                           4
 int_var                                                6
-logic_net                                              3
+logic_net                                              1
 module_inst                                            4
 operation                                              4
 range                                                  2
@@ -174,20 +174,6 @@ design: (work@dut)
       \_int_typespec: , line:3:5, endln:3:18
     |vpiName:array
     |vpiFullName:work@dut.array
-  |vpiNet:
-  \_logic_net: (work@dut.i), line:8:23, endln:8:24
-    |vpiParent:
-    \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/ForeachSquare/dut.sv, line:1:1, endln:11:10
-    |vpiName:i
-    |vpiFullName:work@dut.i
-    |vpiNetType:1
-  |vpiNet:
-  \_logic_net: (work@dut.j), line:8:26, endln:8:27
-    |vpiParent:
-    \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/ForeachSquare/dut.sv, line:1:1, endln:11:10
-    |vpiName:j
-    |vpiFullName:work@dut.j
-    |vpiNetType:1
   |vpiProcess:
   \_initial: , line:5:5, endln:9:8
     |vpiParent:

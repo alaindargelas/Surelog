@@ -107,6 +107,7 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 0.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
+assignment                                             1
 constant                                               2
 design                                                 1
 gen_if                                                 1
@@ -115,14 +116,15 @@ gen_scope_array                                        2
 logic_typespec                                         4
 module_inst                                            3
 named_begin                                            1
-ref_typespec                                           7
+ref_typespec                                           8
 struct_typespec                                        4
-struct_var                                             1
+struct_var                                             2
 typespec_member                                        6
 unsupported_typespec                                   2
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
+assignment                                             1
 constant                                               2
 design                                                 1
 gen_if                                                 1
@@ -131,9 +133,9 @@ gen_scope_array                                        3
 logic_typespec                                         4
 module_inst                                            3
 named_begin                                            1
-ref_typespec                                           8
+ref_typespec                                           9
 struct_typespec                                        4
-struct_var                                             2
+struct_var                                             3
 typespec_member                                        6
 unsupported_typespec                                   2
 === UHDM Object Stats End ===
@@ -169,6 +171,25 @@ design: (work@dut)
       \_gen_if: , line:3:4, endln:3:6
       |vpiName:m
       |vpiFullName:work@dut.m
+      |vpiStmt:
+      \_assignment: , line:19:33, endln:19:54
+        |vpiParent:
+        \_named_begin: (work@dut.m)
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiLhs:
+        \_struct_var: (work@dut.m.mem_fwd_header_cast_i), line:19:33, endln:19:54
+          |vpiParent:
+          \_assignment: , line:19:33, endln:19:54
+          |vpiTypespec:
+          \_ref_typespec: (work@dut.m.mem_fwd_header_cast_i)
+            |vpiParent:
+            \_struct_var: (work@dut.m.mem_fwd_header_cast_i), line:19:33, endln:19:54
+            |vpiFullName:work@dut.m.mem_fwd_header_cast_i
+            |vpiActual:
+            \_struct_typespec: (bp_bedrock_mem_fwd_header_s), line:13:13, endln:16:6
+          |vpiName:mem_fwd_header_cast_i
+          |vpiFullName:work@dut.m.mem_fwd_header_cast_i
 |uhdmtopModules:
 \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/TypeDefGenScope/dut.sv, line:1:1, endln:24:10
   |vpiParent:
@@ -270,6 +291,30 @@ design: (work@dut)
           |vpiRefEndLineNo:8
           |vpiRefEndColumnNo:12
 \_weaklyReferenced:
+\_struct_typespec: (bp_bedrock_mem_fwd_header_s), line:13:13, endln:16:6
+  |vpiName:bp_bedrock_mem_fwd_header_s
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (payload), line:15:68, endln:15:75
+    |vpiParent:
+    \_struct_typespec: (bp_bedrock_mem_fwd_header_s), line:13:13, endln:16:6
+    |vpiName:payload
+    |vpiTypespec:
+    \_ref_typespec: (bp_bedrock_mem_fwd_header_s.payload)
+      |vpiParent:
+      \_typespec_member: (payload), line:15:68, endln:15:75
+      |vpiFullName:bp_bedrock_mem_fwd_header_s.payload
+      |vpiActual:
+      \_unsupported_typespec: (bp_bedrock_mem_rev_payload_s), line:15:9, endln:15:37
+    |vpiRefFile:${SURELOG_DIR}/tests/TypeDefGenScope/dut.sv
+    |vpiRefLineNo:15
+    |vpiRefColumnNo:9
+    |vpiRefEndLineNo:15
+    |vpiRefEndColumnNo:37
+\_unsupported_typespec: (bp_bedrock_mem_rev_payload_s), line:15:9, endln:15:37
+  |vpiParent:
+  \_typespec_member: (payload), line:15:68, endln:15:75
+  |vpiName:bp_bedrock_mem_rev_payload_s
 \_logic_typespec: , line:7:7, endln:7:12
   |vpiParent:
   \_typespec_member: (uncached), line:7:52, endln:7:60
@@ -311,7 +356,3 @@ design: (work@dut)
 [  ERROR] : 0
 [WARNING] : 1
 [   NOTE] : 5
-
-============================== Begin RoundTrip Results ==============================
-[roundtrip]: ${SURELOG_DIR}/tests/TypeDefGenScope/dut.sv | ${SURELOG_DIR}/build/regression/TypeDefGenScope/roundtrip/dut_000.sv | 13 | 24 |
-============================== End RoundTrip Results ==============================

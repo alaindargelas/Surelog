@@ -6639,7 +6639,7 @@ array_net                                              6
 array_typespec                                       116
 array_var                                             99
 assert_stmt                                          401
-assignment                                          8218
+assignment                                          8233
 assume                                                 3
 begin                                               4138
 bit_select                                         27027
@@ -6683,7 +6683,7 @@ int_var                                              661
 integer_typespec                                    4278
 integer_var                                            6
 io_decl                                              349
-logic_net                                           6726
+logic_net                                           6724
 logic_typespec                                     28817
 logic_var                                           3676
 long_int_typespec                                     10
@@ -6703,8 +6703,8 @@ property_spec                                        404
 range                                              36038
 ref_module                                           363
 ref_obj                                            91304
-ref_typespec                                      161091
-ref_var                                               21
+ref_typespec                                      161106
+ref_var                                               36
 return_stmt                                          342
 short_int_typespec                                    16
 short_int_var                                          6
@@ -6720,7 +6720,7 @@ type_parameter                                       483
 typespec_member                                    64646
 union_typespec                                         7
 union_var                                              3
-unsupported_typespec                                1437
+unsupported_typespec                                1452
 var_select                                          1245
 void_typespec                                         18
 === UHDM Object Stats End ===

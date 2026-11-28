@@ -5324,7 +5324,7 @@ array_net                                             38
 array_typespec                                       866
 array_var                                            231
 assert_stmt                                          428
-assignment                                          6219
+assignment                                          6230
 assume                                                30
 attribute                                             33
 begin                                               4027
@@ -5342,7 +5342,7 @@ cover                                                 20
 design                                                 1
 enum_const                                          4453
 enum_typespec                                        917
-enum_var                                             133
+enum_var                                             140
 event_control                                        223
 final_stmt                                           513
 for_stmt                                             295
@@ -5387,8 +5387,8 @@ property_spec                                        479
 range                                              71770
 ref_module                                          2376
 ref_obj                                           166682
-ref_typespec                                      158691
-ref_var                                                2
+ref_typespec                                      158702
+ref_var                                                6
 return_stmt                                          137
 sequence_decl                                         36
 string_typespec                                     8895
@@ -5399,7 +5399,7 @@ sys_func_call                                       2777
 tagged_pattern                                      6169
 task                                                   9
 typespec_member                                    11527
-unsupported_typespec                                 416
+unsupported_typespec                                 420
 var_select                                           882
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/IncompTitan/slpp_all/surelog.uhdm ...

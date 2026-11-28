@@ -25166,7 +25166,7 @@ array_net                                             23
 array_typespec                                       559
 array_var                                            229
 assert_stmt                                            2
-assignment                                          6546
+assignment                                          6555
 begin                                               3834
 bit_select                                         14019
 bit_typespec                                         598
@@ -25180,7 +25180,7 @@ cont_assign                                        13781
 design                                                 1
 enum_const                                          2037
 enum_typespec                                        206
-enum_var                                             280
+enum_var                                             282
 event_control                                        590
 for_stmt                                              72
 func_call                                            176
@@ -25218,7 +25218,8 @@ property_spec                                          2
 range                                              35940
 ref_module                                          1426
 ref_obj                                           112617
-ref_typespec                                       92683
+ref_typespec                                       92692
+ref_var                                                7
 return_stmt                                           46
 string_typespec                                     2470
 struct_net                                           108
@@ -25228,7 +25229,7 @@ sys_func_call                                        144
 tagged_pattern                                      1546
 task                                                   9
 typespec_member                                     3250
-unsupported_typespec                                  10
+unsupported_typespec                                  17
 var_select                                           258
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -25238,7 +25239,7 @@ array_net                                             23
 array_typespec                                       802
 array_var                                            373
 assert_stmt                                            4
-assignment                                         27664
+assignment                                         27673
 begin                                              15948
 bit_select                                         41735
 bit_typespec                                         598
@@ -25252,7 +25253,7 @@ cont_assign                                        30746
 design                                                 1
 enum_const                                          2042
 enum_typespec                                        207
-enum_var                                             432
+enum_var                                             434
 event_control                                       3782
 for_stmt                                            1089
 func_call                                            878
@@ -25290,7 +25291,8 @@ property_spec                                          4
 range                                              36256
 ref_module                                          1426
 ref_obj                                           265569
-ref_typespec                                      147675
+ref_typespec                                      147684
+ref_var                                                7
 return_stmt                                          424
 string_typespec                                     2740
 struct_net                                           108
@@ -25300,7 +25302,7 @@ sys_func_call                                        171
 tagged_pattern                                      1816
 task                                                  18
 typespec_member                                     3250
-unsupported_typespec                                  10
+unsupported_typespec                                  17
 var_select                                          1245
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Earlgrey/slpp_all/surelog.uhdm ...

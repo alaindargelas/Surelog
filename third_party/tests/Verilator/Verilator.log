@@ -3933,9 +3933,11 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_tri_select.v -l t_tri_select.v.log
+[ERR:UH0734] ${SURELOG_DIR}/third_party/tests/Verilator/t_tri_select.v:16:13: Non-constant "A1" in a constant expression.
+[ERR:UH0734] ${SURELOG_DIR}/third_party/tests/Verilator/t_tri_select.v:17:13: Non-constant "A2" in a constant expression.
 [  FATAL] : 0
 [ SYNTAX] : 0
-[  ERROR] : 0
+[  ERROR] : 2
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_select_bad_range2.v -l t_select_bad_range2.v.log
@@ -5790,6 +5792,6 @@ Processing: -cd t_sv_bus_mux_demux +incdir+. -parse -noelab -nocache -nobuiltin 
 Processed 837 tests.
 [  FATAL] : 0
 [ SYNTAX] : 178
-[  ERROR] : 171
+[  ERROR] : 173
 [WARNING] : 43
 [   NOTE] : 0

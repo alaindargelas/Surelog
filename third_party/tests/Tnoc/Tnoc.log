@@ -1,4 +1,4 @@
-[INF:CM0023] Creating log file "/home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Tnoc/slpp_all/surelog.log".
+[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/Tnoc/slpp_all/surelog.log".
 [WRN:PA0205] ${SURELOG_DIR}/third_party/tests/Tnoc/cores/tnoc/rtl/bcm/tbcm_counter.sv:1:1: No timescale set for "tbcm_counter".
 [WRN:PA0205] ${SURELOG_DIR}/third_party/tests/Tnoc/cores/tnoc/rtl/bcm/tbcm_fifo.sv:1:1: No timescale set for "tbcm_fifo".
 [WRN:PA0205] ${SURELOG_DIR}/third_party/tests/Tnoc/cores/tnoc/rtl/bcm/tbcm_mux.sv:1:1: No timescale set for "tbcm_mux".
@@ -12156,7 +12156,7 @@
 always                                              7691
 array_typespec                                       341
 array_var                                            311
-assignment                                         17878
+assignment                                         17887
 begin                                              16145
 bit_select                                         37078
 bit_typespec                                       15942
@@ -12213,8 +12213,8 @@ port                                               38919
 range                                             125795
 ref_module                                          2199
 ref_obj                                           309850
-ref_typespec                                     2817324
-ref_var                                               36
+ref_typespec                                     2817333
+ref_var                                               45
 return_stmt                                          937
 short_int_typespec                               1612592
 string_typespec                                   436873
@@ -12226,10 +12226,10 @@ tagged_pattern                                    436873
 task                                                   9
 type_parameter                                       356
 typespec_member                                  1201810
-unsupported_typespec                                 587
+unsupported_typespec                                 596
 var_select                                          1031
 === UHDM Object Stats End ===
-[INF:UH0708] Writing UHDM DB: /home/alain/uhdm2rtlil/build/third_party/Surelog/regression/Tnoc/slpp_all/surelog.uhdm ...
+[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Tnoc/slpp_all/surelog.uhdm ...
 [  FATAL] : 0
 [ SYNTAX] : 0
 [  ERROR] : 0

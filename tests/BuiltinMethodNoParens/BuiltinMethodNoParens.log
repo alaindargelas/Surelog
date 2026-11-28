@@ -1,0 +1,1583 @@
+[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/BuiltinMethodNoParens/slpp_all/surelog.log".
+AST_DEBUG_BEGIN
+LIB:  work
+FILE: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv
+n<> u<0> t<_INVALID_> f<0> l<0:0>
+n<> u<1> t<Null_rule> p<316> s<315> l<4:1> el<3:64>
+n<module> u<2> t<Module_keyword> p<45> s<3> l<4:1> el<4:7>
+n<top> u<3> t<StringConst> p<45> s<44> l<4:8> el<4:11>
+n<> u<4> t<PortDir_Out> p<9> s<8> l<4:12> el<4:18>
+n<> u<5> t<IntegerAtomType_Int> p<6> l<4:19> el<4:22>
+n<> u<6> t<Data_type> p<7> c<5> l<4:19> el<4:22>
+n<> u<7> t<Data_type_or_implicit> p<8> c<6> l<4:19> el<4:22>
+n<> u<8> t<Net_port_type> p<9> c<7> l<4:19> el<4:22>
+n<> u<9> t<Net_port_header> p<11> c<4> s<10> l<4:12> el<4:22>
+n<o1> u<10> t<StringConst> p<11> l<4:23> el<4:25>
+n<> u<11> t<Ansi_port_declaration> p<44> c<9> s<19> l<4:12> el<4:25>
+n<> u<12> t<PortDir_Out> p<17> s<16> l<4:27> el<4:33>
+n<> u<13> t<IntegerAtomType_Int> p<14> l<4:34> el<4:37>
+n<> u<14> t<Data_type> p<15> c<13> l<4:34> el<4:37>
+n<> u<15> t<Data_type_or_implicit> p<16> c<14> l<4:34> el<4:37>
+n<> u<16> t<Net_port_type> p<17> c<15> l<4:34> el<4:37>
+n<> u<17> t<Net_port_header> p<19> c<12> s<18> l<4:27> el<4:37>
+n<o2> u<18> t<StringConst> p<19> l<4:38> el<4:40>
+n<> u<19> t<Ansi_port_declaration> p<44> c<17> s<27> l<4:27> el<4:40>
+n<> u<20> t<PortDir_Out> p<25> s<24> l<4:42> el<4:48>
+n<> u<21> t<IntegerAtomType_Int> p<22> l<4:49> el<4:52>
+n<> u<22> t<Data_type> p<23> c<21> l<4:49> el<4:52>
+n<> u<23> t<Data_type_or_implicit> p<24> c<22> l<4:49> el<4:52>
+n<> u<24> t<Net_port_type> p<25> c<23> l<4:49> el<4:52>
+n<> u<25> t<Net_port_header> p<27> c<20> s<26> l<4:42> el<4:52>
+n<o3> u<26> t<StringConst> p<27> l<4:53> el<4:55>
+n<> u<27> t<Ansi_port_declaration> p<44> c<25> s<35> l<4:42> el<4:55>
+n<> u<28> t<PortDir_Out> p<33> s<32> l<4:57> el<4:63>
+n<> u<29> t<IntegerAtomType_Int> p<30> l<4:64> el<4:67>
+n<> u<30> t<Data_type> p<31> c<29> l<4:64> el<4:67>
+n<> u<31> t<Data_type_or_implicit> p<32> c<30> l<4:64> el<4:67>
+n<> u<32> t<Net_port_type> p<33> c<31> l<4:64> el<4:67>
+n<> u<33> t<Net_port_header> p<35> c<28> s<34> l<4:57> el<4:67>
+n<o4> u<34> t<StringConst> p<35> l<4:68> el<4:70>
+n<> u<35> t<Ansi_port_declaration> p<44> c<33> s<43> l<4:57> el<4:70>
+n<> u<36> t<PortDir_Out> p<41> s<40> l<5:12> el<5:18>
+n<> u<37> t<IntegerAtomType_Int> p<38> l<5:19> el<5:22>
+n<> u<38> t<Data_type> p<39> c<37> l<5:19> el<5:22>
+n<> u<39> t<Data_type_or_implicit> p<40> c<38> l<5:19> el<5:22>
+n<> u<40> t<Net_port_type> p<41> c<39> l<5:19> el<5:22>
+n<> u<41> t<Net_port_header> p<43> c<36> s<42> l<5:12> el<5:22>
+n<o5> u<42> t<StringConst> p<43> l<5:23> el<5:25>
+n<> u<43> t<Ansi_port_declaration> p<44> c<41> l<5:12> el<5:25>
+n<> u<44> t<List_of_port_declarations> p<45> c<11> l<4:11> el<5:26>
+n<> u<45> t<Module_ansi_header> p<313> c<2> s<72> l<4:1> el<5:27>
+n<> u<46> t<IntVec_TypeLogic> p<57> s<56> l<6:16> el<6:21>
+n<1> u<47> t<IntConst> p<48> l<6:23> el<6:24>
+n<> u<48> t<Primary_literal> p<49> c<47> l<6:23> el<6:24>
+n<> u<49> t<Constant_primary> p<50> c<48> l<6:23> el<6:24>
+n<> u<50> t<Constant_expression> p<55> c<49> s<54> l<6:23> el<6:24>
+n<0> u<51> t<IntConst> p<52> l<6:25> el<6:26>
+n<> u<52> t<Primary_literal> p<53> c<51> l<6:25> el<6:26>
+n<> u<53> t<Constant_primary> p<54> c<52> l<6:25> el<6:26>
+n<> u<54> t<Constant_expression> p<55> c<53> l<6:25> el<6:26>
+n<> u<55> t<Constant_range> p<56> c<50> l<6:23> el<6:26>
+n<> u<56> t<Packed_dimension> p<57> c<55> l<6:22> el<6:27>
+n<> u<57> t<Enum_base_type> p<64> c<46> s<59> l<6:16> el<6:27>
+n<A> u<58> t<StringConst> p<59> l<6:29> el<6:30>
+n<> u<59> t<Enum_name_declaration> p<64> c<58> s<61> l<6:29> el<6:30>
+n<B> u<60> t<StringConst> p<61> l<6:32> el<6:33>
+n<> u<61> t<Enum_name_declaration> p<64> c<60> s<63> l<6:32> el<6:33>
+n<C> u<62> t<StringConst> p<63> l<6:35> el<6:36>
+n<> u<63> t<Enum_name_declaration> p<64> c<62> l<6:35> el<6:36>
+n<> u<64> t<Data_type> p<66> c<57> s<65> l<6:11> el<6:37>
+n<e_t> u<65> t<StringConst> p<66> l<6:38> el<6:41>
+n<> u<66> t<Type_declaration> p<67> c<64> l<6:3> el<6:42>
+n<> u<67> t<Data_declaration> p<68> c<66> l<6:3> el<6:42>
+n<> u<68> t<Package_or_generate_item_declaration> p<69> c<67> l<6:3> el<6:42>
+n<> u<69> t<Module_or_generate_item_declaration> p<70> c<68> l<6:3> el<6:42>
+n<> u<70> t<Module_common_item> p<71> c<69> l<6:3> el<6:42>
+n<> u<71> t<Module_or_generate_item> p<72> c<70> l<6:3> el<6:42>
+n<> u<72> t<Non_port_module_item> p<313> c<71> s<101> l<6:3> el<6:42>
+n<> u<73> t<Struct_keyword> p<74> l<7:11> el<7:17>
+n<> u<74> t<Struct_union> p<93> c<73> s<75> l<7:11> el<7:17>
+n<> u<75> t<Packed_keyword> p<93> s<92> l<7:18> el<7:24>
+n<> u<76> t<IntVec_TypeLogic> p<87> s<86> l<7:27> el<7:32>
+n<3> u<77> t<IntConst> p<78> l<7:34> el<7:35>
+n<> u<78> t<Primary_literal> p<79> c<77> l<7:34> el<7:35>
+n<> u<79> t<Constant_primary> p<80> c<78> l<7:34> el<7:35>
+n<> u<80> t<Constant_expression> p<85> c<79> s<84> l<7:34> el<7:35>
+n<0> u<81> t<IntConst> p<82> l<7:36> el<7:37>
+n<> u<82> t<Primary_literal> p<83> c<81> l<7:36> el<7:37>
+n<> u<83> t<Constant_primary> p<84> c<82> l<7:36> el<7:37>
+n<> u<84> t<Constant_expression> p<85> c<83> l<7:36> el<7:37>
+n<> u<85> t<Constant_range> p<86> c<80> l<7:34> el<7:37>
+n<> u<86> t<Packed_dimension> p<87> c<85> l<7:33> el<7:38>
+n<> u<87> t<Data_type> p<88> c<76> l<7:27> el<7:38>
+n<> u<88> t<Data_type_or_void> p<92> c<87> s<91> l<7:27> el<7:38>
+n<size> u<89> t<StringConst> p<90> l<7:39> el<7:43>
+n<> u<90> t<Variable_decl_assignment> p<91> c<89> l<7:39> el<7:43>
+n<> u<91> t<List_of_variable_decl_assignments> p<92> c<90> l<7:39> el<7:43>
+n<> u<92> t<Struct_union_member> p<93> c<88> l<7:27> el<7:44>
+n<> u<93> t<Data_type> p<95> c<74> s<94> l<7:11> el<7:46>
+n<s_t> u<94> t<StringConst> p<95> l<7:47> el<7:50>
+n<> u<95> t<Type_declaration> p<96> c<93> l<7:3> el<7:51>
+n<> u<96> t<Data_declaration> p<97> c<95> l<7:3> el<7:51>
+n<> u<97> t<Package_or_generate_item_declaration> p<98> c<96> l<7:3> el<7:51>
+n<> u<98> t<Module_or_generate_item_declaration> p<99> c<97> l<7:3> el<7:51>
+n<> u<99> t<Module_common_item> p<100> c<98> l<7:3> el<7:51>
+n<> u<100> t<Module_or_generate_item> p<101> c<99> l<7:3> el<7:51>
+n<> u<101> t<Non_port_module_item> p<313> c<100> s<111> l<7:3> el<7:51>
+n<e_t> u<102> t<StringConst> p<106> s<105> l<8:3> el<8:6>
+n<c1> u<103> t<StringConst> p<104> l<8:7> el<8:9>
+n<> u<104> t<Net_decl_assignment> p<105> c<103> l<8:7> el<8:9>
+n<> u<105> t<List_of_net_decl_assignments> p<106> c<104> l<8:7> el<8:9>
+n<> u<106> t<Net_declaration> p<107> c<102> l<8:3> el<8:10>
+n<> u<107> t<Package_or_generate_item_declaration> p<108> c<106> l<8:3> el<8:10>
+n<> u<108> t<Module_or_generate_item_declaration> p<109> c<107> l<8:3> el<8:10>
+n<> u<109> t<Module_common_item> p<110> c<108> l<8:3> el<8:10>
+n<> u<110> t<Module_or_generate_item> p<111> c<109> l<8:3> el<8:10>
+n<> u<111> t<Non_port_module_item> p<313> c<110> s<145> l<8:3> el<8:10>
+n<> u<112> t<IntegerAtomType_Int> p<113> l<9:3> el<9:6>
+n<> u<113> t<Data_type> p<139> c<112> s<138> l<9:3> el<9:6>
+n<b> u<114> t<StringConst> p<137> s<120> l<9:7> el<9:8>
+n<3> u<115> t<IntConst> p<116> l<9:10> el<9:11>
+n<> u<116> t<Primary_literal> p<117> c<115> l<9:10> el<9:11>
+n<> u<117> t<Constant_primary> p<118> c<116> l<9:10> el<9:11>
+n<> u<118> t<Constant_expression> p<119> c<117> l<9:10> el<9:11>
+n<> u<119> t<Unpacked_dimension> p<120> c<118> l<9:9> el<9:12>
+n<> u<120> t<Variable_dimension> p<137> c<119> s<136> l<9:9> el<9:12>
+n<1> u<121> t<IntConst> p<122> l<9:17> el<9:18>
+n<> u<122> t<Primary_literal> p<123> c<121> l<9:17> el<9:18>
+n<> u<123> t<Primary> p<124> c<122> l<9:17> el<9:18>
+n<> u<124> t<Expression> p<133> c<123> s<128> l<9:17> el<9:18>
+n<2> u<125> t<IntConst> p<126> l<9:20> el<9:21>
+n<> u<126> t<Primary_literal> p<127> c<125> l<9:20> el<9:21>
+n<> u<127> t<Primary> p<128> c<126> l<9:20> el<9:21>
+n<> u<128> t<Expression> p<133> c<127> s<132> l<9:20> el<9:21>
+n<3> u<129> t<IntConst> p<130> l<9:23> el<9:24>
+n<> u<130> t<Primary_literal> p<131> c<129> l<9:23> el<9:24>
+n<> u<131> t<Primary> p<132> c<130> l<9:23> el<9:24>
+n<> u<132> t<Expression> p<133> c<131> l<9:23> el<9:24>
+n<> u<133> t<Assignment_pattern> p<134> c<124> l<9:15> el<9:25>
+n<> u<134> t<Assignment_pattern_expression> p<135> c<133> l<9:15> el<9:25>
+n<> u<135> t<Primary> p<136> c<134> l<9:15> el<9:25>
+n<> u<136> t<Expression> p<137> c<135> l<9:15> el<9:25>
+n<> u<137> t<Variable_decl_assignment> p<138> c<114> l<9:7> el<9:25>
+n<> u<138> t<List_of_variable_decl_assignments> p<139> c<137> l<9:7> el<9:25>
+n<> u<139> t<Variable_declaration> p<140> c<113> l<9:3> el<9:26>
+n<> u<140> t<Data_declaration> p<141> c<139> l<9:3> el<9:26>
+n<> u<141> t<Package_or_generate_item_declaration> p<142> c<140> l<9:3> el<9:26>
+n<> u<142> t<Module_or_generate_item_declaration> p<143> c<141> l<9:3> el<9:26>
+n<> u<143> t<Module_common_item> p<144> c<142> l<9:3> el<9:26>
+n<> u<144> t<Module_or_generate_item> p<145> c<143> l<9:3> el<9:26>
+n<> u<145> t<Non_port_module_item> p<313> c<144> s<162> l<9:3> el<9:26>
+n<> u<146> t<IntegerAtomType_Int> p<147> l<10:3> el<10:6>
+n<> u<147> t<Data_type> p<156> c<146> s<155> l<10:3> el<10:6>
+n<q> u<148> t<StringConst> p<154> s<153> l<10:7> el<10:8>
+n<> u<149> t<Dollar_keyword> p<150> l<10:9> el<10:10>
+n<> u<150> t<Constant_primary> p<151> c<149> l<10:9> el<10:10>
+n<> u<151> t<Constant_expression> p<152> c<150> l<10:9> el<10:10>
+n<> u<152> t<Unpacked_dimension> p<153> c<151> l<10:8> el<10:11>
+n<> u<153> t<Variable_dimension> p<154> c<152> l<10:8> el<10:11>
+n<> u<154> t<Variable_decl_assignment> p<155> c<148> l<10:7> el<10:11>
+n<> u<155> t<List_of_variable_decl_assignments> p<156> c<154> l<10:7> el<10:11>
+n<> u<156> t<Variable_declaration> p<157> c<147> l<10:3> el<10:12>
+n<> u<157> t<Data_declaration> p<158> c<156> l<10:3> el<10:12>
+n<> u<158> t<Package_or_generate_item_declaration> p<159> c<157> l<10:3> el<10:12>
+n<> u<159> t<Module_or_generate_item_declaration> p<160> c<158> l<10:3> el<10:12>
+n<> u<160> t<Module_common_item> p<161> c<159> l<10:3> el<10:12>
+n<> u<161> t<Module_or_generate_item> p<162> c<160> l<10:3> el<10:12>
+n<> u<162> t<Non_port_module_item> p<313> c<161> s<177> l<10:3> el<10:12>
+n<s_t> u<163> t<StringConst> p<172> s<171> l<11:3> el<11:6>
+n<arr> u<164> t<StringConst> p<170> s<169> l<11:7> el<11:10>
+n<2> u<165> t<IntConst> p<166> l<11:12> el<11:13>
+n<> u<166> t<Primary_literal> p<167> c<165> l<11:12> el<11:13>
+n<> u<167> t<Constant_primary> p<168> c<166> l<11:12> el<11:13>
+n<> u<168> t<Constant_expression> p<169> c<167> l<11:12> el<11:13>
+n<> u<169> t<Unpacked_dimension> p<170> c<168> l<11:11> el<11:14>
+n<> u<170> t<Net_decl_assignment> p<171> c<164> l<11:7> el<11:14>
+n<> u<171> t<List_of_net_decl_assignments> p<172> c<170> l<11:7> el<11:14>
+n<> u<172> t<Net_declaration> p<173> c<163> l<11:3> el<11:15>
+n<> u<173> t<Package_or_generate_item_declaration> p<174> c<172> l<11:3> el<11:15>
+n<> u<174> t<Module_or_generate_item_declaration> p<175> c<173> l<11:3> el<11:15>
+n<> u<175> t<Module_common_item> p<176> c<174> l<11:3> el<11:15>
+n<> u<176> t<Module_or_generate_item> p<177> c<175> l<11:3> el<11:15>
+n<> u<177> t<Non_port_module_item> p<313> c<176> s<289> l<11:3> el<11:15>
+n<c1> u<178> t<StringConst> p<179> l<13:5> el<13:7>
+n<> u<179> t<Ps_or_hierarchical_identifier> p<182> c<178> s<181> l<13:5> el<13:7>
+n<> u<180> t<Bit_select> p<181> l<13:8> el<13:8>
+n<> u<181> t<Select> p<182> c<180> l<13:8> el<13:8>
+n<> u<182> t<Variable_lvalue> p<191> c<179> s<183> l<13:5> el<13:7>
+n<> u<183> t<AssignOp_Assign> p<191> s<190> l<13:8> el<13:9>
+n<c1> u<184> t<StringConst> p<188> s<185> l<13:10> el<13:12>
+n<first> u<185> t<StringConst> p<188> s<187> l<13:13> el<13:18>
+n<> u<186> t<Bit_select> p<187> l<13:18> el<13:18>
+n<> u<187> t<Select> p<188> c<186> l<13:18> el<13:18>
+n<> u<188> t<Complex_func_call> p<189> c<184> l<13:10> el<13:18>
+n<> u<189> t<Primary> p<190> c<188> l<13:10> el<13:18>
+n<> u<190> t<Expression> p<191> c<189> l<13:10> el<13:18>
+n<> u<191> t<Operator_assignment> p<192> c<182> l<13:5> el<13:18>
+n<> u<192> t<Blocking_assignment> p<193> c<191> l<13:5> el<13:18>
+n<> u<193> t<Statement_item> p<194> c<192> l<13:5> el<13:19>
+n<> u<194> t<Statement> p<195> c<193> l<13:5> el<13:19>
+n<> u<195> t<Statement_or_null> p<282> c<194> s<213> l<13:5> el<13:19>
+n<o1> u<196> t<StringConst> p<197> l<14:5> el<14:7>
+n<> u<197> t<Ps_or_hierarchical_identifier> p<200> c<196> s<199> l<14:5> el<14:7>
+n<> u<198> t<Bit_select> p<199> l<14:8> el<14:8>
+n<> u<199> t<Select> p<200> c<198> l<14:8> el<14:8>
+n<> u<200> t<Variable_lvalue> p<209> c<197> s<201> l<14:5> el<14:7>
+n<> u<201> t<AssignOp_Assign> p<209> s<208> l<14:8> el<14:9>
+n<c1> u<202> t<StringConst> p<206> s<203> l<14:10> el<14:12>
+n<num> u<203> t<StringConst> p<206> s<205> l<14:13> el<14:16>
+n<> u<204> t<Bit_select> p<205> l<14:16> el<14:16>
+n<> u<205> t<Select> p<206> c<204> l<14:16> el<14:16>
+n<> u<206> t<Complex_func_call> p<207> c<202> l<14:10> el<14:16>
+n<> u<207> t<Primary> p<208> c<206> l<14:10> el<14:16>
+n<> u<208> t<Expression> p<209> c<207> l<14:10> el<14:16>
+n<> u<209> t<Operator_assignment> p<210> c<200> l<14:5> el<14:16>
+n<> u<210> t<Blocking_assignment> p<211> c<209> l<14:5> el<14:16>
+n<> u<211> t<Statement_item> p<212> c<210> l<14:5> el<14:17>
+n<> u<212> t<Statement> p<213> c<211> l<14:5> el<14:17>
+n<> u<213> t<Statement_or_null> p<282> c<212> s<231> l<14:5> el<14:17>
+n<o2> u<214> t<StringConst> p<215> l<15:5> el<15:7>
+n<> u<215> t<Ps_or_hierarchical_identifier> p<218> c<214> s<217> l<15:5> el<15:7>
+n<> u<216> t<Bit_select> p<217> l<15:8> el<15:8>
+n<> u<217> t<Select> p<218> c<216> l<15:8> el<15:8>
+n<> u<218> t<Variable_lvalue> p<227> c<215> s<219> l<15:5> el<15:7>
+n<> u<219> t<AssignOp_Assign> p<227> s<226> l<15:8> el<15:9>
+n<b> u<220> t<StringConst> p<224> s<221> l<15:10> el<15:11>
+n<sum> u<221> t<StringConst> p<224> s<223> l<15:12> el<15:15>
+n<> u<222> t<Bit_select> p<223> l<15:15> el<15:15>
+n<> u<223> t<Select> p<224> c<222> l<15:15> el<15:15>
+n<> u<224> t<Complex_func_call> p<225> c<220> l<15:10> el<15:15>
+n<> u<225> t<Primary> p<226> c<224> l<15:10> el<15:15>
+n<> u<226> t<Expression> p<227> c<225> l<15:10> el<15:15>
+n<> u<227> t<Operator_assignment> p<228> c<218> l<15:5> el<15:15>
+n<> u<228> t<Blocking_assignment> p<229> c<227> l<15:5> el<15:15>
+n<> u<229> t<Statement_item> p<230> c<228> l<15:5> el<15:16>
+n<> u<230> t<Statement> p<231> c<229> l<15:5> el<15:16>
+n<> u<231> t<Statement_or_null> p<282> c<230> s<249> l<15:5> el<15:16>
+n<o3> u<232> t<StringConst> p<233> l<16:5> el<16:7>
+n<> u<233> t<Ps_or_hierarchical_identifier> p<236> c<232> s<235> l<16:5> el<16:7>
+n<> u<234> t<Bit_select> p<235> l<16:8> el<16:8>
+n<> u<235> t<Select> p<236> c<234> l<16:8> el<16:8>
+n<> u<236> t<Variable_lvalue> p<245> c<233> s<237> l<16:5> el<16:7>
+n<> u<237> t<AssignOp_Assign> p<245> s<244> l<16:8> el<16:9>
+n<b> u<238> t<StringConst> p<242> s<239> l<16:10> el<16:11>
+n<product> u<239> t<StringConst> p<242> s<241> l<16:12> el<16:19>
+n<> u<240> t<Bit_select> p<241> l<16:19> el<16:19>
+n<> u<241> t<Select> p<242> c<240> l<16:19> el<16:19>
+n<> u<242> t<Complex_func_call> p<243> c<238> l<16:10> el<16:19>
+n<> u<243> t<Primary> p<244> c<242> l<16:10> el<16:19>
+n<> u<244> t<Expression> p<245> c<243> l<16:10> el<16:19>
+n<> u<245> t<Operator_assignment> p<246> c<236> l<16:5> el<16:19>
+n<> u<246> t<Blocking_assignment> p<247> c<245> l<16:5> el<16:19>
+n<> u<247> t<Statement_item> p<248> c<246> l<16:5> el<16:20>
+n<> u<248> t<Statement> p<249> c<247> l<16:5> el<16:20>
+n<> u<249> t<Statement_or_null> p<282> c<248> s<262> l<16:5> el<16:20>
+n<q> u<250> t<StringConst> p<258> s<251> l<17:5> el<17:6>
+n<> u<251> t<Constant_bit_select> p<258> s<252> l<17:6> el<17:6>
+n<push_back> u<252> t<StringConst> p<258> s<257> l<17:7> el<17:16>
+n<1> u<253> t<IntConst> p<254> l<17:17> el<17:18>
+n<> u<254> t<Primary_literal> p<255> c<253> l<17:17> el<17:18>
+n<> u<255> t<Primary> p<256> c<254> l<17:17> el<17:18>
+n<> u<256> t<Expression> p<257> c<255> l<17:17> el<17:18>
+n<> u<257> t<List_of_arguments> p<258> c<256> l<17:17> el<17:18>
+n<> u<258> t<Subroutine_call> p<259> c<250> l<17:5> el<17:19>
+n<> u<259> t<Subroutine_call_statement> p<260> c<258> l<17:5> el<17:20>
+n<> u<260> t<Statement_item> p<261> c<259> l<17:5> el<17:20>
+n<> u<261> t<Statement> p<262> c<260> l<17:5> el<17:20>
+n<> u<262> t<Statement_or_null> p<282> c<261> s<280> l<17:5> el<17:20>
+n<o4> u<263> t<StringConst> p<264> l<18:5> el<18:7>
+n<> u<264> t<Ps_or_hierarchical_identifier> p<267> c<263> s<266> l<18:5> el<18:7>
+n<> u<265> t<Bit_select> p<266> l<18:8> el<18:8>
+n<> u<266> t<Select> p<267> c<265> l<18:8> el<18:8>
+n<> u<267> t<Variable_lvalue> p<276> c<264> s<268> l<18:5> el<18:7>
+n<> u<268> t<AssignOp_Assign> p<276> s<275> l<18:8> el<18:9>
+n<q> u<269> t<StringConst> p<273> s<270> l<18:10> el<18:11>
+n<pop_back> u<270> t<StringConst> p<273> s<272> l<18:12> el<18:20>
+n<> u<271> t<Bit_select> p<272> l<18:20> el<18:20>
+n<> u<272> t<Select> p<273> c<271> l<18:20> el<18:20>
+n<> u<273> t<Complex_func_call> p<274> c<269> l<18:10> el<18:20>
+n<> u<274> t<Primary> p<275> c<273> l<18:10> el<18:20>
+n<> u<275> t<Expression> p<276> c<274> l<18:10> el<18:20>
+n<> u<276> t<Operator_assignment> p<277> c<267> l<18:5> el<18:20>
+n<> u<277> t<Blocking_assignment> p<278> c<276> l<18:5> el<18:20>
+n<> u<278> t<Statement_item> p<279> c<277> l<18:5> el<18:21>
+n<> u<279> t<Statement> p<280> c<278> l<18:5> el<18:21>
+n<> u<280> t<Statement_or_null> p<282> c<279> s<281> l<18:5> el<18:21>
+n<> u<281> t<END> p<282> l<19:3> el<19:6>
+n<> u<282> t<Seq_block> p<283> c<195> l<12:11> el<19:6>
+n<> u<283> t<Statement_item> p<284> c<282> l<12:11> el<19:6>
+n<> u<284> t<Statement> p<285> c<283> l<12:11> el<19:6>
+n<> u<285> t<Statement_or_null> p<286> c<284> l<12:11> el<19:6>
+n<> u<286> t<Initial_construct> p<287> c<285> l<12:3> el<19:6>
+n<> u<287> t<Module_common_item> p<288> c<286> l<12:3> el<19:6>
+n<> u<288> t<Module_or_generate_item> p<289> c<287> l<12:3> el<19:6>
+n<> u<289> t<Non_port_module_item> p<313> c<288> s<311> l<12:3> el<19:6>
+n<o5> u<290> t<StringConst> p<291> l<20:10> el<20:12>
+n<> u<291> t<Ps_or_hierarchical_identifier> p<294> c<290> s<293> l<20:10> el<20:12>
+n<> u<292> t<Constant_bit_select> p<293> l<20:13> el<20:13>
+n<> u<293> t<Constant_select> p<294> c<292> l<20:13> el<20:13>
+n<> u<294> t<Net_lvalue> p<306> c<291> s<305> l<20:10> el<20:12>
+n<arr> u<295> t<StringConst> p<303> s<299> l<20:15> el<20:18>
+n<1> u<296> t<IntConst> p<297> l<20:19> el<20:20>
+n<> u<297> t<Primary_literal> p<298> c<296> l<20:19> el<20:20>
+n<> u<298> t<Constant_primary> p<299> c<297> l<20:19> el<20:20>
+n<> u<299> t<Constant_expression> p<303> c<298> s<300> l<20:19> el<20:20>
+n<size> u<300> t<StringConst> p<303> s<302> l<20:22> el<20:26>
+n<> u<301> t<Bit_select> p<302> l<20:26> el<20:26>
+n<> u<302> t<Select> p<303> c<301> l<20:26> el<20:26>
+n<> u<303> t<Complex_func_call> p<304> c<295> l<20:15> el<20:26>
+n<> u<304> t<Primary> p<305> c<303> l<20:15> el<20:26>
+n<> u<305> t<Expression> p<306> c<304> l<20:15> el<20:26>
+n<> u<306> t<Net_assignment> p<307> c<294> l<20:10> el<20:26>
+n<> u<307> t<List_of_net_assignments> p<308> c<306> l<20:10> el<20:26>
+n<> u<308> t<Continuous_assign> p<309> c<307> l<20:3> el<20:27>
+n<> u<309> t<Module_common_item> p<310> c<308> l<20:3> el<20:27>
+n<> u<310> t<Module_or_generate_item> p<311> c<309> l<20:3> el<20:27>
+n<> u<311> t<Non_port_module_item> p<313> c<310> s<312> l<20:3> el<20:27>
+n<> u<312> t<ENDMODULE> p<313> l<21:1> el<21:10>
+n<> u<313> t<Module_declaration> p<314> c<45> l<4:1> el<21:10>
+n<> u<314> t<Description> p<315> c<313> l<4:1> el<21:10>
+n<> u<315> t<Source_text> p<316> c<314> l<4:1> el<21:10>
+n<> u<316> t<Top_level_rule> c<1> l<4:1> el<22:1>
+AST_DEBUG_END
+[WRN:PA0205] ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:4:1: No timescale set for "top".
+[INF:CP0300] Compilation...
+[INF:CP0303] ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:4:1: Compile module "work@top".
+[INF:EL0526] Design Elaboration...
+[NTE:EL0503] ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:4:1: Top level module "work@top".
+[NTE:EL0508] Nb Top level modules: 1.
+[NTE:EL0509] Max instance depth: 1.
+[NTE:EL0510] Nb instances: 1.
+[NTE:EL0511] Nb leaf instances: 0.
+[INF:UH0706] Creating UHDM Model...
+=== UHDM Object Stats Begin (Non-Elaborated Model) ===
+array_net                                              1
+array_typespec                                         2
+array_var                                              2
+assignment                                             5
+begin                                                  1
+bit_select                                             1
+constant                                              17
+cont_assign                                            1
+design                                                 1
+enum_const                                             3
+enum_typespec                                          1
+enum_var                                               1
+hier_path                                              6
+initial                                                1
+int_typespec                                          19
+int_var                                                7
+logic_net                                              9
+logic_typespec                                         2
+method_func_call                                       1
+module_inst                                            5
+operation                                              3
+port                                                  10
+range                                                  5
+ref_obj                                               28
+ref_typespec                                          27
+struct_net                                             1
+struct_typespec                                        1
+typespec_member                                        1
+=== UHDM Object Stats End ===
+[INF:UH0707] Elaborating UHDM...
+=== UHDM Object Stats Begin (Elaborated Model) ===
+array_net                                              1
+array_typespec                                         2
+array_var                                              2
+assignment                                            10
+begin                                                  2
+bit_select                                             2
+constant                                              17
+cont_assign                                            2
+design                                                 1
+enum_const                                             3
+enum_typespec                                          1
+enum_var                                               1
+func_call                                              1
+hier_path                                             12
+initial                                                2
+int_typespec                                          19
+int_var                                                7
+logic_net                                              9
+logic_typespec                                         2
+method_func_call                                       7
+module_inst                                            5
+operation                                              3
+port                                                  15
+range                                                  5
+ref_obj                                               52
+ref_typespec                                          32
+struct_net                                             1
+struct_typespec                                        1
+typespec_member                                        1
+=== UHDM Object Stats End ===
+[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/BuiltinMethodNoParens/slpp_all/surelog.uhdm ...
+[INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/BuiltinMethodNoParens/slpp_all/checker/surelog.chk.html ...
+[INF:UH0710] Loading UHDM DB: ${SURELOG_DIR}/build/regression/BuiltinMethodNoParens/slpp_all/surelog.uhdm ...
+[INF:UH0711] Decompiling UHDM...
+====== UHDM =======
+design: (work@top)
+|vpiElaborated:1
+|vpiName:work@top
+|uhdmallModules:
+\_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiFullName:work@top
+  |vpiTypedef:
+  \_enum_typespec: (e_t), line:6:3, endln:6:42
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:e_t
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiBaseTypespec:
+    \_ref_typespec: (work@top.e_t)
+      |vpiParent:
+      \_enum_typespec: (e_t), line:6:3, endln:6:42
+      |vpiFullName:work@top.e_t
+      |vpiActual:
+      \_logic_typespec: , line:6:16, endln:6:27
+    |vpiEnumConst:
+    \_enum_const: (A), line:6:29, endln:6:30
+      |vpiParent:
+      \_enum_typespec: (e_t), line:6:3, endln:6:42
+      |vpiName:A
+      |INT:0
+      |vpiDecompile:0
+      |vpiSize:2
+    |vpiEnumConst:
+    \_enum_const: (B), line:6:32, endln:6:33
+      |vpiParent:
+      \_enum_typespec: (e_t), line:6:3, endln:6:42
+      |vpiName:B
+      |INT:1
+      |vpiDecompile:1
+      |vpiSize:2
+    |vpiEnumConst:
+    \_enum_const: (C), line:6:35, endln:6:36
+      |vpiParent:
+      \_enum_typespec: (e_t), line:6:3, endln:6:42
+      |vpiName:C
+      |INT:2
+      |vpiDecompile:2
+      |vpiSize:2
+  |vpiTypedef:
+  \_struct_typespec: (s_t), line:7:11, endln:11:14
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:s_t
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiPacked:1
+    |vpiTypespecMember:
+    \_typespec_member: (size), line:7:39, endln:7:43
+      |vpiParent:
+      \_struct_typespec: (s_t), line:7:11, endln:11:14
+      |vpiName:size
+      |vpiTypespec:
+      \_ref_typespec: (work@top.s_t.size)
+        |vpiParent:
+        \_typespec_member: (size), line:7:39, endln:7:43
+        |vpiFullName:work@top.s_t.size
+        |vpiActual:
+        \_logic_typespec: , line:7:27, endln:7:38
+      |vpiRefFile:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv
+      |vpiRefLineNo:7
+      |vpiRefColumnNo:27
+      |vpiRefEndLineNo:7
+      |vpiRefEndColumnNo:38
+  |vpiDefName:work@top
+  |vpiNet:
+  \_logic_net: (work@top.o1), line:4:23, endln:4:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o1
+    |vpiFullName:work@top.o1
+  |vpiNet:
+  \_logic_net: (work@top.o2), line:4:38, endln:4:40
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o2
+    |vpiFullName:work@top.o2
+  |vpiNet:
+  \_logic_net: (work@top.o3), line:4:53, endln:4:55
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o3
+    |vpiFullName:work@top.o3
+  |vpiNet:
+  \_logic_net: (work@top.o4), line:4:68, endln:4:70
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o4
+    |vpiFullName:work@top.o4
+  |vpiNet:
+  \_logic_net: (work@top.o5), line:5:23, endln:5:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o5
+    |vpiFullName:work@top.o5
+  |vpiNet:
+  \_logic_net: (work@top.c1), line:8:7, endln:8:9
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.c1)
+      |vpiParent:
+      \_logic_net: (work@top.c1), line:8:7, endln:8:9
+      |vpiFullName:work@top.c1
+      |vpiActual:
+      \_enum_typespec: (e_t), line:6:3, endln:6:42
+    |vpiName:c1
+    |vpiFullName:work@top.c1
+  |vpiNet:
+  \_logic_net: (work@top.b), line:9:7, endln:9:8
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.b)
+      |vpiParent:
+      \_logic_net: (work@top.b), line:9:7, endln:9:8
+      |vpiFullName:work@top.b
+      |vpiActual:
+      \_int_typespec: , line:9:3, endln:9:12
+    |vpiName:b
+    |vpiFullName:work@top.b
+  |vpiNet:
+  \_logic_net: (work@top.q), line:10:7, endln:10:8
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.q)
+      |vpiParent:
+      \_logic_net: (work@top.q), line:10:7, endln:10:8
+      |vpiFullName:work@top.q
+      |vpiActual:
+      \_int_typespec: , line:10:3, endln:10:11
+    |vpiName:q
+    |vpiFullName:work@top.q
+  |vpiNet:
+  \_logic_net: (work@top.arr), line:11:7, endln:11:10
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.arr)
+      |vpiParent:
+      \_logic_net: (work@top.arr), line:11:7, endln:11:10
+      |vpiFullName:work@top.arr
+      |vpiActual:
+      \_struct_typespec: (s_t), line:7:11, endln:11:14
+    |vpiName:arr
+    |vpiFullName:work@top.arr
+  |vpiPort:
+  \_port: (o1), line:4:23, endln:4:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o1
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o1.o1), line:4:23, endln:4:25
+      |vpiParent:
+      \_port: (o1), line:4:23, endln:4:25
+      |vpiName:o1
+      |vpiFullName:work@top.o1.o1
+      |vpiActual:
+      \_logic_net: (work@top.o1), line:4:23, endln:4:25
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_port: (o1), line:4:23, endln:4:25
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_typespec: , line:4:19, endln:4:22
+  |vpiPort:
+  \_port: (o2), line:4:38, endln:4:40
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o2
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o2.o2), line:4:38, endln:4:40
+      |vpiParent:
+      \_port: (o2), line:4:38, endln:4:40
+      |vpiName:o2
+      |vpiFullName:work@top.o2.o2
+      |vpiActual:
+      \_logic_net: (work@top.o2), line:4:38, endln:4:40
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o2)
+      |vpiParent:
+      \_port: (o2), line:4:38, endln:4:40
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_typespec: , line:4:34, endln:4:37
+  |vpiPort:
+  \_port: (o3), line:4:53, endln:4:55
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o3
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o3.o3), line:4:53, endln:4:55
+      |vpiParent:
+      \_port: (o3), line:4:53, endln:4:55
+      |vpiName:o3
+      |vpiFullName:work@top.o3.o3
+      |vpiActual:
+      \_logic_net: (work@top.o3), line:4:53, endln:4:55
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o3)
+      |vpiParent:
+      \_port: (o3), line:4:53, endln:4:55
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_typespec: , line:4:49, endln:4:52
+  |vpiPort:
+  \_port: (o4), line:4:68, endln:4:70
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o4
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o4.o4), line:4:68, endln:4:70
+      |vpiParent:
+      \_port: (o4), line:4:68, endln:4:70
+      |vpiName:o4
+      |vpiFullName:work@top.o4.o4
+      |vpiActual:
+      \_logic_net: (work@top.o4), line:4:68, endln:4:70
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o4)
+      |vpiParent:
+      \_port: (o4), line:4:68, endln:4:70
+      |vpiFullName:work@top.o4
+      |vpiActual:
+      \_int_typespec: , line:4:64, endln:4:67
+  |vpiPort:
+  \_port: (o5), line:5:23, endln:5:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o5
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o5.o5), line:5:23, endln:5:25
+      |vpiParent:
+      \_port: (o5), line:5:23, endln:5:25
+      |vpiName:o5
+      |vpiFullName:work@top.o5.o5
+      |vpiActual:
+      \_logic_net: (work@top.o5), line:5:23, endln:5:25
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o5)
+      |vpiParent:
+      \_port: (o5), line:5:23, endln:5:25
+      |vpiFullName:work@top.o5
+      |vpiActual:
+      \_int_typespec: , line:5:19, endln:5:22
+  |vpiProcess:
+  \_initial: , line:12:3, endln:19:6
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiStmt:
+    \_begin: (work@top), line:12:11, endln:19:6
+      |vpiParent:
+      \_initial: , line:12:3, endln:19:6
+      |vpiFullName:work@top
+      |vpiStmt:
+      \_assignment: , line:13:5, endln:13:18
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (c1.first), line:13:10, endln:13:18
+          |vpiParent:
+          \_assignment: , line:13:5, endln:13:18
+          |vpiActual:
+          \_ref_obj: (c1), line:13:10, endln:13:12
+            |vpiParent:
+            \_hier_path: (c1.first), line:13:10, endln:13:18
+            |vpiName:c1
+          |vpiActual:
+          \_ref_obj: (work@top.first), line:13:13, endln:13:18
+            |vpiParent:
+            \_hier_path: (c1.first), line:13:10, endln:13:18
+            |vpiName:first
+            |vpiFullName:work@top.first
+          |vpiName:c1.first
+        |vpiLhs:
+        \_ref_obj: (work@top.c1), line:13:5, endln:13:7
+          |vpiParent:
+          \_assignment: , line:13:5, endln:13:18
+          |vpiName:c1
+          |vpiFullName:work@top.c1
+          |vpiActual:
+          \_logic_net: (work@top.c1), line:8:7, endln:8:9
+      |vpiStmt:
+      \_assignment: , line:14:5, endln:14:16
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (c1.num), line:14:10, endln:14:16
+          |vpiParent:
+          \_assignment: , line:14:5, endln:14:16
+          |vpiActual:
+          \_ref_obj: (c1), line:14:10, endln:14:12
+            |vpiParent:
+            \_hier_path: (c1.num), line:14:10, endln:14:16
+            |vpiName:c1
+          |vpiActual:
+          \_ref_obj: (work@top.num), line:14:13, endln:14:16
+            |vpiParent:
+            \_hier_path: (c1.num), line:14:10, endln:14:16
+            |vpiName:num
+            |vpiFullName:work@top.num
+          |vpiName:c1.num
+        |vpiLhs:
+        \_ref_obj: (work@top.o1), line:14:5, endln:14:7
+          |vpiParent:
+          \_assignment: , line:14:5, endln:14:16
+          |vpiName:o1
+          |vpiFullName:work@top.o1
+          |vpiActual:
+          \_logic_net: (work@top.o1), line:4:23, endln:4:25
+      |vpiStmt:
+      \_assignment: , line:15:5, endln:15:15
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (b.sum), line:15:10, endln:15:15
+          |vpiParent:
+          \_assignment: , line:15:5, endln:15:15
+          |vpiActual:
+          \_ref_obj: (b), line:15:10, endln:15:11
+            |vpiParent:
+            \_hier_path: (b.sum), line:15:10, endln:15:15
+            |vpiName:b
+          |vpiActual:
+          \_ref_obj: (work@top.sum), line:15:12, endln:15:15
+            |vpiParent:
+            \_hier_path: (b.sum), line:15:10, endln:15:15
+            |vpiName:sum
+            |vpiFullName:work@top.sum
+          |vpiName:b.sum
+        |vpiLhs:
+        \_ref_obj: (work@top.o2), line:15:5, endln:15:7
+          |vpiParent:
+          \_assignment: , line:15:5, endln:15:15
+          |vpiName:o2
+          |vpiFullName:work@top.o2
+          |vpiActual:
+          \_logic_net: (work@top.o2), line:4:38, endln:4:40
+      |vpiStmt:
+      \_assignment: , line:16:5, endln:16:19
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (b.product), line:16:10, endln:16:19
+          |vpiParent:
+          \_assignment: , line:16:5, endln:16:19
+          |vpiActual:
+          \_ref_obj: (b), line:16:10, endln:16:11
+            |vpiParent:
+            \_hier_path: (b.product), line:16:10, endln:16:19
+            |vpiName:b
+          |vpiActual:
+          \_ref_obj: (work@top.product), line:16:12, endln:16:19
+            |vpiParent:
+            \_hier_path: (b.product), line:16:10, endln:16:19
+            |vpiName:product
+            |vpiFullName:work@top.product
+          |vpiName:b.product
+        |vpiLhs:
+        \_ref_obj: (work@top.o3), line:16:5, endln:16:7
+          |vpiParent:
+          \_assignment: , line:16:5, endln:16:19
+          |vpiName:o3
+          |vpiFullName:work@top.o3
+          |vpiActual:
+          \_logic_net: (work@top.o3), line:4:53, endln:4:55
+      |vpiStmt:
+      \_method_func_call: (push_back), line:17:7, endln:17:16
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiArgument:
+        \_constant: , line:17:17, endln:17:18
+          |vpiParent:
+          \_method_func_call: (push_back), line:17:7, endln:17:16
+          |vpiDecompile:1
+          |vpiSize:64
+          |UINT:1
+          |vpiConstType:9
+        |vpiName:push_back
+        |vpiPrefix:
+        \_ref_obj: (work@top.q), line:17:5, endln:17:6
+          |vpiParent:
+          \_method_func_call: (push_back), line:17:7, endln:17:16
+          |vpiName:q
+          |vpiFullName:work@top.q
+      |vpiStmt:
+      \_assignment: , line:18:5, endln:18:20
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (q.pop_back), line:18:10, endln:18:20
+          |vpiParent:
+          \_assignment: , line:18:5, endln:18:20
+          |vpiActual:
+          \_ref_obj: (q), line:18:10, endln:18:11
+            |vpiParent:
+            \_hier_path: (q.pop_back), line:18:10, endln:18:20
+            |vpiName:q
+          |vpiActual:
+          \_ref_obj: (work@top.pop_back), line:18:12, endln:18:20
+            |vpiParent:
+            \_hier_path: (q.pop_back), line:18:10, endln:18:20
+            |vpiName:pop_back
+            |vpiFullName:work@top.pop_back
+          |vpiName:q.pop_back
+        |vpiLhs:
+        \_ref_obj: (work@top.o4), line:18:5, endln:18:7
+          |vpiParent:
+          \_assignment: , line:18:5, endln:18:20
+          |vpiName:o4
+          |vpiFullName:work@top.o4
+          |vpiActual:
+          \_logic_net: (work@top.o4), line:4:68, endln:4:70
+  |vpiContAssign:
+  \_cont_assign: , line:20:10, endln:20:26
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiRhs:
+    \_hier_path: (arr[1].size), line:20:15, endln:20:26
+      |vpiParent:
+      \_cont_assign: , line:20:10, endln:20:26
+      |vpiActual:
+      \_bit_select: (arr[1]), line:20:15, endln:20:18
+        |vpiParent:
+        \_hier_path: (arr[1].size), line:20:15, endln:20:26
+        |vpiName:arr
+        |vpiFullName:arr[1]
+        |vpiIndex:
+        \_constant: , line:20:19, endln:20:20
+          |vpiDecompile:1
+          |vpiSize:64
+          |UINT:1
+          |vpiConstType:9
+      |vpiActual:
+      \_ref_obj: (work@top.size), line:20:22, endln:20:26
+        |vpiParent:
+        \_hier_path: (arr[1].size), line:20:15, endln:20:26
+        |vpiName:size
+        |vpiFullName:work@top.size
+      |vpiName:arr[1].size
+    |vpiLhs:
+    \_ref_obj: (work@top.o5), line:20:10, endln:20:12
+      |vpiParent:
+      \_cont_assign: , line:20:10, endln:20:26
+      |vpiName:o5
+      |vpiFullName:work@top.o5
+      |vpiActual:
+      \_logic_net: (work@top.o5), line:5:23, endln:5:25
+|uhdmtopModules:
+\_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiName:work@top
+  |vpiVariables:
+  \_int_var: (work@top.o1), line:4:23, endln:4:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_int_var: (work@top.o1), line:4:23, endln:4:25
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_typespec: , line:4:19, endln:4:22
+    |vpiName:o1
+    |vpiFullName:work@top.o1
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@top.o2), line:4:38, endln:4:40
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o2)
+      |vpiParent:
+      \_int_var: (work@top.o2), line:4:38, endln:4:40
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_typespec: , line:4:34, endln:4:37
+    |vpiName:o2
+    |vpiFullName:work@top.o2
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@top.o3), line:4:53, endln:4:55
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o3)
+      |vpiParent:
+      \_int_var: (work@top.o3), line:4:53, endln:4:55
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_typespec: , line:4:49, endln:4:52
+    |vpiName:o3
+    |vpiFullName:work@top.o3
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@top.o4), line:4:68, endln:4:70
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o4)
+      |vpiParent:
+      \_int_var: (work@top.o4), line:4:68, endln:4:70
+      |vpiFullName:work@top.o4
+      |vpiActual:
+      \_int_typespec: , line:4:64, endln:4:67
+    |vpiName:o4
+    |vpiFullName:work@top.o4
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@top.o5), line:5:23, endln:5:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o5)
+      |vpiParent:
+      \_int_var: (work@top.o5), line:5:23, endln:5:25
+      |vpiFullName:work@top.o5
+      |vpiActual:
+      \_int_typespec: , line:5:19, endln:5:22
+    |vpiName:o5
+    |vpiFullName:work@top.o5
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_enum_var: (work@top.c1), line:8:7, endln:8:9
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.c1)
+      |vpiParent:
+      \_enum_var: (work@top.c1), line:8:7, endln:8:9
+      |vpiFullName:work@top.c1
+      |vpiActual:
+      \_enum_typespec: (e_t), line:6:3, endln:6:42
+    |vpiName:c1
+    |vpiFullName:work@top.c1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_array_var: (work@top.b), line:9:7, endln:9:8
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiSize:3
+    |vpiTypespec:
+    \_ref_typespec: (work@top.b)
+      |vpiParent:
+      \_array_var: (work@top.b), line:9:7, endln:9:8
+      |vpiFullName:work@top.b
+      |vpiActual:
+      \_array_typespec: 
+    |vpiName:b
+    |vpiFullName:work@top.b
+    |vpiSigned:1
+    |vpiRandType:1
+    |vpiVisibility:1
+    |vpiExpr:
+    \_operation: , line:9:15, endln:9:25
+      |vpiParent:
+      \_int_var: (work@top.b), line:9:7, endln:9:8
+      |vpiOpType:75
+      |vpiOperand:
+      \_constant: , line:9:17, endln:9:18
+        |vpiDecompile:1
+        |vpiSize:32
+        |UINT:1
+        |vpiConstType:9
+      |vpiOperand:
+      \_constant: , line:9:20, endln:9:21
+        |vpiDecompile:2
+        |vpiSize:32
+        |UINT:2
+        |vpiConstType:9
+      |vpiOperand:
+      \_constant: , line:9:23, endln:9:24
+        |vpiDecompile:3
+        |vpiSize:32
+        |UINT:3
+        |vpiConstType:9
+    |vpiArrayType:1
+    |vpiRange:
+    \_range: , line:9:10, endln:9:11
+      |vpiParent:
+      \_array_var: (work@top.b), line:9:7, endln:9:8
+      |vpiLeftRange:
+      \_constant: 
+        |vpiParent:
+        \_range: , line:9:10, endln:9:11
+        |vpiDecompile:0
+        |vpiSize:64
+        |UINT:0
+        |vpiConstType:9
+      |vpiRightRange:
+      \_operation: , line:9:10, endln:9:11
+        |vpiParent:
+        \_range: , line:9:10, endln:9:11
+        |vpiOpType:11
+        |vpiOperand:
+        \_constant: , line:9:10, endln:9:11
+          |vpiParent:
+          \_operation: , line:9:10, endln:9:11
+          |vpiDecompile:3
+          |vpiSize:64
+          |UINT:3
+          |vpiConstType:9
+        |vpiOperand:
+        \_constant: 
+          |vpiSize:64
+          |INT:1
+          |vpiConstType:7
+    |vpiReg:
+    \_int_var: (work@top.b), line:9:7, endln:9:8
+      |vpiParent:
+      \_array_var: (work@top.b), line:9:7, endln:9:8
+      |vpiTypespec:
+      \_ref_typespec: (work@top.b)
+        |vpiParent:
+        \_int_var: (work@top.b), line:9:7, endln:9:8
+        |vpiFullName:work@top.b
+        |vpiActual:
+        \_int_typespec: , line:9:3, endln:9:6
+      |vpiFullName:work@top.b
+      |vpiExpr:
+      \_operation: , line:9:15, endln:9:25
+  |vpiVariables:
+  \_array_var: (work@top.q), line:10:7, endln:10:8
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiSize:1
+    |vpiTypespec:
+    \_ref_typespec: (work@top.q)
+      |vpiParent:
+      \_array_var: (work@top.q), line:10:7, endln:10:8
+      |vpiFullName:work@top.q
+      |vpiActual:
+      \_array_typespec: 
+    |vpiName:q
+    |vpiFullName:work@top.q
+    |vpiSigned:1
+    |vpiRandType:1
+    |vpiVisibility:1
+    |vpiArrayType:4
+    |vpiReg:
+    \_int_var: (work@top.q), line:10:7, endln:10:8
+      |vpiParent:
+      \_array_var: (work@top.q), line:10:7, endln:10:8
+      |vpiTypespec:
+      \_ref_typespec: (work@top.q)
+        |vpiParent:
+        \_int_var: (work@top.q), line:10:7, endln:10:8
+        |vpiFullName:work@top.q
+        |vpiActual:
+        \_int_typespec: , line:10:3, endln:10:6
+      |vpiFullName:work@top.q
+  |vpiTypedef:
+  \_enum_typespec: (e_t), line:6:3, endln:6:42
+  |vpiTypedef:
+  \_struct_typespec: (s_t), line:7:11, endln:11:14
+  |vpiDefName:work@top
+  |vpiTop:1
+  |vpiArrayNet:
+  \_array_net: (work@top.arr), line:11:7, endln:11:10
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiSize:2
+    |vpiName:arr
+    |vpiFullName:work@top.arr
+    |vpiRange:
+    \_range: , line:11:12, endln:11:13
+      |vpiParent:
+      \_array_net: (work@top.arr), line:11:7, endln:11:10
+      |vpiLeftRange:
+      \_constant: 
+        |vpiParent:
+        \_range: , line:11:12, endln:11:13
+        |vpiDecompile:0
+        |vpiSize:64
+        |UINT:0
+        |vpiConstType:9
+      |vpiRightRange:
+      \_operation: , line:11:12, endln:11:13
+        |vpiParent:
+        \_range: , line:11:12, endln:11:13
+        |vpiOpType:11
+        |vpiOperand:
+        \_constant: , line:11:12, endln:11:13
+          |vpiParent:
+          \_operation: , line:11:12, endln:11:13
+          |vpiDecompile:2
+          |vpiSize:64
+          |UINT:2
+          |vpiConstType:9
+        |vpiOperand:
+        \_constant: 
+          |vpiSize:64
+          |INT:1
+          |vpiConstType:7
+    |vpiNet:
+    \_struct_net: (work@top.arr.arr), line:11:7, endln:11:14
+      |vpiParent:
+      \_array_net: (work@top.arr), line:11:7, endln:11:10
+      |vpiTypespec:
+      \_ref_typespec: (work@top.arr.arr)
+        |vpiParent:
+        \_struct_net: (work@top.arr.arr), line:11:7, endln:11:14
+        |vpiFullName:work@top.arr.arr
+        |vpiActual:
+        \_struct_typespec: (s_t), line:7:11, endln:11:14
+      |vpiName:arr
+      |vpiFullName:work@top.arr.arr
+  |vpiTopModule:1
+  |vpiPort:
+  \_port: (o1), line:4:23, endln:4:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o1
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o1), line:4:23, endln:4:25
+      |vpiParent:
+      \_port: (o1), line:4:23, endln:4:25
+      |vpiName:o1
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_var: (work@top.o1), line:4:23, endln:4:25
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_port: (o1), line:4:23, endln:4:25
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_typespec: , line:4:19, endln:4:22
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+  |vpiPort:
+  \_port: (o2), line:4:38, endln:4:40
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o2
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o2), line:4:38, endln:4:40
+      |vpiParent:
+      \_port: (o2), line:4:38, endln:4:40
+      |vpiName:o2
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_var: (work@top.o2), line:4:38, endln:4:40
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o2)
+      |vpiParent:
+      \_port: (o2), line:4:38, endln:4:40
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_typespec: , line:4:34, endln:4:37
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+  |vpiPort:
+  \_port: (o3), line:4:53, endln:4:55
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o3
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o3), line:4:53, endln:4:55
+      |vpiParent:
+      \_port: (o3), line:4:53, endln:4:55
+      |vpiName:o3
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_var: (work@top.o3), line:4:53, endln:4:55
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o3)
+      |vpiParent:
+      \_port: (o3), line:4:53, endln:4:55
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_typespec: , line:4:49, endln:4:52
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+  |vpiPort:
+  \_port: (o4), line:4:68, endln:4:70
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o4
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o4), line:4:68, endln:4:70
+      |vpiParent:
+      \_port: (o4), line:4:68, endln:4:70
+      |vpiName:o4
+      |vpiFullName:work@top.o4
+      |vpiActual:
+      \_int_var: (work@top.o4), line:4:68, endln:4:70
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o4)
+      |vpiParent:
+      \_port: (o4), line:4:68, endln:4:70
+      |vpiFullName:work@top.o4
+      |vpiActual:
+      \_int_typespec: , line:4:64, endln:4:67
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+  |vpiPort:
+  \_port: (o5), line:5:23, endln:5:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiName:o5
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o5), line:5:23, endln:5:25
+      |vpiParent:
+      \_port: (o5), line:5:23, endln:5:25
+      |vpiName:o5
+      |vpiFullName:work@top.o5
+      |vpiActual:
+      \_int_var: (work@top.o5), line:5:23, endln:5:25
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o5)
+      |vpiParent:
+      \_port: (o5), line:5:23, endln:5:25
+      |vpiFullName:work@top.o5
+      |vpiActual:
+      \_int_typespec: , line:5:19, endln:5:22
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+  |vpiProcess:
+  \_initial: , line:12:3, endln:19:6
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiStmt:
+    \_begin: (work@top), line:12:11, endln:19:6
+      |vpiParent:
+      \_initial: , line:12:3, endln:19:6
+      |vpiFullName:work@top
+      |vpiStmt:
+      \_assignment: , line:13:5, endln:13:18
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (c1.first), line:13:10, endln:13:18
+          |vpiParent:
+          \_assignment: , line:13:5, endln:13:18
+          |vpiActual:
+          \_ref_obj: (c1), line:13:10, endln:13:12
+            |vpiParent:
+            \_hier_path: (c1.first), line:13:10, endln:13:18
+            |vpiName:c1
+            |vpiActual:
+            \_enum_var: (work@top.c1), line:8:7, endln:8:9
+          |vpiActual:
+          \_method_func_call: (first), line:13:13, endln:13:18
+            |vpiParent:
+            \_hier_path: (c1.first), line:13:10, endln:13:18
+            |vpiName:first
+          |vpiName:c1.first
+        |vpiLhs:
+        \_ref_obj: (work@top.c1), line:13:5, endln:13:7
+          |vpiParent:
+          \_assignment: , line:13:5, endln:13:18
+          |vpiName:c1
+          |vpiFullName:work@top.c1
+          |vpiActual:
+          \_enum_var: (work@top.c1), line:8:7, endln:8:9
+      |vpiStmt:
+      \_assignment: , line:14:5, endln:14:16
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (c1.num), line:14:10, endln:14:16
+          |vpiParent:
+          \_assignment: , line:14:5, endln:14:16
+          |vpiActual:
+          \_ref_obj: (c1), line:14:10, endln:14:12
+            |vpiParent:
+            \_hier_path: (c1.num), line:14:10, endln:14:16
+            |vpiName:c1
+            |vpiActual:
+            \_enum_var: (work@top.c1), line:8:7, endln:8:9
+          |vpiActual:
+          \_method_func_call: (num), line:14:13, endln:14:16
+            |vpiParent:
+            \_hier_path: (c1.num), line:14:10, endln:14:16
+            |vpiName:num
+          |vpiName:c1.num
+        |vpiLhs:
+        \_ref_obj: (work@top.o1), line:14:5, endln:14:7
+          |vpiParent:
+          \_assignment: , line:14:5, endln:14:16
+          |vpiName:o1
+          |vpiFullName:work@top.o1
+          |vpiActual:
+          \_int_var: (work@top.o1), line:4:23, endln:4:25
+      |vpiStmt:
+      \_assignment: , line:15:5, endln:15:15
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (b.sum), line:15:10, endln:15:15
+          |vpiParent:
+          \_assignment: , line:15:5, endln:15:15
+          |vpiActual:
+          \_ref_obj: (b), line:15:10, endln:15:11
+            |vpiParent:
+            \_hier_path: (b.sum), line:15:10, endln:15:15
+            |vpiName:b
+            |vpiActual:
+            \_array_var: (work@top.b), line:9:7, endln:9:8
+          |vpiActual:
+          \_method_func_call: (sum), line:15:12, endln:15:15
+            |vpiParent:
+            \_hier_path: (b.sum), line:15:10, endln:15:15
+            |vpiName:sum
+          |vpiName:b.sum
+        |vpiLhs:
+        \_ref_obj: (work@top.o2), line:15:5, endln:15:7
+          |vpiParent:
+          \_assignment: , line:15:5, endln:15:15
+          |vpiName:o2
+          |vpiFullName:work@top.o2
+          |vpiActual:
+          \_int_var: (work@top.o2), line:4:38, endln:4:40
+      |vpiStmt:
+      \_assignment: , line:16:5, endln:16:19
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (b.product), line:16:10, endln:16:19
+          |vpiParent:
+          \_assignment: , line:16:5, endln:16:19
+          |vpiActual:
+          \_ref_obj: (b), line:16:10, endln:16:11
+            |vpiParent:
+            \_hier_path: (b.product), line:16:10, endln:16:19
+            |vpiName:b
+            |vpiActual:
+            \_array_var: (work@top.b), line:9:7, endln:9:8
+          |vpiActual:
+          \_method_func_call: (product), line:16:12, endln:16:19
+            |vpiParent:
+            \_hier_path: (b.product), line:16:10, endln:16:19
+            |vpiName:product
+          |vpiName:b.product
+        |vpiLhs:
+        \_ref_obj: (work@top.o3), line:16:5, endln:16:7
+          |vpiParent:
+          \_assignment: , line:16:5, endln:16:19
+          |vpiName:o3
+          |vpiFullName:work@top.o3
+          |vpiActual:
+          \_int_var: (work@top.o3), line:4:53, endln:4:55
+      |vpiStmt:
+      \_method_func_call: (push_back), line:17:7, endln:17:16
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiArgument:
+        \_constant: , line:17:17, endln:17:18
+        |vpiName:push_back
+        |vpiPrefix:
+        \_ref_obj: (work@top.q), line:17:5, endln:17:6
+          |vpiParent:
+          \_method_func_call: (push_back), line:17:7, endln:17:16
+          |vpiName:q
+          |vpiFullName:work@top.q
+          |vpiActual:
+          \_array_var: (work@top.q), line:10:7, endln:10:8
+      |vpiStmt:
+      \_assignment: , line:18:5, endln:18:20
+        |vpiParent:
+        \_begin: (work@top), line:12:11, endln:19:6
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_hier_path: (q.pop_back), line:18:10, endln:18:20
+          |vpiParent:
+          \_assignment: , line:18:5, endln:18:20
+          |vpiActual:
+          \_ref_obj: (q), line:18:10, endln:18:11
+            |vpiParent:
+            \_hier_path: (q.pop_back), line:18:10, endln:18:20
+            |vpiName:q
+            |vpiActual:
+            \_array_var: (work@top.q), line:10:7, endln:10:8
+          |vpiActual:
+          \_method_func_call: (pop_back), line:18:12, endln:18:20
+            |vpiParent:
+            \_hier_path: (q.pop_back), line:18:10, endln:18:20
+            |vpiName:pop_back
+          |vpiName:q.pop_back
+        |vpiLhs:
+        \_ref_obj: (work@top.o4), line:18:5, endln:18:7
+          |vpiParent:
+          \_assignment: , line:18:5, endln:18:20
+          |vpiName:o4
+          |vpiFullName:work@top.o4
+          |vpiActual:
+          \_int_var: (work@top.o4), line:4:68, endln:4:70
+  |vpiContAssign:
+  \_cont_assign: , line:20:10, endln:20:26
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv, line:4:1, endln:21:10
+    |vpiRhs:
+    \_hier_path: (arr[1].size), line:20:15, endln:20:26
+      |vpiParent:
+      \_cont_assign: , line:20:10, endln:20:26
+      |vpiActual:
+      \_bit_select: (arr[1]), line:20:15, endln:20:18
+        |vpiParent:
+        \_hier_path: (arr[1].size), line:20:15, endln:20:26
+        |vpiName:arr
+        |vpiFullName:arr[1]
+        |vpiActual:
+        \_array_net: (work@top.arr), line:11:7, endln:11:10
+        |vpiIndex:
+        \_constant: , line:20:19, endln:20:20
+      |vpiActual:
+      \_ref_obj: (work@top.size), line:20:22, endln:20:26
+        |vpiParent:
+        \_hier_path: (arr[1].size), line:20:15, endln:20:26
+        |vpiName:size
+        |vpiFullName:work@top.size
+        |vpiActual:
+        \_typespec_member: (size), line:7:39, endln:7:43
+      |vpiName:arr[1].size
+    |vpiLhs:
+    \_ref_obj: (work@top.o5), line:20:10, endln:20:12
+      |vpiParent:
+      \_cont_assign: , line:20:10, endln:20:26
+      |vpiName:o5
+      |vpiFullName:work@top.o5
+      |vpiActual:
+      \_int_var: (work@top.o5), line:5:23, endln:5:25
+\_weaklyReferenced:
+\_logic_typespec: , line:6:16, endln:6:27
+  |vpiRange:
+  \_range: , line:6:22, endln:6:27
+    |vpiParent:
+    \_logic_typespec: , line:6:16, endln:6:27
+    |vpiLeftRange:
+    \_constant: , line:6:23, endln:6:24
+      |vpiParent:
+      \_range: , line:6:22, endln:6:27
+      |vpiDecompile:1
+      |vpiSize:64
+      |UINT:1
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:6:25, endln:6:26
+      |vpiParent:
+      \_range: , line:6:22, endln:6:27
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:7:27, endln:7:38
+  |vpiParent:
+  \_typespec_member: (size), line:7:39, endln:7:43
+  |vpiRange:
+  \_range: , line:7:33, endln:7:38
+    |vpiParent:
+    \_logic_typespec: , line:7:27, endln:7:38
+    |vpiLeftRange:
+    \_constant: , line:7:34, endln:7:35
+      |vpiParent:
+      \_range: , line:7:33, endln:7:38
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:36, endln:7:37
+      |vpiParent:
+      \_range: , line:7:33, endln:7:38
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_int_typespec: , line:4:19, endln:4:22
+  |vpiSigned:1
+\_int_typespec: , line:4:34, endln:4:37
+  |vpiSigned:1
+\_int_typespec: , line:4:49, endln:4:52
+  |vpiSigned:1
+\_int_typespec: , line:4:64, endln:4:67
+  |vpiSigned:1
+\_int_typespec: , line:5:19, endln:5:22
+  |vpiSigned:1
+\_int_typespec: , line:4:19, endln:4:22
+  |vpiParent:
+  \_int_var: (work@top.o1), line:4:23, endln:4:25
+  |vpiSigned:1
+\_int_typespec: , line:4:34, endln:4:37
+  |vpiParent:
+  \_int_var: (work@top.o2), line:4:38, endln:4:40
+  |vpiSigned:1
+\_int_typespec: , line:4:49, endln:4:52
+  |vpiParent:
+  \_int_var: (work@top.o3), line:4:53, endln:4:55
+  |vpiSigned:1
+\_int_typespec: , line:4:64, endln:4:67
+  |vpiParent:
+  \_int_var: (work@top.o4), line:4:68, endln:4:70
+  |vpiSigned:1
+\_int_typespec: , line:5:19, endln:5:22
+  |vpiSigned:1
+\_int_typespec: , line:9:3, endln:9:6
+  |vpiParent:
+  \_int_var: (work@top.b), line:9:7, endln:9:8
+  |vpiSigned:1
+\_array_typespec: 
+\_int_typespec: , line:10:3, endln:10:6
+  |vpiParent:
+  \_int_var: (work@top.q), line:10:7, endln:10:8
+  |vpiSigned:1
+\_array_typespec: 
+\_int_typespec: , line:4:19, endln:4:22
+  |vpiSigned:1
+\_int_typespec: , line:4:34, endln:4:37
+  |vpiSigned:1
+\_int_typespec: , line:4:49, endln:4:52
+  |vpiSigned:1
+\_int_typespec: , line:4:64, endln:4:67
+  |vpiSigned:1
+\_int_typespec: , line:5:19, endln:5:22
+  |vpiSigned:1
+\_int_typespec: , line:9:3, endln:9:12
+  |vpiSigned:1
+\_int_typespec: , line:10:3, endln:10:11
+  |vpiSigned:1
+===================
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 0
+[WARNING] : 1
+[   NOTE] : 5
+
+============================== Begin Linting Results ==============================
+[LINT]: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:17:7: Non synthesizable construct, push_back
+[LINT]: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:13:13: Non synthesizable construct, first
+[LINT]: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:14:13: Non synthesizable construct, num
+[LINT]: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:15:12: Non synthesizable construct, sum
+[LINT]: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:16:12: Non synthesizable construct, product
+[LINT]: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:17:7: Non synthesizable construct, push_back
+[LINT]: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv:18:12: Non synthesizable construct, pop_back
+============================== End Linting Results ==============================
+
+============================== Begin RoundTrip Results ==============================
+[roundtrip]: ${SURELOG_DIR}/tests/BuiltinMethodNoParens/dut.sv | ${SURELOG_DIR}/build/regression/BuiltinMethodNoParens/roundtrip/dut_000.sv | 7 | 21 |
+============================== End RoundTrip Results ==============================

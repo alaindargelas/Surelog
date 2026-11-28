@@ -1,0 +1,2448 @@
+[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/GenTypeParamVarDecl/slpp_all/surelog.log".
+AST_DEBUG_BEGIN
+LIB:  work
+FILE: ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+n<> u<0> t<_INVALID_> f<0> l<0:0>
+n<> u<1> t<Null_rule> p<391> s<390> l<4:1> el<3:82>
+n<> u<2> t<PACKAGE> p<44> s<3> l<4:1> el<4:8>
+n<p> u<3> t<StringConst> p<44> s<26> l<4:9> el<4:10>
+n<> u<4> t<Struct_keyword> p<5> l<5:11> el<5:17>
+n<> u<5> t<Struct_union> p<21> c<4> s<6> l<5:11> el<5:17>
+n<> u<6> t<Packed_keyword> p<21> s<13> l<5:18> el<5:24>
+n<> u<7> t<IntVec_TypeBit> p<8> l<5:27> el<5:30>
+n<> u<8> t<Data_type> p<9> c<7> l<5:27> el<5:30>
+n<> u<9> t<Data_type_or_void> p<13> c<8> s<12> l<5:27> el<5:30>
+n<eccEn> u<10> t<StringConst> p<11> l<5:31> el<5:36>
+n<> u<11> t<Variable_decl_assignment> p<12> c<10> l<5:31> el<5:36>
+n<> u<12> t<List_of_variable_decl_assignments> p<13> c<11> l<5:31> el<5:36>
+n<> u<13> t<Struct_union_member> p<21> c<9> s<20> l<5:27> el<5:37>
+n<> u<14> t<IntegerAtomType_Int> p<15> l<5:38> el<5:41>
+n<> u<15> t<Data_type> p<16> c<14> l<5:38> el<5:41>
+n<> u<16> t<Data_type_or_void> p<20> c<15> s<19> l<5:38> el<5:41>
+n<ways> u<17> t<StringConst> p<18> l<5:42> el<5:46>
+n<> u<18> t<Variable_decl_assignment> p<19> c<17> l<5:42> el<5:46>
+n<> u<19> t<List_of_variable_decl_assignments> p<20> c<18> l<5:42> el<5:46>
+n<> u<20> t<Struct_union_member> p<21> c<16> l<5:38> el<5:47>
+n<> u<21> t<Data_type> p<23> c<5> s<22> l<5:11> el<5:49>
+n<u_t> u<22> t<StringConst> p<23> l<5:50> el<5:53>
+n<> u<23> t<Type_declaration> p<24> c<21> l<5:3> el<5:54>
+n<> u<24> t<Data_declaration> p<25> c<23> l<5:3> el<5:54>
+n<> u<25> t<Package_or_generate_item_declaration> p<26> c<24> l<5:3> el<5:54>
+n<> u<26> t<Package_item> p<44> c<25> s<42> l<5:3> el<5:54>
+n<> u<27> t<Struct_keyword> p<28> l<6:11> el<6:17>
+n<> u<28> t<Struct_union> p<37> c<27> s<29> l<6:11> el<6:17>
+n<> u<29> t<Packed_keyword> p<37> s<36> l<6:18> el<6:24>
+n<u_t> u<30> t<StringConst> p<31> l<6:27> el<6:30>
+n<> u<31> t<Data_type> p<32> c<30> l<6:27> el<6:30>
+n<> u<32> t<Data_type_or_void> p<36> c<31> s<35> l<6:27> el<6:30>
+n<u> u<33> t<StringConst> p<34> l<6:31> el<6:32>
+n<> u<34> t<Variable_decl_assignment> p<35> c<33> l<6:31> el<6:32>
+n<> u<35> t<List_of_variable_decl_assignments> p<36> c<34> l<6:31> el<6:32>
+n<> u<36> t<Struct_union_member> p<37> c<32> l<6:27> el<6:33>
+n<> u<37> t<Data_type> p<39> c<28> s<38> l<6:11> el<6:35>
+n<cfg_t> u<38> t<StringConst> p<39> l<6:36> el<6:41>
+n<> u<39> t<Type_declaration> p<40> c<37> l<6:3> el<6:42>
+n<> u<40> t<Data_declaration> p<41> c<39> l<6:3> el<6:42>
+n<> u<41> t<Package_or_generate_item_declaration> p<42> c<40> l<6:3> el<6:42>
+n<> u<42> t<Package_item> p<44> c<41> s<43> l<6:3> el<6:42>
+n<> u<43> t<ENDPACKAGE> p<44> l<7:1> el<7:11>
+n<> u<44> t<Package_declaration> p<45> c<2> l<4:1> el<7:11>
+n<> u<45> t<Description> p<390> c<44> s<278> l<4:1> el<7:11>
+n<module> u<46> t<Module_keyword> p<130> s<47> l<8:1> el<8:7>
+n<m> u<47> t<StringConst> p<130> s<50> l<8:8> el<8:9>
+n<p> u<48> t<StringConst> p<49> l<8:17> el<8:18>
+n<> u<49> t<Package_import_item> p<50> c<48> l<8:17> el<8:21>
+n<> u<50> t<Package_import_declaration> p<130> c<49> s<84> l<8:10> el<8:22>
+n<cfg_t> u<51> t<StringConst> p<52> l<8:35> el<8:40>
+n<> u<52> t<Data_type> p<53> c<51> l<8:35> el<8:40>
+n<> u<53> t<Data_type_or_implicit> p<63> c<52> s<62> l<8:35> el<8:40>
+n<C> u<54> t<StringConst> p<61> s<60> l<8:41> el<8:42>
+n<> u<55> t<Number_Tick0> p<56> l<8:45> el<8:47>
+n<> u<56> t<Primary_literal> p<57> c<55> l<8:45> el<8:47>
+n<> u<57> t<Constant_primary> p<58> c<56> l<8:45> el<8:47>
+n<> u<58> t<Constant_expression> p<59> c<57> l<8:45> el<8:47>
+n<> u<59> t<Constant_mintypmax_expression> p<60> c<58> l<8:45> el<8:47>
+n<> u<60> t<Constant_param_expression> p<61> c<59> l<8:45> el<8:47>
+n<> u<61> t<Param_assignment> p<62> c<54> l<8:41> el<8:47>
+n<> u<62> t<List_of_param_assignments> p<63> c<61> l<8:41> el<8:47>
+n<> u<63> t<Parameter_declaration> p<64> c<53> l<8:25> el<8:47>
+n<> u<64> t<Parameter_port_declaration> p<84> c<63> s<83> l<8:25> el<8:47>
+n<row_t> u<65> t<StringConst> p<79> s<78> l<8:64> el<8:69>
+n<> u<66> t<IntVec_TypeLogic> p<77> s<76> l<8:72> el<8:77>
+n<3> u<67> t<IntConst> p<68> l<8:79> el<8:80>
+n<> u<68> t<Primary_literal> p<69> c<67> l<8:79> el<8:80>
+n<> u<69> t<Constant_primary> p<70> c<68> l<8:79> el<8:80>
+n<> u<70> t<Constant_expression> p<75> c<69> s<74> l<8:79> el<8:80>
+n<0> u<71> t<IntConst> p<72> l<8:81> el<8:82>
+n<> u<72> t<Primary_literal> p<73> c<71> l<8:81> el<8:82>
+n<> u<73> t<Constant_primary> p<74> c<72> l<8:81> el<8:82>
+n<> u<74> t<Constant_expression> p<75> c<73> l<8:81> el<8:82>
+n<> u<75> t<Constant_range> p<76> c<70> l<8:79> el<8:82>
+n<> u<76> t<Packed_dimension> p<77> c<75> l<8:78> el<8:83>
+n<> u<77> t<Data_type> p<78> c<66> l<8:72> el<8:83>
+n<> u<78> t<Constant_param_expression> p<79> c<77> l<8:72> el<8:83>
+n<> u<79> t<Param_assignment> p<80> c<65> l<8:64> el<8:83>
+n<> u<80> t<List_of_param_assignments> p<82> c<79> l<8:64> el<8:83>
+n<> u<81> t<TYPE> p<82> s<80> l<8:59> el<8:63>
+n<> u<82> t<Parameter_declaration> p<83> c<81> l<8:49> el<8:83>
+n<> u<83> t<Parameter_port_declaration> p<84> c<82> l<8:49> el<8:83>
+n<> u<84> t<Parameter_port_list> p<130> c<64> s<129> l<8:23> el<8:84>
+n<> u<85> t<PortDir_Inp> p<90> s<89> l<9:4> el<9:9>
+n<> u<86> t<IntVec_TypeLogic> p<87> l<9:10> el<9:15>
+n<> u<87> t<Data_type> p<88> c<86> l<9:10> el<9:15>
+n<> u<88> t<Data_type_or_implicit> p<89> c<87> l<9:10> el<9:15>
+n<> u<89> t<Net_port_type> p<90> c<88> l<9:10> el<9:15>
+n<> u<90> t<Net_port_header> p<92> c<85> s<91> l<9:4> el<9:15>
+n<clk> u<91> t<StringConst> p<92> l<9:16> el<9:19>
+n<> u<92> t<Ansi_port_declaration> p<129> c<90> s<110> l<9:4> el<9:19>
+n<> u<93> t<PortDir_Inp> p<108> s<107> l<9:21> el<9:26>
+n<> u<94> t<IntVec_TypeLogic> p<105> s<104> l<9:27> el<9:32>
+n<3> u<95> t<IntConst> p<96> l<9:34> el<9:35>
+n<> u<96> t<Primary_literal> p<97> c<95> l<9:34> el<9:35>
+n<> u<97> t<Constant_primary> p<98> c<96> l<9:34> el<9:35>
+n<> u<98> t<Constant_expression> p<103> c<97> s<102> l<9:34> el<9:35>
+n<0> u<99> t<IntConst> p<100> l<9:36> el<9:37>
+n<> u<100> t<Primary_literal> p<101> c<99> l<9:36> el<9:37>
+n<> u<101> t<Constant_primary> p<102> c<100> l<9:36> el<9:37>
+n<> u<102> t<Constant_expression> p<103> c<101> l<9:36> el<9:37>
+n<> u<103> t<Constant_range> p<104> c<98> l<9:34> el<9:37>
+n<> u<104> t<Packed_dimension> p<105> c<103> l<9:33> el<9:38>
+n<> u<105> t<Data_type> p<106> c<94> l<9:27> el<9:38>
+n<> u<106> t<Data_type_or_implicit> p<107> c<105> l<9:27> el<9:38>
+n<> u<107> t<Net_port_type> p<108> c<106> l<9:27> el<9:38>
+n<> u<108> t<Net_port_header> p<110> c<93> s<109> l<9:21> el<9:38>
+n<a> u<109> t<StringConst> p<110> l<9:39> el<9:40>
+n<> u<110> t<Ansi_port_declaration> p<129> c<108> s<128> l<9:21> el<9:40>
+n<> u<111> t<PortDir_Out> p<126> s<125> l<9:42> el<9:48>
+n<> u<112> t<IntVec_TypeLogic> p<123> s<122> l<9:49> el<9:54>
+n<3> u<113> t<IntConst> p<114> l<9:56> el<9:57>
+n<> u<114> t<Primary_literal> p<115> c<113> l<9:56> el<9:57>
+n<> u<115> t<Constant_primary> p<116> c<114> l<9:56> el<9:57>
+n<> u<116> t<Constant_expression> p<121> c<115> s<120> l<9:56> el<9:57>
+n<0> u<117> t<IntConst> p<118> l<9:58> el<9:59>
+n<> u<118> t<Primary_literal> p<119> c<117> l<9:58> el<9:59>
+n<> u<119> t<Constant_primary> p<120> c<118> l<9:58> el<9:59>
+n<> u<120> t<Constant_expression> p<121> c<119> l<9:58> el<9:59>
+n<> u<121> t<Constant_range> p<122> c<116> l<9:56> el<9:59>
+n<> u<122> t<Packed_dimension> p<123> c<121> l<9:55> el<9:60>
+n<> u<123> t<Data_type> p<124> c<112> l<9:49> el<9:60>
+n<> u<124> t<Data_type_or_implicit> p<125> c<123> l<9:49> el<9:60>
+n<> u<125> t<Net_port_type> p<126> c<124> l<9:49> el<9:60>
+n<> u<126> t<Net_port_header> p<128> c<111> s<127> l<9:42> el<9:60>
+n<o> u<127> t<StringConst> p<128> l<9:61> el<9:62>
+n<> u<128> t<Ansi_port_declaration> p<129> c<126> l<9:42> el<9:62>
+n<> u<129> t<List_of_port_declarations> p<130> c<92> l<9:3> el<9:63>
+n<> u<130> t<Module_ansi_header> p<277> c<46> s<275> l<8:1> el<9:64>
+n<C> u<131> t<StringConst> p<137> s<136> l<10:7> el<10:8>
+n<u> u<132> t<StringConst> p<136> s<133> l<10:9> el<10:10>
+n<> u<133> t<Constant_bit_select> p<136> s<134> l<10:10> el<10:10>
+n<eccEn> u<134> t<StringConst> p<136> s<135> l<10:11> el<10:16>
+n<> u<135> t<Constant_bit_select> p<136> l<10:16> el<10:16>
+n<> u<136> t<Constant_select> p<137> c<132> l<10:8> el<10:16>
+n<> u<137> t<Constant_primary> p<138> c<131> l<10:7> el<10:16>
+n<> u<138> t<Constant_expression> p<271> c<137> s<249> l<10:7> el<10:16>
+n<g> u<139> t<StringConst> p<248> s<149> l<10:26> el<10:27>
+n<row_t> u<140> t<StringConst> p<144> s<143> l<11:5> el<11:10>
+n<q> u<141> t<StringConst> p<142> l<11:11> el<11:12>
+n<> u<142> t<Net_decl_assignment> p<143> c<141> l<11:11> el<11:12>
+n<> u<143> t<List_of_net_decl_assignments> p<144> c<142> l<11:11> el<11:12>
+n<> u<144> t<Net_declaration> p<145> c<140> l<11:5> el<11:13>
+n<> u<145> t<Package_or_generate_item_declaration> p<146> c<144> l<11:5> el<11:13>
+n<> u<146> t<Module_or_generate_item_declaration> p<147> c<145> l<11:5> el<11:13>
+n<> u<147> t<Module_common_item> p<148> c<146> l<11:5> el<11:13>
+n<> u<148> t<Module_or_generate_item> p<149> c<147> l<11:5> el<11:13>
+n<> u<149> t<Generate_item> p<248> c<148> s<178> l<11:5> el<11:13>
+n<> u<150> t<ALWAYS_FF> p<175> s<174> l<12:5> el<12:14>
+n<> u<151> t<Edge_Posedge> p<156> s<155> l<12:17> el<12:24>
+n<clk> u<152> t<StringConst> p<153> l<12:25> el<12:28>
+n<> u<153> t<Primary_literal> p<154> c<152> l<12:25> el<12:28>
+n<> u<154> t<Primary> p<155> c<153> l<12:25> el<12:28>
+n<> u<155> t<Expression> p<156> c<154> l<12:25> el<12:28>
+n<> u<156> t<Event_expression> p<157> c<151> l<12:17> el<12:28>
+n<> u<157> t<Event_control> p<158> c<156> l<12:15> el<12:29>
+n<> u<158> t<Procedural_timing_control> p<172> c<157> s<171> l<12:15> el<12:29>
+n<q> u<159> t<StringConst> p<160> l<12:30> el<12:31>
+n<> u<160> t<Ps_or_hierarchical_identifier> p<163> c<159> s<162> l<12:30> el<12:31>
+n<> u<161> t<Bit_select> p<162> l<12:32> el<12:32>
+n<> u<162> t<Select> p<163> c<161> l<12:32> el<12:32>
+n<> u<163> t<Variable_lvalue> p<168> c<160> s<167> l<12:30> el<12:31>
+n<a> u<164> t<StringConst> p<165> l<12:35> el<12:36>
+n<> u<165> t<Primary_literal> p<166> c<164> l<12:35> el<12:36>
+n<> u<166> t<Primary> p<167> c<165> l<12:35> el<12:36>
+n<> u<167> t<Expression> p<168> c<166> l<12:35> el<12:36>
+n<> u<168> t<Nonblocking_assignment> p<169> c<163> l<12:30> el<12:36>
+n<> u<169> t<Statement_item> p<170> c<168> l<12:30> el<12:37>
+n<> u<170> t<Statement> p<171> c<169> l<12:30> el<12:37>
+n<> u<171> t<Statement_or_null> p<172> c<170> l<12:30> el<12:37>
+n<> u<172> t<Procedural_timing_control_statement> p<173> c<158> l<12:15> el<12:37>
+n<> u<173> t<Statement_item> p<174> c<172> l<12:15> el<12:37>
+n<> u<174> t<Statement> p<175> c<173> l<12:15> el<12:37>
+n<> u<175> t<Always_construct> p<176> c<150> l<12:5> el<12:37>
+n<> u<176> t<Module_common_item> p<177> c<175> l<12:5> el<12:37>
+n<> u<177> t<Module_or_generate_item> p<178> c<176> l<12:5> el<12:37>
+n<> u<178> t<Generate_item> p<248> c<177> s<246> l<12:5> el<12:37>
+n<> u<179> t<ALWAYS_COMB> p<243> s<242> l<13:5> el<13:16>
+n<c> u<180> t<StringConst> p<240> s<238> l<13:25> el<13:26>
+n<> u<181> t<IntegerAtomType_Int> p<182> l<14:12> el<14:15>
+n<> u<182> t<Data_type> p<188> c<181> s<183> l<14:12> el<14:15>
+n<w> u<183> t<StringConst> p<188> s<187> l<14:16> el<14:17>
+n<0> u<184> t<IntConst> p<185> l<14:20> el<14:21>
+n<> u<185> t<Primary_literal> p<186> c<184> l<14:20> el<14:21>
+n<> u<186> t<Primary> p<187> c<185> l<14:20> el<14:21>
+n<> u<187> t<Expression> p<188> c<186> l<14:20> el<14:21>
+n<> u<188> t<For_variable_declaration> p<189> c<182> l<14:12> el<14:21>
+n<> u<189> t<For_initialization> p<235> c<188> s<199> l<14:12> el<14:21>
+n<w> u<190> t<StringConst> p<191> l<14:23> el<14:24>
+n<> u<191> t<Primary_literal> p<192> c<190> l<14:23> el<14:24>
+n<> u<192> t<Primary> p<193> c<191> l<14:23> el<14:24>
+n<> u<193> t<Expression> p<199> c<192> s<198> l<14:23> el<14:24>
+n<4> u<194> t<IntConst> p<195> l<14:27> el<14:28>
+n<> u<195> t<Primary_literal> p<196> c<194> l<14:27> el<14:28>
+n<> u<196> t<Primary> p<197> c<195> l<14:27> el<14:28>
+n<> u<197> t<Expression> p<199> c<196> l<14:27> el<14:28>
+n<> u<198> t<BinOp_Less> p<199> s<197> l<14:25> el<14:26>
+n<> u<199> t<Expression> p<235> c<193> s<208> l<14:23> el<14:28>
+n<w> u<200> t<StringConst> p<201> l<14:30> el<14:31>
+n<> u<201> t<Ps_or_hierarchical_identifier> p<204> c<200> s<203> l<14:30> el<14:31>
+n<> u<202> t<Bit_select> p<203> l<14:31> el<14:31>
+n<> u<203> t<Select> p<204> c<202> l<14:31> el<14:31>
+n<> u<204> t<Variable_lvalue> p<206> c<201> s<205> l<14:30> el<14:31>
+n<> u<205> t<IncDec_PlusPlus> p<206> l<14:31> el<14:33>
+n<> u<206> t<Inc_or_dec_expression> p<207> c<204> l<14:30> el<14:33>
+n<> u<207> t<For_step_assignment> p<208> c<206> l<14:30> el<14:33>
+n<> u<208> t<For_step> p<235> c<207> s<233> l<14:30> el<14:33>
+n<o> u<209> t<StringConst> p<210> l<14:35> el<14:36>
+n<> u<210> t<Ps_or_hierarchical_identifier> p<217> c<209> s<216> l<14:35> el<14:36>
+n<w> u<211> t<StringConst> p<212> l<14:37> el<14:38>
+n<> u<212> t<Primary_literal> p<213> c<211> l<14:37> el<14:38>
+n<> u<213> t<Primary> p<214> c<212> l<14:37> el<14:38>
+n<> u<214> t<Expression> p<215> c<213> l<14:37> el<14:38>
+n<> u<215> t<Bit_select> p<216> c<214> l<14:36> el<14:39>
+n<> u<216> t<Select> p<217> c<215> l<14:36> el<14:39>
+n<> u<217> t<Variable_lvalue> p<229> c<210> s<218> l<14:35> el<14:39>
+n<> u<218> t<AssignOp_Assign> p<229> s<228> l<14:40> el<14:41>
+n<q> u<219> t<StringConst> p<226> s<225> l<14:42> el<14:43>
+n<w> u<220> t<StringConst> p<221> l<14:44> el<14:45>
+n<> u<221> t<Primary_literal> p<222> c<220> l<14:44> el<14:45>
+n<> u<222> t<Primary> p<223> c<221> l<14:44> el<14:45>
+n<> u<223> t<Expression> p<224> c<222> l<14:44> el<14:45>
+n<> u<224> t<Bit_select> p<225> c<223> l<14:43> el<14:46>
+n<> u<225> t<Select> p<226> c<224> l<14:43> el<14:46>
+n<> u<226> t<Complex_func_call> p<227> c<219> l<14:42> el<14:46>
+n<> u<227> t<Primary> p<228> c<226> l<14:42> el<14:46>
+n<> u<228> t<Expression> p<229> c<227> l<14:42> el<14:46>
+n<> u<229> t<Operator_assignment> p<230> c<217> l<14:35> el<14:46>
+n<> u<230> t<Blocking_assignment> p<231> c<229> l<14:35> el<14:46>
+n<> u<231> t<Statement_item> p<232> c<230> l<14:35> el<14:47>
+n<> u<232> t<Statement> p<233> c<231> l<14:35> el<14:47>
+n<> u<233> t<Statement_or_null> p<235> c<232> l<14:35> el<14:47>
+n<> u<234> t<FOR> p<235> s<189> l<14:7> el<14:10>
+n<> u<235> t<Loop_statement> p<236> c<234> l<14:7> el<14:47>
+n<> u<236> t<Statement_item> p<237> c<235> l<14:7> el<14:47>
+n<> u<237> t<Statement> p<238> c<236> l<14:7> el<14:47>
+n<> u<238> t<Statement_or_null> p<240> c<237> s<239> l<14:7> el<14:47>
+n<> u<239> t<END> p<240> l<15:5> el<15:8>
+n<> u<240> t<Seq_block> p<241> c<180> l<13:17> el<15:8>
+n<> u<241> t<Statement_item> p<242> c<240> l<13:17> el<15:8>
+n<> u<242> t<Statement> p<243> c<241> l<13:17> el<15:8>
+n<> u<243> t<Always_construct> p<244> c<179> l<13:5> el<15:8>
+n<> u<244> t<Module_common_item> p<245> c<243> l<13:5> el<15:8>
+n<> u<245> t<Module_or_generate_item> p<246> c<244> l<13:5> el<15:8>
+n<> u<246> t<Generate_item> p<248> c<245> s<247> l<13:5> el<15:8>
+n<> u<247> t<END> p<248> l<16:3> el<16:6>
+n<> u<248> t<Generate_begin_end_block> p<249> c<139> l<10:18> el<16:6>
+n<> u<249> t<Generate_item> p<271> c<248> s<270> l<10:18> el<16:6>
+n<g2> u<250> t<StringConst> p<267> s<265> l<16:20> el<16:22>
+n<o> u<251> t<StringConst> p<252> l<17:12> el<17:13>
+n<> u<252> t<Ps_or_hierarchical_identifier> p<255> c<251> s<254> l<17:12> el<17:13>
+n<> u<253> t<Constant_bit_select> p<254> l<17:14> el<17:14>
+n<> u<254> t<Constant_select> p<255> c<253> l<17:14> el<17:14>
+n<> u<255> t<Net_lvalue> p<260> c<252> s<259> l<17:12> el<17:13>
+n<> u<256> t<Number_Tick0> p<257> l<17:16> el<17:18>
+n<> u<257> t<Primary_literal> p<258> c<256> l<17:16> el<17:18>
+n<> u<258> t<Primary> p<259> c<257> l<17:16> el<17:18>
+n<> u<259> t<Expression> p<260> c<258> l<17:16> el<17:18>
+n<> u<260> t<Net_assignment> p<261> c<255> l<17:12> el<17:18>
+n<> u<261> t<List_of_net_assignments> p<262> c<260> l<17:12> el<17:18>
+n<> u<262> t<Continuous_assign> p<263> c<261> l<17:5> el<17:19>
+n<> u<263> t<Module_common_item> p<264> c<262> l<17:5> el<17:19>
+n<> u<264> t<Module_or_generate_item> p<265> c<263> l<17:5> el<17:19>
+n<> u<265> t<Generate_item> p<267> c<264> s<266> l<17:5> el<17:19>
+n<> u<266> t<END> p<267> l<18:3> el<18:6>
+n<> u<267> t<Generate_begin_end_block> p<268> c<250> l<16:12> el<18:6>
+n<> u<268> t<Generate_item> p<271> c<267> l<16:12> el<18:6>
+n<> u<269> t<IF> p<271> s<138> l<10:3> el<10:5>
+n<> u<270> t<ELSE> p<271> s<268> l<16:7> el<16:11>
+n<> u<271> t<If_generate_construct> p<272> c<269> l<10:3> el<18:6>
+n<> u<272> t<Conditional_generate_construct> p<273> c<271> l<10:3> el<18:6>
+n<> u<273> t<Module_common_item> p<274> c<272> l<10:3> el<18:6>
+n<> u<274> t<Module_or_generate_item> p<275> c<273> l<10:3> el<18:6>
+n<> u<275> t<Non_port_module_item> p<277> c<274> s<276> l<10:3> el<18:6>
+n<> u<276> t<ENDMODULE> p<277> l<19:1> el<19:10>
+n<> u<277> t<Module_declaration> p<278> c<130> l<8:1> el<19:10>
+n<> u<278> t<Description> p<390> c<277> s<389> l<8:1> el<19:10>
+n<module> u<279> t<Module_keyword> p<329> s<280> l<20:1> el<20:7>
+n<top> u<280> t<StringConst> p<329> s<283> l<20:8> el<20:11>
+n<p> u<281> t<StringConst> p<282> l<20:19> el<20:20>
+n<> u<282> t<Package_import_item> p<283> c<281> l<20:19> el<20:23>
+n<> u<283> t<Package_import_declaration> p<329> c<282> s<328> l<20:12> el<20:24>
+n<> u<284> t<PortDir_Inp> p<289> s<288> l<20:26> el<20:31>
+n<> u<285> t<IntVec_TypeLogic> p<286> l<20:32> el<20:37>
+n<> u<286> t<Data_type> p<287> c<285> l<20:32> el<20:37>
+n<> u<287> t<Data_type_or_implicit> p<288> c<286> l<20:32> el<20:37>
+n<> u<288> t<Net_port_type> p<289> c<287> l<20:32> el<20:37>
+n<> u<289> t<Net_port_header> p<291> c<284> s<290> l<20:26> el<20:37>
+n<clk> u<290> t<StringConst> p<291> l<20:38> el<20:41>
+n<> u<291> t<Ansi_port_declaration> p<328> c<289> s<309> l<20:26> el<20:41>
+n<> u<292> t<PortDir_Inp> p<307> s<306> l<20:43> el<20:48>
+n<> u<293> t<IntVec_TypeLogic> p<304> s<303> l<20:49> el<20:54>
+n<3> u<294> t<IntConst> p<295> l<20:56> el<20:57>
+n<> u<295> t<Primary_literal> p<296> c<294> l<20:56> el<20:57>
+n<> u<296> t<Constant_primary> p<297> c<295> l<20:56> el<20:57>
+n<> u<297> t<Constant_expression> p<302> c<296> s<301> l<20:56> el<20:57>
+n<0> u<298> t<IntConst> p<299> l<20:58> el<20:59>
+n<> u<299> t<Primary_literal> p<300> c<298> l<20:58> el<20:59>
+n<> u<300> t<Constant_primary> p<301> c<299> l<20:58> el<20:59>
+n<> u<301> t<Constant_expression> p<302> c<300> l<20:58> el<20:59>
+n<> u<302> t<Constant_range> p<303> c<297> l<20:56> el<20:59>
+n<> u<303> t<Packed_dimension> p<304> c<302> l<20:55> el<20:60>
+n<> u<304> t<Data_type> p<305> c<293> l<20:49> el<20:60>
+n<> u<305> t<Data_type_or_implicit> p<306> c<304> l<20:49> el<20:60>
+n<> u<306> t<Net_port_type> p<307> c<305> l<20:49> el<20:60>
+n<> u<307> t<Net_port_header> p<309> c<292> s<308> l<20:43> el<20:60>
+n<a> u<308> t<StringConst> p<309> l<20:61> el<20:62>
+n<> u<309> t<Ansi_port_declaration> p<328> c<307> s<327> l<20:43> el<20:62>
+n<> u<310> t<PortDir_Out> p<325> s<324> l<20:64> el<20:70>
+n<> u<311> t<IntVec_TypeLogic> p<322> s<321> l<20:71> el<20:76>
+n<3> u<312> t<IntConst> p<313> l<20:78> el<20:79>
+n<> u<313> t<Primary_literal> p<314> c<312> l<20:78> el<20:79>
+n<> u<314> t<Constant_primary> p<315> c<313> l<20:78> el<20:79>
+n<> u<315> t<Constant_expression> p<320> c<314> s<319> l<20:78> el<20:79>
+n<0> u<316> t<IntConst> p<317> l<20:80> el<20:81>
+n<> u<317> t<Primary_literal> p<318> c<316> l<20:80> el<20:81>
+n<> u<318> t<Constant_primary> p<319> c<317> l<20:80> el<20:81>
+n<> u<319> t<Constant_expression> p<320> c<318> l<20:80> el<20:81>
+n<> u<320> t<Constant_range> p<321> c<315> l<20:78> el<20:81>
+n<> u<321> t<Packed_dimension> p<322> c<320> l<20:77> el<20:82>
+n<> u<322> t<Data_type> p<323> c<311> l<20:71> el<20:82>
+n<> u<323> t<Data_type_or_implicit> p<324> c<322> l<20:71> el<20:82>
+n<> u<324> t<Net_port_type> p<325> c<323> l<20:71> el<20:82>
+n<> u<325> t<Net_port_header> p<327> c<310> s<326> l<20:64> el<20:82>
+n<o> u<326> t<StringConst> p<327> l<20:83> el<20:84>
+n<> u<327> t<Ansi_port_declaration> p<328> c<325> l<20:64> el<20:84>
+n<> u<328> t<List_of_port_declarations> p<329> c<291> l<20:25> el<20:85>
+n<> u<329> t<Module_ansi_header> p<388> c<279> s<366> l<20:1> el<20:86>
+n<cfg_t> u<330> t<StringConst> p<331> l<21:14> el<21:19>
+n<> u<331> t<Data_type> p<332> c<330> l<21:14> el<21:19>
+n<> u<332> t<Data_type_or_implicit> p<361> c<331> s<360> l<21:14> el<21:19>
+n<C> u<333> t<StringConst> p<359> s<358> l<21:20> el<21:21>
+n<u> u<334> t<StringConst> p<335> l<21:26> el<21:27>
+n<> u<335> t<Structure_pattern_key> p<352> c<334> s<351> l<21:26> el<21:27>
+n<eccEn> u<336> t<StringConst> p<337> l<21:31> el<21:36>
+n<> u<337> t<Structure_pattern_key> p<348> c<336> s<341> l<21:31> el<21:36>
+n<> u<338> t<Number_1Tickb0> p<339> l<21:38> el<21:42>
+n<> u<339> t<Primary_literal> p<340> c<338> l<21:38> el<21:42>
+n<> u<340> t<Primary> p<341> c<339> l<21:38> el<21:42>
+n<> u<341> t<Expression> p<348> c<340> s<343> l<21:38> el<21:42>
+n<ways> u<342> t<StringConst> p<343> l<21:44> el<21:48>
+n<> u<343> t<Structure_pattern_key> p<348> c<342> s<347> l<21:44> el<21:48>
+n<4> u<344> t<IntConst> p<345> l<21:50> el<21:51>
+n<> u<345> t<Primary_literal> p<346> c<344> l<21:50> el<21:51>
+n<> u<346> t<Primary> p<347> c<345> l<21:50> el<21:51>
+n<> u<347> t<Expression> p<348> c<346> l<21:50> el<21:51>
+n<> u<348> t<Assignment_pattern> p<349> c<337> l<21:29> el<21:52>
+n<> u<349> t<Assignment_pattern_expression> p<350> c<348> l<21:29> el<21:52>
+n<> u<350> t<Primary> p<351> c<349> l<21:29> el<21:52>
+n<> u<351> t<Expression> p<352> c<350> l<21:29> el<21:52>
+n<> u<352> t<Assignment_pattern> p<353> c<335> l<21:24> el<21:53>
+n<> u<353> t<Assignment_pattern_expression> p<354> c<352> l<21:24> el<21:53>
+n<> u<354> t<Constant_assignment_pattern_expression> p<355> c<353> l<21:24> el<21:53>
+n<> u<355> t<Constant_primary> p<356> c<354> l<21:24> el<21:53>
+n<> u<356> t<Constant_expression> p<357> c<355> l<21:24> el<21:53>
+n<> u<357> t<Constant_mintypmax_expression> p<358> c<356> l<21:24> el<21:53>
+n<> u<358> t<Constant_param_expression> p<359> c<357> l<21:24> el<21:53>
+n<> u<359> t<Param_assignment> p<360> c<333> l<21:20> el<21:53>
+n<> u<360> t<List_of_param_assignments> p<361> c<359> l<21:20> el<21:53>
+n<> u<361> t<Local_parameter_declaration> p<362> c<332> l<21:3> el<21:53>
+n<> u<362> t<Package_or_generate_item_declaration> p<363> c<361> l<21:3> el<21:54>
+n<> u<363> t<Module_or_generate_item_declaration> p<364> c<362> l<21:3> el<21:54>
+n<> u<364> t<Module_common_item> p<365> c<363> l<21:3> el<21:54>
+n<> u<365> t<Module_or_generate_item> p<366> c<364> l<21:3> el<21:54>
+n<> u<366> t<Non_port_module_item> p<388> c<365> s<386> l<21:3> el<21:54>
+n<m> u<367> t<StringConst> p<384> s<377> l<22:3> el<22:4>
+n<C> u<368> t<StringConst> p<375> s<374> l<22:8> el<22:9>
+n<C> u<369> t<StringConst> p<370> l<22:10> el<22:11>
+n<> u<370> t<Primary_literal> p<371> c<369> l<22:10> el<22:11>
+n<> u<371> t<Primary> p<372> c<370> l<22:10> el<22:11>
+n<> u<372> t<Expression> p<373> c<371> l<22:10> el<22:11>
+n<> u<373> t<Mintypmax_expression> p<374> c<372> l<22:10> el<22:11>
+n<> u<374> t<Param_expression> p<375> c<373> l<22:10> el<22:11>
+n<> u<375> t<Named_parameter_assignment> p<376> c<368> l<22:7> el<22:12>
+n<> u<376> t<List_of_parameter_assignments> p<377> c<375> l<22:7> el<22:12>
+n<> u<377> t<Parameter_value_assignment> p<384> c<376> s<383> l<22:5> el<22:13>
+n<u> u<378> t<StringConst> p<379> l<22:14> el<22:15>
+n<> u<379> t<Name_of_instance> p<383> c<378> s<382> l<22:14> el<22:15>
+n<> u<380> t<DOTSTAR> p<381> l<22:17> el<22:19>
+n<> u<381> t<Named_port_connection> p<382> c<380> l<22:17> el<22:19>
+n<> u<382> t<List_of_port_connections> p<383> c<381> l<22:17> el<22:19>
+n<> u<383> t<Hierarchical_instance> p<384> c<379> l<22:14> el<22:20>
+n<> u<384> t<Module_instantiation> p<385> c<367> l<22:3> el<22:21>
+n<> u<385> t<Module_or_generate_item> p<386> c<384> l<22:3> el<22:21>
+n<> u<386> t<Non_port_module_item> p<388> c<385> s<387> l<22:3> el<22:21>
+n<> u<387> t<ENDMODULE> p<388> l<23:1> el<23:10>
+n<> u<388> t<Module_declaration> p<389> c<329> l<20:1> el<23:10>
+n<> u<389> t<Description> p<390> c<388> l<20:1> el<23:10>
+n<> u<390> t<Source_text> p<391> c<45> l<4:1> el<23:10>
+n<> u<391> t<Top_level_rule> c<1> l<4:1> el<24:1>
+AST_DEBUG_END
+[WRN:PA0205] ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv:4:1: No timescale set for "p".
+[WRN:PA0205] ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv:8:1: No timescale set for "m".
+[WRN:PA0205] ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv:20:1: No timescale set for "top".
+[INF:CP0300] Compilation...
+[INF:CP0301] ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv:4:1: Compile package "p".
+[INF:CP0303] ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv:8:1: Compile module "work@m".
+[INF:CP0303] ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv:20:1: Compile module "work@top".
+[INF:EL0526] Design Elaboration...
+[INF:CP0335] ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv:16:12: Compile generate block "work@top.u.g2".
+[NTE:EL0503] ${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv:20:1: Top level module "work@top".
+[NTE:EL0508] Nb Top level modules: 1.
+[NTE:EL0509] Max instance depth: 2.
+[NTE:EL0510] Nb instances: 2.
+[NTE:EL0511] Nb leaf instances: 0.
+[INF:UH0706] Creating UHDM Model...
+=== UHDM Object Stats Begin (Non-Elaborated Model) ===
+always                                                 2
+assignment                                             4
+bit_select                                             2
+bit_typespec                                          14
+constant                                              68
+cont_assign                                            3
+design                                                 1
+event_control                                          1
+for_stmt                                               1
+gen_if_else                                            1
+gen_scope                                              2
+gen_scope_array                                        2
+hier_path                                              2
+import_typespec                                        2
+int_typespec                                          15
+int_var                                                1
+logic_net                                             12
+logic_typespec                                        19
+module_inst                                            8
+named_begin                                            3
+operation                                             24
+package                                                2
+param_assign                                           4
+parameter                                              6
+port                                                  13
+range                                                 17
+ref_module                                             1
+ref_obj                                               31
+ref_typespec                                         111
+ref_var                                                1
+string_typespec                                       27
+struct_typespec                                       26
+tagged_pattern                                        27
+type_parameter                                         1
+typespec_member                                       40
+unsupported_typespec                                   1
+=== UHDM Object Stats End ===
+[INF:UH0707] Elaborating UHDM...
+=== UHDM Object Stats Begin (Elaborated Model) ===
+always                                                 2
+assignment                                             4
+bit_select                                             2
+bit_typespec                                          14
+constant                                              68
+cont_assign                                            4
+design                                                 1
+event_control                                          1
+for_stmt                                               1
+gen_if_else                                            1
+gen_scope                                              3
+gen_scope_array                                        3
+hier_path                                              2
+import_typespec                                        2
+int_typespec                                          15
+int_var                                                1
+logic_net                                             12
+logic_typespec                                        19
+module_inst                                            8
+named_begin                                            3
+operation                                             24
+package                                                2
+param_assign                                           4
+parameter                                              6
+port                                                  19
+range                                                 17
+ref_module                                             1
+ref_obj                                               41
+ref_typespec                                         117
+ref_var                                                1
+string_typespec                                       27
+struct_typespec                                       26
+tagged_pattern                                        27
+type_parameter                                         1
+typespec_member                                       40
+unsupported_typespec                                   1
+=== UHDM Object Stats End ===
+[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/GenTypeParamVarDecl/slpp_all/surelog.uhdm ...
+[INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/GenTypeParamVarDecl/slpp_all/checker/surelog.chk.html ...
+[INF:UH0710] Loading UHDM DB: ${SURELOG_DIR}/build/regression/GenTypeParamVarDecl/slpp_all/surelog.uhdm ...
+[INF:UH0711] Decompiling UHDM...
+====== UHDM =======
+design: (work@top)
+|vpiElaborated:1
+|vpiName:work@top
+|uhdmallPackages:
+\_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiParent:
+  \_design: (work@top)
+  |vpiName:p
+  |vpiFullName:p::
+  |vpiTypedef:
+  \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiParent:
+    \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+    |vpiName:p::cfg_t
+    |vpiInstance:
+    \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+    |vpiPacked:1
+    |vpiTypespecMember:
+    \_typespec_member: (u), line:6:31, endln:6:32
+      |vpiParent:
+      \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+      |vpiName:u
+      |vpiTypespec:
+      \_ref_typespec: (p::p::cfg_t::u)
+        |vpiParent:
+        \_typespec_member: (u), line:6:31, endln:6:32
+        |vpiFullName:p::p::cfg_t::u
+        |vpiActual:
+        \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+      |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+      |vpiRefLineNo:6
+      |vpiRefColumnNo:27
+      |vpiRefEndLineNo:6
+      |vpiRefEndColumnNo:30
+  |vpiTypedef:
+  \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiParent:
+    \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+    |vpiName:p::u_t
+    |vpiInstance:
+    \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+    |vpiPacked:1
+    |vpiTypespecMember:
+    \_typespec_member: (eccEn), line:5:31, endln:5:36
+      |vpiParent:
+      \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+      |vpiName:eccEn
+      |vpiTypespec:
+      \_ref_typespec: (p::p::u_t::eccEn)
+        |vpiParent:
+        \_typespec_member: (eccEn), line:5:31, endln:5:36
+        |vpiFullName:p::p::u_t::eccEn
+        |vpiActual:
+        \_bit_typespec: , line:5:27, endln:5:30
+      |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+      |vpiRefLineNo:5
+      |vpiRefColumnNo:27
+      |vpiRefEndLineNo:5
+      |vpiRefEndColumnNo:30
+    |vpiTypespecMember:
+    \_typespec_member: (ways), line:5:42, endln:5:46
+      |vpiParent:
+      \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+      |vpiName:ways
+      |vpiTypespec:
+      \_ref_typespec: (p::p::u_t::ways)
+        |vpiParent:
+        \_typespec_member: (ways), line:5:42, endln:5:46
+        |vpiFullName:p::p::u_t::ways
+        |vpiActual:
+        \_int_typespec: , line:5:38, endln:5:41
+      |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+      |vpiRefLineNo:5
+      |vpiRefColumnNo:38
+      |vpiRefEndLineNo:5
+      |vpiRefEndColumnNo:41
+  |vpiDefName:p
+|uhdmtopPackages:
+\_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiParent:
+  \_design: (work@top)
+  |vpiName:p
+  |vpiFullName:p::
+  |vpiTypedef:
+  \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:p::cfg_t
+    |vpiInstance:
+    \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+    |vpiPacked:1
+    |vpiTypespecMember:
+    \_typespec_member: (u), line:6:31, endln:6:32
+      |vpiParent:
+      \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+      |vpiName:u
+      |vpiTypespec:
+      \_ref_typespec: (work@top.p::cfg_t.u)
+        |vpiParent:
+        \_typespec_member: (u), line:6:31, endln:6:32
+        |vpiFullName:work@top.p::cfg_t.u
+        |vpiActual:
+        \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+      |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+      |vpiRefLineNo:6
+      |vpiRefColumnNo:27
+      |vpiRefEndLineNo:6
+      |vpiRefEndColumnNo:30
+  |vpiTypedef:
+  \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:p::u_t
+    |vpiInstance:
+    \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+    |vpiPacked:1
+    |vpiTypespecMember:
+    \_typespec_member: (eccEn), line:5:31, endln:5:36
+      |vpiParent:
+      \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+      |vpiName:eccEn
+      |vpiTypespec:
+      \_ref_typespec: (work@top.p::u_t.eccEn)
+        |vpiParent:
+        \_typespec_member: (eccEn), line:5:31, endln:5:36
+        |vpiFullName:work@top.p::u_t.eccEn
+        |vpiActual:
+        \_bit_typespec: , line:5:27, endln:5:30
+      |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+      |vpiRefLineNo:5
+      |vpiRefColumnNo:27
+      |vpiRefEndLineNo:5
+      |vpiRefEndColumnNo:30
+    |vpiTypespecMember:
+    \_typespec_member: (ways), line:5:42, endln:5:46
+      |vpiParent:
+      \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+      |vpiName:ways
+      |vpiTypespec:
+      \_ref_typespec: (work@top.p::u_t.ways)
+        |vpiParent:
+        \_typespec_member: (ways), line:5:42, endln:5:46
+        |vpiFullName:work@top.p::u_t.ways
+        |vpiActual:
+        \_int_typespec: , line:5:38, endln:5:41
+      |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+      |vpiRefLineNo:5
+      |vpiRefColumnNo:38
+      |vpiRefEndLineNo:5
+      |vpiRefEndColumnNo:41
+  |vpiDefName:p
+  |vpiTop:1
+|uhdmallModules:
+\_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiFullName:work@m
+  |vpiParameter:
+  \_parameter: (work@m.C), line:8:41, endln:8:42
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |BIN:0
+    |vpiTypespec:
+    \_ref_typespec: (work@m.C)
+      |vpiParent:
+      \_parameter: (work@m.C), line:8:41, endln:8:42
+      |vpiFullName:work@m.C
+      |vpiActual:
+      \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiName:C
+    |vpiFullName:work@m.C
+  |vpiParameter:
+  \_type_parameter: (work@m.row_t), line:8:64, endln:8:69
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiName:row_t
+    |vpiFullName:work@m.row_t
+    |vpiTypespec:
+    \_ref_typespec: (work@m.row_t)
+      |vpiParent:
+      \_type_parameter: (work@m.row_t), line:8:64, endln:8:69
+      |vpiFullName:work@m.row_t
+      |vpiActual:
+      \_logic_typespec: , line:8:72, endln:8:83
+  |vpiParamAssign:
+  \_param_assign: , line:8:41, endln:8:47
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiRhs:
+    \_constant: , line:8:45, endln:8:47
+      |vpiParent:
+      \_param_assign: , line:8:41, endln:8:47
+      |vpiDecompile:'0
+      |vpiSize:-1
+      |BIN:0
+      |vpiTypespec:
+      \_ref_typespec: (work@m)
+        |vpiParent:
+        \_constant: , line:8:45, endln:8:47
+        |vpiFullName:work@m
+        |vpiActual:
+        \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+      |vpiConstType:3
+    |vpiLhs:
+    \_parameter: (work@m.C), line:8:41, endln:8:42
+  |vpiTypedef:
+  \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiTypedef:
+  \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiTypedef:
+  \_import_typespec: (p), line:8:17, endln:8:21
+  |vpiDefName:work@m
+  |vpiNet:
+  \_logic_net: (work@m.clk), line:9:16, endln:9:19
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiName:clk
+    |vpiFullName:work@m.clk
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@m.a), line:9:39, endln:9:40
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiName:a
+    |vpiFullName:work@m.a
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@m.o), line:9:61, endln:9:62
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiName:o
+    |vpiFullName:work@m.o
+    |vpiNetType:36
+  |vpiPort:
+  \_port: (clk), line:9:16, endln:9:19
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiName:clk
+    |vpiDirection:1
+    |vpiLowConn:
+    \_ref_obj: (work@m.clk.clk), line:9:16, endln:9:19
+      |vpiParent:
+      \_port: (clk), line:9:16, endln:9:19
+      |vpiName:clk
+      |vpiFullName:work@m.clk.clk
+      |vpiActual:
+      \_logic_net: (work@m.clk), line:9:16, endln:9:19
+    |vpiTypedef:
+    \_ref_typespec: (work@m.clk)
+      |vpiParent:
+      \_port: (clk), line:9:16, endln:9:19
+      |vpiFullName:work@m.clk
+      |vpiActual:
+      \_logic_typespec: , line:9:10, endln:9:15
+  |vpiPort:
+  \_port: (a), line:9:39, endln:9:40
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiName:a
+    |vpiDirection:1
+    |vpiLowConn:
+    \_ref_obj: (work@m.a.a), line:9:39, endln:9:40
+      |vpiParent:
+      \_port: (a), line:9:39, endln:9:40
+      |vpiName:a
+      |vpiFullName:work@m.a.a
+      |vpiActual:
+      \_logic_net: (work@m.a), line:9:39, endln:9:40
+    |vpiTypedef:
+    \_ref_typespec: (work@m.a)
+      |vpiParent:
+      \_port: (a), line:9:39, endln:9:40
+      |vpiFullName:work@m.a
+      |vpiActual:
+      \_logic_typespec: , line:9:27, endln:9:38
+  |vpiPort:
+  \_port: (o), line:9:61, endln:9:62
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiName:o
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@m.o.o), line:9:61, endln:9:62
+      |vpiParent:
+      \_port: (o), line:9:61, endln:9:62
+      |vpiName:o
+      |vpiFullName:work@m.o.o
+      |vpiActual:
+      \_logic_net: (work@m.o), line:9:61, endln:9:62
+    |vpiTypedef:
+    \_ref_typespec: (work@m.o)
+      |vpiParent:
+      \_port: (o), line:9:61, endln:9:62
+      |vpiFullName:work@m.o
+      |vpiActual:
+      \_logic_typespec: , line:9:49, endln:9:60
+  |vpiGenStmt:
+  \_gen_if_else: 
+    |vpiParent:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiCondition:
+    \_hier_path: (C.u.eccEn), line:10:7, endln:10:16
+      |vpiParent:
+      \_gen_if_else: 
+      |vpiActual:
+      \_ref_obj: (C), line:10:9, endln:10:10
+        |vpiParent:
+        \_hier_path: (C.u.eccEn), line:10:7, endln:10:16
+        |vpiName:C
+      |vpiActual:
+      \_ref_obj: (u), line:10:9, endln:10:10
+        |vpiParent:
+        \_hier_path: (C.u.eccEn), line:10:7, endln:10:16
+        |vpiName:u
+      |vpiActual:
+      \_ref_obj: (eccEn), line:10:11, endln:10:16
+        |vpiParent:
+        \_hier_path: (C.u.eccEn), line:10:7, endln:10:16
+        |vpiName:eccEn
+      |vpiName:C.u.eccEn
+    |vpiStmt:
+    \_named_begin: (work@m.g)
+      |vpiParent:
+      \_gen_if_else: 
+      |vpiName:g
+      |vpiFullName:work@m.g
+      |vpiStmt:
+      \_assignment: , line:11:11, endln:11:12
+        |vpiParent:
+        \_named_begin: (work@m.g)
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiLhs:
+        \_ref_var: (work@m.g.q), line:11:11, endln:11:12
+          |vpiParent:
+          \_assignment: , line:11:11, endln:11:12
+          |vpiTypespec:
+          \_ref_typespec: (work@m.g.q)
+            |vpiParent:
+            \_ref_var: (work@m.g.q), line:11:11, endln:11:12
+            |vpiFullName:work@m.g.q
+            |vpiActual:
+            \_unsupported_typespec: (row_t), line:11:5, endln:11:10
+          |vpiName:q
+          |vpiFullName:work@m.g.q
+      |vpiStmt:
+      \_always: , line:12:5, endln:12:37
+        |vpiParent:
+        \_named_begin: (work@m.g)
+        |vpiStmt:
+        \_event_control: , line:12:15, endln:12:29
+          |vpiParent:
+          \_always: , line:12:5, endln:12:37
+          |vpiCondition:
+          \_operation: , line:12:17, endln:12:28
+            |vpiParent:
+            \_event_control: , line:12:15, endln:12:29
+            |vpiOpType:39
+            |vpiOperand:
+            \_ref_obj: (work@m.g.clk), line:12:25, endln:12:28
+              |vpiParent:
+              \_operation: , line:12:17, endln:12:28
+              |vpiName:clk
+              |vpiFullName:work@m.g.clk
+          |vpiStmt:
+          \_assignment: , line:12:30, endln:12:36
+            |vpiParent:
+            \_event_control: , line:12:15, endln:12:29
+            |vpiOpType:82
+            |vpiRhs:
+            \_ref_obj: (work@m.g.a), line:12:35, endln:12:36
+              |vpiParent:
+              \_assignment: , line:12:30, endln:12:36
+              |vpiName:a
+              |vpiFullName:work@m.g.a
+            |vpiLhs:
+            \_ref_obj: (work@m.g.q), line:12:30, endln:12:31
+              |vpiParent:
+              \_assignment: , line:12:30, endln:12:36
+              |vpiName:q
+              |vpiFullName:work@m.g.q
+        |vpiAlwaysType:3
+      |vpiStmt:
+      \_always: , line:13:5, endln:15:8
+        |vpiParent:
+        \_named_begin: (work@m.g)
+        |vpiStmt:
+        \_named_begin: (work@m.g.c), line:13:25, endln:13:26
+          |vpiParent:
+          \_always: , line:13:5, endln:15:8
+          |vpiName:c
+          |vpiFullName:work@m.g.c
+          |vpiStmt:
+          \_for_stmt: (work@m.g.c), line:14:7, endln:14:10
+            |vpiParent:
+            \_named_begin: (work@m.g.c), line:13:25, endln:13:26
+            |vpiFullName:work@m.g.c
+            |vpiForInitStmt:
+            \_assignment: , line:14:12, endln:14:21
+              |vpiParent:
+              \_for_stmt: (work@m.g.c), line:14:7, endln:14:10
+              |vpiRhs:
+              \_constant: , line:14:20, endln:14:21
+                |vpiParent:
+                \_assignment: , line:14:12, endln:14:21
+                |vpiDecompile:0
+                |vpiSize:64
+                |UINT:0
+                |vpiConstType:9
+              |vpiLhs:
+              \_int_var: (work@m.g.c.w), line:14:16, endln:14:17
+                |vpiParent:
+                \_assignment: , line:14:12, endln:14:21
+                |vpiTypespec:
+                \_ref_typespec: (work@m.g.c.w)
+                  |vpiParent:
+                  \_int_var: (work@m.g.c.w), line:14:16, endln:14:17
+                  |vpiFullName:work@m.g.c.w
+                  |vpiActual:
+                  \_int_typespec: , line:14:12, endln:14:15
+                |vpiName:w
+                |vpiFullName:work@m.g.c.w
+                |vpiSigned:1
+            |vpiForIncStmt:
+            \_operation: , line:14:30, endln:14:33
+              |vpiParent:
+              \_for_stmt: (work@m.g.c), line:14:7, endln:14:10
+              |vpiOpType:62
+              |vpiOperand:
+              \_ref_obj: (work@m.g.c.w), line:14:30, endln:14:31
+                |vpiParent:
+                \_operation: , line:14:30, endln:14:33
+                |vpiName:w
+                |vpiFullName:work@m.g.c.w
+                |vpiActual:
+                \_int_var: (work@m.g.c.w), line:14:16, endln:14:17
+            |vpiCondition:
+            \_operation: , line:14:23, endln:14:28
+              |vpiParent:
+              \_for_stmt: (work@m.g.c), line:14:7, endln:14:10
+              |vpiOpType:20
+              |vpiOperand:
+              \_ref_obj: (work@m.g.c.w), line:14:23, endln:14:24
+                |vpiParent:
+                \_operation: , line:14:23, endln:14:28
+                |vpiName:w
+                |vpiFullName:work@m.g.c.w
+                |vpiActual:
+                \_int_var: (work@m.g.c.w), line:14:16, endln:14:17
+              |vpiOperand:
+              \_constant: , line:14:27, endln:14:28
+                |vpiParent:
+                \_operation: , line:14:23, endln:14:28
+                |vpiDecompile:4
+                |vpiSize:64
+                |UINT:4
+                |vpiConstType:9
+            |vpiStmt:
+            \_assignment: , line:14:35, endln:14:46
+              |vpiParent:
+              \_for_stmt: (work@m.g.c), line:14:7, endln:14:10
+              |vpiOpType:82
+              |vpiBlocking:1
+              |vpiRhs:
+              \_bit_select: (work@m.g.c.q), line:14:44, endln:14:45
+                |vpiParent:
+                \_assignment: , line:14:35, endln:14:46
+                |vpiName:q
+                |vpiFullName:work@m.g.c.q
+                |vpiIndex:
+                \_ref_obj: (work@m.g.c.w), line:14:44, endln:14:45
+                  |vpiParent:
+                  \_bit_select: (work@m.g.c.q), line:14:44, endln:14:45
+                  |vpiName:w
+                  |vpiFullName:work@m.g.c.w
+                  |vpiActual:
+                  \_int_var: (work@m.g.c.w), line:14:16, endln:14:17
+              |vpiLhs:
+              \_bit_select: (work@m.g.c.o), line:14:35, endln:14:39
+                |vpiParent:
+                \_assignment: , line:14:35, endln:14:46
+                |vpiName:o
+                |vpiFullName:work@m.g.c.o
+                |vpiIndex:
+                \_ref_obj: (work@m.g.c.w), line:14:37, endln:14:38
+                  |vpiParent:
+                  \_bit_select: (work@m.g.c.o), line:14:35, endln:14:39
+                  |vpiName:w
+                  |vpiFullName:work@m.g.c.w
+                  |vpiActual:
+                  \_int_var: (work@m.g.c.w), line:14:16, endln:14:17
+        |vpiAlwaysType:2
+    |vpiElseStmt:
+    \_named_begin: (work@m.g2)
+      |vpiParent:
+      \_gen_if_else: 
+      |vpiName:g2
+      |vpiFullName:work@m.g2
+      |vpiStmt:
+      \_cont_assign: , line:17:12, endln:17:18
+        |vpiParent:
+        \_named_begin: (work@m.g2)
+        |vpiRhs:
+        \_constant: , line:17:16, endln:17:18
+          |vpiParent:
+          \_cont_assign: , line:17:12, endln:17:18
+          |vpiDecompile:'0
+          |vpiSize:-1
+          |BIN:0
+          |vpiConstType:3
+        |vpiLhs:
+        \_ref_obj: (work@m.g2.o), line:17:12, endln:17:13
+          |vpiParent:
+          \_cont_assign: , line:17:12, endln:17:18
+          |vpiName:o
+          |vpiFullName:work@m.g2.o
+|uhdmallModules:
+\_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiFullName:work@top
+  |vpiParameter:
+  \_parameter: (work@top.C), line:21:20, endln:21:21
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.C)
+      |vpiParent:
+      \_parameter: (work@top.C), line:21:20, endln:21:21
+      |vpiFullName:work@top.C
+      |vpiActual:
+      \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiLocalParam:1
+    |vpiName:C
+    |vpiFullName:work@top.C
+  |vpiParamAssign:
+  \_param_assign: , line:21:20, endln:21:53
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiRhs:
+    \_operation: , line:21:24, endln:21:53
+      |vpiParent:
+      \_param_assign: , line:21:20, endln:21:53
+      |vpiOpType:75
+      |vpiOperand:
+      \_tagged_pattern: , line:21:29, endln:21:52
+        |vpiParent:
+        \_operation: , line:21:24, endln:21:53
+        |vpiPattern:
+        \_operation: , line:21:29, endln:21:52
+          |vpiParent:
+          \_operation: , line:21:24, endln:21:53
+          |vpiOpType:75
+          |vpiOperand:
+          \_tagged_pattern: , line:21:38, endln:21:42
+            |vpiParent:
+            \_operation: , line:21:29, endln:21:52
+            |vpiPattern:
+            \_constant: , line:21:38, endln:21:42
+              |vpiDecompile:1'b0
+              |vpiSize:1
+              |BIN:0
+              |vpiConstType:3
+            |vpiTypespec:
+            \_ref_typespec: (work@top)
+              |vpiParent:
+              \_tagged_pattern: , line:21:38, endln:21:42
+              |vpiFullName:work@top
+              |vpiActual:
+              \_string_typespec: (eccEn), line:21:31, endln:21:36
+          |vpiOperand:
+          \_tagged_pattern: , line:21:50, endln:21:51
+            |vpiParent:
+            \_operation: , line:21:29, endln:21:52
+            |vpiPattern:
+            \_constant: , line:21:50, endln:21:51
+              |vpiDecompile:4
+              |vpiSize:64
+              |UINT:4
+              |vpiConstType:9
+            |vpiTypespec:
+            \_ref_typespec: (work@top)
+              |vpiParent:
+              \_tagged_pattern: , line:21:50, endln:21:51
+              |vpiFullName:work@top
+              |vpiActual:
+              \_string_typespec: (ways), line:21:44, endln:21:48
+        |vpiTypespec:
+        \_ref_typespec: (work@top)
+          |vpiParent:
+          \_tagged_pattern: , line:21:29, endln:21:52
+          |vpiFullName:work@top
+          |vpiActual:
+          \_string_typespec: (u), line:21:26, endln:21:27
+    |vpiLhs:
+    \_parameter: (work@top.C), line:21:20, endln:21:21
+  |vpiTypedef:
+  \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiTypedef:
+  \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiTypedef:
+  \_import_typespec: (p), line:20:19, endln:20:23
+  |vpiDefName:work@top
+  |vpiNet:
+  \_logic_net: (work@top.clk), line:20:38, endln:20:41
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:clk
+    |vpiFullName:work@top.clk
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.a), line:20:61, endln:20:62
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:a
+    |vpiFullName:work@top.a
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.o), line:20:83, endln:20:84
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:o
+    |vpiFullName:work@top.o
+    |vpiNetType:36
+  |vpiPort:
+  \_port: (clk), line:20:38, endln:20:41
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:clk
+    |vpiDirection:1
+    |vpiLowConn:
+    \_ref_obj: (work@top.clk.clk), line:20:38, endln:20:41
+      |vpiParent:
+      \_port: (clk), line:20:38, endln:20:41
+      |vpiName:clk
+      |vpiFullName:work@top.clk.clk
+      |vpiActual:
+      \_logic_net: (work@top.clk), line:20:38, endln:20:41
+    |vpiTypedef:
+    \_ref_typespec: (work@top.clk)
+      |vpiParent:
+      \_port: (clk), line:20:38, endln:20:41
+      |vpiFullName:work@top.clk
+      |vpiActual:
+      \_logic_typespec: , line:20:32, endln:20:37
+  |vpiPort:
+  \_port: (a), line:20:61, endln:20:62
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:a
+    |vpiDirection:1
+    |vpiLowConn:
+    \_ref_obj: (work@top.a.a), line:20:61, endln:20:62
+      |vpiParent:
+      \_port: (a), line:20:61, endln:20:62
+      |vpiName:a
+      |vpiFullName:work@top.a.a
+      |vpiActual:
+      \_logic_net: (work@top.a), line:20:61, endln:20:62
+    |vpiTypedef:
+    \_ref_typespec: (work@top.a)
+      |vpiParent:
+      \_port: (a), line:20:61, endln:20:62
+      |vpiFullName:work@top.a
+      |vpiActual:
+      \_logic_typespec: , line:20:49, endln:20:60
+  |vpiPort:
+  \_port: (o), line:20:83, endln:20:84
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:o
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o.o), line:20:83, endln:20:84
+      |vpiParent:
+      \_port: (o), line:20:83, endln:20:84
+      |vpiName:o
+      |vpiFullName:work@top.o.o
+      |vpiActual:
+      \_logic_net: (work@top.o), line:20:83, endln:20:84
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o)
+      |vpiParent:
+      \_port: (o), line:20:83, endln:20:84
+      |vpiFullName:work@top.o
+      |vpiActual:
+      \_logic_typespec: , line:20:71, endln:20:82
+  |vpiRefModule:
+  \_ref_module: work@m (u), line:22:14, endln:22:15
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:u
+    |vpiDefName:work@m
+    |vpiActual:
+    \_module_inst: work@m (work@m), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:8:1, endln:19:10
+    |vpiPort:
+    \_port: , line:22:17, endln:22:19
+      |vpiParent:
+      \_ref_module: work@m (u), line:22:14, endln:22:15
+      |vpiHighConn:
+      \_constant: , line:22:17, endln:22:19
+        |vpiParent:
+        \_port: , line:22:17, endln:22:19
+        |vpiDecompile:.*
+        |STRING:.*
+|uhdmtopModules:
+\_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiName:work@top
+  |vpiParameter:
+  \_parameter: (work@top.C), line:21:20, endln:21:21
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.C)
+      |vpiParent:
+      \_parameter: (work@top.C), line:21:20, endln:21:21
+      |vpiFullName:work@top.C
+      |vpiActual:
+      \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiLocalParam:1
+    |vpiName:C
+    |vpiFullName:work@top.C
+  |vpiParamAssign:
+  \_param_assign: , line:21:20, endln:21:53
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiRhs:
+    \_operation: , line:21:24, endln:21:53
+      |vpiParent:
+      \_param_assign: , line:21:20, endln:21:53
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_operation: , line:21:24, endln:21:53
+        |vpiFullName:work@top
+        |vpiActual:
+        \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+      |vpiOpType:75
+      |vpiOperand:
+      \_operation: , line:21:29, endln:21:52
+        |vpiParent:
+        \_operation: , line:21:24, endln:21:53
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiActual:
+          \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+        |vpiOpType:75
+        |vpiOperand:
+        \_constant: , line:21:38, endln:21:42
+          |vpiParent:
+          \_operation: , line:21:29, endln:21:52
+          |vpiDecompile:1'b0
+          |vpiSize:1
+          |BIN:0
+          |vpiConstType:3
+        |vpiOperand:
+        \_constant: , line:21:50, endln:21:51
+          |vpiParent:
+          \_operation: , line:21:29, endln:21:52
+          |vpiDecompile:4
+          |vpiSize:64
+          |UINT:4
+          |vpiConstType:9
+    |vpiLhs:
+    \_parameter: (work@top.C), line:21:20, endln:21:21
+  |vpiTypedef:
+  \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiTypedef:
+  \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiTypedef:
+  \_import_typespec: (p), line:20:19, endln:20:23
+  |vpiDefName:work@top
+  |vpiTop:1
+  |vpiNet:
+  \_logic_net: (work@top.clk), line:20:38, endln:20:41
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.clk)
+      |vpiParent:
+      \_logic_net: (work@top.clk), line:20:38, endln:20:41
+      |vpiFullName:work@top.clk
+      |vpiActual:
+      \_logic_typespec: , line:20:32, endln:20:37
+    |vpiName:clk
+    |vpiFullName:work@top.clk
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.a), line:20:61, endln:20:62
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.a)
+      |vpiParent:
+      \_logic_net: (work@top.a), line:20:61, endln:20:62
+      |vpiFullName:work@top.a
+      |vpiActual:
+      \_logic_typespec: , line:20:49, endln:20:60
+    |vpiName:a
+    |vpiFullName:work@top.a
+    |vpiNetType:36
+  |vpiNet:
+  \_logic_net: (work@top.o), line:20:83, endln:20:84
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o)
+      |vpiParent:
+      \_logic_net: (work@top.o), line:20:83, endln:20:84
+      |vpiFullName:work@top.o
+      |vpiActual:
+      \_logic_typespec: , line:20:71, endln:20:82
+    |vpiName:o
+    |vpiFullName:work@top.o
+    |vpiNetType:36
+  |vpiTopModule:1
+  |vpiPort:
+  \_port: (clk), line:20:38, endln:20:41
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:clk
+    |vpiDirection:1
+    |vpiLowConn:
+    \_ref_obj: (work@top.clk), line:20:38, endln:20:41
+      |vpiParent:
+      \_port: (clk), line:20:38, endln:20:41
+      |vpiName:clk
+      |vpiFullName:work@top.clk
+      |vpiActual:
+      \_logic_net: (work@top.clk), line:20:38, endln:20:41
+    |vpiTypedef:
+    \_ref_typespec: (work@top.clk)
+      |vpiParent:
+      \_port: (clk), line:20:38, endln:20:41
+      |vpiFullName:work@top.clk
+      |vpiActual:
+      \_logic_typespec: , line:20:32, endln:20:37
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+  |vpiPort:
+  \_port: (a), line:20:61, endln:20:62
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:a
+    |vpiDirection:1
+    |vpiLowConn:
+    \_ref_obj: (work@top.a), line:20:61, endln:20:62
+      |vpiParent:
+      \_port: (a), line:20:61, endln:20:62
+      |vpiName:a
+      |vpiFullName:work@top.a
+      |vpiActual:
+      \_logic_net: (work@top.a), line:20:61, endln:20:62
+    |vpiTypedef:
+    \_ref_typespec: (work@top.a)
+      |vpiParent:
+      \_port: (a), line:20:61, endln:20:62
+      |vpiFullName:work@top.a
+      |vpiActual:
+      \_logic_typespec: , line:20:49, endln:20:60
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+  |vpiPort:
+  \_port: (o), line:20:83, endln:20:84
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:o
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o), line:20:83, endln:20:84
+      |vpiParent:
+      \_port: (o), line:20:83, endln:20:84
+      |vpiName:o
+      |vpiFullName:work@top.o
+      |vpiActual:
+      \_logic_net: (work@top.o), line:20:83, endln:20:84
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o)
+      |vpiParent:
+      \_port: (o), line:20:83, endln:20:84
+      |vpiFullName:work@top.o
+      |vpiActual:
+      \_logic_typespec: , line:20:71, endln:20:82
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+  |vpiModule:
+  \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiName:u
+    |vpiFullName:work@top.u
+    |vpiParameter:
+    \_parameter: (work@top.u.C), line:8:41, endln:8:42
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |BIN:0
+      |vpiTypespec:
+      \_ref_typespec: (work@top.u.C)
+        |vpiParent:
+        \_parameter: (work@top.u.C), line:8:41, endln:8:42
+        |vpiFullName:work@top.u.C
+        |vpiActual:
+        \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+      |vpiName:C
+      |vpiFullName:work@top.u.C
+    |vpiParameter:
+    \_type_parameter: (work@m.row_t), line:8:64, endln:8:69
+    |vpiParamAssign:
+    \_param_assign: , line:8:41, endln:8:47
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |vpiOverriden:1
+      |vpiRhs:
+      \_operation: , line:22:10, endln:22:11
+        |vpiParent:
+        \_param_assign: , line:8:41, endln:8:47
+        |vpiTypespec:
+        \_ref_typespec: (work@top.u)
+          |vpiParent:
+          \_operation: , line:22:10, endln:22:11
+          |vpiFullName:work@top.u
+          |vpiActual:
+          \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+        |vpiOpType:75
+        |vpiOperand:
+        \_operation: , line:21:29, endln:21:52
+          |vpiParent:
+          \_operation: , line:22:10, endln:22:11
+          |vpiSize:33
+          |vpiTypespec:
+          \_ref_typespec: (work@top.u)
+            |vpiParent:
+            \_operation: , line:21:29, endln:21:52
+            |vpiFullName:work@top.u
+            |vpiActual:
+            \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+          |vpiOpType:75
+          |vpiOperand:
+          \_constant: , line:21:38, endln:21:42
+            |vpiParent:
+            \_operation: , line:21:29, endln:21:52
+            |vpiDecompile:1'b0
+            |vpiSize:1
+            |BIN:0
+            |vpiConstType:3
+          |vpiOperand:
+          \_constant: , line:21:50, endln:21:51
+            |vpiParent:
+            \_operation: , line:21:29, endln:21:52
+            |vpiDecompile:4
+            |vpiSize:64
+            |UINT:4
+            |vpiConstType:9
+      |vpiLhs:
+      \_parameter: (work@top.u.C), line:8:41, endln:8:42
+    |vpiTypedef:
+    \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiTypedef:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiTypedef:
+    \_import_typespec: (p), line:8:17, endln:8:21
+    |vpiDefName:work@m
+    |vpiDefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiDefLineNo:8
+    |vpiNet:
+    \_logic_net: (work@top.u.clk), line:9:16, endln:9:19
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |vpiTypespec:
+      \_ref_typespec: (work@top.u.clk)
+        |vpiParent:
+        \_logic_net: (work@top.u.clk), line:9:16, endln:9:19
+        |vpiFullName:work@top.u.clk
+        |vpiActual:
+        \_logic_typespec: , line:9:10, endln:9:15
+      |vpiName:clk
+      |vpiFullName:work@top.u.clk
+      |vpiNetType:36
+    |vpiNet:
+    \_logic_net: (work@top.u.a), line:9:39, endln:9:40
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |vpiTypespec:
+      \_ref_typespec: (work@top.u.a)
+        |vpiParent:
+        \_logic_net: (work@top.u.a), line:9:39, endln:9:40
+        |vpiFullName:work@top.u.a
+        |vpiActual:
+        \_logic_typespec: , line:9:27, endln:9:38
+      |vpiName:a
+      |vpiFullName:work@top.u.a
+      |vpiNetType:36
+    |vpiNet:
+    \_logic_net: (work@top.u.o), line:9:61, endln:9:62
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |vpiTypespec:
+      \_ref_typespec: (work@top.u.o)
+        |vpiParent:
+        \_logic_net: (work@top.u.o), line:9:61, endln:9:62
+        |vpiFullName:work@top.u.o
+        |vpiActual:
+        \_logic_typespec: , line:9:49, endln:9:60
+      |vpiName:o
+      |vpiFullName:work@top.u.o
+      |vpiNetType:36
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:20:1, endln:23:10
+    |vpiPort:
+    \_port: (clk), line:9:16, endln:9:19
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |vpiName:clk
+      |vpiDirection:1
+      |vpiHighConn:
+      \_ref_obj: (work@top.clk), line:22:17, endln:22:18
+        |vpiParent:
+        \_port: (clk), line:9:16, endln:9:19
+        |vpiName:clk
+        |vpiFullName:work@top.clk
+        |vpiActual:
+        \_logic_net: (work@top.clk), line:20:38, endln:20:41
+      |vpiLowConn:
+      \_ref_obj: (work@top.u.clk), line:9:16, endln:9:19
+        |vpiParent:
+        \_port: (clk), line:9:16, endln:9:19
+        |vpiName:clk
+        |vpiFullName:work@top.u.clk
+        |vpiActual:
+        \_logic_net: (work@top.u.clk), line:9:16, endln:9:19
+      |vpiTypedef:
+      \_ref_typespec: (work@top.u.clk)
+        |vpiParent:
+        \_port: (clk), line:9:16, endln:9:19
+        |vpiFullName:work@top.u.clk
+        |vpiActual:
+        \_logic_typespec: , line:9:10, endln:9:15
+      |vpiInstance:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+    |vpiPort:
+    \_port: (a), line:9:39, endln:9:40
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |vpiName:a
+      |vpiDirection:1
+      |vpiHighConn:
+      \_ref_obj: (work@top.a), line:22:17, endln:22:18
+        |vpiParent:
+        \_port: (a), line:9:39, endln:9:40
+        |vpiName:a
+        |vpiFullName:work@top.a
+        |vpiActual:
+        \_logic_net: (work@top.a), line:20:61, endln:20:62
+      |vpiLowConn:
+      \_ref_obj: (work@top.u.a), line:9:39, endln:9:40
+        |vpiParent:
+        \_port: (a), line:9:39, endln:9:40
+        |vpiName:a
+        |vpiFullName:work@top.u.a
+        |vpiActual:
+        \_logic_net: (work@top.u.a), line:9:39, endln:9:40
+      |vpiTypedef:
+      \_ref_typespec: (work@top.u.a)
+        |vpiParent:
+        \_port: (a), line:9:39, endln:9:40
+        |vpiFullName:work@top.u.a
+        |vpiActual:
+        \_logic_typespec: , line:9:27, endln:9:38
+      |vpiInstance:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+    |vpiPort:
+    \_port: (o), line:9:61, endln:9:62
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |vpiName:o
+      |vpiDirection:2
+      |vpiHighConn:
+      \_ref_obj: (work@top.o), line:22:17, endln:22:18
+        |vpiParent:
+        \_port: (o), line:9:61, endln:9:62
+        |vpiName:o
+        |vpiFullName:work@top.o
+        |vpiActual:
+        \_logic_net: (work@top.o), line:20:83, endln:20:84
+      |vpiLowConn:
+      \_ref_obj: (work@top.u.o), line:9:61, endln:9:62
+        |vpiParent:
+        \_port: (o), line:9:61, endln:9:62
+        |vpiName:o
+        |vpiFullName:work@top.u.o
+        |vpiActual:
+        \_logic_net: (work@top.u.o), line:9:61, endln:9:62
+      |vpiTypedef:
+      \_ref_typespec: (work@top.u.o)
+        |vpiParent:
+        \_port: (o), line:9:61, endln:9:62
+        |vpiFullName:work@top.u.o
+        |vpiActual:
+        \_logic_typespec: , line:9:49, endln:9:60
+      |vpiInstance:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+    |vpiGenScopeArray:
+    \_gen_scope_array: (work@top.u.g2), line:16:12, endln:18:6
+      |vpiParent:
+      \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+      |vpiName:g2
+      |vpiFullName:work@top.u.g2
+      |vpiGenScope:
+      \_gen_scope: (work@top.u.g2), line:16:12, endln:18:6
+        |vpiParent:
+        \_gen_scope_array: (work@top.u.g2), line:16:12, endln:18:6
+        |vpiFullName:work@top.u.g2
+        |vpiContAssign:
+        \_cont_assign: , line:17:12, endln:17:18
+          |vpiParent:
+          \_gen_scope: (work@top.u.g2), line:16:12, endln:18:6
+          |vpiRhs:
+          \_constant: , line:17:16, endln:17:18
+            |vpiParent:
+            \_cont_assign: , line:17:12, endln:17:18
+            |vpiDecompile:'0
+            |vpiSize:4
+            |BIN:0
+            |vpiConstType:3
+          |vpiLhs:
+          \_ref_obj: (work@top.u.g2.o), line:17:12, endln:17:13
+            |vpiParent:
+            \_cont_assign: , line:17:12, endln:17:18
+            |vpiName:o
+            |vpiFullName:work@top.u.g2.o
+            |vpiActual:
+            \_logic_net: (work@top.u.o), line:9:61, endln:9:62
+\_weaklyReferenced:
+\_bit_typespec: , line:5:27, endln:5:30
+  |vpiParent:
+  \_typespec_member: (eccEn), line:5:31, endln:5:36
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+\_int_typespec: , line:5:38, endln:5:41
+  |vpiParent:
+  \_typespec_member: (ways), line:5:42, endln:5:46
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiSigned:1
+\_bit_typespec: , line:5:27, endln:5:30
+  |vpiParent:
+  \_typespec_member: (eccEn), line:5:31, endln:5:36
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+\_int_typespec: , line:5:38, endln:5:41
+  |vpiParent:
+  \_typespec_member: (ways), line:5:42, endln:5:46
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiSigned:1
+\_logic_typespec: , line:8:72, endln:8:83
+  |vpiParent:
+  \_type_parameter: (work@m.row_t), line:8:64, endln:8:69
+  |vpiRange:
+  \_range: , line:8:78, endln:8:83
+    |vpiParent:
+    \_logic_typespec: , line:8:72, endln:8:83
+    |vpiLeftRange:
+    \_constant: , line:8:79, endln:8:80
+      |vpiParent:
+      \_range: , line:8:78, endln:8:83
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:8:81, endln:8:82
+      |vpiParent:
+      \_range: , line:8:78, endln:8:83
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_unsupported_typespec: (row_t), line:11:5, endln:11:10
+  |vpiName:row_t
+\_int_typespec: , line:14:12, endln:14:15
+  |vpiSigned:1
+\_string_typespec: (eccEn), line:21:31, endln:21:36
+  |vpiParent:
+  \_tagged_pattern: , line:21:38, endln:21:42
+  |vpiName:eccEn
+\_string_typespec: (ways), line:21:44, endln:21:48
+  |vpiParent:
+  \_tagged_pattern: , line:21:50, endln:21:51
+  |vpiName:ways
+\_string_typespec: (u), line:21:26, endln:21:27
+  |vpiParent:
+  \_tagged_pattern: , line:21:29, endln:21:52
+  |vpiName:u
+\_logic_typespec: , line:20:32, endln:20:37
+\_logic_typespec: , line:20:49, endln:20:60
+  |vpiRange:
+  \_range: , line:20:55, endln:20:60
+    |vpiParent:
+    \_logic_typespec: , line:20:49, endln:20:60
+    |vpiLeftRange:
+    \_constant: , line:20:56, endln:20:57
+      |vpiParent:
+      \_range: , line:20:55, endln:20:60
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:20:58, endln:20:59
+      |vpiParent:
+      \_range: , line:20:55, endln:20:60
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:20:71, endln:20:82
+  |vpiRange:
+  \_range: , line:20:77, endln:20:82
+    |vpiParent:
+    \_logic_typespec: , line:20:71, endln:20:82
+    |vpiLeftRange:
+    \_constant: , line:20:78, endln:20:79
+      |vpiParent:
+      \_range: , line:20:77, endln:20:82
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:20:80, endln:20:81
+      |vpiParent:
+      \_range: , line:20:77, endln:20:82
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiParent:
+  \_ref_typespec: (work@top.C.p::cfg_t.u)
+  |vpiName:p::u_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (eccEn), line:5:31, endln:5:36
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:eccEn
+    |vpiTypespec:
+    \_ref_typespec: (work@top.C.p::cfg_t.u.p::u_t.eccEn)
+      |vpiParent:
+      \_typespec_member: (eccEn), line:5:31, endln:5:36
+      |vpiFullName:work@top.C.p::cfg_t.u.p::u_t.eccEn
+      |vpiActual:
+      \_bit_typespec: , line:5:27, endln:5:30
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:30
+  |vpiTypespecMember:
+  \_typespec_member: (ways), line:5:42, endln:5:46
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:ways
+    |vpiTypespec:
+    \_ref_typespec: (work@top.C.p::cfg_t.u.p::u_t.ways)
+      |vpiParent:
+      \_typespec_member: (ways), line:5:42, endln:5:46
+      |vpiFullName:work@top.C.p::cfg_t.u.p::u_t.ways
+      |vpiActual:
+      \_int_typespec: , line:5:38, endln:5:41
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:38
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:41
+\_ref_typespec: (work@top.C.p::cfg_t.u)
+  |vpiParent:
+  \_typespec_member: (u), line:6:31, endln:6:32
+  |vpiFullName:work@top.C.p::cfg_t.u
+  |vpiActual:
+  \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+\_typespec_member: (u), line:6:31, endln:6:32
+  |vpiParent:
+  \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiName:u
+  |vpiTypespec:
+  \_ref_typespec: (work@top.C.p::cfg_t.u)
+  |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+  |vpiRefLineNo:6
+  |vpiRefColumnNo:27
+  |vpiRefEndLineNo:6
+  |vpiRefEndColumnNo:30
+\_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiParent:
+  \_ref_typespec: (work@top.C)
+  |vpiName:p::cfg_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (u), line:6:31, endln:6:32
+\_ref_typespec: (work@top.C)
+  |vpiParent:
+  \_parameter: (work@top.C), line:21:20, endln:21:21
+  |vpiFullName:work@top.C
+  |vpiActual:
+  \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+\_parameter: (work@top.C), line:21:20, endln:21:21
+  |vpiParent:
+  \_param_assign: , line:21:20, endln:21:53
+  |vpiTypespec:
+  \_ref_typespec: (work@top.C)
+  |vpiLocalParam:1
+  |vpiName:C
+  |vpiFullName:work@top.C
+\_bit_typespec: , line:5:27, endln:5:30
+  |vpiParent:
+  \_ref_typespec: (work@top.C.p::cfg_t.u.p::u_t.eccEn)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+\_int_typespec: , line:5:38, endln:5:41
+  |vpiParent:
+  \_ref_typespec: (work@top.C.p::cfg_t.u.p::u_t.ways)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiSigned:1
+\_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiParent:
+  \_ref_typespec: (work@top)
+  |vpiName:p::cfg_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (u), line:6:31, endln:6:32
+    |vpiParent:
+    \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiName:u
+    |vpiTypespec:
+    \_ref_typespec: (work@top.p::cfg_t.u)
+      |vpiParent:
+      \_typespec_member: (u), line:6:31, endln:6:32
+      |vpiFullName:work@top.p::cfg_t.u
+      |vpiActual:
+      \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:6
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:6
+    |vpiRefEndColumnNo:30
+\_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiParent:
+  \_ref_typespec: (work@top.p::cfg_t.u)
+  |vpiName:p::u_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (eccEn), line:5:31, endln:5:36
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:eccEn
+    |vpiTypespec:
+    \_ref_typespec: (work@top.p::cfg_t.u.p::u_t.eccEn)
+      |vpiParent:
+      \_typespec_member: (eccEn), line:5:31, endln:5:36
+      |vpiFullName:work@top.p::cfg_t.u.p::u_t.eccEn
+      |vpiActual:
+      \_bit_typespec: , line:5:27, endln:5:30
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:30
+  |vpiTypespecMember:
+  \_typespec_member: (ways), line:5:42, endln:5:46
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:ways
+    |vpiTypespec:
+    \_ref_typespec: (work@top.p::cfg_t.u.p::u_t.ways)
+      |vpiParent:
+      \_typespec_member: (ways), line:5:42, endln:5:46
+      |vpiFullName:work@top.p::cfg_t.u.p::u_t.ways
+      |vpiActual:
+      \_int_typespec: , line:5:38, endln:5:41
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:38
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:41
+\_bit_typespec: , line:5:27, endln:5:30
+  |vpiParent:
+  \_ref_typespec: (work@top.p::cfg_t.u.p::u_t.eccEn)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+\_int_typespec: , line:5:38, endln:5:41
+  |vpiParent:
+  \_ref_typespec: (work@top.p::cfg_t.u.p::u_t.ways)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiSigned:1
+\_operation: , line:21:24, endln:21:53
+  |vpiParent:
+  \_param_assign: , line:21:20, endln:21:53
+  |vpiTypespec:
+  \_ref_typespec: 
+    |vpiActual:
+    \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiOpType:75
+  |vpiOperand:
+  \_operation: , line:21:29, endln:21:52
+\_logic_typespec: , line:20:32, endln:20:37
+  |vpiParent:
+  \_logic_net: (work@top.clk), line:20:38, endln:20:41
+\_logic_typespec: , line:20:49, endln:20:60
+  |vpiParent:
+  \_logic_net: (work@top.a), line:20:61, endln:20:62
+  |vpiRange:
+  \_range: , line:20:55, endln:20:60
+    |vpiParent:
+    \_logic_typespec: , line:20:49, endln:20:60
+    |vpiLeftRange:
+    \_constant: , line:20:56, endln:20:57
+      |vpiParent:
+      \_range: , line:20:55, endln:20:60
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:20:58, endln:20:59
+      |vpiParent:
+      \_range: , line:20:55, endln:20:60
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:20:71, endln:20:82
+  |vpiParent:
+  \_logic_net: (work@top.o), line:20:83, endln:20:84
+  |vpiRange:
+  \_range: , line:20:77, endln:20:82
+    |vpiParent:
+    \_logic_typespec: , line:20:71, endln:20:82
+    |vpiLeftRange:
+    \_constant: , line:20:78, endln:20:79
+      |vpiParent:
+      \_range: , line:20:77, endln:20:82
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:20:80, endln:20:81
+      |vpiParent:
+      \_range: , line:20:77, endln:20:82
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiParent:
+  \_ref_typespec: (work@top.u)
+  |vpiName:p::cfg_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (u), line:6:31, endln:6:32
+    |vpiParent:
+    \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiName:u
+    |vpiTypespec:
+    \_ref_typespec: (work@top.u.p::cfg_t.u)
+      |vpiParent:
+      \_typespec_member: (u), line:6:31, endln:6:32
+      |vpiFullName:work@top.u.p::cfg_t.u
+      |vpiActual:
+      \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:6
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:6
+    |vpiRefEndColumnNo:30
+\_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiParent:
+  \_ref_typespec: (work@top.u.p::cfg_t.u)
+  |vpiName:p::u_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (eccEn), line:5:31, endln:5:36
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:eccEn
+    |vpiTypespec:
+    \_ref_typespec: (work@top.u.p::cfg_t.u.p::u_t.eccEn)
+      |vpiParent:
+      \_typespec_member: (eccEn), line:5:31, endln:5:36
+      |vpiFullName:work@top.u.p::cfg_t.u.p::u_t.eccEn
+      |vpiActual:
+      \_bit_typespec: , line:5:27, endln:5:30
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:30
+  |vpiTypespecMember:
+  \_typespec_member: (ways), line:5:42, endln:5:46
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:ways
+    |vpiTypespec:
+    \_ref_typespec: (work@top.u.p::cfg_t.u.p::u_t.ways)
+      |vpiParent:
+      \_typespec_member: (ways), line:5:42, endln:5:46
+      |vpiFullName:work@top.u.p::cfg_t.u.p::u_t.ways
+      |vpiActual:
+      \_int_typespec: , line:5:38, endln:5:41
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:38
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:41
+\_bit_typespec: , line:5:27, endln:5:30
+  |vpiParent:
+  \_ref_typespec: (work@top.u.p::cfg_t.u.p::u_t.eccEn)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+\_int_typespec: , line:5:38, endln:5:41
+  |vpiParent:
+  \_ref_typespec: (work@top.u.p::cfg_t.u.p::u_t.ways)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiSigned:1
+\_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiParent:
+  \_ref_typespec: (work@top.u)
+  |vpiName:p::u_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (eccEn), line:5:31, endln:5:36
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:eccEn
+    |vpiTypespec:
+    \_ref_typespec: (work@top.u.p::u_t.eccEn)
+      |vpiParent:
+      \_typespec_member: (eccEn), line:5:31, endln:5:36
+      |vpiFullName:work@top.u.p::u_t.eccEn
+      |vpiActual:
+      \_bit_typespec: , line:5:27, endln:5:30
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:30
+  |vpiTypespecMember:
+  \_typespec_member: (ways), line:5:42, endln:5:46
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:ways
+    |vpiTypespec:
+    \_ref_typespec: (work@top.u.p::u_t.ways)
+      |vpiParent:
+      \_typespec_member: (ways), line:5:42, endln:5:46
+      |vpiFullName:work@top.u.p::u_t.ways
+      |vpiActual:
+      \_int_typespec: , line:5:38, endln:5:41
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:38
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:41
+\_bit_typespec: , line:5:27, endln:5:30
+  |vpiParent:
+  \_ref_typespec: (work@top.u.p::u_t.eccEn)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+\_int_typespec: , line:5:38, endln:5:41
+  |vpiParent:
+  \_ref_typespec: (work@top.u.p::u_t.ways)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiSigned:1
+\_logic_typespec: , line:9:10, endln:9:15
+\_logic_typespec: , line:9:27, endln:9:38
+  |vpiRange:
+  \_range: , line:9:33, endln:9:38
+    |vpiParent:
+    \_logic_typespec: , line:9:27, endln:9:38
+    |vpiLeftRange:
+    \_constant: , line:9:34, endln:9:35
+      |vpiParent:
+      \_range: , line:9:33, endln:9:38
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:9:36, endln:9:37
+      |vpiParent:
+      \_range: , line:9:33, endln:9:38
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:9:49, endln:9:60
+  |vpiRange:
+  \_range: , line:9:55, endln:9:60
+    |vpiParent:
+    \_logic_typespec: , line:9:49, endln:9:60
+    |vpiLeftRange:
+    \_constant: , line:9:56, endln:9:57
+      |vpiParent:
+      \_range: , line:9:55, endln:9:60
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:9:58, endln:9:59
+      |vpiParent:
+      \_range: , line:9:55, endln:9:60
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:9:10, endln:9:15
+  |vpiParent:
+  \_logic_net: (work@top.u.clk), line:9:16, endln:9:19
+\_logic_typespec: , line:9:27, endln:9:38
+  |vpiParent:
+  \_logic_net: (work@top.u.a), line:9:39, endln:9:40
+  |vpiRange:
+  \_range: , line:9:33, endln:9:38
+    |vpiParent:
+    \_logic_typespec: , line:9:27, endln:9:38
+    |vpiLeftRange:
+    \_constant: , line:9:34, endln:9:35
+      |vpiParent:
+      \_range: , line:9:33, endln:9:38
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:9:36, endln:9:37
+      |vpiParent:
+      \_range: , line:9:33, endln:9:38
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:9:49, endln:9:60
+  |vpiRange:
+  \_range: , line:9:55, endln:9:60
+    |vpiParent:
+    \_logic_typespec: , line:9:49, endln:9:60
+    |vpiLeftRange:
+    \_constant: , line:9:56, endln:9:57
+      |vpiParent:
+      \_range: , line:9:55, endln:9:60
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:9:58, endln:9:59
+      |vpiParent:
+      \_range: , line:9:55, endln:9:60
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:9:10, endln:9:15
+\_logic_typespec: , line:9:27, endln:9:38
+  |vpiRange:
+  \_range: , line:9:33, endln:9:38
+    |vpiParent:
+    \_logic_typespec: , line:9:27, endln:9:38
+    |vpiLeftRange:
+    \_constant: , line:9:34, endln:9:35
+      |vpiParent:
+      \_range: , line:9:33, endln:9:38
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:9:36, endln:9:37
+      |vpiParent:
+      \_range: , line:9:33, endln:9:38
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:9:49, endln:9:60
+  |vpiRange:
+  \_range: , line:9:55, endln:9:60
+    |vpiParent:
+    \_logic_typespec: , line:9:49, endln:9:60
+    |vpiLeftRange:
+    \_constant: , line:9:56, endln:9:57
+      |vpiParent:
+      \_range: , line:9:55, endln:9:60
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:9:58, endln:9:59
+      |vpiParent:
+      \_range: , line:9:55, endln:9:60
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:20:32, endln:20:37
+\_logic_typespec: , line:20:49, endln:20:60
+  |vpiRange:
+  \_range: , line:20:55, endln:20:60
+    |vpiParent:
+    \_logic_typespec: , line:20:49, endln:20:60
+    |vpiLeftRange:
+    \_constant: , line:20:56, endln:20:57
+      |vpiParent:
+      \_range: , line:20:55, endln:20:60
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:20:58, endln:20:59
+      |vpiParent:
+      \_range: , line:20:55, endln:20:60
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:20:71, endln:20:82
+  |vpiRange:
+  \_range: , line:20:77, endln:20:82
+    |vpiParent:
+    \_logic_typespec: , line:20:71, endln:20:82
+    |vpiLeftRange:
+    \_constant: , line:20:78, endln:20:79
+      |vpiParent:
+      \_range: , line:20:77, endln:20:82
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:20:80, endln:20:81
+      |vpiParent:
+      \_range: , line:20:77, endln:20:82
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiParent:
+  \_ref_typespec: (work@top.C)
+  |vpiName:p::cfg_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (u), line:6:31, endln:6:32
+    |vpiParent:
+    \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiName:u
+    |vpiTypespec:
+    \_ref_typespec: (work@top.C.p::cfg_t.u)
+      |vpiParent:
+      \_typespec_member: (u), line:6:31, endln:6:32
+      |vpiFullName:work@top.C.p::cfg_t.u
+      |vpiActual:
+      \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:6
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:6
+    |vpiRefEndColumnNo:30
+\_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiParent:
+  \_ref_typespec: (work@top.C.p::cfg_t.u)
+  |vpiName:p::u_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (eccEn), line:5:31, endln:5:36
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:eccEn
+    |vpiTypespec:
+    \_ref_typespec: (work@top.C.p::cfg_t.u.p::u_t.eccEn)
+      |vpiParent:
+      \_typespec_member: (eccEn), line:5:31, endln:5:36
+      |vpiFullName:work@top.C.p::cfg_t.u.p::u_t.eccEn
+      |vpiActual:
+      \_bit_typespec: , line:5:27, endln:5:30
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:30
+  |vpiTypespecMember:
+  \_typespec_member: (ways), line:5:42, endln:5:46
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:ways
+    |vpiTypespec:
+    \_ref_typespec: (work@top.C.p::cfg_t.u.p::u_t.ways)
+      |vpiParent:
+      \_typespec_member: (ways), line:5:42, endln:5:46
+      |vpiFullName:work@top.C.p::cfg_t.u.p::u_t.ways
+      |vpiActual:
+      \_int_typespec: , line:5:38, endln:5:41
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:38
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:41
+\_bit_typespec: , line:5:27, endln:5:30
+  |vpiParent:
+  \_ref_typespec: (work@top.C.p::cfg_t.u.p::u_t.eccEn)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+\_int_typespec: , line:5:38, endln:5:41
+  |vpiParent:
+  \_ref_typespec: (work@top.C.p::cfg_t.u.p::u_t.ways)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiSigned:1
+\_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+  |vpiParent:
+  \_ref_typespec: (work@top.u.C)
+  |vpiName:p::cfg_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (u), line:6:31, endln:6:32
+    |vpiParent:
+    \_struct_typespec: (p::cfg_t), line:6:11, endln:6:35
+    |vpiName:u
+    |vpiTypespec:
+    \_ref_typespec: (work@top.u.C.p::cfg_t.u)
+      |vpiParent:
+      \_typespec_member: (u), line:6:31, endln:6:32
+      |vpiFullName:work@top.u.C.p::cfg_t.u
+      |vpiActual:
+      \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:6
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:6
+    |vpiRefEndColumnNo:30
+\_struct_typespec: (p::u_t), line:5:11, endln:5:49
+  |vpiParent:
+  \_ref_typespec: (work@top.u.C.p::cfg_t.u)
+  |vpiName:p::u_t
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiPacked:1
+  |vpiTypespecMember:
+  \_typespec_member: (eccEn), line:5:31, endln:5:36
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:eccEn
+    |vpiTypespec:
+    \_ref_typespec: (work@top.u.C.p::cfg_t.u.p::u_t.eccEn)
+      |vpiParent:
+      \_typespec_member: (eccEn), line:5:31, endln:5:36
+      |vpiFullName:work@top.u.C.p::cfg_t.u.p::u_t.eccEn
+      |vpiActual:
+      \_bit_typespec: , line:5:27, endln:5:30
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:27
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:30
+  |vpiTypespecMember:
+  \_typespec_member: (ways), line:5:42, endln:5:46
+    |vpiParent:
+    \_struct_typespec: (p::u_t), line:5:11, endln:5:49
+    |vpiName:ways
+    |vpiTypespec:
+    \_ref_typespec: (work@top.u.C.p::cfg_t.u.p::u_t.ways)
+      |vpiParent:
+      \_typespec_member: (ways), line:5:42, endln:5:46
+      |vpiFullName:work@top.u.C.p::cfg_t.u.p::u_t.ways
+      |vpiActual:
+      \_int_typespec: , line:5:38, endln:5:41
+    |vpiRefFile:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv
+    |vpiRefLineNo:5
+    |vpiRefColumnNo:38
+    |vpiRefEndLineNo:5
+    |vpiRefEndColumnNo:41
+\_bit_typespec: , line:5:27, endln:5:30
+  |vpiParent:
+  \_ref_typespec: (work@top.u.C.p::cfg_t.u.p::u_t.eccEn)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+\_int_typespec: , line:5:38, endln:5:41
+  |vpiParent:
+  \_ref_typespec: (work@top.u.C.p::cfg_t.u.p::u_t.ways)
+  |vpiInstance:
+  \_package: p (p::), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:4:1, endln:7:11
+  |vpiSigned:1
+\_cont_assign: , line:17:12, endln:17:18
+  |vpiParent:
+  \_gen_scope: (work@top.u.g2), line:16:12, endln:18:6
+  |vpiRhs:
+  \_constant: , line:17:16, endln:17:18
+  |vpiLhs:
+  \_ref_obj: (work@top.u.g2.o), line:17:12, endln:17:13
+    |vpiParent:
+    \_cont_assign: , line:17:12, endln:17:18
+    |vpiName:o
+    |vpiFullName:work@top.u.g2.o
+    |vpiActual:
+    \_logic_net: (work@top.u.o), line:9:61, endln:9:62
+\_gen_scope: (work@top.u.g2), line:16:12, endln:18:6
+  |vpiParent:
+  \_gen_scope_array: (work@top.u.g2), line:16:12, endln:18:6
+  |vpiFullName:work@top.u.g2
+  |vpiContAssign:
+  \_cont_assign: , line:17:12, endln:17:18
+\_gen_scope_array: (work@top.u.g2), line:16:12, endln:18:6
+  |vpiParent:
+  \_module_inst: work@m (work@top.u), file:${SURELOG_DIR}/tests/GenTypeParamVarDecl/dut.sv, line:22:3, endln:22:21
+  |vpiName:g2
+  |vpiFullName:work@top.u.g2
+  |vpiGenScope:
+  \_gen_scope: (work@top.u.g2), line:16:12, endln:18:6
+===================
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 0
+[WARNING] : 3
+[   NOTE] : 5

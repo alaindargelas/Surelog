@@ -492,8 +492,6 @@ Surelog preproc status: 0
 [INF:PP0122] Preprocessing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_systems_top_earlgrey_0.1/rtl/autogen/top_earlgrey_rnd_cnst_pkg.sv".
 [INF:PP0122] Preprocessing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_systems_top_earlgrey_0.1/rtl/autogen/top_earlgrey.sv".
 [INF:PP0122] Preprocessing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_systems_top_earlgrey_verilator_0.1/rtl/top_earlgrey_verilator.sv".
-Running: cd "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/sim-icarus"; "${SURELOG_DIR}/build/bin/surelog" -o "${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21" -nostdout -batch ${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21/slpp_all/mp_preprocess/parser_batch.txt
-Surelog parsing status: 0
 [INF:PA0201] Parsing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_constants_top_pkg_0/rtl/top_pkg.sv".
 PARSER CACHE USED FOR: ${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_constants_top_pkg_0/rtl/top_pkg.sv
 [INF:PA0201] Parsing source file "${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_dv_dpi_gpiodpi_0.1/gpiodpi.sv".
@@ -14345,7 +14343,7 @@ always                                              1957
 array_net                                             89
 array_typespec                                      3315
 array_var                                            477
-assignment                                         17408
+assignment                                         17429
 attribute                                             35
 begin                                               8926
 bit_select                                         46178
@@ -14365,7 +14363,7 @@ cont_assign                                        39270
 design                                                 1
 enum_const                                         19028
 enum_typespec                                       4609
-enum_var                                            1174
+enum_var                                            1181
 event_control                                       1182
 final_stmt                                             8
 for_stmt                                             430
@@ -14409,8 +14407,8 @@ port                                               91788
 range                                             157967
 ref_module                                          5040
 ref_obj                                           334166
-ref_typespec                                      410125
-ref_var                                                2
+ref_typespec                                      410146
+ref_var                                               16
 return_stmt                                          429
 string_typespec                                    27017
 string_var                                            19
@@ -14421,7 +14419,7 @@ sys_func_call                                       1086
 tagged_pattern                                     23437
 task                                                   9
 typespec_member                                    41235
-unsupported_typespec                                  26
+unsupported_typespec                                  40
 var_select                                          3914
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -14430,7 +14428,7 @@ always                                             17644
 array_net                                             89
 array_typespec                                      3666
 array_var                                            749
-assignment                                        119759
+assignment                                        119780
 attribute                                           2915
 begin                                              86444
 bit_select                                        360094
@@ -14450,7 +14448,7 @@ cont_assign                                       147477
 design                                                 1
 enum_const                                         19033
 enum_typespec                                       4610
-enum_var                                            1925
+enum_var                                            1932
 event_control                                      15153
 final_stmt                                            15
 for_stmt                                            8970
@@ -14494,8 +14492,8 @@ port                                              224742
 range                                             166627
 ref_module                                          5040
 ref_obj                                          1094970
-ref_typespec                                      754493
-ref_var                                                4
+ref_typespec                                      754514
+ref_var                                               18
 return_stmt                                        15514
 string_typespec                                    27407
 string_var                                            36
@@ -14506,7 +14504,7 @@ sys_func_call                                       5748
 tagged_pattern                                     23827
 task                                                  18
 typespec_member                                    41235
-unsupported_typespec                                  26
+unsupported_typespec                                  40
 var_select                                         16611
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21/slpp_all/surelog.uhdm ...
@@ -14517,7 +14515,7 @@ var_select                                         16611
 [   NOTE] : 111
 
 ============================== Begin Linting Results ==============================
-[LINT]: ${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_dv_dv_macros_0/dv_macros.svh:476:271: Non synthesizable construct, name
+[LINT]: ${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_dv_dv_macros_0/dv_macros.svh:476:253: Non synthesizable construct, name
 [LINT]: ${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_dv_dpi_dmidpi_0.1/dmidpi.sv:25:12: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_dv_dpi_dmidpi_0.1/dmidpi.sv:25:12: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/third_party/tests/Earlgrey_Verilator_01_05_21/src/lowrisc_dv_dpi_dmidpi_0.1/dmidpi.sv:28:35: Non synthesizable construct,

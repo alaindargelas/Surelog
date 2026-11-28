@@ -6349,9 +6349,10 @@ Processing: -cd regression/issue_00083 top.v -writepp -parse -nocache -nobuiltin
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd regression/issue_00083 top_fault.v -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l top_fault.v.log
+[ERR:UH0734] ${SURELOG_DIR}/third_party/tests/YosysTests/regression/issue_00083/top_fault.v:4:10: Non-constant "b" in a constant expression.
 [  FATAL] : 0
 [ SYNTAX] : 0
-[  ERROR] : 0
+[  ERROR] : 1
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd regression/issue_00083 testbench.v -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l testbench.v.log
@@ -11005,6 +11006,6 @@ Processing: -cd regression/issue_01329 synchronizer.sv -writepp -parse -nocache 
 Processed 1309 tests.
 [  FATAL] : 0
 [ SYNTAX] : 240
-[  ERROR] : 43
+[  ERROR] : 44
 [WARNING] : 2371
 [   NOTE] : 0

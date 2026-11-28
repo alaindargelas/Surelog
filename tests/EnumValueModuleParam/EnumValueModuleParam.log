@@ -1,0 +1,1076 @@
+[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/EnumValueModuleParam/slpp_all/surelog.log".
+AST_DEBUG_BEGIN
+LIB:  work
+FILE: ${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv
+n<> u<0> t<_INVALID_> f<0> l<0:0>
+n<> u<1> t<Null_rule> p<218> s<217> l<3:1> el<2:56>
+n<module> u<2> t<Module_keyword> p<29> s<3> l<3:1> el<3:7>
+n<top> u<3> t<StringConst> p<29> s<28> l<3:8> el<3:11>
+n<> u<4> t<PortDir_Out> p<9> s<8> l<3:12> el<3:18>
+n<> u<5> t<IntegerAtomType_Int> p<6> l<3:19> el<3:22>
+n<> u<6> t<Data_type> p<7> c<5> l<3:19> el<3:22>
+n<> u<7> t<Data_type_or_implicit> p<8> c<6> l<3:19> el<3:22>
+n<> u<8> t<Net_port_type> p<9> c<7> l<3:19> el<3:22>
+n<> u<9> t<Net_port_header> p<11> c<4> s<10> l<3:12> el<3:22>
+n<o1> u<10> t<StringConst> p<11> l<3:23> el<3:25>
+n<> u<11> t<Ansi_port_declaration> p<28> c<9> s<19> l<3:12> el<3:25>
+n<> u<12> t<PortDir_Out> p<17> s<16> l<3:27> el<3:33>
+n<> u<13> t<IntegerAtomType_Int> p<14> l<3:34> el<3:37>
+n<> u<14> t<Data_type> p<15> c<13> l<3:34> el<3:37>
+n<> u<15> t<Data_type_or_implicit> p<16> c<14> l<3:34> el<3:37>
+n<> u<16> t<Net_port_type> p<17> c<15> l<3:34> el<3:37>
+n<> u<17> t<Net_port_header> p<19> c<12> s<18> l<3:27> el<3:37>
+n<o2> u<18> t<StringConst> p<19> l<3:38> el<3:40>
+n<> u<19> t<Ansi_port_declaration> p<28> c<17> s<27> l<3:27> el<3:40>
+n<> u<20> t<PortDir_Out> p<25> s<24> l<3:42> el<3:48>
+n<> u<21> t<IntegerAtomType_Int> p<22> l<3:49> el<3:52>
+n<> u<22> t<Data_type> p<23> c<21> l<3:49> el<3:52>
+n<> u<23> t<Data_type_or_implicit> p<24> c<22> l<3:49> el<3:52>
+n<> u<24> t<Net_port_type> p<25> c<23> l<3:49> el<3:52>
+n<> u<25> t<Net_port_header> p<27> c<20> s<26> l<3:42> el<3:52>
+n<o3> u<26> t<StringConst> p<27> l<3:53> el<3:55>
+n<> u<27> t<Ansi_port_declaration> p<28> c<25> l<3:42> el<3:55>
+n<> u<28> t<List_of_port_declarations> p<29> c<11> l<3:11> el<3:56>
+n<> u<29> t<Module_ansi_header> p<215> c<2> s<45> l<3:1> el<3:57>
+n<> u<30> t<Data_type_or_implicit> p<40> s<39> l<4:14> el<4:14>
+n<S> u<31> t<StringConst> p<38> s<37> l<4:14> el<4:15>
+n<2> u<32> t<IntConst> p<33> l<4:18> el<4:19>
+n<> u<33> t<Primary_literal> p<34> c<32> l<4:18> el<4:19>
+n<> u<34> t<Constant_primary> p<35> c<33> l<4:18> el<4:19>
+n<> u<35> t<Constant_expression> p<36> c<34> l<4:18> el<4:19>
+n<> u<36> t<Constant_mintypmax_expression> p<37> c<35> l<4:18> el<4:19>
+n<> u<37> t<Constant_param_expression> p<38> c<36> l<4:18> el<4:19>
+n<> u<38> t<Param_assignment> p<39> c<31> l<4:14> el<4:19>
+n<> u<39> t<List_of_param_assignments> p<40> c<38> l<4:14> el<4:19>
+n<> u<40> t<Local_parameter_declaration> p<41> c<30> l<4:3> el<4:19>
+n<> u<41> t<Package_or_generate_item_declaration> p<42> c<40> l<4:3> el<4:20>
+n<> u<42> t<Module_or_generate_item_declaration> p<43> c<41> l<4:3> el<4:20>
+n<> u<43> t<Module_common_item> p<44> c<42> l<4:3> el<4:20>
+n<> u<44> t<Module_or_generate_item> p<45> c<43> l<4:3> el<4:20>
+n<> u<45> t<Non_port_module_item> p<215> c<44> s<61> l<4:3> el<4:20>
+n<> u<46> t<Data_type_or_implicit> p<56> s<55> l<5:13> el<5:13>
+n<P> u<47> t<StringConst> p<54> s<53> l<5:13> el<5:14>
+n<5> u<48> t<IntConst> p<49> l<5:17> el<5:18>
+n<> u<49> t<Primary_literal> p<50> c<48> l<5:17> el<5:18>
+n<> u<50> t<Constant_primary> p<51> c<49> l<5:17> el<5:18>
+n<> u<51> t<Constant_expression> p<52> c<50> l<5:17> el<5:18>
+n<> u<52> t<Constant_mintypmax_expression> p<53> c<51> l<5:17> el<5:18>
+n<> u<53> t<Constant_param_expression> p<54> c<52> l<5:17> el<5:18>
+n<> u<54> t<Param_assignment> p<55> c<47> l<5:13> el<5:18>
+n<> u<55> t<List_of_param_assignments> p<56> c<54> l<5:13> el<5:18>
+n<> u<56> t<Parameter_declaration> p<57> c<46> l<5:3> el<5:18>
+n<> u<57> t<Package_or_generate_item_declaration> p<58> c<56> l<5:3> el<5:19>
+n<> u<58> t<Module_or_generate_item_declaration> p<59> c<57> l<5:3> el<5:19>
+n<> u<59> t<Module_common_item> p<60> c<58> l<5:3> el<5:19>
+n<> u<60> t<Module_or_generate_item> p<61> c<59> l<5:3> el<5:19>
+n<> u<61> t<Non_port_module_item> p<215> c<60> s<98> l<5:3> el<5:19>
+n<> u<62> t<IntVec_TypeLogic> p<73> s<72> l<6:8> el<6:13>
+n<3> u<63> t<IntConst> p<64> l<6:15> el<6:16>
+n<> u<64> t<Primary_literal> p<65> c<63> l<6:15> el<6:16>
+n<> u<65> t<Constant_primary> p<66> c<64> l<6:15> el<6:16>
+n<> u<66> t<Constant_expression> p<71> c<65> s<70> l<6:15> el<6:16>
+n<0> u<67> t<IntConst> p<68> l<6:17> el<6:18>
+n<> u<68> t<Primary_literal> p<69> c<67> l<6:17> el<6:18>
+n<> u<69> t<Constant_primary> p<70> c<68> l<6:17> el<6:18>
+n<> u<70> t<Constant_expression> p<71> c<69> l<6:17> el<6:18>
+n<> u<71> t<Constant_range> p<72> c<66> l<6:15> el<6:18>
+n<> u<72> t<Packed_dimension> p<73> c<71> l<6:14> el<6:19>
+n<> u<73> t<Enum_base_type> p<88> c<62> s<85> l<6:8> el<6:19>
+n<A> u<74> t<StringConst> p<85> s<84> l<6:22> el<6:23>
+n<S> u<75> t<StringConst> p<76> l<6:26> el<6:27>
+n<> u<76> t<Primary_literal> p<77> c<75> l<6:26> el<6:27>
+n<> u<77> t<Constant_primary> p<78> c<76> l<6:26> el<6:27>
+n<> u<78> t<Constant_expression> p<84> c<77> s<83> l<6:26> el<6:27>
+n<1> u<79> t<IntConst> p<80> l<6:30> el<6:31>
+n<> u<80> t<Primary_literal> p<81> c<79> l<6:30> el<6:31>
+n<> u<81> t<Constant_primary> p<82> c<80> l<6:30> el<6:31>
+n<> u<82> t<Constant_expression> p<84> c<81> l<6:30> el<6:31>
+n<> u<83> t<BinOp_Plus> p<84> s<82> l<6:28> el<6:29>
+n<> u<84> t<Constant_expression> p<85> c<78> l<6:26> el<6:31>
+n<> u<85> t<Enum_name_declaration> p<88> c<74> s<87> l<6:22> el<6:31>
+n<B> u<86> t<StringConst> p<87> l<6:33> el<6:34>
+n<> u<87> t<Enum_name_declaration> p<88> c<86> l<6:33> el<6:34>
+n<> u<88> t<Data_type> p<92> c<73> s<91> l<6:3> el<6:36>
+n<e1> u<89> t<StringConst> p<90> l<6:37> el<6:39>
+n<> u<90> t<Variable_decl_assignment> p<91> c<89> l<6:37> el<6:39>
+n<> u<91> t<List_of_variable_decl_assignments> p<92> c<90> l<6:37> el<6:39>
+n<> u<92> t<Variable_declaration> p<93> c<88> l<6:3> el<6:40>
+n<> u<93> t<Data_declaration> p<94> c<92> l<6:3> el<6:40>
+n<> u<94> t<Package_or_generate_item_declaration> p<95> c<93> l<6:3> el<6:40>
+n<> u<95> t<Module_or_generate_item_declaration> p<96> c<94> l<6:3> el<6:40>
+n<> u<96> t<Module_common_item> p<97> c<95> l<6:3> el<6:40>
+n<> u<97> t<Module_or_generate_item> p<98> c<96> l<6:3> el<6:40>
+n<> u<98> t<Non_port_module_item> p<215> c<97> s<131> l<6:3> el<6:40>
+n<> u<99> t<IntVec_TypeLogic> p<110> s<109> l<7:16> el<7:21>
+n<3> u<100> t<IntConst> p<101> l<7:23> el<7:24>
+n<> u<101> t<Primary_literal> p<102> c<100> l<7:23> el<7:24>
+n<> u<102> t<Constant_primary> p<103> c<101> l<7:23> el<7:24>
+n<> u<103> t<Constant_expression> p<108> c<102> s<107> l<7:23> el<7:24>
+n<0> u<104> t<IntConst> p<105> l<7:25> el<7:26>
+n<> u<105> t<Primary_literal> p<106> c<104> l<7:25> el<7:26>
+n<> u<106> t<Constant_primary> p<107> c<105> l<7:25> el<7:26>
+n<> u<107> t<Constant_expression> p<108> c<106> l<7:25> el<7:26>
+n<> u<108> t<Constant_range> p<109> c<103> l<7:23> el<7:26>
+n<> u<109> t<Packed_dimension> p<110> c<108> l<7:22> el<7:27>
+n<> u<110> t<Enum_base_type> p<123> c<99> s<116> l<7:16> el<7:27>
+n<C> u<111> t<StringConst> p<116> s<115> l<7:30> el<7:31>
+n<S> u<112> t<StringConst> p<113> l<7:34> el<7:35>
+n<> u<113> t<Primary_literal> p<114> c<112> l<7:34> el<7:35>
+n<> u<114> t<Constant_primary> p<115> c<113> l<7:34> el<7:35>
+n<> u<115> t<Constant_expression> p<116> c<114> l<7:34> el<7:35>
+n<> u<116> t<Enum_name_declaration> p<123> c<111> s<122> l<7:30> el<7:35>
+n<D> u<117> t<StringConst> p<122> s<121> l<7:37> el<7:38>
+n<P> u<118> t<StringConst> p<119> l<7:41> el<7:42>
+n<> u<119> t<Primary_literal> p<120> c<118> l<7:41> el<7:42>
+n<> u<120> t<Constant_primary> p<121> c<119> l<7:41> el<7:42>
+n<> u<121> t<Constant_expression> p<122> c<120> l<7:41> el<7:42>
+n<> u<122> t<Enum_name_declaration> p<123> c<117> l<7:37> el<7:42>
+n<> u<123> t<Data_type> p<125> c<110> s<124> l<7:11> el<7:44>
+n<e_t> u<124> t<StringConst> p<125> l<7:45> el<7:48>
+n<> u<125> t<Type_declaration> p<126> c<123> l<7:3> el<7:49>
+n<> u<126> t<Data_declaration> p<127> c<125> l<7:3> el<7:49>
+n<> u<127> t<Package_or_generate_item_declaration> p<128> c<126> l<7:3> el<7:49>
+n<> u<128> t<Module_or_generate_item_declaration> p<129> c<127> l<7:3> el<7:49>
+n<> u<129> t<Module_common_item> p<130> c<128> l<7:3> el<7:49>
+n<> u<130> t<Module_or_generate_item> p<131> c<129> l<7:3> el<7:49>
+n<> u<131> t<Non_port_module_item> p<215> c<130> s<141> l<7:3> el<7:49>
+n<e_t> u<132> t<StringConst> p<136> s<135> l<8:3> el<8:6>
+n<e2> u<133> t<StringConst> p<134> l<8:7> el<8:9>
+n<> u<134> t<Net_decl_assignment> p<135> c<133> l<8:7> el<8:9>
+n<> u<135> t<List_of_net_decl_assignments> p<136> c<134> l<8:7> el<8:9>
+n<> u<136> t<Net_declaration> p<137> c<132> l<8:3> el<8:10>
+n<> u<137> t<Package_or_generate_item_declaration> p<138> c<136> l<8:3> el<8:10>
+n<> u<138> t<Module_or_generate_item_declaration> p<139> c<137> l<8:3> el<8:10>
+n<> u<139> t<Module_common_item> p<140> c<138> l<8:3> el<8:10>
+n<> u<140> t<Module_or_generate_item> p<141> c<139> l<8:3> el<8:10>
+n<> u<141> t<Non_port_module_item> p<215> c<140> s<168> l<8:3> el<8:10>
+n<> u<142> t<IntVec_TypeLogic> p<153> s<152> l<9:16> el<9:21>
+n<3> u<143> t<IntConst> p<144> l<9:23> el<9:24>
+n<> u<144> t<Primary_literal> p<145> c<143> l<9:23> el<9:24>
+n<> u<145> t<Constant_primary> p<146> c<144> l<9:23> el<9:24>
+n<> u<146> t<Constant_expression> p<151> c<145> s<150> l<9:23> el<9:24>
+n<0> u<147> t<IntConst> p<148> l<9:25> el<9:26>
+n<> u<148> t<Primary_literal> p<149> c<147> l<9:25> el<9:26>
+n<> u<149> t<Constant_primary> p<150> c<148> l<9:25> el<9:26>
+n<> u<150> t<Constant_expression> p<151> c<149> l<9:25> el<9:26>
+n<> u<151> t<Constant_range> p<152> c<146> l<9:23> el<9:26>
+n<> u<152> t<Packed_dimension> p<153> c<151> l<9:22> el<9:27>
+n<> u<153> t<Enum_base_type> p<160> c<142> s<159> l<9:16> el<9:27>
+n<E> u<154> t<StringConst> p<159> s<158> l<9:30> el<9:31>
+n<NOPE> u<155> t<StringConst> p<156> l<9:34> el<9:38>
+n<> u<156> t<Primary_literal> p<157> c<155> l<9:34> el<9:38>
+n<> u<157> t<Constant_primary> p<158> c<156> l<9:34> el<9:38>
+n<> u<158> t<Constant_expression> p<159> c<157> l<9:34> el<9:38>
+n<> u<159> t<Enum_name_declaration> p<160> c<154> l<9:30> el<9:38>
+n<> u<160> t<Data_type> p<162> c<153> s<161> l<9:11> el<9:40>
+n<bad_t> u<161> t<StringConst> p<162> l<9:41> el<9:46>
+n<> u<162> t<Type_declaration> p<163> c<160> l<9:3> el<9:47>
+n<> u<163> t<Data_declaration> p<164> c<162> l<9:3> el<9:47>
+n<> u<164> t<Package_or_generate_item_declaration> p<165> c<163> l<9:3> el<9:47>
+n<> u<165> t<Module_or_generate_item_declaration> p<166> c<164> l<9:3> el<9:47>
+n<> u<166> t<Module_common_item> p<167> c<165> l<9:3> el<9:47>
+n<> u<167> t<Module_or_generate_item> p<168> c<166> l<9:3> el<9:47>
+n<> u<168> t<Non_port_module_item> p<215> c<167> s<183> l<9:3> el<9:47>
+n<o1> u<169> t<StringConst> p<170> l<10:10> el<10:12>
+n<> u<170> t<Ps_or_hierarchical_identifier> p<173> c<169> s<172> l<10:10> el<10:12>
+n<> u<171> t<Constant_bit_select> p<172> l<10:13> el<10:13>
+n<> u<172> t<Constant_select> p<173> c<171> l<10:13> el<10:13>
+n<> u<173> t<Net_lvalue> p<178> c<170> s<177> l<10:10> el<10:12>
+n<B> u<174> t<StringConst> p<175> l<10:15> el<10:16>
+n<> u<175> t<Primary_literal> p<176> c<174> l<10:15> el<10:16>
+n<> u<176> t<Primary> p<177> c<175> l<10:15> el<10:16>
+n<> u<177> t<Expression> p<178> c<176> l<10:15> el<10:16>
+n<> u<178> t<Net_assignment> p<179> c<173> l<10:10> el<10:16>
+n<> u<179> t<List_of_net_assignments> p<180> c<178> l<10:10> el<10:16>
+n<> u<180> t<Continuous_assign> p<181> c<179> l<10:3> el<10:17>
+n<> u<181> t<Module_common_item> p<182> c<180> l<10:3> el<10:17>
+n<> u<182> t<Module_or_generate_item> p<183> c<181> l<10:3> el<10:17>
+n<> u<183> t<Non_port_module_item> p<215> c<182> s<198> l<10:3> el<10:17>
+n<o2> u<184> t<StringConst> p<185> l<11:10> el<11:12>
+n<> u<185> t<Ps_or_hierarchical_identifier> p<188> c<184> s<187> l<11:10> el<11:12>
+n<> u<186> t<Constant_bit_select> p<187> l<11:13> el<11:13>
+n<> u<187> t<Constant_select> p<188> c<186> l<11:13> el<11:13>
+n<> u<188> t<Net_lvalue> p<193> c<185> s<192> l<11:10> el<11:12>
+n<D> u<189> t<StringConst> p<190> l<11:15> el<11:16>
+n<> u<190> t<Primary_literal> p<191> c<189> l<11:15> el<11:16>
+n<> u<191> t<Primary> p<192> c<190> l<11:15> el<11:16>
+n<> u<192> t<Expression> p<193> c<191> l<11:15> el<11:16>
+n<> u<193> t<Net_assignment> p<194> c<188> l<11:10> el<11:16>
+n<> u<194> t<List_of_net_assignments> p<195> c<193> l<11:10> el<11:16>
+n<> u<195> t<Continuous_assign> p<196> c<194> l<11:3> el<11:17>
+n<> u<196> t<Module_common_item> p<197> c<195> l<11:3> el<11:17>
+n<> u<197> t<Module_or_generate_item> p<198> c<196> l<11:3> el<11:17>
+n<> u<198> t<Non_port_module_item> p<215> c<197> s<213> l<11:3> el<11:17>
+n<o3> u<199> t<StringConst> p<200> l<12:10> el<12:12>
+n<> u<200> t<Ps_or_hierarchical_identifier> p<203> c<199> s<202> l<12:10> el<12:12>
+n<> u<201> t<Constant_bit_select> p<202> l<12:13> el<12:13>
+n<> u<202> t<Constant_select> p<203> c<201> l<12:13> el<12:13>
+n<> u<203> t<Net_lvalue> p<208> c<200> s<207> l<12:10> el<12:12>
+n<A> u<204> t<StringConst> p<205> l<12:15> el<12:16>
+n<> u<205> t<Primary_literal> p<206> c<204> l<12:15> el<12:16>
+n<> u<206> t<Primary> p<207> c<205> l<12:15> el<12:16>
+n<> u<207> t<Expression> p<208> c<206> l<12:15> el<12:16>
+n<> u<208> t<Net_assignment> p<209> c<203> l<12:10> el<12:16>
+n<> u<209> t<List_of_net_assignments> p<210> c<208> l<12:10> el<12:16>
+n<> u<210> t<Continuous_assign> p<211> c<209> l<12:3> el<12:17>
+n<> u<211> t<Module_common_item> p<212> c<210> l<12:3> el<12:17>
+n<> u<212> t<Module_or_generate_item> p<213> c<211> l<12:3> el<12:17>
+n<> u<213> t<Non_port_module_item> p<215> c<212> s<214> l<12:3> el<12:17>
+n<> u<214> t<ENDMODULE> p<215> l<13:1> el<13:10>
+n<> u<215> t<Module_declaration> p<216> c<29> l<3:1> el<13:10>
+n<> u<216> t<Description> p<217> c<215> l<3:1> el<13:10>
+n<> u<217> t<Source_text> p<218> c<216> l<3:1> el<13:10>
+n<> u<218> t<Top_level_rule> c<1> l<3:1> el<14:1>
+AST_DEBUG_END
+[WRN:PA0205] ${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv:3:1: No timescale set for "top".
+[INF:CP0300] Compilation...
+[INF:CP0303] ${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv:3:1: Compile module "work@top".
+[ERR:EL0514] ${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv:9:34: Undefined variable: NOPE.
+[INF:EL0526] Design Elaboration...
+[NTE:EL0503] ${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv:3:1: Top level module "work@top".
+[NTE:EL0508] Nb Top level modules: 1.
+[NTE:EL0509] Max instance depth: 1.
+[NTE:EL0510] Nb instances: 1.
+[NTE:EL0511] Nb leaf instances: 1.
+[INF:UH0706] Creating UHDM Model...
+=== UHDM Object Stats Begin (Non-Elaborated Model) ===
+constant                                              29
+cont_assign                                            6
+design                                                 1
+enum_const                                             7
+enum_typespec                                          4
+enum_var                                               2
+int_typespec                                          17
+int_var                                                3
+logic_net                                              6
+logic_typespec                                         4
+module_inst                                            6
+operation                                              4
+param_assign                                           4
+parameter                                              4
+port                                                   6
+range                                                  4
+ref_obj                                               27
+ref_typespec                                          31
+=== UHDM Object Stats End ===
+[INF:UH0707] Elaborating UHDM...
+=== UHDM Object Stats Begin (Elaborated Model) ===
+constant                                              29
+cont_assign                                            9
+design                                                 1
+enum_const                                             7
+enum_typespec                                          4
+enum_var                                               2
+int_typespec                                          17
+int_var                                                3
+logic_net                                              6
+logic_typespec                                         4
+module_inst                                            6
+operation                                              4
+param_assign                                           4
+parameter                                              4
+port                                                   9
+range                                                  4
+ref_obj                                               33
+ref_typespec                                          34
+=== UHDM Object Stats End ===
+[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/EnumValueModuleParam/slpp_all/surelog.uhdm ...
+[INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/EnumValueModuleParam/slpp_all/checker/surelog.chk.html ...
+[INF:UH0710] Loading UHDM DB: ${SURELOG_DIR}/build/regression/EnumValueModuleParam/slpp_all/surelog.uhdm ...
+[INF:UH0711] Decompiling UHDM...
+====== UHDM =======
+design: (work@top)
+|vpiElaborated:1
+|vpiName:work@top
+|uhdmallModules:
+\_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiFullName:work@top
+  |vpiParameter:
+  \_parameter: (work@top.S), line:4:14, endln:4:15
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |UINT:2
+    |vpiTypespec:
+    \_ref_typespec: (work@top.S)
+      |vpiParent:
+      \_parameter: (work@top.S), line:4:14, endln:4:15
+      |vpiFullName:work@top.S
+      |vpiActual:
+      \_int_typespec: , line:4:3, endln:4:19
+    |vpiLocalParam:1
+    |vpiName:S
+    |vpiFullName:work@top.S
+  |vpiParameter:
+  \_parameter: (work@top.P), line:5:13, endln:5:14
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |UINT:5
+    |vpiTypespec:
+    \_ref_typespec: (work@top.P)
+      |vpiParent:
+      \_parameter: (work@top.P), line:5:13, endln:5:14
+      |vpiFullName:work@top.P
+      |vpiActual:
+      \_int_typespec: , line:5:3, endln:5:18
+    |vpiName:P
+    |vpiFullName:work@top.P
+  |vpiParamAssign:
+  \_param_assign: , line:4:14, endln:4:19
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_constant: , line:4:18, endln:4:19
+      |vpiParent:
+      \_param_assign: , line:4:14, endln:4:19
+      |vpiDecompile:2
+      |vpiSize:64
+      |UINT:2
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_constant: , line:4:18, endln:4:19
+        |vpiFullName:work@top
+        |vpiActual:
+        \_int_typespec: , line:4:3, endln:4:19
+      |vpiConstType:9
+    |vpiLhs:
+    \_parameter: (work@top.S), line:4:14, endln:4:15
+  |vpiParamAssign:
+  \_param_assign: , line:5:13, endln:5:18
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_constant: , line:5:17, endln:5:18
+      |vpiParent:
+      \_param_assign: , line:5:13, endln:5:18
+      |vpiDecompile:5
+      |vpiSize:64
+      |UINT:5
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_constant: , line:5:17, endln:5:18
+        |vpiFullName:work@top
+        |vpiActual:
+        \_int_typespec: , line:5:3, endln:5:18
+      |vpiConstType:9
+    |vpiLhs:
+    \_parameter: (work@top.P), line:5:13, endln:5:14
+  |vpiTypedef:
+  \_enum_typespec: (bad_t), line:9:3, endln:9:47
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:bad_t
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiBaseTypespec:
+    \_ref_typespec: (work@top.bad_t)
+      |vpiParent:
+      \_enum_typespec: (bad_t), line:9:3, endln:9:47
+      |vpiFullName:work@top.bad_t
+      |vpiActual:
+      \_logic_typespec: , line:9:16, endln:9:27
+    |vpiEnumConst:
+    \_enum_const: (E), line:9:30, endln:9:38
+      |vpiParent:
+      \_enum_typespec: (bad_t), line:9:3, endln:9:47
+      |vpiName:E
+      |INT:0
+      |vpiDecompile:NOPE
+  |vpiTypedef:
+  \_enum_typespec: (e_t), line:7:3, endln:7:49
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:e_t
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiBaseTypespec:
+    \_ref_typespec: (work@top.e_t)
+      |vpiParent:
+      \_enum_typespec: (e_t), line:7:3, endln:7:49
+      |vpiFullName:work@top.e_t
+      |vpiActual:
+      \_logic_typespec: , line:7:16, endln:7:27
+    |vpiEnumConst:
+    \_enum_const: (C), line:7:30, endln:7:35
+      |vpiParent:
+      \_enum_typespec: (e_t), line:7:3, endln:7:49
+      |vpiName:C
+      |UINT:2
+      |vpiDecompile:S
+      |vpiSize:64
+    |vpiEnumConst:
+    \_enum_const: (D), line:7:37, endln:7:42
+      |vpiParent:
+      \_enum_typespec: (e_t), line:7:3, endln:7:49
+      |vpiName:D
+      |UINT:5
+      |vpiDecompile:P
+      |vpiSize:64
+  |vpiDefName:work@top
+  |vpiNet:
+  \_logic_net: (work@top.o1), line:3:23, endln:3:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o1
+    |vpiFullName:work@top.o1
+  |vpiNet:
+  \_logic_net: (work@top.o2), line:3:38, endln:3:40
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o2
+    |vpiFullName:work@top.o2
+  |vpiNet:
+  \_logic_net: (work@top.o3), line:3:53, endln:3:55
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o3
+    |vpiFullName:work@top.o3
+  |vpiNet:
+  \_logic_net: (work@top.e1), line:6:37, endln:6:39
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.e1)
+      |vpiParent:
+      \_logic_net: (work@top.e1), line:6:37, endln:6:39
+      |vpiFullName:work@top.e1
+      |vpiActual:
+      \_enum_typespec: 
+    |vpiName:e1
+    |vpiFullName:work@top.e1
+  |vpiNet:
+  \_logic_net: (work@top.e2), line:8:7, endln:8:9
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.e2)
+      |vpiParent:
+      \_logic_net: (work@top.e2), line:8:7, endln:8:9
+      |vpiFullName:work@top.e2
+      |vpiActual:
+      \_enum_typespec: (e_t), line:7:3, endln:7:49
+    |vpiName:e2
+    |vpiFullName:work@top.e2
+  |vpiNet:
+  \_logic_net: (work@top.NOPE), line:9:34, endln:9:38
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:NOPE
+    |vpiFullName:work@top.NOPE
+    |vpiNetType:1
+  |vpiPort:
+  \_port: (o1), line:3:23, endln:3:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o1
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o1.o1), line:3:23, endln:3:25
+      |vpiParent:
+      \_port: (o1), line:3:23, endln:3:25
+      |vpiName:o1
+      |vpiFullName:work@top.o1.o1
+      |vpiActual:
+      \_logic_net: (work@top.o1), line:3:23, endln:3:25
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_port: (o1), line:3:23, endln:3:25
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_typespec: , line:3:19, endln:3:22
+  |vpiPort:
+  \_port: (o2), line:3:38, endln:3:40
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o2
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o2.o2), line:3:38, endln:3:40
+      |vpiParent:
+      \_port: (o2), line:3:38, endln:3:40
+      |vpiName:o2
+      |vpiFullName:work@top.o2.o2
+      |vpiActual:
+      \_logic_net: (work@top.o2), line:3:38, endln:3:40
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o2)
+      |vpiParent:
+      \_port: (o2), line:3:38, endln:3:40
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_typespec: , line:3:34, endln:3:37
+  |vpiPort:
+  \_port: (o3), line:3:53, endln:3:55
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o3
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o3.o3), line:3:53, endln:3:55
+      |vpiParent:
+      \_port: (o3), line:3:53, endln:3:55
+      |vpiName:o3
+      |vpiFullName:work@top.o3.o3
+      |vpiActual:
+      \_logic_net: (work@top.o3), line:3:53, endln:3:55
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o3)
+      |vpiParent:
+      \_port: (o3), line:3:53, endln:3:55
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_typespec: , line:3:49, endln:3:52
+  |vpiContAssign:
+  \_cont_assign: , line:10:10, endln:10:16
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_ref_obj: (work@top.B), line:10:15, endln:10:16
+      |vpiParent:
+      \_cont_assign: , line:10:10, endln:10:16
+      |vpiName:B
+      |vpiFullName:work@top.B
+      |vpiActual:
+      \_enum_const: (B), line:6:33, endln:6:34
+    |vpiLhs:
+    \_ref_obj: (work@top.o1), line:10:10, endln:10:12
+      |vpiParent:
+      \_cont_assign: , line:10:10, endln:10:16
+      |vpiName:o1
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_logic_net: (work@top.o1), line:3:23, endln:3:25
+  |vpiContAssign:
+  \_cont_assign: , line:11:10, endln:11:16
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_ref_obj: (work@top.D), line:11:15, endln:11:16
+      |vpiParent:
+      \_cont_assign: , line:11:10, endln:11:16
+      |vpiName:D
+      |vpiFullName:work@top.D
+      |vpiActual:
+      \_enum_const: (D), line:7:37, endln:7:42
+    |vpiLhs:
+    \_ref_obj: (work@top.o2), line:11:10, endln:11:12
+      |vpiParent:
+      \_cont_assign: , line:11:10, endln:11:16
+      |vpiName:o2
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_logic_net: (work@top.o2), line:3:38, endln:3:40
+  |vpiContAssign:
+  \_cont_assign: , line:12:10, endln:12:16
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_ref_obj: (work@top.A), line:12:15, endln:12:16
+      |vpiParent:
+      \_cont_assign: , line:12:10, endln:12:16
+      |vpiName:A
+      |vpiFullName:work@top.A
+      |vpiActual:
+      \_enum_const: (A), line:6:22, endln:6:31
+    |vpiLhs:
+    \_ref_obj: (work@top.o3), line:12:10, endln:12:12
+      |vpiParent:
+      \_cont_assign: , line:12:10, endln:12:16
+      |vpiName:o3
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_logic_net: (work@top.o3), line:3:53, endln:3:55
+|uhdmtopModules:
+\_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+  |vpiParent:
+  \_design: (work@top)
+  |vpiName:work@top
+  |vpiVariables:
+  \_int_var: (work@top.o1), line:3:23, endln:3:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_int_var: (work@top.o1), line:3:23, endln:3:25
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_typespec: , line:3:19, endln:3:22
+    |vpiName:o1
+    |vpiFullName:work@top.o1
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@top.o2), line:3:38, endln:3:40
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o2)
+      |vpiParent:
+      \_int_var: (work@top.o2), line:3:38, endln:3:40
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_typespec: , line:3:34, endln:3:37
+    |vpiName:o2
+    |vpiFullName:work@top.o2
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_int_var: (work@top.o3), line:3:53, endln:3:55
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.o3)
+      |vpiParent:
+      \_int_var: (work@top.o3), line:3:53, endln:3:55
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_typespec: , line:3:49, endln:3:52
+    |vpiName:o3
+    |vpiFullName:work@top.o3
+    |vpiSigned:1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_enum_var: (work@top.e1), line:6:37, endln:6:39
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.e1)
+      |vpiParent:
+      \_enum_var: (work@top.e1), line:6:37, endln:6:39
+      |vpiFullName:work@top.e1
+      |vpiActual:
+      \_enum_typespec: 
+    |vpiName:e1
+    |vpiFullName:work@top.e1
+    |vpiVisibility:1
+  |vpiVariables:
+  \_enum_var: (work@top.e2), line:8:7, endln:8:9
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiTypespec:
+    \_ref_typespec: (work@top.e2)
+      |vpiParent:
+      \_enum_var: (work@top.e2), line:8:7, endln:8:9
+      |vpiFullName:work@top.e2
+      |vpiActual:
+      \_enum_typespec: (e_t), line:7:3, endln:7:49
+    |vpiName:e2
+    |vpiFullName:work@top.e2
+    |vpiVisibility:1
+  |vpiParameter:
+  \_parameter: (work@top.S), line:4:14, endln:4:15
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |UINT:2
+    |vpiTypespec:
+    \_ref_typespec: (work@top.S)
+      |vpiParent:
+      \_parameter: (work@top.S), line:4:14, endln:4:15
+      |vpiFullName:work@top.S
+      |vpiActual:
+      \_int_typespec: , line:4:3, endln:4:19
+    |vpiLocalParam:1
+    |vpiName:S
+    |vpiFullName:work@top.S
+  |vpiParameter:
+  \_parameter: (work@top.P), line:5:13, endln:5:14
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |UINT:5
+    |vpiTypespec:
+    \_ref_typespec: (work@top.P)
+      |vpiParent:
+      \_parameter: (work@top.P), line:5:13, endln:5:14
+      |vpiFullName:work@top.P
+      |vpiActual:
+      \_int_typespec: , line:5:3, endln:5:18
+    |vpiName:P
+    |vpiFullName:work@top.P
+  |vpiParamAssign:
+  \_param_assign: , line:4:14, endln:4:19
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_constant: , line:4:18, endln:4:19
+      |vpiParent:
+      \_param_assign: , line:4:14, endln:4:19
+      |vpiDecompile:2
+      |vpiSize:32
+      |UINT:2
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_constant: , line:4:18, endln:4:19
+        |vpiFullName:work@top
+        |vpiActual:
+        \_int_typespec: , line:4:3, endln:4:19
+      |vpiConstType:9
+    |vpiLhs:
+    \_parameter: (work@top.S), line:4:14, endln:4:15
+  |vpiParamAssign:
+  \_param_assign: , line:5:13, endln:5:18
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_constant: , line:5:17, endln:5:18
+      |vpiParent:
+      \_param_assign: , line:5:13, endln:5:18
+      |vpiDecompile:5
+      |vpiSize:32
+      |UINT:5
+      |vpiTypespec:
+      \_ref_typespec: (work@top)
+        |vpiParent:
+        \_constant: , line:5:17, endln:5:18
+        |vpiFullName:work@top
+        |vpiActual:
+        \_int_typespec: , line:5:3, endln:5:18
+      |vpiConstType:9
+    |vpiLhs:
+    \_parameter: (work@top.P), line:5:13, endln:5:14
+  |vpiTypedef:
+  \_enum_typespec: (bad_t), line:9:3, endln:9:47
+  |vpiTypedef:
+  \_enum_typespec: (e_t), line:7:3, endln:7:49
+  |vpiDefName:work@top
+  |vpiTop:1
+  |vpiTopModule:1
+  |vpiPort:
+  \_port: (o1), line:3:23, endln:3:25
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o1
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o1), line:3:23, endln:3:25
+      |vpiParent:
+      \_port: (o1), line:3:23, endln:3:25
+      |vpiName:o1
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_var: (work@top.o1), line:3:23, endln:3:25
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o1)
+      |vpiParent:
+      \_port: (o1), line:3:23, endln:3:25
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_typespec: , line:3:19, endln:3:22
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+  |vpiPort:
+  \_port: (o2), line:3:38, endln:3:40
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o2
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o2), line:3:38, endln:3:40
+      |vpiParent:
+      \_port: (o2), line:3:38, endln:3:40
+      |vpiName:o2
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_var: (work@top.o2), line:3:38, endln:3:40
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o2)
+      |vpiParent:
+      \_port: (o2), line:3:38, endln:3:40
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_typespec: , line:3:34, endln:3:37
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+  |vpiPort:
+  \_port: (o3), line:3:53, endln:3:55
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiName:o3
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@top.o3), line:3:53, endln:3:55
+      |vpiParent:
+      \_port: (o3), line:3:53, endln:3:55
+      |vpiName:o3
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_var: (work@top.o3), line:3:53, endln:3:55
+    |vpiTypedef:
+    \_ref_typespec: (work@top.o3)
+      |vpiParent:
+      \_port: (o3), line:3:53, endln:3:55
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_typespec: , line:3:49, endln:3:52
+    |vpiInstance:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+  |vpiContAssign:
+  \_cont_assign: , line:10:10, endln:10:16
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_constant: 
+      |vpiParent:
+      \_cont_assign: , line:10:10, endln:10:16
+      |vpiDecompile:4
+      |vpiSize:32
+      |INT:4
+      |vpiConstType:7
+    |vpiLhs:
+    \_ref_obj: (work@top.o1), line:10:10, endln:10:12
+      |vpiParent:
+      \_cont_assign: , line:10:10, endln:10:16
+      |vpiName:o1
+      |vpiFullName:work@top.o1
+      |vpiActual:
+      \_int_var: (work@top.o1), line:3:23, endln:3:25
+  |vpiContAssign:
+  \_cont_assign: , line:11:10, endln:11:16
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_constant: 
+      |vpiParent:
+      \_cont_assign: , line:11:10, endln:11:16
+      |vpiDecompile:5
+      |vpiSize:32
+      |UINT:5
+      |vpiConstType:9
+    |vpiLhs:
+    \_ref_obj: (work@top.o2), line:11:10, endln:11:12
+      |vpiParent:
+      \_cont_assign: , line:11:10, endln:11:16
+      |vpiName:o2
+      |vpiFullName:work@top.o2
+      |vpiActual:
+      \_int_var: (work@top.o2), line:3:38, endln:3:40
+  |vpiContAssign:
+  \_cont_assign: , line:12:10, endln:12:16
+    |vpiParent:
+    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+    |vpiRhs:
+    \_constant: 
+      |vpiParent:
+      \_cont_assign: , line:12:10, endln:12:16
+      |vpiDecompile:3
+      |vpiSize:32
+      |UINT:3
+      |vpiConstType:9
+    |vpiLhs:
+    \_ref_obj: (work@top.o3), line:12:10, endln:12:12
+      |vpiParent:
+      \_cont_assign: , line:12:10, endln:12:16
+      |vpiName:o3
+      |vpiFullName:work@top.o3
+      |vpiActual:
+      \_int_var: (work@top.o3), line:3:53, endln:3:55
+\_weaklyReferenced:
+\_int_typespec: , line:4:3, endln:4:19
+\_int_typespec: , line:5:3, endln:5:18
+\_logic_typespec: , line:7:16, endln:7:27
+  |vpiRange:
+  \_range: , line:7:22, endln:7:27
+    |vpiParent:
+    \_logic_typespec: , line:7:16, endln:7:27
+    |vpiLeftRange:
+    \_constant: , line:7:23, endln:7:24
+      |vpiParent:
+      \_range: , line:7:22, endln:7:27
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:25, endln:7:26
+      |vpiParent:
+      \_range: , line:7:22, endln:7:27
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:9:16, endln:9:27
+  |vpiRange:
+  \_range: , line:9:22, endln:9:27
+    |vpiParent:
+    \_logic_typespec: , line:9:16, endln:9:27
+    |vpiLeftRange:
+    \_constant: , line:9:23, endln:9:24
+      |vpiParent:
+      \_range: , line:9:22, endln:9:27
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:9:25, endln:9:26
+      |vpiParent:
+      \_range: , line:9:22, endln:9:27
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_int_typespec: , line:3:19, endln:3:22
+  |vpiSigned:1
+\_int_typespec: , line:3:34, endln:3:37
+  |vpiSigned:1
+\_int_typespec: , line:3:49, endln:3:52
+  |vpiSigned:1
+\_int_typespec: , line:3:19, endln:3:22
+  |vpiSigned:1
+\_int_typespec: , line:3:34, endln:3:37
+  |vpiSigned:1
+\_int_typespec: , line:3:49, endln:3:52
+  |vpiSigned:1
+\_enum_typespec: 
+  |vpiParent:
+  \_enum_var: (work@top.e1), line:6:37, endln:6:39
+  |vpiBaseTypespec:
+  \_ref_typespec: (work@top.e1)
+    |vpiParent:
+    \_enum_typespec: 
+    |vpiFullName:work@top.e1
+    |vpiActual:
+    \_logic_typespec: , line:6:8, endln:6:19
+  |vpiEnumConst:
+  \_enum_const: (A), line:6:22, endln:6:31
+    |vpiParent:
+    \_enum_typespec: 
+    |vpiName:A
+    |UINT:3
+    |vpiDecompile:S + 1
+    |vpiSize:64
+  |vpiEnumConst:
+  \_enum_const: (B), line:6:33, endln:6:34
+    |vpiParent:
+    \_enum_typespec: 
+    |vpiName:B
+    |INT:4
+    |vpiDecompile:4
+    |vpiSize:4
+\_logic_typespec: , line:6:8, endln:6:19
+  |vpiRange:
+  \_range: , line:6:14, endln:6:19
+    |vpiParent:
+    \_logic_typespec: , line:6:8, endln:6:19
+    |vpiLeftRange:
+    \_constant: , line:6:15, endln:6:16
+      |vpiParent:
+      \_range: , line:6:14, endln:6:19
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:6:17, endln:6:18
+      |vpiParent:
+      \_range: , line:6:14, endln:6:19
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_int_typespec: , line:3:19, endln:3:22
+  |vpiSigned:1
+\_int_typespec: , line:3:34, endln:3:37
+  |vpiSigned:1
+\_int_typespec: , line:3:49, endln:3:52
+  |vpiSigned:1
+\_enum_typespec: 
+  |vpiBaseTypespec:
+  \_ref_typespec: 
+    |vpiParent:
+    \_enum_typespec: 
+    |vpiActual:
+    \_logic_typespec: , line:6:8, endln:6:19
+  |vpiEnumConst:
+  \_enum_const: (A), line:6:22, endln:6:31
+    |vpiParent:
+    \_enum_typespec: 
+    |vpiName:A
+    |UINT:3
+    |vpiDecompile:S + 1
+    |vpiSize:64
+  |vpiEnumConst:
+  \_enum_const: (B), line:6:33, endln:6:34
+    |vpiParent:
+    \_enum_typespec: 
+    |vpiName:B
+    |INT:4
+    |vpiDecompile:4
+    |vpiSize:4
+\_logic_typespec: , line:6:8, endln:6:19
+  |vpiRange:
+  \_range: , line:6:14, endln:6:19
+    |vpiParent:
+    \_logic_typespec: , line:6:8, endln:6:19
+    |vpiLeftRange:
+    \_constant: , line:6:15, endln:6:16
+      |vpiParent:
+      \_range: , line:6:14, endln:6:19
+      |vpiDecompile:3
+      |vpiSize:64
+      |UINT:3
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:6:17, endln:6:18
+      |vpiParent:
+      \_range: , line:6:14, endln:6:19
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_int_typespec: , line:4:3, endln:4:19
+  |vpiParent:
+  \_ref_typespec: (work@top.S)
+\_int_typespec: , line:5:3, endln:5:18
+  |vpiParent:
+  \_ref_typespec: (work@top.P)
+\_cont_assign: , line:10:10, endln:10:16
+  |vpiParent:
+  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+  |vpiRhs:
+  \_constant: 
+  |vpiLhs:
+  \_ref_obj: (work@top.o1), line:10:10, endln:10:12
+    |vpiParent:
+    \_cont_assign: , line:10:10, endln:10:16
+    |vpiName:o1
+    |vpiFullName:work@top.o1
+    |vpiActual:
+    \_logic_net: (work@top.o1), line:3:23, endln:3:25
+\_cont_assign: , line:11:10, endln:11:16
+  |vpiParent:
+  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+  |vpiRhs:
+  \_constant: 
+  |vpiLhs:
+  \_ref_obj: (work@top.o2), line:11:10, endln:11:12
+    |vpiParent:
+    \_cont_assign: , line:11:10, endln:11:16
+    |vpiName:o2
+    |vpiFullName:work@top.o2
+    |vpiActual:
+    \_logic_net: (work@top.o2), line:3:38, endln:3:40
+\_cont_assign: , line:12:10, endln:12:16
+  |vpiParent:
+  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/EnumValueModuleParam/dut.sv, line:3:1, endln:13:10
+  |vpiRhs:
+  \_constant: 
+  |vpiLhs:
+  \_ref_obj: (work@top.o3), line:12:10, endln:12:12
+    |vpiParent:
+    \_cont_assign: , line:12:10, endln:12:16
+    |vpiName:o3
+    |vpiFullName:work@top.o3
+    |vpiActual:
+    \_logic_net: (work@top.o3), line:3:53, endln:3:55
+===================
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 1
+[WARNING] : 1
+[   NOTE] : 5
