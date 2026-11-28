@@ -1967,6 +1967,23 @@ UHDM::any *CompileHelper::compileExpression(
       result->VpiParent(pexpr);
       break;
     }
+    // `$bits(time)`, `$bits(real)`: like the integer atoms above.
+    case VObjectType::paIntegerAtomType_Time: {
+      result = s.MakeTime_var();
+      result->VpiParent(pexpr);
+      break;
+    }
+    case VObjectType::paNonIntType_Real:
+    case VObjectType::paNonIntType_RealTime: {
+      result = s.MakeReal_var();
+      result->VpiParent(pexpr);
+      break;
+    }
+    case VObjectType::paNonIntType_ShortReal: {
+      result = s.MakeShort_real_var();
+      result->VpiParent(pexpr);
+      break;
+    }
     case VObjectType::paValue_range: {
       UHDM::operation *list_op = s.MakeOperation();
       fC->populateCoreMembers(parent, parent, list_op);
